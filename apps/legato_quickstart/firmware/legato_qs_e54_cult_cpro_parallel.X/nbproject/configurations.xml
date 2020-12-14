@@ -282,45 +282,45 @@
       <logicalFolder name="f2" displayName="packs" projectFiles="true">
         <logicalFolder name="f1" displayName="ATSAME54P20A_DFP" projectFiles="true">
           <logicalFolder name="f1" displayName="component" projectFiles="true">
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/adc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/aes.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/can.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ccl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/cmcc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/dac.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/dmac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/dsu.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/eic.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/evsys.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/freqm.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/gclk.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/gmac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/hmatrixb.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/i2s.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/icm.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/mclk.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/nvmctrl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/osc32kctrl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/oscctrl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pcc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pdec.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/pm.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/port.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pukcc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/qspi.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ramecc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/rstc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/adc.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/rtc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/sdhc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/sercom.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/supc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/qspi.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/rstc.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/tc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/tcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/osc32kctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/nvmctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/supc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/cmcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/eic.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pukcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/mclk.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/gmac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/evsys.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/sdhc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pdec.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/dac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/i2s.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/port.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/icm.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ramecc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/freqm.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/trng.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/aes.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ccl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/oscctrl.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/usb.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/hmatrixb.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pcc.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/dsu.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/tcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/sercom.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/gclk.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAME54P20A_DFP/pio/same54p20a.h</itemPath>
@@ -340,7 +340,6 @@
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -688,9 +687,36 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false">
+      <logicalFolder name="f1"
+                     displayName="ili9488_rgb565_e54_cult_parallel.mhc"
+                     projectFiles="true">
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/drv_i2c.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/evsys.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/gfx_hal_le.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/tc1.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/BSP_SAM_E54_Curiosity_Ultra.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/core.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/le_gfx_intf_parallel_portgroup.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/cmsis.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/sys_input.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/gfx_disp_mxt_cpro_320x480.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/sercom4.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/project.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/gfx_legato.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/gfx_maxtouch_controller.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/nvmctrl.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/tc0.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/sys_time.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/ccl.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/legato_gfx_mxt_cpro.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/tc4.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/le_gfx_driver_external.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/HarmonyCore.yml</itemPath>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/harmony.prj</itemPath>
-      <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.xml</itemPath>
       <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/harmony-manifest-success.yml</itemPath>
       <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/harmony-manifest-failure.yml</itemPath>
     </logicalFolder>
@@ -708,12 +734,12 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
-        <platform>3</platform>
+        <languageToolchainVersion>2.50</languageToolchainVersion>
+        <platform>2</platform>
       </toolsSet>
       <packs>
+        <pack name="SAME54_DFP" vendor="Microchip" version="3.3.64"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="SAME54_DFP" vendor="Microchip" version="3.2.56"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -734,6 +760,7 @@
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
         <makeCustomizationPostStep></makeCustomizationPostStep>
@@ -902,6 +929,8 @@
       </C32Global>
       <EdbgTool>
         <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="arm.use_vtor" value="false"/>
+        <property key="arm.vtor_adr" value="exception_table"/>
         <property key="communication.activationmode" value="nohv"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.speed" value="2.000"/>
@@ -911,6 +940,8 @@
         <property key="firmware.toolpack"
                   value="Press to select which tool pack to use"/>
         <property key="firmware.update.action" value="firmware.update.use.latest"/>
+        <property key="freeze.timers" value="false"/>
+        <property key="lastid" value=""/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
         <property key="memories.configurationmemory" value="true"/>
@@ -924,9 +955,10 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-fffff"/>
+        <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
         <property key="programmerToGoFilePath"
-                  value="C:/Users/c18797/Documents/Projects/Harmony/H3/gfx/apps/legato_quickstart/firmware/legato_qs_e54_cult_cpro_parallel.X/debug/ili9488_rgb565_e54_cult_parallel/legato_qs_e54_cult_cpro_parallel_ptg"/>
+                  value="/home/rhone/work/h3/harmony_gfx_apps_sam_d5x_e5x/apps/legato_quickstart/firmware/legato_qs_e54_cult_cpro_parallel.X/debug/ili9488_rgb565_e54_cult_parallel/legato_qs_e54_cult_cpro_parallel_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
@@ -937,6 +969,9 @@
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.preserveuserid" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
+        <property key="script.log_level" value="0"/>
+        <property key="script.reset_delay" value="0"/>
+        <property key="script.show_output" value="false"/>
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.uselatestoolpack"/>
         <property key="toolpack.updateoptions.packversion"

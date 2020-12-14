@@ -21,13 +21,15 @@ extern "C" {
 #define screenID_Screen1    1
 #define screenID_Screen2    2
 
-void legato_initialize(void);
+void legato_initializeScreenState(void);
 
 // global screen control functions
 uint32_t legato_getCurrentScreen(void);
 void legato_showScreen(uint32_t id);
-void legato_hideCurrentScreen(void);
-void legato_updateCurrentScreen(void);
+void legato_updateScreenState(void);
+
+// do not do anything in the application if this returns true
+leBool legato_isChangingScreens(void);
 
 //DOM-IGNORE-BEGIN
 

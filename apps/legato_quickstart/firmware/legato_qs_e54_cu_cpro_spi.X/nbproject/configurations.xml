@@ -290,45 +290,45 @@
       <logicalFolder name="f2" displayName="packs" projectFiles="true">
         <logicalFolder name="f1" displayName="ATSAME54P20A_DFP" projectFiles="true">
           <logicalFolder name="f1" displayName="component" projectFiles="true">
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/adc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/aes.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/can.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ccl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/cmcc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/dac.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/dmac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/dsu.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/eic.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/evsys.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/freqm.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/gclk.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/gmac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/hmatrixb.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/i2s.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/icm.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/mclk.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/nvmctrl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/osc32kctrl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/oscctrl.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pac.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pcc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pdec.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/pm.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/port.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pukcc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/qspi.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ramecc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/rstc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/adc.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/rtc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/sdhc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/sercom.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/supc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/qspi.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/rstc.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/tc.h</itemPath>
-            <itemPath>../src/packs/ATSAME54P20A_DFP/component/tcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/osc32kctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/nvmctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/supc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/cmcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/eic.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pukcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/mclk.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/gmac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/evsys.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/sdhc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pdec.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/dac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/i2s.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/port.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/icm.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ramecc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/freqm.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/trng.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/aes.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ccl.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/oscctrl.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/usb.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/hmatrixb.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/pcc.h</itemPath>
             <itemPath>../src/packs/ATSAME54P20A_DFP/component/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/ac.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/dsu.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/tcc.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/sercom.h</itemPath>
+            <itemPath>../src/packs/ATSAME54P20A_DFP/component/gclk.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAME54P20A_DFP/pio/same54p20a.h</itemPath>
@@ -348,7 +348,6 @@
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h</itemPath>
-                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -698,9 +697,35 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false">
+      <logicalFolder name="f1"
+                     displayName="ili9488_rgb565_e54_cult_spi.mhc"
+                     projectFiles="true">
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/drv_i2c.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/evsys.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/le_gfx_intf_spi4.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/gfx_hal_le.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/BSP_SAM_E54_Curiosity_Ultra.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/core.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/cmsis.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/sys_input.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/sercom6.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/gfx_disp_mxt_cpro_320x480.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/project.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/gfx_legato.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/sercom0.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/gfx_maxtouch_controller.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/nvmctrl.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/tc0.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/sys_time.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/legato_gfx_mxt_cpro.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/drv_spi.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/le_gfx_driver_external.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/HarmonyCore.yml</itemPath>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/harmony.prj</itemPath>
-      <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.xml</itemPath>
       <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/harmony-manifest-failure.yml</itemPath>
       <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
@@ -718,8 +743,8 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.40</languageToolchainVersion>
-        <platform>3</platform>
+        <languageToolchainVersion>2.50</languageToolchainVersion>
+        <platform>2</platform>
       </toolsSet>
       <packs>
         <pack name="SAME54_DFP" vendor="Microchip" version="3.2.56"/>
@@ -744,6 +769,7 @@
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
         <makeCustomizationPostStep></makeCustomizationPostStep>

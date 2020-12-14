@@ -1,0 +1,23 @@
+{
+    "linker": {
+        "script": "..\\src\\config\\ili9488_rgb565_e54_cult_parallel_iar\\flash.icf"
+    }, 
+    "assembler": {
+        "macros": [], 
+        "includes": []
+    }, 
+    "general": {
+        "name": "ili9488_rgb565_e54_cult_parallel_iar", 
+        "device": "ATSAME54P20A"
+    }, 
+    "compiler": {
+        "macros": [], 
+        "includes": [
+            "..\\src", 
+            "..\\src\\config\\ili9488_rgb565_e54_cult_parallel_iar", 
+            "..\\src\\packs\\ATSAME54P20A_DFP", 
+            "..\\src\\packs\\CMSIS\\CMSIS\\Core\\Include", 
+            "..\\src\\packs\\CMSIS"
+        ]
+    }
+}

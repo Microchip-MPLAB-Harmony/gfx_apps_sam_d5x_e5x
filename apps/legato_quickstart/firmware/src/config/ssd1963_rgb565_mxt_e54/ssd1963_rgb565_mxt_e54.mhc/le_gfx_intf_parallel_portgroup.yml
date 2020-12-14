@@ -1,0 +1,30 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: le_gfx_intf_parallel_portgroup}
+children:
+- type: Symbols
+  children:
+  - type: Combo
+    attributes: {id: PortGroup}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: legato_gfx_pda_tm4301b, value: '2'}
+- type: Attachments
+  children:
+  - type: DirectCapability
+    attributes: {id: le_gfx_intf_parallel_portgroup}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: le_gfx_driver_external}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: Parallel Display Interface}
+- type: ElementPosition
+  attributes: {x: '52', y: '400', id: le_gfx_intf_parallel_portgroup}

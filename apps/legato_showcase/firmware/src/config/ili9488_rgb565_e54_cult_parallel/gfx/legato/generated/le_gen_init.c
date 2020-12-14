@@ -1,8 +1,9 @@
 #include "gfx/legato/generated/le_gen_init.h"
 
-static uint32_t currentScreen;
+static int32_t currentScreen;
+static int32_t changingToScreen;
 
-void legato_initialize(void)
+void legato_initializeScreenState(void)
 {
     leSetStringTable(&stringTable);
 
@@ -24,6 +25,7 @@ void legato_initialize(void)
     screenInit_SlideshowHelpScreen();
 
     currentScreen = -1;
+    changingToScreen = -1;
 
     legato_showScreen(screenID_SplashScreen);
 }
@@ -33,7 +35,7 @@ uint32_t legato_getCurrentScreen(void)
     return currentScreen;
 }
 
-void legato_hideCurrentScreen()
+static void legato_hideCurrentScreen(void)
 {
     switch(currentScreen)
     {
@@ -126,99 +128,96 @@ void legato_hideCurrentScreen()
 
 void legato_showScreen(uint32_t id)
 {
-    legato_hideCurrentScreen();
+    if(changingToScreen >= 0)
+        return;
 
-    switch(id)
-    {
-        case screenID_SplashScreen:
-        {
-            screenShow_SplashScreen();
-            currentScreen = id;
-            break;
-        }
-        case screenID_MainMenu:
-        {
-            screenShow_MainMenu();
-            currentScreen = id;
-            break;
-        }
-        case screenID_ListWheelDemoScreen:
-        {
-            screenShow_ListWheelDemoScreen();
-            currentScreen = id;
-            break;
-        }
-        case screenID_TouchTestDemoScreen:
-        {
-            screenShow_TouchTestDemoScreen();
-            currentScreen = id;
-            break;
-        }
-        case screenID_KeypadDemoScreen:
-        {
-            screenShow_KeypadDemoScreen();
-            currentScreen = id;
-            break;
-        }
-        case screenID_AlphaBlendingDemoScreen:
-        {
-            screenShow_AlphaBlendingDemoScreen();
-            currentScreen = id;
-            break;
-        }
-        case screenID_SlideShowDemoScreen:
-        {
-            screenShow_SlideShowDemoScreen();
-            currentScreen = id;
-            break;
-        }
-        case screenID_SettingsScreen:
-        {
-            screenShow_SettingsScreen();
-            currentScreen = id;
-            break;
-        }
-        case screenID_MainMenuHelp:
-        {
-            screenShow_MainMenuHelp();
-            currentScreen = id;
-            break;
-        }
-        case screenID_ListWheelHelpScreen:
-        {
-            screenShow_ListWheelHelpScreen();
-            currentScreen = id;
-            break;
-        }
-        case screenID_TouchTestHelpScreen:
-        {
-            screenShow_TouchTestHelpScreen();
-            currentScreen = id;
-            break;
-        }
-        case screenID_KeypadHelpScreen:
-        {
-            screenShow_KeypadHelpScreen();
-            currentScreen = id;
-            break;
-        }
-        case screenID_AlphaBlendingHelpScreen:
-        {
-            screenShow_AlphaBlendingHelpScreen();
-            currentScreen = id;
-            break;
-        }
-        case screenID_SlideshowHelpScreen:
-        {
-            screenShow_SlideshowHelpScreen();
-            currentScreen = id;
-            break;
-        }
-    }
+    changingToScreen = id;
 }
 
-void legato_updateCurrentScreen(void)
+void legato_updateScreenState(void)
 {
+    if(changingToScreen >= 0)
+    {
+        legato_hideCurrentScreen();
+
+        switch(changingToScreen)
+        {
+            case screenID_SplashScreen:
+            {
+                screenShow_SplashScreen();
+                break;
+            }
+            case screenID_MainMenu:
+            {
+                screenShow_MainMenu();
+                break;
+            }
+            case screenID_ListWheelDemoScreen:
+            {
+                screenShow_ListWheelDemoScreen();
+                break;
+            }
+            case screenID_TouchTestDemoScreen:
+            {
+                screenShow_TouchTestDemoScreen();
+                break;
+            }
+            case screenID_KeypadDemoScreen:
+            {
+                screenShow_KeypadDemoScreen();
+                break;
+            }
+            case screenID_AlphaBlendingDemoScreen:
+            {
+                screenShow_AlphaBlendingDemoScreen();
+                break;
+            }
+            case screenID_SlideShowDemoScreen:
+            {
+                screenShow_SlideShowDemoScreen();
+                break;
+            }
+            case screenID_SettingsScreen:
+            {
+                screenShow_SettingsScreen();
+                break;
+            }
+            case screenID_MainMenuHelp:
+            {
+                screenShow_MainMenuHelp();
+                break;
+            }
+            case screenID_ListWheelHelpScreen:
+            {
+                screenShow_ListWheelHelpScreen();
+                break;
+            }
+            case screenID_TouchTestHelpScreen:
+            {
+                screenShow_TouchTestHelpScreen();
+                break;
+            }
+            case screenID_KeypadHelpScreen:
+            {
+                screenShow_KeypadHelpScreen();
+                break;
+            }
+            case screenID_AlphaBlendingHelpScreen:
+            {
+                screenShow_AlphaBlendingHelpScreen();
+                break;
+            }
+            case screenID_SlideshowHelpScreen:
+            {
+                screenShow_SlideshowHelpScreen();
+                break;
+            }
+        }
+
+        currentScreen = changingToScreen;
+        changingToScreen = -1;
+    }
+
     switch(currentScreen)
     {
         case screenID_SplashScreen:
@@ -292,5 +291,10 @@ void legato_updateCurrentScreen(void)
             break;
         }
     }
+}
+
+leBool legato_isChangingScreens(void)
+{
+    return changingToScreen != -1;
 }
 
