@@ -348,6 +348,7 @@
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -697,33 +698,62 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false">
+      <logicalFolder name="f2"
+                     displayName="ili9488_rgb565_e54_cult_parallel.mhc"
+                     projectFiles="true">
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/BSP_SAM_E54_Curiosity_Ultra.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/ccl.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/cmsis.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/core.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/drv_i2c.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/evsys.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/gfx_disp_mxt_cpro_320x480.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/gfx_hal_le.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/gfx_legato.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/gfx_maxtouch_controller.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/HarmonyCore.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/legato_gfx_mxt_cpro.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/le_gfx_driver_external.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/le_gfx_intf_parallel_portgroup.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/nvmctrl.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/project.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/sercom4.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/sys_input.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/sys_time.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/tc0.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/tc1.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/tc4.yml</itemPath>
+      </logicalFolder>
       <logicalFolder name="f1"
                      displayName="ili9488_rgb565_e54_cult_spi.mhc"
                      projectFiles="true">
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/drv_i2c.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/evsys.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/le_gfx_intf_spi4.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/gfx_hal_le.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/settings.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/BSP_SAM_E54_Curiosity_Ultra.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/core.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/cmsis.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/sys_input.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/sercom6.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/gfx_disp_mxt_cpro_320x480.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/project.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/gfx_legato.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/sercom0.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/gfx_maxtouch_controller.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/nvmctrl.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/tc0.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/sys_time.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/legato_gfx_mxt_cpro.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/drv_spi.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/core.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/dfp.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/le_gfx_driver_external.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/drv_i2c.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/drv_spi.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/evsys.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/gfx_disp_mxt_cpro_320x480.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/gfx_hal_le.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/gfx_legato.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/gfx_maxtouch_controller.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/GraphSettings.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/HarmonyCore.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/legato_gfx_mxt_cpro.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/le_gfx_driver_external.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/le_gfx_intf_spi4.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/nvmctrl.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/project.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/sercom0.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/sercom6.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/sys_input.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/sys_time.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/ili9488_rgb565_e54_cult_spi.mhc/tc0.yml</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/harmony-manifest-failure.yml</itemPath>
@@ -744,7 +774,7 @@
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>2.50</languageToolchainVersion>
-        <platform>2</platform>
+        <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="SAME54_DFP" vendor="Microchip" version="3.2.56"/>
@@ -769,7 +799,6 @@
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
-        <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
         <makeCustomizationPostStep></makeCustomizationPostStep>

@@ -146,6 +146,8 @@ children:
       children:
       - type: Dynamic
         attributes: {id: le_gfx_driver_external, value: '72'}
+      - type: User
+        attributes: {value: '40'}
   - type: Integer
     attributes: {id: Command3ParmsCount}
     children:
@@ -228,6 +230,8 @@ children:
       children:
       - type: Dynamic
         attributes: {id: le_gfx_driver_external, value: '480'}
+      - type: User
+        attributes: {value: '320'}
   - type: Integer
     attributes: {id: DisplayWidth}
     children:
@@ -235,6 +239,8 @@ children:
       children:
       - type: Dynamic
         attributes: {id: le_gfx_driver_external, value: '320'}
+      - type: User
+        attributes: {value: '480'}
   - type: Integer
     attributes: {id: InitCommandsCount}
     children:
@@ -307,7 +313,7 @@ children:
       - type: String
         attributes: {id: targetComponentID}
         children:
-        - {type: Value, value: gfx_disp_pdatm4301b_480x272}
+        - {type: Value, value: gfx_disp_mxt_cpro_320x480}
       - type: String
         attributes: {id: targetAttachmentID}
         children:
@@ -339,4 +345,4 @@ children:
         children:
         - {type: Value, value: gfx_driver}
 - type: ElementPosition
-  attributes: {x: '258', y: '185', id: le_gfx_driver_external}
+  attributes: {x: '262', y: '185', id: le_gfx_driver_external}

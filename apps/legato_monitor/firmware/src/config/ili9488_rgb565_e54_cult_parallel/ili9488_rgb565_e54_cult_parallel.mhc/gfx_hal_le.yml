@@ -26,7 +26,7 @@ children:
       - type: Dynamic
         attributes: {id: le_gfx_driver_external, value: '480'}
       - type: User
-        attributes: {value: '480'}
+        attributes: {value: '320'}
   - type: Integer
     attributes: {id: DisplayHorzBackPorch}
     children:
@@ -98,7 +98,7 @@ children:
       - type: Dynamic
         attributes: {id: le_gfx_driver_external, value: '320'}
       - type: User
-        attributes: {value: '320'}
+        attributes: {value: '480'}
   - type: String
     attributes: {id: DriverName}
     children:

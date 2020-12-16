@@ -14,7 +14,7 @@ Following table provides number of peripheral library examples available for dif
 | Development Kits  | MPLABx applications |
 |:-----------------:|:-------------------:|
 | [SAM E54 Curiosity Ultra Development Board](https://www.microchip.com/Developmenttools/ProductDetails/DM320210)     | 11 |
-|
+
 
 
 ### New Features
@@ -22,13 +22,13 @@ Following table provides number of peripheral library examples available for dif
 New features added in this release are as follows:
 
 - Applications migrated from gfx and gfx_apps repository to this new application repository for SAM D5x/E5x development support
-
+- Added legato_qs_e54_cult_cpro_parallel.IAR and legato_qs_e54_cu_tm4301b_ssd1963.IAR configurations
 
 ### Known Issues
 
 The current known issues are as follows:
 
-- None
+- For all IAR configurations, make sure LE_DYNAMIC_VTABLES is define to 1 to ensure build success
 
 ### Development Tools
 

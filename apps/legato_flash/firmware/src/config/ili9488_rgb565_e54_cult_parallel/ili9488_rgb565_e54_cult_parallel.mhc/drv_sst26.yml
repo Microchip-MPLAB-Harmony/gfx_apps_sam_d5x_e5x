@@ -39,6 +39,15 @@ children:
 - type: Attachments
   children:
   - type: DirectDependency
+    attributes: {id: drv_sst26_SPI_dependency}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
+  - type: DirectDependency
     attributes: {id: drv_sst26_SQI_dependency}
     children:
     - type: Attributes

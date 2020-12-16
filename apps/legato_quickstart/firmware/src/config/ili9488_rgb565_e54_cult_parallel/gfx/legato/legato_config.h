@@ -57,7 +57,8 @@ extern "C" {
 
 
 #define LE_DEFAULT_COLOR_MODE                LE_COLOR_MODE_RGB_565
-#define LE_TOUCH_ORIENTATION                 90
+#define LE_TOUCH_ORIENTATION                 270
+#define LE_RENDER_ORIENTATION                270
 #define LE_DRIVER_LAYER_MODE                 1
 #define LE_DYNAMIC_VTABLES                   0
 

@@ -150,4 +150,4 @@ children:
         children:
         - {type: Value, value: Parallel Display Interface}
 - type: ElementPosition
-  attributes: {x: '499', y: '255', id: le_gfx_intf_parallel_portgroup}
+  attributes: {x: '500', y: '256', id: le_gfx_intf_parallel_portgroup}

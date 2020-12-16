@@ -50,8 +50,8 @@
 #define DISPLAY_DEFAULT_WIDTH   480
 #define DISPLAY_DEFAULT_HEIGHT  800
 
-#define DISPLAY_WIDTH   320
-#define DISPLAY_HEIGHT  480
+#define DISPLAY_WIDTH   480
+#define DISPLAY_HEIGHT  320
 
 #define PIXEL_BUFFER_COLOR_MODE GFX_COLOR_MODE_RGB_565
 #define SCREEN_WIDTH DISPLAY_WIDTH
@@ -186,7 +186,7 @@ static int DRV_ILI9488_Configure(ILI9488_DRV *drvPtr)
 
     //Memory Access Control
     cmd = 0x36;
-    parms[0] = 0x48;
+    parms[0] = 0x28;
     GFX_Disp_Intf_WriteCommand(intf, cmd);
     GFX_Disp_Intf_WriteData(intf, parms, 1);
 

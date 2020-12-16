@@ -40,9 +40,16 @@ leRenderState _rendererState;
 #define SCRATCH_BUFFER_SZ     (LE_SCRATCH_BUFFER_SIZE_KB * 1024)
 #define MAX_RECTARRAYS_SZ    8
 
+#ifndef LE_NO_CACHE_ATTR
+// CUSTOM CODE - DO NOT MODIFY
+#define LE_NO_CACHE_ATTR SECTION(".region_nocache")
+// END CUSTOM CODE
+#endif
+
+static uint8_t LE_COHERENT_ATTR LE_NO_CACHE_ATTR __ALIGNED(64) _dataBuffers[SCRATCH_BUFFER_SZ];
+
 struct leScratchBuffer
 {
-    uint8_t data[SCRATCH_BUFFER_SZ];
     lePixelBuffer renderBuffer;
     gfxPixelBuffer gfxBuffer;
 };
@@ -477,6 +484,7 @@ static void preRect(void)
         {
             _rendererState.currentScratchBuffer = idx;
             buf = &_scratchBuffers[idx];
+            buf->renderBuffer.pixels = &_dataBuffers[idx];
 
             break;
         }
@@ -489,11 +497,16 @@ static void preRect(void)
                      &_rendererState.layerStates[_rendererState.layerIdx].frameRectList.rects[_rendererState.frameRectIdx]);
 
     // set up render buffer to match damaged rectangle size
+#if LE_RENDER_ORIENTATION == 0 || LE_RENDER_ORIENTATION == 180
     buf->renderBuffer.size.width = _rendererState.layerStates[_rendererState.layerIdx].frameRectList.rects[_rendererState.frameRectIdx].width;
     buf->renderBuffer.size.height = _rendererState.layerStates[_rendererState.layerIdx].frameRectList.rects[_rendererState.frameRectIdx].height;
+#else
+    buf->renderBuffer.size.width = _rendererState.layerStates[_rendererState.layerIdx].frameRectList.rects[_rendererState.frameRectIdx].height;
+    buf->renderBuffer.size.height = _rendererState.layerStates[_rendererState.layerIdx].frameRectList.rects[_rendererState.frameRectIdx].width;
+#endif
+
     buf->renderBuffer.pixel_count = buf->renderBuffer.size.width * buf->renderBuffer.size.height;
     buf->renderBuffer.mode = leGetLayerColorMode(_rendererState.layerIdx);
-    buf->renderBuffer.pixels = &buf->data;
     buf->renderBuffer.buffer_length = buf->renderBuffer.pixel_count * leColorInfoTable[buf->renderBuffer.mode].size;
 
     _rendererState.frameState = LE_FRAME_PREWIDGET;
@@ -728,7 +741,23 @@ static void _nextRect(void)
 
 static leResult postRect(void)
 {
+    int32_t rotX, rotY;
+
     leRect frameRect = _rendererState.layerStates[_rendererState.layerIdx].frameRectList.rects[_rendererState.frameRectIdx];
+
+#if LE_RENDER_ORIENTATION == 0
+    rotX = frameRect.x;
+    rotY = frameRect.y;
+#elif LE_RENDER_ORIENTATION == 90
+    rotY = frameRect.x;
+    rotX = _state->rootWidget[_rendererState.layerIdx].rect.height - frameRect.y - frameRect.height;
+#elif LE_RENDER_ORIENTATION == 180
+    rotX = _state->rootWidget[_rendererState.layerIdx].rect.width - frameRect.x - frameRect.width;
+    rotY = _state->rootWidget[_rendererState.layerIdx].rect.height - frameRect.y - frameRect.height;
+#elif LE_RENDER_ORIENTATION == 270
+    rotX = frameRect.y;
+    rotY = _state->rootWidget[_rendererState.layerIdx].rect.width - frameRect.x - frameRect.width;
+#endif
 
     _scratchBuffers[_rendererState.currentScratchBuffer].gfxBuffer.pixel_count = _scratchBuffers[_rendererState.currentScratchBuffer].renderBuffer.pixel_count;
     _scratchBuffers[_rendererState.currentScratchBuffer].gfxBuffer.size.width = _scratchBuffers[_rendererState.currentScratchBuffer].renderBuffer.size.width;
@@ -739,8 +768,8 @@ static leResult postRect(void)
     _scratchBuffers[_rendererState.currentScratchBuffer].gfxBuffer.pixels = (gfxBuffer)_scratchBuffers[_rendererState.currentScratchBuffer].renderBuffer.pixels;
 
     /* render buffer may be locked by something or display driver may not be ready */
-    if(_rendererState.dispDriver->blitBuffer(frameRect.x,
-                                             frameRect.y,
+    if(_rendererState.dispDriver->blitBuffer(rotX,
+                                             rotY,
                                              &_scratchBuffers[_rendererState.currentScratchBuffer].gfxBuffer) == GFX_FAILURE)
     {
         return LE_FAILURE;

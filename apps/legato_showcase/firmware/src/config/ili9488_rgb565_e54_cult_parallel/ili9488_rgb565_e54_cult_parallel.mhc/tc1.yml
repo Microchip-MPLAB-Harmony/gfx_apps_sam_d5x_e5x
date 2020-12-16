@@ -25,6 +25,24 @@ children:
       children:
       - type: Dynamic
         attributes: {id: tc1, value: TC1_Timer8bitPeriodSet}
+  - type: File
+    attributes: {id: TC_CAPTURE_HEADER}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
+  - type: File
+    attributes: {id: TC_CAPTURE_SOURCE}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
   - type: Long
     attributes: {id: TC_COMPARE_CC0}
     children:
