@@ -42,14 +42,17 @@
 				"Development Kit", "SAM E54 Xplained Pro Evaluation Kit"
 			],
 			[
-				"Harmony", "Middleware", "Graphics", "BLANK_QUICKSTART"
+				"Harmony", "Middleware", "Graphics", "Legato", "BLANK_QUICKSTART"
 			],
 			[
-				"Middleware", "Graphics", "BLANK_QUICKSTART"
+				"Middleware", "Graphics", "Legato", "BLANK_QUICKSTART"
 			]
 		],
 		"peripherals": [
-			"GPU"
+			"External Display Controller",
+            "Touch",
+            "I2C",
+            "SPI"
 		],
 		"keywords": [
 			"MHC",
@@ -58,11 +61,13 @@
 			"Graphics",
 			"ATSAME54P20A",
 			"SAM D5x/E5x Family",
-			"GPU",
-			"External Bus Interface",
-			"External Memory",
 			"Memory",
-			"Graphics"
+			"Legato",
+			"External Display Controller",
+            "Touch",
+            "I2C",
+            "SPI",
+            "MaxTouch Curiosity Pro"
 		],
 		"additionalData": {
 			"longDescription": {
