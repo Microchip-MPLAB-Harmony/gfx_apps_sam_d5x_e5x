@@ -29,6 +29,7 @@ New features added in this release are as follows:
 The current known issues are as follows:
 
 - For all IAR configurations, make sure LE_DYNAMIC_VTABLES is define to 1 to ensure build success
+- legato_flash configuration support for USB is non-functional. SD EMMC is functional.
 
 ### Development Tools
 
