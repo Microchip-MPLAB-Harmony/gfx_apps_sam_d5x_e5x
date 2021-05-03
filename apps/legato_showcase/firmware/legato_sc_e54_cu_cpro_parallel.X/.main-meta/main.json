@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.gfx_apps_sam_d5x_e5x_legato_showcase_legato_sc_e54_cu_cpro_parallel",
-		"version": "3.9.0",
+		"version": "3.9.1",
 		"displayName": "Legato Showcase Example for SAM D5x/E5x Family",
 		"projectName": "legato_showcase_e54_cult_cpro_parallel",
 		"shortDescription": "This demonstration provides a touch-enabled starting point for reading images, string, and multiple fonts from both internal and external non-volatile memory (NVM).",
@@ -39,7 +39,7 @@
 		"author": "Microchip",
 		"subcategories": [
 			[
-				"Development Kit", "SAM E54 Xplained Pro Evaluation Kit"
+				"Development Kit", "SAM E54 Curiosity Ultra Development Board"
 			],
 			[
 				"Harmony", "Middleware", "Graphics", "Legato", "LEGATO_SHOWCASE"

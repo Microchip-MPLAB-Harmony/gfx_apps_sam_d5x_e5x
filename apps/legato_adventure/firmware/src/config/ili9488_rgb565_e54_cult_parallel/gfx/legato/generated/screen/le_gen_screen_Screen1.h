@@ -36,6 +36,7 @@ void event_Screen1_ButtonWidget_RunRight_OnPressed(leButtonWidget* btn);
 void event_Screen1_ButtonWidget_RunRight_OnReleased(leButtonWidget* btn);
 void event_Screen1_ButtonWidget_Jump_OnPressed(leButtonWidget* btn);
 void event_Screen1_ButtonWidget_Jump_OnReleased(leButtonWidget* btn);
+void event_Screen1_ButtonWidget_ScreenChange_OnReleased(leButtonWidget* btn);
 
 // screen lifecycle functions
 // DO NOT CALL THESE DIRECTLY

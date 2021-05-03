@@ -5,7 +5,7 @@ nav_order: 99
 
 # ![MPLAB® Harmony Graphics Suite](./docs/html/mhgs.png) Microchip MPLAB® Harmony 3 Graphics application examples for SAM D5x/E5x Family
 
-## Harmony 3 Graphics application examples for SAM D5x/E5x family v3.9.0
+## Harmony 3 Graphics application examples for SAM D5x/E5x family v3.9.1
 
 ### Development kit and demo application support
 
@@ -13,9 +13,19 @@ Following table provides number of peripheral library examples available for dif
 
 | Development Kits  | MPLABx applications |
 |:-----------------:|:-------------------:|
-| [SAM E54 Curiosity Ultra Development Board](https://www.microchip.com/Developmenttools/ProductDetails/DM320210)     | 11 |
+| [SAM E54 Curiosity Ultra Development Board](https://www.microchip.com/Developmenttools/ProductDetails/DM320210)     | 13 |
+
+## Release v3.9.1
+
+### New Features
+
+New features added in this release are as follows:
+
+- Added Legato Quickstart for the IGAT Development Board
+- Added Legato IGAT Showcase for the IGAT Development Board
 
 
+## Release v3.9.0
 
 ### New Features
 
@@ -29,7 +39,6 @@ New features added in this release are as follows:
 The current known issues are as follows:
 
 - For all IAR configurations, make sure LE_DYNAMIC_VTABLES is define to 1 to ensure build success
-- legato_flash configuration support for USB is non-functional. SD EMMC is functional.
 
 ### Development Tools
 
@@ -40,9 +49,5 @@ The current known issues are as follows:
 
 ### Dependent Components
 
-* [GFX v3.9.0](https://github.com/Microchip-MPLAB-Harmony/gfx/releases/tag/v3.9.0)
-* [BSP v3.8.2](https://github.com/Microchip-MPLAB-Harmony/bsp/releases/tag/v3.8.1)
-* [Core v3.8.1 ](https://github.com/Microchip-MPLAB-Harmony/core/releases/tag/v3.8.1)
-* [dev_packs v3.8.0 ](https://github.com/Microchip-MPLAB-Harmony/dev_packs/releases/tag/v3.8.0)
-* [Harmony 3 USB v3.7.0](https://github.com/Microchip-MPLAB-Harmony/usb/releases/tag/v3.7.0)
-* [Harmony 3 CMSIS-FreeRTOS v10.3.1](https://github.com/ARM-software/CMSIS-FreeRTOS)
+* [Harmony 3 GFX v3.9.3](https://github.com/Microchip-MPLAB-Harmony/gfx/releases/tag/v3.9.3)
+* [Harmony 3 TOUCH v3.9.2](https://github.com/Microchip-MPLAB-Harmony/touch/releases/tag/v3.9.2)

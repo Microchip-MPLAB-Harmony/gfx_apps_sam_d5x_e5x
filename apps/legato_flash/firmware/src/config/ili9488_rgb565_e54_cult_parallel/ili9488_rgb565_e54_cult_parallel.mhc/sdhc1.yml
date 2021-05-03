@@ -31,7 +31,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: sdhc1, value: '96000000'}
+        attributes: {id: sdhc1, value: '120000000'}
 - type: Attachments
   children:
   - type: DirectCapability

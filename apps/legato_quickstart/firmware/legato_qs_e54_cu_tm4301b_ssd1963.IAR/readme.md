@@ -50,6 +50,15 @@ The final setup should be:
 
 ![](../../../../docs/html/legato_qs_e54_cu_tm4301b_ssd1963_conf1.png)
 
+The board and display are powered by a Micro B USB A cable from PC to the **Debug USB** port on the SAM E54 Curiosity Ultra board.
+
+In IAR, make sure the debugger setting is pointed to CMSIS DAP.
+
+![](../../../../docs/html/iar_cmsis_dap_debugger_setup.png)
+
+**Download and Debug** to deploy to the device.
+
+
 Running the Demonstration
 -------------------------
 

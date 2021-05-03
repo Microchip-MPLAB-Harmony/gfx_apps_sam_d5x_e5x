@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.gfx_apps_sam_d5x_e5x_legato_cooker_legato_ck_e54_cult_cpro_parallel",
-		"version": "3.9.0",
+		"version": "3.9.1",
 		"displayName": "Legato Cooker Example for SAM D5x/E5x Family",
 		"projectName": "legato_cooker_e54_cult_cpro_parallel",
 		"shortDescription": "This demonstration provides a touch-enabled cooker UI.",
@@ -39,7 +39,7 @@
 		"author": "Microchip",
 		"subcategories": [
 			[
-				"Development Kit", "SAM E54 Xplained Pro Evaluation Kit"
+				"Development Kit", "SAM E54 Curiosity Ultra Development Board"
 			],
 			[
 				"Harmony", "Middleware", "Graphics", "Legato", "LEGATO_COOKER"

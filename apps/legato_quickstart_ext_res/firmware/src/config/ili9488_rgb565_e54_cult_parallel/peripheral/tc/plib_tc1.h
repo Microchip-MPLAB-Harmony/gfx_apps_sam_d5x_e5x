@@ -94,7 +94,7 @@ void TC1_CompareStop( void );
 
 uint32_t TC1_CompareFrequencyGet( void );
 
-void TC1_Compare8bitPeriodSet( uint8_t period );
+bool TC1_Compare8bitPeriodSet( uint8_t period );
 
 uint8_t TC1_Compare8bitPeriodGet( void );
 
@@ -102,9 +102,9 @@ uint8_t TC1_Compare8bitCounterGet( void );
 
 void TC1_Compare8bitCounterSet( uint8_t count );
 
-void TC1_Compare8bitMatch0Set( uint8_t compareValue );
+bool TC1_Compare8bitMatch0Set( uint8_t compareValue );
 
-void TC1_Compare8bitMatch1Set( uint8_t compareValue );
+bool TC1_Compare8bitMatch1Set( uint8_t compareValue );
 
 
 TC_COMPARE_STATUS TC1_CompareStatusGet( void );

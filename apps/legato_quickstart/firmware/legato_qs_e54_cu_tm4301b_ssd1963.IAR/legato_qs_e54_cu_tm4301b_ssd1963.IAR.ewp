@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>3</fileVersion>
     <configuration>
@@ -66,7 +66,7 @@
                 </option>
                 <option>
                     <name>OGLastSavedByProductVersion</name>
-                    <state>8.40.1.21529</state>
+                    <state>8.32.3.20186</state>
                 </option>
                 <option>
                     <name>GeneralEnableMisra</name>
@@ -190,11 +190,11 @@
                 </option>
                 <option>
                     <name>GenLocaleTags</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>GenLocaleDisplayOnly</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>DSPExtension</name>
@@ -220,6 +220,7 @@
                 <debug>1</debug>
                 <option>
                     <name>CCDefines</name>
+                    <state></state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -259,19 +260,19 @@
                 </option>
                 <option>
                     <name>CCDiagSuppress</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>CCDiagRemark</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>CCDiagWarning</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>CCDiagError</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>CCObjPrefix</name>
@@ -300,7 +301,7 @@
                 </option>
                 <option>
                     <name>IExtraOptions</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>CCLangConformance</name>
@@ -336,7 +337,7 @@
                 </option>
                 <option>
                     <name>PreInclude</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>CompilerMisraOverride</name>
@@ -506,15 +507,15 @@
                 </option>
                 <option>
                     <name>AWarnOne</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>AWarnRange1</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>AWarnRange2</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>ADebug</name>
@@ -526,6 +527,7 @@
                 </option>
                 <option>
                     <name>ADefines</name>
+                    <state></state>
                 </option>
                 <option>
                     <name>AList</name>
@@ -601,7 +603,7 @@
                 </option>
                 <option>
                     <name>AOutputFile</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>ALimitErrorsCheck</name>
@@ -617,6 +619,7 @@
                 </option>
                 <option>
                     <name>AUserIncludes</name>
+                    <state></state>
                 </option>
                 <option>
                     <name>AExtraOptionsCheckV2</name>
@@ -624,7 +627,7 @@
                 </option>
                 <option>
                     <name>AExtraOptionsV2</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>AsmNoLiteralPool</name>
@@ -650,7 +653,7 @@
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -666,8 +669,8 @@
             <name>CUSTOM</name>
             <archiveVersion>3</archiveVersion>
             <data>
-                <extensions />
-                <cmdline />
+                <extensions></extensions>
+                <cmdline></cmdline>
                 <hasPrio>0</hasPrio>
             </data>
         </settings>
@@ -680,15 +683,15 @@
             <name>BUILDACTION</name>
             <archiveVersion>1</archiveVersion>
             <data>
-                <prebuild />
-                <postbuild />
+                <prebuild></prebuild>
+                <postbuild></postbuild>
             </data>
         </settings>
         <settings>
             <name>ILINK</name>
             <archiveVersion>0</archiveVersion>
             <data>
-                <version>23</version>
+                <version>22</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>1</debug>
                 <option>
@@ -705,7 +708,7 @@
                 </option>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>ili9488_rgb565_e54_cult_parallel.out</state>
+                    <state>legato_qs_e54_cu_tm4301b_ssd1963.IAR.out</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>
@@ -713,31 +716,31 @@
                 </option>
                 <option>
                     <name>IlinkKeepSymbols</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkRawBinaryFile</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkRawBinarySymbol</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkRawBinarySegment</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkRawBinaryAlign</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkDefines</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkConfigDefines</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkMapFile</name>
@@ -765,15 +768,15 @@
                 </option>
                 <option>
                     <name>IlinkIcfOverride</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\flash.icf</state>
+                    <state>lnk0t.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkEnableRemarks</name>
@@ -781,19 +784,19 @@
                 </option>
                 <option>
                     <name>IlinkSuppressDiags</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkTreatAsRem</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkTreatAsWarn</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkTreatAsErr</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkWarningsAreErrors</name>
@@ -805,7 +808,7 @@
                 </option>
                 <option>
                     <name>IlinkExtraOptions</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkLowLevelInterfaceSlave</name>
@@ -817,11 +820,11 @@
                 </option>
                 <option>
                     <name>IlinkAdditionalLibs</name>
-                    
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkOverrideProgramEntryLabel</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabelSelect</name>
@@ -829,7 +832,7 @@
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabel</name>
-                    <state>Reset_Handler</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>DoFill</name>
@@ -952,11 +955,11 @@
                 </option>
                 <option>
                     <name>IlinkStackControlFile</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkStackCallGraphFile</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>CrcAlgorithm</name>
@@ -978,7 +981,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile_AltDefault</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkEncInput</name>
@@ -1008,22 +1011,6 @@
                     <name>OILinkExtraOption</name>
                     <state>1</state>
                 </option>
-                <option>
-                    <name>IlinkRawBinaryFile2</name>
-                    <state />
-                </option>
-                <option>
-                    <name>IlinkRawBinarySymbol2</name>
-                    <state />
-                </option>
-                <option>
-                    <name>IlinkRawBinarySegment2</name>
-                    <state />
-                </option>
-                <option>
-                    <name>IlinkRawBinaryAlign2</name>
-                    <state />
-                </option>
             </data>
         </settings>
         <settings>
@@ -1035,7 +1022,7 @@
                 <debug>1</debug>
                 <option>
                     <name>IarchiveInputs</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IarchiveOverride</name>
@@ -1247,11 +1234,11 @@
                 </option>
                 <option>
                     <name>GenLocaleTags</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>GenLocaleDisplayOnly</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>DSPExtension</name>
@@ -1317,19 +1304,19 @@
                 </option>
                 <option>
                     <name>CCDiagSuppress</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>CCDiagRemark</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>CCDiagWarning</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>CCDiagError</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>CCObjPrefix</name>
@@ -1358,7 +1345,7 @@
                 </option>
                 <option>
                     <name>IExtraOptions</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>CCLangConformance</name>
@@ -1394,7 +1381,7 @@
                 </option>
                 <option>
                     <name>PreInclude</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>CompilerMisraOverride</name>
@@ -1564,15 +1551,15 @@
                 </option>
                 <option>
                     <name>AWarnOne</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>AWarnRange1</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>AWarnRange2</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>ADebug</name>
@@ -1584,6 +1571,7 @@
                 </option>
                 <option>
                     <name>ADefines</name>
+                    <state></state>
                 </option>
                 <option>
                     <name>AList</name>
@@ -1659,7 +1647,7 @@
                 </option>
                 <option>
                     <name>AOutputFile</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>ALimitErrorsCheck</name>
@@ -1675,6 +1663,7 @@
                 </option>
                 <option>
                     <name>AUserIncludes</name>
+                    <state></state>
                 </option>
                 <option>
                     <name>AExtraOptionsCheckV2</name>
@@ -1682,7 +1671,7 @@
                 </option>
                 <option>
                     <name>AExtraOptionsV2</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>AsmNoLiteralPool</name>
@@ -1708,7 +1697,7 @@
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -1724,8 +1713,8 @@
             <name>CUSTOM</name>
             <archiveVersion>3</archiveVersion>
             <data>
-                <extensions />
-                <cmdline />
+                <extensions></extensions>
+                <cmdline></cmdline>
                 <hasPrio>0</hasPrio>
             </data>
         </settings>
@@ -1738,15 +1727,15 @@
             <name>BUILDACTION</name>
             <archiveVersion>1</archiveVersion>
             <data>
-                <prebuild />
-                <postbuild />
+                <prebuild></prebuild>
+                <postbuild></postbuild>
             </data>
         </settings>
         <settings>
             <name>ILINK</name>
             <archiveVersion>0</archiveVersion>
             <data>
-                <version>23</version>
+                <version>22</version>
                 <wantNonLocal>1</wantNonLocal>
                 <debug>0</debug>
                 <option>
@@ -1763,7 +1752,7 @@
                 </option>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>ili9488_rgb565_e54_cult_parallel.out</state>
+                    <state>###Unitialized###</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>
@@ -1771,31 +1760,31 @@
                 </option>
                 <option>
                     <name>IlinkKeepSymbols</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkRawBinaryFile</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkRawBinarySymbol</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkRawBinarySegment</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkRawBinaryAlign</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkDefines</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkConfigDefines</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkMapFile</name>
@@ -1823,15 +1812,15 @@
                 </option>
                 <option>
                     <name>IlinkIcfOverride</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\flash.icf</state>
+                    <state>lnk0t.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkEnableRemarks</name>
@@ -1839,19 +1828,19 @@
                 </option>
                 <option>
                     <name>IlinkSuppressDiags</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkTreatAsRem</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkTreatAsWarn</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkTreatAsErr</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkWarningsAreErrors</name>
@@ -1863,7 +1852,7 @@
                 </option>
                 <option>
                     <name>IlinkExtraOptions</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkLowLevelInterfaceSlave</name>
@@ -1875,11 +1864,11 @@
                 </option>
                 <option>
                     <name>IlinkAdditionalLibs</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkOverrideProgramEntryLabel</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabelSelect</name>
@@ -1887,7 +1876,7 @@
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabel</name>
-                    <state>Reset_Handler</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>DoFill</name>
@@ -2010,11 +1999,11 @@
                 </option>
                 <option>
                     <name>IlinkStackControlFile</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkStackCallGraphFile</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>CrcAlgorithm</name>
@@ -2036,7 +2025,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile_AltDefault</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IlinkEncInput</name>
@@ -2066,22 +2055,6 @@
                     <name>OILinkExtraOption</name>
                     <state>1</state>
                 </option>
-                <option>
-                    <name>IlinkRawBinaryFile2</name>
-                    <state />
-                </option>
-                <option>
-                    <name>IlinkRawBinarySymbol2</name>
-                    <state />
-                </option>
-                <option>
-                    <name>IlinkRawBinarySegment2</name>
-                    <state />
-                </option>
-                <option>
-                    <name>IlinkRawBinaryAlign2</name>
-                    <state />
-                </option>
             </data>
         </settings>
         <settings>
@@ -2093,7 +2066,7 @@
                 <debug>0</debug>
                 <option>
                     <name>IarchiveInputs</name>
-                    <state />
+                    <state></state>
                 </option>
                 <option>
                     <name>IarchiveOverride</name>
@@ -2125,72 +2098,57 @@
                 <group>
                     <name>ssd1963_rgb565_mxt_e54_iar</name>
                     <group>
-                        <name>peripheral</name>
+                        <name>bsp</name>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\bsp\bsp.h</name>
+                        </file>
+                    </group>
+                    <group>
+                        <name>driver</name>
                         <group>
-                            <name>nvmctrl</name>
+                            <name>i2c</name>
                             <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\nvmctrl\plib_nvmctrl.h</name>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\i2c\drv_i2c.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\i2c\drv_i2c_definitions.h</name>
                             </file>
                         </group>
                         <group>
-                            <name>evsys</name>
+                            <name>input</name>
                             <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\evsys\plib_evsys.h</name>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\input\drv_maxtouch.h</name>
                             </file>
                         </group>
-                        <group>
-                            <name>port</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\port\plib_port.h</name>
-                            </file>
-                        </group>
-                        <group>
-                            <name>clock</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\clock\plib_clock.h</name>
-                            </file>
-                        </group>
-                        <group>
-                            <name>nvic</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\nvic\plib_nvic.h</name>
-                            </file>
-                        </group>
-                        <group>
-                            <name>cmcc</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\cmcc\plib_cmcc.h</name>
-                            </file>
-                        </group>
-                        <group>
-                            <name>sercom</name>
-                            <group>
-                                <name>i2c_master</name>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\sercom\i2c_master\plib_sercom_i2c_master_common.h</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\sercom\i2c_master\plib_sercom4_i2c_master.h</name>
-                                </file>
-                            </group>
-                        </group>
-                        <group>
-                            <name>tc</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\tc\plib_tc_common.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\tc\plib_tc0.h</name>
-                            </file>
-                        </group>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\driver.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\driver_common.h</name>
+                        </file>
                     </group>
                     <group>
                         <name>gfx</name>
                         <group>
-                            <name>legato</name>
+                            <name>driver</name>
+                            <group>
+                                <name>external_controller</name>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\driver\controller\external_controller\drv_gfx_external_controller.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\driver\gfx_driver.h</name>
+                                </file>
+                            </group>
+                        </group>
+                        <group>
+                            <name>interface</name>
                             <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\legato.h</name>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\interface\drv_gfx_disp_intf.h</name>
                             </file>
+                        </group>
+                        <group>
+                            <name>legato</name>
                             <group>
                                 <name>common</name>
                                 <file>
@@ -2252,19 +2210,28 @@
                                 </file>
                             </group>
                             <group>
-                                <name>image</name>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\legato_image.h</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\legato_palette.h</name>
-                                </file>
+                                <name>generated</name>
                                 <group>
-                                    <name>raw</name>
+                                    <name>screen</name>
                                     <file>
-                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\raw\legato_imagedecoder_raw.h</name>
+                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\screen\le_gen_screen_Screen0.h</name>
                                     </file>
                                 </group>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_assets.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_harmony.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_init.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_scheme.h</name>
+                                </file>
+                            </group>
+                            <group>
+                                <name>image</name>
                                 <group>
                                     <name>jpeg</name>
                                     <file>
@@ -2283,8 +2250,20 @@
                                         <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\png\lodepng.h</name>
                                     </file>
                                 </group>
+                                <group>
+                                    <name>raw</name>
+                                    <file>
+                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\raw\legato_imagedecoder_raw.h</name>
+                                    </file>
+                                </group>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\legato_image.h</name>
+                                </file>
                                 <file>
                                     <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\legato_image_utils.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\legato_palette.h</name>
                                 </file>
                             </group>
                             <group>
@@ -2302,10 +2281,10 @@
                             <group>
                                 <name>renderer</name>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\renderer\legato_renderer.h</name>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\renderer\legato_gpu.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\renderer\legato_gpu.h</name>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\renderer\legato_renderer.h</name>
                                 </file>
                             </group>
                             <group>
@@ -2326,23 +2305,14 @@
                                     <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\string\legato_stringtable.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\string\legato_tablestring.h</name>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\string\legato_stringutils.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\string\legato_stringutils.h</name>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\string\legato_tablestring.h</name>
                                 </file>
                             </group>
                             <group>
                                 <name>widget</name>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\legato_editwidget.h</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\legato_widget.h</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\legato_widget_skin_classic_common.h</name>
-                                </file>
                                 <group>
                                     <name>arc</name>
                                     <file>
@@ -2526,102 +2496,108 @@
                                         <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\window\legato_widget_window.h</name>
                                     </file>
                                 </group>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\legato_editwidget.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\legato_widget.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\legato_widget_skin_classic_common.h</name>
+                                </file>
                             </group>
-                            <group>
-                                <name>generated</name>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_assets.h</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_harmony.h</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_init.h</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_scheme.h</name>
-                                </file>
-                                <group>
-                                    <name>screen</name>
-                                    <file>
-                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\screen\le_gen_screen_Screen0.h</name>
-                                    </file>
-                                </group>
-                            </group>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\legato.h</name>
+                            </file>
                             <file>
                                 <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\legato_config.h</name>
                             </file>
                         </group>
+                    </group>
+                    <group>
+                        <name>osal</name>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\osal\osal.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\osal\osal_definitions.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\osal\osal_impl_basic.h</name>
+                        </file>
+                    </group>
+                    <group>
+                        <name>peripheral</name>
                         <group>
-                            <name>interface</name>
+                            <name>clock</name>
                             <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\interface\drv_gfx_disp_intf.h</name>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\clock\plib_clock.h</name>
                             </file>
                         </group>
                         <group>
-                            <name>driver</name>
+                            <name>cmcc</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\cmcc\plib_cmcc.h</name>
+                            </file>
+                        </group>
+                        <group>
+                            <name>evsys</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\evsys\plib_evsys.h</name>
+                            </file>
+                        </group>
+                        <group>
+                            <name>nvic</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\nvic\plib_nvic.h</name>
+                            </file>
+                        </group>
+                        <group>
+                            <name>nvmctrl</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\nvmctrl\plib_nvmctrl.h</name>
+                            </file>
+                        </group>
+                        <group>
+                            <name>port</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\port\plib_port.h</name>
+                            </file>
+                        </group>
+                        <group>
+                            <name>sercom</name>
                             <group>
-                                <name>external_controller</name>
+                                <name>i2c_master</name>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\driver\gfx_driver.h</name>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\sercom\i2c_master\plib_sercom4_i2c_master.h</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\driver\controller\external_controller\drv_gfx_external_controller.h</name>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\sercom\i2c_master\plib_sercom_i2c_master_common.h</name>
                                 </file>
                             </group>
                         </group>
-                    </group>
-                    <file>
-                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\device_cache.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\toolchain_specifics.h</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\definitions.h</name>
-                    </file>
-                    <group>
-                        <name>bsp</name>
-                        <file>
-                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\bsp\bsp.h</name>
-                        </file>
-                    </group>
-                    <group>
-                        <name>driver</name>
                         <group>
-                            <name>i2c</name>
+                            <name>tc</name>
                             <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\i2c\drv_i2c.h</name>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\tc\plib_tc0.h</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\i2c\drv_i2c_definitions.h</name>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\tc\plib_tc_common.h</name>
                             </file>
                         </group>
-                        <group>
-                            <name>input</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\input\drv_maxtouch.h</name>
-                            </file>
-                        </group>
-                        <file>
-                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\driver.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\driver_common.h</name>
-                        </file>
                     </group>
                     <group>
                         <name>system</name>
                         <group>
-                            <name>time</name>
+                            <name>cache</name>
                             <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\time\sys_time.h</name>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\cache\sys_cache.h</name>
                             </file>
+                        </group>
+                        <group>
+                            <name>debug</name>
                             <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\time\sys_time_definitions.h</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\time\src\sys_time_local.h</name>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\debug\sys_debug.h</name>
                             </file>
                         </group>
                         <group>
@@ -2645,15 +2621,6 @@
                                 <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\input\sys_input_touch.h</name>
                             </file>
                         </group>
-                        <file>
-                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\system.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\system_common.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\system_module.h</name>
-                        </file>
                         <group>
                             <name>int</name>
                             <file>
@@ -2664,38 +2631,50 @@
                             </file>
                         </group>
                         <group>
-                            <name>cache</name>
+                            <name>time</name>
                             <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\cache\sys_cache.h</name>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\time\sys_time.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\time\sys_time_definitions.h</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\time\src\sys_time_local.h</name>
                             </file>
                         </group>
-                        <group>
-                            <name>debug</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\debug\sys_debug.h</name>
-                            </file>
-                        </group>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\system.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\system_common.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\system_module.h</name>
+                        </file>
                     </group>
+                    <file>
+                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\configuration.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\definitions.h</name>
+                    </file>
                     <file>
                         <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\device.h</name>
                     </file>
-                    <group>
-                        <name>osal</name>
-                        <file>
-                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\osal\osal.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\osal\osal_definitions.h</name>
-                        </file>
-                        <file>
-                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\osal\osal_impl_basic.h</name>
-                        </file>
-                    </group>
                     <file>
-                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\user.h</name>
+                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\device_cache.h</name>
                     </file>
                     <file>
-                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\configuration.h</name>
+                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\device_vectors.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\interrupts.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\toolchain_specifics.h</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\user.h</name>
                     </file>
                 </group>
             </group>
@@ -2823,15 +2802,195 @@
                             <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\component\wdt.h</name>
                         </file>
                     </group>
-                    <file>
-                        <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\atsame54p20a.h</name>
-                    </file>
+                    <group>
+                        <name>instance</name>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\ac.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\adc0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\adc1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\aes.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\can0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\can1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\ccl.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\cmcc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\dac.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\dmac.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\dsu.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\eic.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\evsys.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\freqm.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\gclk.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\gmac.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\hmatrix.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\i2s.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\icm.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\mclk.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\nvmctrl.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\osc32kctrl.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\oscctrl.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\pac.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\pcc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\pdec.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\pm.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\port.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\qspi.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\ramecc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\rstc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\rtc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\sdhc0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\sdhc1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\sercom0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\sercom1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\sercom2.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\sercom3.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\sercom4.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\sercom5.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\sercom6.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\sercom7.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\supc.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\tc0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\tc1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\tc2.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\tc3.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\tc4.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\tc5.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\tc6.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\tc7.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\tcc0.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\tcc1.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\tcc2.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\tcc3.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\tcc4.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\trng.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\usb.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\instance\wdt.h</name>
+                        </file>
+                    </group>
                     <group>
                         <name>pio</name>
                         <file>
                             <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\pio\same54p20a.h</name>
                         </file>
                     </group>
+                    <file>
+                        <name>$PROJ_DIR$\..\src\packs\ATSAME54P20A_DFP\same54p20a.h</name>
+                    </file>
                 </group>
                 <group>
                     <name>CMSIS</name>
@@ -2842,16 +3001,7 @@
                             <group>
                                 <name>Include</name>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_compiler.h</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_iccarm.h</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_gcc.h</name>
+                                    <name>$PROJ_DIR$\..\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h</name>
                                 </file>
                                 <file>
                                     <name>$PROJ_DIR$\..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armcc.h</name>
@@ -2863,13 +3013,22 @@
                                     <name>$PROJ_DIR$\..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang_ltm.h</name>
                                 </file>
                                 <file>
+                                    <name>$PROJ_DIR$\..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_compiler.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_gcc.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_iccarm.h</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h</name>
+                                </file>
+                                <file>
                                     <name>$PROJ_DIR$\..\src\packs\CMSIS\CMSIS\Core\Include\core_cm4.h</name>
                                 </file>
                                 <file>
                                     <name>$PROJ_DIR$\..\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv7.h</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h</name>
                                 </file>
                             </group>
                         </group>
@@ -2881,67 +3040,64 @@
             </file>
         </group>
         <group>
+            <name>Linker File</name>
+            <file>
+                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\flash.icf</name>
+            </file>
+        </group>
+        <group>
             <name>Source Files</name>
             <group>
                 <name>config</name>
                 <group>
                     <name>ssd1963_rgb565_mxt_e54_iar</name>
                     <group>
-                        <name>peripheral</name>
+                        <name>bsp</name>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\bsp\bsp.c</name>
+                        </file>
+                    </group>
+                    <group>
+                        <name>driver</name>
                         <group>
-                            <name>nvmctrl</name>
+                            <name>i2c</name>
                             <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\nvmctrl\plib_nvmctrl.c</name>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\i2c\src\drv_i2c.c</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\i2c\src\drv_i2c_local.h</name>
                             </file>
                         </group>
                         <group>
-                            <name>evsys</name>
+                            <name>input</name>
                             <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\evsys\plib_evsys.c</name>
-                            </file>
-                        </group>
-                        <group>
-                            <name>port</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\port\plib_port.c</name>
-                            </file>
-                        </group>
-                        <group>
-                            <name>clock</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\clock\plib_clock.c</name>
-                            </file>
-                        </group>
-                        <group>
-                            <name>nvic</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\nvic\plib_nvic.c</name>
-                            </file>
-                        </group>
-                        <group>
-                            <name>cmcc</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\cmcc\plib_cmcc.c</name>
-                            </file>
-                        </group>
-                        <group>
-                            <name>sercom</name>
-                            <group>
-                                <name>i2c_master</name>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\sercom\i2c_master\plib_sercom4_i2c_master.c</name>
-                                </file>
-                            </group>
-                        </group>
-                        <group>
-                            <name>tc</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\tc\plib_tc0.c</name>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\input\drv_maxtouch.c</name>
                             </file>
                         </group>
                     </group>
                     <group>
                         <name>gfx</name>
+                        <group>
+                            <name>driver</name>
+                            <group>
+                                <name>external_controller</name>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\driver\controller\external_controller\drv_gfx_external_controller.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\driver\gfx_driver.c</name>
+                                </file>
+                            </group>
+                        </group>
+                        <group>
+                            <name>interface</name>
+                            <group>
+                                <name>parallel_portgroup</name>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\interface\parallel_portgroup\drv_gfx_disp_intf_parallel_portgroup.c</name>
+                                </file>
+                            </group>
+                        </group>
                         <group>
                             <name>legato</name>
                             <group>
@@ -3023,13 +3179,64 @@
                                 </file>
                             </group>
                             <group>
+                                <name>generated</name>
+                                <group>
+                                    <name>font</name>
+                                    <file>
+                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\font\le_gen_fonts.c</name>
+                                    </file>
+                                </group>
+                                <group>
+                                    <name>image</name>
+                                    <file>
+                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\image\le_gen_images.c</name>
+                                    </file>
+                                </group>
+                                <group>
+                                    <name>screen</name>
+                                    <file>
+                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\screen\le_gen_screen_Screen0.c</name>
+                                    </file>
+                                </group>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_globalpalette.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_harmony.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_init.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_scheme.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_stringtable.c</name>
+                                </file>
+                            </group>
+                            <group>
                                 <name>image</name>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\legato_image.c</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\legato_palette.c</name>
-                                </file>
+                                <group>
+                                    <name>jpeg</name>
+                                    <file>
+                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\jpeg\jidctint.c</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\jpeg\legato_imagedecoder_jpeg.c</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\jpeg\legato_imagedecoder_jpeg_common.c</name>
+                                    </file>
+                                </group>
+                                <group>
+                                    <name>png</name>
+                                    <file>
+                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\png\legato_imagedecoder_png.c</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\png\lodepng.c</name>
+                                    </file>
+                                </group>
                                 <group>
                                     <name>raw</name>
                                     <file>
@@ -3078,29 +3285,14 @@
                                         <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\raw\legato_imagedecoder_raw_write.c</name>
                                     </file>
                                 </group>
-                                <group>
-                                    <name>jpeg</name>
-                                    <file>
-                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\jpeg\legato_imagedecoder_jpeg.c</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\jpeg\legato_imagedecoder_jpeg_common.c</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\jpeg\jidctint.c</name>
-                                    </file>
-                                </group>
-                                <group>
-                                    <name>png</name>
-                                    <file>
-                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\png\legato_imagedecoder_png.c</name>
-                                    </file>
-                                    <file>
-                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\png\lodepng.c</name>
-                                    </file>
-                                </group>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\legato_image.c</name>
+                                </file>
                                 <file>
                                     <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\legato_image_utils.c</name>
+                                </file>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\image\legato_palette.c</name>
                                 </file>
                             </group>
                             <group>
@@ -3130,10 +3322,10 @@
                                     <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\renderer\legato_draw_rect.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\renderer\legato_renderer.c</name>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\renderer\legato_gpu.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\renderer\legato_gpu.c</name>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\renderer\legato_renderer.c</name>
                                 </file>
                             </group>
                             <group>
@@ -3157,26 +3349,14 @@
                                     <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\string\legato_stringtable.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\string\legato_tablestring.c</name>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\string\legato_stringutils.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\string\legato_stringutils.c</name>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\string\legato_tablestring.c</name>
                                 </file>
                             </group>
                             <group>
                                 <name>widget</name>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\legato_editwidget.c</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\legato_widget.c</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\legato_widget_skin_classic.c</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\legato_widget_skin_classic_common.c</name>
-                                </file>
                                 <group>
                                     <name>arc</name>
                                     <file>
@@ -3450,114 +3630,87 @@
                                         <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\window\legato_widget_window_skin_classic.c</name>
                                     </file>
                                 </group>
-                            </group>
-                            <group>
-                                <name>generated</name>
-                                <group>
-                                    <name>font</name>
-                                    <file>
-                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\font\le_gen_fonts.c</name>
-                                    </file>
-                                </group>
-                                <group>
-                                    <name>image</name>
-                                    <file>
-                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\image\le_gen_images.c</name>
-                                    </file>
-                                </group>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_globalpalette.c</name>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\legato_editwidget.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_harmony.c</name>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\legato_widget.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_init.c</name>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\legato_widget_skin_classic.c</name>
                                 </file>
                                 <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_scheme.c</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\le_gen_stringtable.c</name>
-                                </file>
-                                <group>
-                                    <name>screen</name>
-                                    <file>
-                                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\generated\screen\le_gen_screen_Screen0.c</name>
-                                    </file>
-                                </group>
-                            </group>
-                        </group>
-                        <group>
-                            <name>interface</name>
-                            <group>
-                                <name>parallel_portgroup</name>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\interface\parallel_portgroup\drv_gfx_disp_intf_parallel_portgroup.c</name>
-                                </file>
-                            </group>
-                        </group>
-                        <group>
-                            <name>driver</name>
-                            <group>
-                                <name>external_controller</name>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\driver\gfx_driver.c</name>
-                                </file>
-                                <file>
-                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\driver\controller\external_controller\drv_gfx_external_controller.c</name>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\gfx\legato\widget\legato_widget_skin_classic_common.c</name>
                                 </file>
                             </group>
                         </group>
                     </group>
-                    <file>
-                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\initialization.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\interrupts.c</name>
-                    </file>
-                    <file>
-                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\exceptions.c</name>
-                    </file>
+                    <group>
+                        <name>peripheral</name>
+                        <group>
+                            <name>clock</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\clock\plib_clock.c</name>
+                            </file>
+                        </group>
+                        <group>
+                            <name>cmcc</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\cmcc\plib_cmcc.c</name>
+                            </file>
+                        </group>
+                        <group>
+                            <name>evsys</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\evsys\plib_evsys.c</name>
+                            </file>
+                        </group>
+                        <group>
+                            <name>nvic</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\nvic\plib_nvic.c</name>
+                            </file>
+                        </group>
+                        <group>
+                            <name>nvmctrl</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\nvmctrl\plib_nvmctrl.c</name>
+                            </file>
+                        </group>
+                        <group>
+                            <name>port</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\port\plib_port.c</name>
+                            </file>
+                        </group>
+                        <group>
+                            <name>sercom</name>
+                            <group>
+                                <name>i2c_master</name>
+                                <file>
+                                    <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\sercom\i2c_master\plib_sercom4_i2c_master.c</name>
+                                </file>
+                            </group>
+                        </group>
+                        <group>
+                            <name>tc</name>
+                            <file>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\peripheral\tc\plib_tc0.c</name>
+                            </file>
+                        </group>
+                    </group>
                     <group>
                         <name>stdio</name>
                         <file>
                             <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\stdio\iar_monitor.c</name>
                         </file>
                     </group>
-                    <file>
-                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\startup_iar.c</name>
-                    </file>
-                    <group>
-                        <name>bsp</name>
-                        <file>
-                            <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\bsp\bsp.c</name>
-                        </file>
-                    </group>
-                    <group>
-                        <name>driver</name>
-                        <group>
-                            <name>i2c</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\i2c\src\drv_i2c.c</name>
-                            </file>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\i2c\src\drv_i2c_local.h</name>
-                            </file>
-                        </group>
-                        <group>
-                            <name>input</name>
-                            <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\driver\input\drv_maxtouch.c</name>
-                            </file>
-                        </group>
-                    </group>
                     <group>
                         <name>system</name>
                         <group>
-                            <name>time</name>
+                            <name>cache</name>
                             <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\time\src\sys_time.c</name>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\cache\sys_cache.c</name>
                             </file>
                         </group>
                         <group>
@@ -3576,29 +3729,35 @@
                             </file>
                         </group>
                         <group>
-                            <name>cache</name>
+                            <name>time</name>
                             <file>
-                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\cache\sys_cache.c</name>
+                                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\system\time\src\sys_time.c</name>
                             </file>
                         </group>
                     </group>
+                    <file>
+                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\exceptions.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\initialization.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\interrupts.c</name>
+                    </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\startup_iar.c</name>
+                    </file>
                     <file>
                         <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\tasks.c</name>
                     </file>
                 </group>
             </group>
             <file>
-                <name>$PROJ_DIR$\..\src\main.c</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\..\src\app.c</name>
             </file>
-        </group>
-        <group>
-            <name>Linker File</name>
             <file>
-                <name>$PROJ_DIR$\..\src\config\ssd1963_rgb565_mxt_e54_iar\flash.icf</name>
+                <name>$PROJ_DIR$\..\src\main.c</name>
             </file>
         </group>
     </group>
-    </project>
+</project>

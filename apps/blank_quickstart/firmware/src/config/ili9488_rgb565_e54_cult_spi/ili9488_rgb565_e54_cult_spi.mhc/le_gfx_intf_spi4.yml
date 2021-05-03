@@ -31,4 +31,4 @@ children:
         children:
         - {type: Value, value: SPI Display Interface}
 - type: ElementPosition
-  attributes: {x: '361', y: '429', id: le_gfx_intf_spi4}
+  attributes: {x: '364', y: '428', id: le_gfx_intf_spi4}

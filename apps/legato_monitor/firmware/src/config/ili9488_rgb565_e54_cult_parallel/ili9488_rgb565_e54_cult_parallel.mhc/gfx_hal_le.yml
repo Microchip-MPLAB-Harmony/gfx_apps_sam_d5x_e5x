@@ -61,7 +61,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '0'}
+        attributes: {value: '90'}
   - type: Boolean
     attributes: {id: DisplayVSYNCNegative}
     children:

@@ -1,0 +1,14 @@
+configName: ili9488_rgb565_e51_igat
+folderName: legato_qs_e51_igat
+format_version: v1.0
+frameworkPath: ..\..\..\..\..
+processor: ATSAME51J20A
+projectName: legato_quickstart_e51_igat
+settings:
+  PackageFilter: aerospace;audio;bsp;core;csp;gfx;harmony_gfx_apps_pic32mz_da;harmony_gfx_apps_pic32mz_ef;harmony_gfx_apps_sam_9x60;harmony_gfx_apps_sam_a5d2;harmony_gfx_apps_sam_c20_c21;harmony_gfx_apps_sam_d5x_e5x;harmony_gfx_apps_sam_e70_s70_v70_v71;touch;usb
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.7.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: .\dev_packs\Microchip\SAME51_DFP\3.4.98\atdf\ATSAME51J20A.atdf

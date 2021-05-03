@@ -5,9 +5,9 @@ frameworkPath: ../../..
 processor: ATSAME54P20A
 projectName: legato_qs_e54_cu_tm4301b_ssd1963.IAR
 settings:
-  PackageFilter: aerospace;audio;bsp;bt;core;csp;csp_apps_sam_9x60;gfx;aerospace;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;gfx_apps_pic32mz_da;usb;
+  PackageFilter: aerospace;audio;bsp;core;csp;gfx;harmony_gfx_apps_pic32mz_da;harmony_gfx_apps_pic32mz_ef;harmony_gfx_apps_sam_9x60;harmony_gfx_apps_sam_a5d2;harmony_gfx_apps_sam_c20_c21;harmony_gfx_apps_sam_d5x_e5x;harmony_gfx_apps_sam_e70_s70_v70_v71;touch;usb
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
   CMSISPath: .\dev_packs\arm\CMSIS\5.7.0
   MERGE_STRATEGY: USER_ALL
-  DFPPath: .\dev_packs\Microchip\SAME54_DFP\3.4.70\atdf\ATSAME54P20A.atdf
+  DFPPath: .\dev_packs\Microchip\SAME54_DFP\3.5.87\atdf\ATSAME54P20A.atdf

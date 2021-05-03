@@ -216,7 +216,9 @@ leResult screenShow_Screen1(void)
     Screen1_ButtonWidget_ScreenChange->fn->setScheme(Screen1_ButtonWidget_ScreenChange, &WhiteFillScheme);
     Screen1_ButtonWidget_ScreenChange->fn->setBackgroundType(Screen1_ButtonWidget_ScreenChange, LE_WIDGET_BACKGROUND_NONE);
     Screen1_ButtonWidget_ScreenChange->fn->setBorderType(Screen1_ButtonWidget_ScreenChange, LE_WIDGET_BORDER_NONE);
+    Screen1_ButtonWidget_ScreenChange->fn->setPressedImage(Screen1_ButtonWidget_ScreenChange, (leImage*)&mchp_logo);
     Screen1_ButtonWidget_ScreenChange->fn->setReleasedImage(Screen1_ButtonWidget_ScreenChange, (leImage*)&mchp_logo);
+    Screen1_ButtonWidget_ScreenChange->fn->setReleasedEventCallback(Screen1_ButtonWidget_ScreenChange, event_Screen1_ButtonWidget_ScreenChange_OnReleased);
     root0->fn->addChild(root0, (leWidget*)Screen1_ButtonWidget_ScreenChange);
 
     leAddRootWidget(root0, 0);

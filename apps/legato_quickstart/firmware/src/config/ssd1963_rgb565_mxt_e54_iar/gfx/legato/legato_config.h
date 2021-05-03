@@ -60,7 +60,9 @@ extern "C" {
 #define LE_TOUCH_ORIENTATION                 0
 #define LE_RENDER_ORIENTATION                0
 #define LE_DRIVER_LAYER_MODE                 1
+// CUSTOM CODE - DO NOT MODIFY
 #define LE_DYNAMIC_VTABLES                   1
+// CUSTOM CODE END
 
 #define LE_ASSERT_ENABLE                     0
 

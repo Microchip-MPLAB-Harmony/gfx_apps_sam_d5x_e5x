@@ -6,21 +6,24 @@ nav_order: 1
 # ![MPLAB® Harmony Graphics Suite](./docs/html/mhgs.png) MPLAB® Harmony 3 Graphics application examples for SAM D5x/E5x Family
 
 MPLAB® Harmony Graphics Suite  is an extension of the MPLAB® ecosystem for creating
-embedded graphics firmware solutions for Microchip 32-bit SAM and PIC microcontroller
+embedded graphics firmware solutions for Microchip 32-bit SAM and PIC® microcontroller
 and microprocessor devices.  Refer to the following links for more information.
  - [Microchip 32-bit MCUs](https://www.microchip.com/design-centers/32-bit)
  - [Microchip 32-bit MPUs](https://www.microchip.com/design-centers/32-bit-mpus)
- - [Microchip MPLAB X IDE](https://www.microchip.com/mplab/mplab-x-ide)
- - [Microchip MPLAB Harmony](https://www.microchip.com/mplab/mplab-harmony)
- - [Microchip MPLAB Harmony Pages](https://microchip-mplab-harmony.github.io/)
+ - [Microchip MPLAB® X IDE](https://www.microchip.com/mplab/mplab-x-ide)
+ - [Microchip MPLAB® Harmony](https://www.microchip.com/mplab/mplab-harmony)
+ - [Microchip MPLAB® Harmony Pages](https://microchip-mplab-harmony.github.io/)
+ - [MPLAB® Discover](https://mplab-discover.microchip.com/v1/itemtype/com.microchip.ide.project?s0=Legato)
 
 This repository contains the MPLAB® Harmony 3 Graphics application examples for SAM D5x/E5x Family. Graphics applications are standalone applications which demonstrate of some of the capabilities of MPLAB® Harmony Graphics Suite.  Refer to the following links for release notes, home page, training materials, framework and application help.
 For more information on the tools, libraries and basic development with the MPLAB® Harmony Graphics Suite, please see the gfx repo also on github.
- - [Release Notes](./release_notes.md)
- - [MPLAB Harmony License](mplab_harmony_license.md)
- - [MPLAB Harmony 3 Graphics Wiki](https://github.com/Microchip-MPLAB-Harmony/gfx/wiki)
- - [MPLAB Harmony 3 Graphics Videos](https://www.youtube.com/playlist?list=PL9B4edd-p2ag5xsIIHhja-caKYY7AKPxe)
- - [MPLAB Harmony 3 Graphics Suite Documentation](https://microchip-mplab-harmony.github.io/gfx/documentation.html)
+ - [Release Notes](https://microchip-mplab-harmony.github.io/gfx_apps_sam_d5x_e5x/release_notes.html)
+ - [MPLAB® Harmony License](https://microchip-mplab-harmony.github.io/gfx/mplab_harmony_license.html)
+ - [MPLAB® Harmony 3 Graphics User Guides Wiki](https://github.com/mchpgfx/legato.docs/wiki)
+ - [MPLAB® Harmony 3 Graphics API Help](https://mchpgfx.github.io/legato.docs/html/index.html)
+ - [MPLAB® Harmony 3 Graphics Applications](https://microchip-mplab-harmony.github.io/gfx/apps/readme.html)
+ - [MPLAB® Harmony 3 Graphics Videos](https://www.youtube.com/channel/UCwGbrIuty-pHCyjuVRAyP5Q)
+
 
 # Contents Summary
 
@@ -45,6 +48,7 @@ The following applications are provided to demonstrate a subset of the capabilit
 |     | [legato_quickstart](./apps/legato_quickstart/readme.md) | Legato UI library quickstart example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 |     | [legato_quickstart_ext_res](./apps/legato_quickstart_ext_res/readme.md) | Legato UI library external resource example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic)|
 |     | [legato_showcase](./apps/legato_showcase/readme.md) | Widgets and advance capabilities example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
+|     | [legato_igat_showcase](./apps/legato_igat_showcase/readme.md) | Advanced graphics with Integrated touch example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 
 
 ## Graphics application examples (Blank)
@@ -58,10 +62,10 @@ The following applications are provided to demonstrate the ability for the Harmo
 
 ____
 
-[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_pic32mz_da/blob/master/mplab_harmony_license.md)
-[![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/gfx.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_pic32mz_da/releases/latest)
-[![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/gfx.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_pic32mz_da/releases/latest)
-[![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/gfx.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_pic32mz_da/graphs/commit-activity)
+[![License](https://img.shields.io/badge/license-Harmony%20license-orange.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_sam_d5x_e5x/blob/master/mplab_harmony_license.md)
+[![Latest release](https://img.shields.io/github/release/Microchip-MPLAB-Harmony/gfx.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_sam_d5x_e5x/releases/latest)
+[![Latest release date](https://img.shields.io/github/release-date/Microchip-MPLAB-Harmony/gfx.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_sam_d5x_e5x/releases/latest)
+[![Commit activity](https://img.shields.io/github/commit-activity/y/Microchip-MPLAB-Harmony/gfx.svg)](https://github.com/Microchip-MPLAB-Harmony/gfx_apps_sam_d5x_e5x/graphs/commit-activity)
 [![Contributors](https://img.shields.io/github/contributors-anon/Microchip-MPLAB-Harmony/gfx.svg)]()
 
 ____

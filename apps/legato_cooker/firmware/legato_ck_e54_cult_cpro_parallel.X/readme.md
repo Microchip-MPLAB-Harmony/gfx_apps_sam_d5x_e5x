@@ -41,6 +41,8 @@ Some of these components use default settings, while other require some changes.
 
 ![](../../../../docs/html/legato_qs_e54_cult_cpro_parallel_pg2.png)
 
+![](../../../../docs/html/legato_qs_e54_cult_cpro_parallel_pg5.png)
+
 To setup the CCL to clock the pixel data, make sure PB09 is set to CCL_OUT2 
 
 ![](../../../../docs/html/legato_qs_e54_cult_cpro_parallel_pg3.png)
@@ -58,7 +60,7 @@ The following table lists configuration properties:
 
 | Project Name  | BSP Used |Graphics Template Used | Description |
 |---------------| ---------|---------------| ---------|
-| legato_ck_e54_cult_cpro_parallel.X | SAM E54 Curiosity Ultra BSP | Legato Graphics w/ Xplained Pro Display | SAM E54 Curiosity Ultra w/ maXTouch Xplained Pro display via 8-bit parallel interface |
+| legato_ck_e54_cult_cpro_parallel.X | SAM E54 Curiosity Ultra BSP | Legato Graphics w/ maXTouch Curiosity Pro Display | SAM E54 Curiosity Ultra w/ maXTouch Curiosity Pro display via 8-bit parallel interface |
  
 > **_NOTE:_**  This application may contain custom code that is marked by the comments // START OF CUSTOM CODE ... and // END OF CUSTOM CODE. When using the MPLAB Harmony Configurator to regenerate the application code, use the "ALL" merging strategy and do not remove or replace the custom code.
 
@@ -70,6 +72,9 @@ Configure the hardware as follows:
 * Attach the 24-bit pass through card to the GFX Connector on the SAM E54 Curiosity Ultra board. 
 * Connect the ribbon cable from the maXTouch Curiosity Pro Display to the ribbon connector on the 24-bit pass through card. Make sure that the S1 switch on the 24-bit pass through card is set to 2. 
 * On the backside of the maXTouch Curiosity Pro display, set the IM[2:0] switches to **011** for 8-bit MCU mode.
+
+![](../../../../docs/html/cpro_8_bit_parallel_conf.png)
+
 * Connect a USB cable from the host computer to the DEBUG USB port on the SAM E54 Curiosity Ultra board. This USB connection is used for power, code download and debugging. 
 * Connect 5.5V power supply to the SAM E54 Curiosity Ultra board is optional 
 
@@ -84,16 +89,13 @@ Running the Demonstration
 
 The application first boots to an alpha-blend Splash Screen.
 
-![](../../../../docs/html/legato_qs_e54_cult_cpro_parallel_run1.png)
-
-
 Once the Splash Screen animation completes, the application boots to a Basic Main Screen. The color gamut for the Basic Main Screen is purposely muted 
 
-![](../../../../docs/html/legato_qs_e54_cult_cpro_parallel_run2.png)
+![](../../../../docs/html/legato_cooker.png)
 
 Touch **Cook**, **Reheat**, **Bake** or **Broil** button to initial a cooking progress sequence
 
-![](../../../../docs/html/legato_qs_e54_cult_cpro_parallel_run3.png)
+![](../../../../docs/html/legato_cooker_1.png)
 
 Touch the RGB ellipse button on the upper right to switch to the Color Screen. The Color Screen is designed to transition from the Basic Screen with some simple animation.
 

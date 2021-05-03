@@ -342,6 +342,12 @@ void event_Screen1_ButtonWidget_Jump_OnReleased(leButtonWidget *btn)
 {
 }
 
+void event_Screen1_ButtonWidget_ScreenChange_OnReleased(leButtonWidget* btn)
+{
+    legato_showScreen(screenID_Screen2);
+}
+
+
 /*******************************************************************************
  End of File
  */

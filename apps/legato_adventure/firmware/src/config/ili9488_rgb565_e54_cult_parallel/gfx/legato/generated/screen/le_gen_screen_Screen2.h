@@ -23,6 +23,10 @@ extern leLabelWidget* Screen2_LabelWidget4;
 extern leLabelWidget* Screen2_LabelWidget5;
 extern leButtonWidget* Screen2_ButtonWidget0;
 
+// event handlers
+// !!THESE MUST BE IMPLEMENTED IN THE APPLICATION CODE!!
+void event_Screen2_ButtonWidget0_OnReleased(leButtonWidget* btn);
+
 // screen lifecycle functions
 // DO NOT CALL THESE DIRECTLY
 leResult screenInit_Screen2(void); // called when Legato is initialized

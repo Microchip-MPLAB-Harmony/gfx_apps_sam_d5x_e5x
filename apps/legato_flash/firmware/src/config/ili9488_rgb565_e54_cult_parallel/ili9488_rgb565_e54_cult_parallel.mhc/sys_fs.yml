@@ -126,8 +126,5 @@ children:
       children:
       - type: TargetAttachment
         attributes: {targetComponentID: drv_sdmmc_0, targetAttachmentID: drv_media}
-      - type: TargetAttachment
-        attributes: {targetComponentID: usb_host_msd, targetAttachmentID: USB Host
-            MSD}
 - type: ElementPosition
   attributes: {x: '863', y: '368', id: sys_fs}
