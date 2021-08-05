@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_TouchTestHelpScreen.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leWidget* TouchTestHelpScreen_PanelWidget5;
 leImageWidget* TouchTestHelpScreen_ImageWidget17;

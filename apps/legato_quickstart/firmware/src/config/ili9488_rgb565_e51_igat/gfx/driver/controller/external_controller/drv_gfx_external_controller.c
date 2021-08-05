@@ -75,6 +75,9 @@
 #define DRV_ILI9488_NCSDeassert(intf) GFX_Disp_Intf_PinControl(intf, \
                                     GFX_DISP_INTF_PIN_CS, \
                                     GFX_DISP_INTF_PIN_SET)
+									
+
+									
 #define PIXEL_BUFFER_BYTES_PER_PIXEL 2
 static uint8_t pixelBuffer[SCREEN_WIDTH * PIXEL_BUFFER_BYTES_PER_PIXEL];
 
@@ -219,6 +222,7 @@ static int DRV_ILI9488_Configure(ILI9488_DRV *drvPtr,
         if (initVals->parms != NULL &&
             initVals->parmCount > 0)
         {
+
             returnValue = GFX_Disp_Intf_WriteData(intf, 
                                                  (uint8_t *) initVals->parms,
                                                  initVals->parmCount);
@@ -411,10 +415,12 @@ void DRV_ILI9488_Update(void)
     }
 }
 
+
 gfxResult DRV_ILI9488_BlitBuffer(int32_t x,
                                 int32_t y,
                                 gfxPixelBuffer* buf)
 {
+
 
     if(drv.state != IDLE)
         return GFX_FAILURE;
@@ -440,6 +446,10 @@ gfxDriverIOCTLResponse DRV_ILI9488_IOCTL(gfxDriverIOCTLRequest request,
     
     switch(request)
     {
+        case GFX_IOCTL_FRAME_END:
+        {
+            return GFX_IOCTL_OK;
+        }	
         case GFX_IOCTL_GET_COLOR_MODE:
         {
             val = (gfxIOCTLArg_Value*)arg;

@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_ListWheelHelpScreen.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leWidget* ListWheelHelpScreen_PanelWidget4;
 leImageWidget* ListWheelHelpScreen_ImageWidget14;

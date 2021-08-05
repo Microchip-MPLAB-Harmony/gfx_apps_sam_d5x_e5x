@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.gfx_apps_sam_d5x_e5x_legato_quickstart_legato_qs_e54_cu_cpro_spi",
-		"version": "3.9.1",
+		"version": "3.9.2",
 		"displayName": "Legato Quickstart Example for SAM D5x/E5x Family",
 		"projectName": "legato_quickstart_e54_cult_cpro_spi",
 		"shortDescription": "This demonstration provides a touch-enabled starting point for the legato graphics library.",

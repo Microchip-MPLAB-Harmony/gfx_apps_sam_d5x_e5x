@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_KeypadDemoScreen.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leGradientWidget* KeypadDemoScreen_BackgroundGradient2;
 leKeyPadWidget* KeypadDemoScreen_KeyPadWidget1;

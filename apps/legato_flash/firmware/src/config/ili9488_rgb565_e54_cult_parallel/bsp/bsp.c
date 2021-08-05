@@ -73,6 +73,8 @@
 void BSP_Initialize(void )
 {
 
+    /* Disable VBUS power */
+    VBUS_AL_PC19_PowerDisable(); 
 
     /* Switch off LEDs */
     LED2_Off();

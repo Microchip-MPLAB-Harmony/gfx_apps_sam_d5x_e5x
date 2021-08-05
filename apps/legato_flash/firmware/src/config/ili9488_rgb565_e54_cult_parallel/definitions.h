@@ -53,12 +53,17 @@
 #include "peripheral/sdhc/plib_sdhc1.h"
 #include "driver/i2c/drv_i2c.h"
 #include "system/time/sys_time.h"
-#include "peripheral/tc/plib_tc4.h"
+#include "usb/usb_chapter_9.h"
+#include "usb/usb_host.h"
+#include "driver/usb/usbfsv1/drv_usbfsv1.h"
 #include "driver/input/drv_maxtouch.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
 #include "osal/osal.h"
 #include "system/debug/sys_debug.h"
+#include "usb/usb_msd.h"
+#include "usb/usb_host_msd.h"
+#include "usb/usb_host_scsi.h"
 #include "peripheral/evsys/plib_evsys.h"
 #include "driver/sdmmc/drv_sdmmc.h"
 #include "gfx/legato/generated/le_gen_harmony.h"
@@ -210,6 +215,10 @@ typedef struct
     SYS_MODULE_OBJ drvI2C0;
 
     SYS_MODULE_OBJ  sysTime;
+	SYS_MODULE_OBJ  usbHostObject0;
+
+	SYS_MODULE_OBJ  drvUSBFSV1Object;
+
     SYS_MODULE_OBJ  drvMAXTOUCH;
 
     SYS_MODULE_OBJ  drvSST26;
@@ -224,6 +233,8 @@ typedef struct
 // Section: extern declarations
 // *****************************************************************************
 // *****************************************************************************
+
+extern const USB_HOST_INIT usbHostInitData; 
 
 
 

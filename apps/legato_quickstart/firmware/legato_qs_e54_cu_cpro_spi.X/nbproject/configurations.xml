@@ -75,6 +75,9 @@
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/gfx/legato/image/jpeg/legato_imagedecoder_jpeg.h</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/gfx/legato/image/jpeg/legato_imagedecoder_jpeg_common.h</itemPath>
                 </logicalFolder>
+                <logicalFolder name="f4" displayName="mono" projectFiles="true">
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/gfx/legato/image/mono/legato_imagedecoder_mono.h</itemPath>
+                </logicalFolder>
                 <logicalFolder name="f3" displayName="png" projectFiles="true">
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/gfx/legato/image/png/legato_imagedecoder_png.h</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/gfx/legato/image/png/lodepng.h</itemPath>
@@ -518,6 +521,11 @@
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/gfx/legato/image/jpeg/legato_imagedecoder_jpeg_common.c</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/gfx/legato/image/jpeg/jidctint.c</itemPath>
                 </logicalFolder>
+                <logicalFolder name="f4" displayName="mono" projectFiles="true">
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/gfx/legato/image/mono/legato_imagedecoder_mono.c</itemPath>
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/gfx/legato/image/mono/legato_imagedecoder_mono_read_internal.c</itemPath>
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/gfx/legato/image/mono/legato_imagedecoder_mono_read_stream.c</itemPath>
+                </logicalFolder>
                 <logicalFolder name="f3" displayName="png" projectFiles="true">
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/gfx/legato/image/png/legato_imagedecoder_png.c</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_spi/gfx/legato/image/png/lodepng.c</itemPath>
@@ -836,12 +844,12 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.50</languageToolchainVersion>
+        <languageToolchainVersion>3.00</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAME54_DFP" vendor="Microchip" version="3.5.87"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="SAME54_DFP" vendor="Microchip" version="3.3.64"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -1069,7 +1077,6 @@
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.preserveuserid" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
-        <property key="script.has_reset" value="true"/>
         <property key="script.log_level" value="1"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>

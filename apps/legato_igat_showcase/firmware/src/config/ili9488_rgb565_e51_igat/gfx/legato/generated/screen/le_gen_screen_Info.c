@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_Info.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leWidget* Info_PanelWidget0;
 leButtonWidget* Info_HomeButton;

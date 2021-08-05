@@ -6,7 +6,7 @@ Defining the Architecture
 
 ![](../../../../docs/html/legato_fl_e54_cult_cpro_parallel_arch.png)
 
-This application uses the file systems in MPLAB Harmony and the SDMMC
+This application uses the file systems in MPLAB Harmony and the USB or the SDMMC
 driver to scan the MSD for a .hex file with resources and reads them
 sector by sector and programs the external non-volatile QSPI memory. The
 Graphics Library is used to render graphics to the scratch buffer. Via
@@ -37,8 +37,8 @@ Input Driver. The Touch Input Driver reads the touch information over
 I2C and sends the touch event to the Graphics Library thru the Input
 System Service.
 
-The SDMMC peripheral is setup in MSD Host mode with the File System
-service support. It scans for a file named SQI.hex when a SDMMC MSD
+The USB and the SDMMC peripheral are setup in MSD Host mode with the File System
+service support. It scans for a file named SQI.hex when a UBS MSD or a SDMMC MSD
 device is connected. The application reads the hex data from the
 file and decodes it with a hex decoder into binary data. The binary
 is written to external non-volatile memory via the QSPI peripheral
@@ -54,7 +54,8 @@ configured with the SST26 driver.
 * Port/GPIO peripheral 
 * I2C peripheral library and driver 
 * SST26 QSPI driver 
-* SD MMC driver 
+* SDMMC driver
+* USB MSD driver
 * Images and Fonts for user interface stored in internal flash
 
 Creating the Project Graph
@@ -62,7 +63,12 @@ Creating the Project Graph
 
 ![](../../../../docs/html/legato_fl_e54_cult_cpro_parallel_pg.png)
 
-Adding the **SAM E54 Curiosity Ultra BSP** and **Legato Graphics w/ MXT Curiosity Pro Display** Graphics Template component into the project graph.
+To create a duplicate project configuration, use the MHC import function to import this application's MHC configuration in
+"legato_flash\firmware\src\config\ili9488_rgb565_e54_cult_parallel\ili9488_rgb565_e54_cult_parallel.mhc".
+
+Alternatively, here is the step-by-step guide to creating the project configuration.
+
+Add the **SAM E54 Curiosity Ultra BSP** and **Legato Graphics w/ MXT Curiosity Pro Display** Graphics Template component into the project graph.
 
 This will automatically add the components needed for a graphics project and resolve their dependencies. It will also configure the pins needed to drive the external peripherals like the display and the touch controller. 
 

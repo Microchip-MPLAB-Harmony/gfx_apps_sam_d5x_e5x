@@ -2,3029 +2,3057 @@ files:
 - generatedChecksum: null
   logicalPath: ''
   name: app.c
-  physicalPath: ..\..
+  physicalPath: ../..
   security: NON_SECURE
   type: SOURCE
   userChecksum: null
 - generatedChecksum: 3E59F5E2CC619BC6273282ECE032DF6F
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\bsp
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/bsp
   name: bsp.c
   physicalPath: bsp
   security: NON_SECURE
   type: SOURCE
   userChecksum: 3E59F5E2CC619BC6273282ECE032DF6F
 - generatedChecksum: 5150CC7B021BFE5E4EDB3C42429DE90C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\interface\parallel_portgroup
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/interface/parallel_portgroup
   name: drv_gfx_disp_intf_parallel_portgroup_dma.c
-  physicalPath: gfx\interface\parallel_portgroup
+  physicalPath: gfx/interface/parallel_portgroup
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5150CC7B021BFE5E4EDB3C42429DE90C
-- generatedChecksum: 33DD229D0AA185FE53BCC44C92650B87
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\driver\external_controller
+- generatedChecksum: EC8990E27512AAEB7D3B1DF7BD9E95AC
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/driver/external_controller
   name: drv_gfx_external_controller.c
-  physicalPath: gfx\driver\controller\external_controller
+  physicalPath: gfx/driver/controller/external_controller
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 33DD229D0AA185FE53BCC44C92650B87
+  userChecksum: EC8990E27512AAEB7D3B1DF7BD9E95AC
 - generatedChecksum: 13F062B063A4F4AE0B19CE872943995B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\driver\i2c
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/driver/i2c
   name: drv_i2c.c
-  physicalPath: driver\i2c\src
+  physicalPath: driver/i2c/src
   security: NON_SECURE
   type: SOURCE
   userChecksum: 13F062B063A4F4AE0B19CE872943995B
 - generatedChecksum: 37780F17759DED907A0F36E28BFB3136
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\driver\i2c
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/driver/i2c
   name: drv_i2c_local.h
-  physicalPath: driver\i2c\src
+  physicalPath: driver/i2c/src
   security: NON_SECURE
   type: SOURCE
   userChecksum: 37780F17759DED907A0F36E28BFB3136
 - generatedChecksum: D60987ADDBC55D814DF1F8934395B71C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\driver\input
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/driver/input
   name: drv_maxtouch.c
-  physicalPath: driver\input
+  physicalPath: driver/input
   security: NON_SECURE
   type: SOURCE
   userChecksum: D60987ADDBC55D814DF1F8934395B71C
 - generatedChecksum: 6069C4FD56993BDA3B1FC223DD5BAA4A
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: exceptions.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
   userChecksum: 6069C4FD56993BDA3B1FC223DD5BAA4A
-- generatedChecksum: 36FA79243A4ABD63DAAEA023290EDE3B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\driver\external_controller
+- generatedChecksum: 395CB5E473B76326871D60F6D31F648D
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/driver/external_controller
   name: gfx_driver.c
-  physicalPath: gfx\driver
+  physicalPath: gfx/driver
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 36FA79243A4ABD63DAAEA023290EDE3B
-- generatedChecksum: 31F72862872EA31F84A00924D0C018A2
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  userChecksum: 395CB5E473B76326871D60F6D31F648D
+- generatedChecksum: 138161A09DCEA6A08EF247A14CAB3D5F
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 31F72862872EA31F84A00924D0C018A2
+  userChecksum: 138161A09DCEA6A08EF247A14CAB3D5F
 - generatedChecksum: F2A994095FEAB3C8F88B479AE108FEFB
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: interrupts.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
   userChecksum: F2A994095FEAB3C8F88B479AE108FEFB
 - generatedChecksum: BD56AABB9ED9F9439F14C3A58FDA4676
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\jpeg
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg
   name: jidctint.c
-  physicalPath: gfx\legato\image\jpeg
+  physicalPath: gfx/legato/image/jpeg
   security: NON_SECURE
   type: SOURCE
   userChecksum: BD56AABB9ED9F9439F14C3A58FDA4676
 - generatedChecksum: 5E9C6A64E2DE0C0A0EE297830421727D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\font
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/font
   name: le_gen_fonts.c
-  physicalPath: gfx\legato\generated\font
+  physicalPath: gfx/legato/generated/font
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5E9C6A64E2DE0C0A0EE297830421727D
 - generatedChecksum: 38C0A5CEDB76FF42671B392A61A637FD
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated
   name: le_gen_globalpalette.c
-  physicalPath: gfx\legato\generated
+  physicalPath: gfx/legato/generated
   security: NON_SECURE
   type: SOURCE
   userChecksum: 38C0A5CEDB76FF42671B392A61A637FD
 - generatedChecksum: B3CE19A5FC9AE2944FECF0FDA2847E3B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated
   name: le_gen_harmony.c
-  physicalPath: gfx\legato\generated
+  physicalPath: gfx/legato/generated
   security: NON_SECURE
   type: SOURCE
   userChecksum: B3CE19A5FC9AE2944FECF0FDA2847E3B
 - generatedChecksum: 1FD0489B642513A0A41A7FE52A9CC94E
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\image
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/image
   name: le_gen_images.c
-  physicalPath: gfx\legato\generated\image
+  physicalPath: gfx/legato/generated/image
   security: NON_SECURE
   type: SOURCE
   userChecksum: 1FD0489B642513A0A41A7FE52A9CC94E
 - generatedChecksum: EFC77617B566713C672F0928CA56551C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated
   name: le_gen_init.c
-  physicalPath: gfx\legato\generated
+  physicalPath: gfx/legato/generated
   security: NON_SECURE
   type: SOURCE
   userChecksum: EFC77617B566713C672F0928CA56551C
-- generatedChecksum: FE7034BF53F433EFC9AC1238BBA12789
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated
+- generatedChecksum: C63205E9363D7FA71FB92D5412A87A23
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated
   name: le_gen_scheme.c
-  physicalPath: gfx\legato\generated
+  physicalPath: gfx/legato/generated
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FE7034BF53F433EFC9AC1238BBA12789
-- generatedChecksum: 5F8798426654A9A2D8B7D1584E76E14B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  userChecksum: C63205E9363D7FA71FB92D5412A87A23
+- generatedChecksum: DD4EE41248CB7D96E72EC7BF0F08A760
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_AlphaBlendingDemoScreen.c
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5F8798426654A9A2D8B7D1584E76E14B
-- generatedChecksum: 9336C1C8DCD07A90002BA46E0F3B9251
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  userChecksum: DD4EE41248CB7D96E72EC7BF0F08A760
+- generatedChecksum: 1BE91319BB06BA12F5ADB69AF2C30242
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_AlphaBlendingHelpScreen.c
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 9336C1C8DCD07A90002BA46E0F3B9251
-- generatedChecksum: DF4A4C67C8CFE2AFE11370BE5AA06B46
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  userChecksum: 1BE91319BB06BA12F5ADB69AF2C30242
+- generatedChecksum: 9FA43342212A6BA1D2D7C84B9C949451
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_KeypadDemoScreen.c
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: DF4A4C67C8CFE2AFE11370BE5AA06B46
-- generatedChecksum: BA717664D58FAAB4438E0E97AFB5A4A8
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  userChecksum: 9FA43342212A6BA1D2D7C84B9C949451
+- generatedChecksum: F010DEB83AAC3E8DDFD1C024BF2EE392
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_KeypadHelpScreen.c
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: BA717664D58FAAB4438E0E97AFB5A4A8
-- generatedChecksum: 3189A9A644341A2EA66DF6B248A7590D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  userChecksum: F010DEB83AAC3E8DDFD1C024BF2EE392
+- generatedChecksum: DDCA9C5FA33FAF98D6C1A0E2F16ECD2A
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_ListWheelDemoScreen.c
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 3189A9A644341A2EA66DF6B248A7590D
-- generatedChecksum: DD82E0C57A40C16E93B58319FCDBB32C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  userChecksum: DDCA9C5FA33FAF98D6C1A0E2F16ECD2A
+- generatedChecksum: FE9E6C636D1F5D6C02322D546817EBCA
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_ListWheelHelpScreen.c
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: DD82E0C57A40C16E93B58319FCDBB32C
-- generatedChecksum: F4FF2B8DC0A4693E49AB25EEFD976221
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  userChecksum: FE9E6C636D1F5D6C02322D546817EBCA
+- generatedChecksum: 09F4E70174754A20DA6F4F9F70E4D9A9
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_MainMenu.c
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F4FF2B8DC0A4693E49AB25EEFD976221
-- generatedChecksum: 5D9D53FBAD580A5CD81851D6B18D3A6E
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  userChecksum: 09F4E70174754A20DA6F4F9F70E4D9A9
+- generatedChecksum: CD5C874999ADB837B0150477982D9078
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_MainMenuHelp.c
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5D9D53FBAD580A5CD81851D6B18D3A6E
-- generatedChecksum: E84EE381AC314CD93B4FB88373B1A7B4
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  userChecksum: CD5C874999ADB837B0150477982D9078
+- generatedChecksum: 330F9EB656BB0D750DD5AF875C639904
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_SettingsScreen.c
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E84EE381AC314CD93B4FB88373B1A7B4
-- generatedChecksum: F498877639AB18BC077A27FDEABC1D51
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  userChecksum: 330F9EB656BB0D750DD5AF875C639904
+- generatedChecksum: BB47CA2B14ACEBF35143D61AAD7701D3
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_SlideShowDemoScreen.c
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F498877639AB18BC077A27FDEABC1D51
-- generatedChecksum: 3EF79240319322E6573F39A998FB587E
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  userChecksum: BB47CA2B14ACEBF35143D61AAD7701D3
+- generatedChecksum: 8D6BBF19A97682FFE839FADDB187B185
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_SlideshowHelpScreen.c
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 3EF79240319322E6573F39A998FB587E
-- generatedChecksum: 57E9D3F994322997B08003DA607B3D19
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  userChecksum: 8D6BBF19A97682FFE839FADDB187B185
+- generatedChecksum: 664D32EA9036F4454CAB623C7D48046E
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_SplashScreen.c
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 57E9D3F994322997B08003DA607B3D19
-- generatedChecksum: A6A48129B2FA074E13795804649C2A7F
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  userChecksum: 664D32EA9036F4454CAB623C7D48046E
+- generatedChecksum: 777810A8732FDF97F0F8A566C252361E
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_TouchTestDemoScreen.c
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: A6A48129B2FA074E13795804649C2A7F
-- generatedChecksum: 2140498E289CC85EAF9216987B31BCDC
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  userChecksum: 777810A8732FDF97F0F8A566C252361E
+- generatedChecksum: BE4EB744A7FA0E2F937C14DA774CB483
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_TouchTestHelpScreen.c
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 2140498E289CC85EAF9216987B31BCDC
+  userChecksum: BE4EB744A7FA0E2F937C14DA774CB483
 - generatedChecksum: 0C4DEDDEC5681A60894774655FC2E502
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated
   name: le_gen_stringtable.c
-  physicalPath: gfx\legato\generated
+  physicalPath: gfx/legato/generated
   security: NON_SECURE
   type: SOURCE
   userChecksum: 0C4DEDDEC5681A60894774655FC2E502
 - generatedChecksum: 01B237A9019C1E5013E2A0861C7A238D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\datastructure
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/datastructure
   name: legato_array.c
-  physicalPath: gfx\legato\datastructure
+  physicalPath: gfx/legato/datastructure
   security: NON_SECURE
   type: SOURCE
   userChecksum: 01B237A9019C1E5013E2A0861C7A238D
-- generatedChecksum: E94315C195A45FF08B0139E2B45361BF
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+- generatedChecksum: 7FB91D04503DFDEF7E004C7A0EF79B7D
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_color.c
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E94315C195A45FF08B0139E2B45361BF
+  userChecksum: 7FB91D04503DFDEF7E004C7A0EF79B7D
 - generatedChecksum: D5267278C45E6C26787A4F43711E0BCD
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_color_blend.c
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
   userChecksum: D5267278C45E6C26787A4F43711E0BCD
-- generatedChecksum: 52C224E473C92A243A2088CA26FC4D4D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+- generatedChecksum: 74840DE2605F41AFD0AECDDBDE96219E
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_color_convert.c
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 52C224E473C92A243A2088CA26FC4D4D
+  userChecksum: 74840DE2605F41AFD0AECDDBDE96219E
 - generatedChecksum: 1221BA4090C19217257E0D9F403C0ED6
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_color_lerp.c
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
   userChecksum: 1221BA4090C19217257E0D9F403C0ED6
 - generatedChecksum: 5E9BA6B6BE8679E6B74CD26D3C79755B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_color_value.c
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5E9BA6B6BE8679E6B74CD26D3C79755B
-- generatedChecksum: 74C24E7B319ADC8668D49EF3884CF937
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\renderer
+- generatedChecksum: B6BF53F2B8B168438C7789379356FCAE
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/renderer
   name: legato_draw.c
-  physicalPath: gfx\legato\renderer
+  physicalPath: gfx/legato/renderer
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 74C24E7B319ADC8668D49EF3884CF937
+  userChecksum: B6BF53F2B8B168438C7789379356FCAE
 - generatedChecksum: B47C2B94656F56D52E89DC68EB5F382A
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\renderer
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/renderer
   name: legato_draw_arc.c
-  physicalPath: gfx\legato\renderer
+  physicalPath: gfx/legato/renderer
   security: NON_SECURE
   type: SOURCE
   userChecksum: B47C2B94656F56D52E89DC68EB5F382A
 - generatedChecksum: 5C03344C63C48D6EFBD514FEE8215C0E
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\renderer
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/renderer
   name: legato_draw_line.c
-  physicalPath: gfx\legato\renderer
+  physicalPath: gfx/legato/renderer
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5C03344C63C48D6EFBD514FEE8215C0E
 - generatedChecksum: 05F537129E62A0A653F25D17A5A337FF
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\renderer
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/renderer
   name: legato_draw_rect.c
-  physicalPath: gfx\legato\renderer
+  physicalPath: gfx/legato/renderer
   security: NON_SECURE
   type: SOURCE
   userChecksum: 05F537129E62A0A653F25D17A5A337FF
 - generatedChecksum: D5DFD46741296DA701BCC19BFE3261F7
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_dynamicstring.c
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: SOURCE
   userChecksum: D5DFD46741296DA701BCC19BFE3261F7
 - generatedChecksum: 0892D9FD231475AD088F284F9D65D0E8
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget
   name: legato_editwidget.c
-  physicalPath: gfx\legato\widget
+  physicalPath: gfx/legato/widget
   security: NON_SECURE
   type: SOURCE
   userChecksum: 0892D9FD231475AD088F284F9D65D0E8
 - generatedChecksum: 847835D8D58B709AD3DE9B32B698137A
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_error.c
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
   userChecksum: 847835D8D58B709AD3DE9B32B698137A
 - generatedChecksum: 6BE27C8A351299B6B06C9E6989FA7CC3
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\core
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/core
   name: legato_event.c
-  physicalPath: gfx\legato\core
+  physicalPath: gfx/legato/core
   security: NON_SECURE
   type: SOURCE
   userChecksum: 6BE27C8A351299B6B06C9E6989FA7CC3
-- generatedChecksum: 01014B4BC02CB8016B18A8C0F988237C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\memory
+- generatedChecksum: 4F690E83221F436BB8BEA3F0A5937EF5
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/memory
   name: legato_fixedheap.c
-  physicalPath: gfx\legato\memory
+  physicalPath: gfx/legato/memory
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 01014B4BC02CB8016B18A8C0F988237C
+  userChecksum: 4F690E83221F436BB8BEA3F0A5937EF5
 - generatedChecksum: 0229A4CF2EC1D9A2EDC422F27A4F31B5
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_fixedstring.c
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: SOURCE
   userChecksum: 0229A4CF2EC1D9A2EDC422F27A4F31B5
-- generatedChecksum: A86BC44CF6D3E3F3F9D52066D9F6D2AC
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\font
+- generatedChecksum: E0DB819796B4B5F4227D20621206AF44
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/font
   name: legato_font.c
-  physicalPath: gfx\legato\font
+  physicalPath: gfx/legato/font
   security: NON_SECURE
   type: SOURCE
-  userChecksum: A86BC44CF6D3E3F3F9D52066D9F6D2AC
-- generatedChecksum: 76B808B91E91DAD68C7907369324E9A3
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\renderer
+  userChecksum: E0DB819796B4B5F4227D20621206AF44
+- generatedChecksum: 2BBF9EFDBC1B2CCFD8F836296F1CADEF
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/renderer
   name: legato_gpu.c
-  physicalPath: gfx\legato\renderer
+  physicalPath: gfx/legato/renderer
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 76B808B91E91DAD68C7907369324E9A3
-- generatedChecksum: CFBB5FCE143F019F8D2C63C8CECFC8C5
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image
+  userChecksum: 2BBF9EFDBC1B2CCFD8F836296F1CADEF
+- generatedChecksum: AD1126687188EBF0194B8D83099D80DC
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image
   name: legato_image.c
-  physicalPath: gfx\legato\image
+  physicalPath: gfx/legato/image
   security: NON_SECURE
   type: SOURCE
-  userChecksum: CFBB5FCE143F019F8D2C63C8CECFC8C5
+  userChecksum: AD1126687188EBF0194B8D83099D80DC
 - generatedChecksum: 3AA0D34DB9343AF0E35B8F0C576C89FA
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image
   name: legato_image_utils.c
-  physicalPath: gfx\legato\image
+  physicalPath: gfx/legato/image
   security: NON_SECURE
   type: SOURCE
   userChecksum: 3AA0D34DB9343AF0E35B8F0C576C89FA
-- generatedChecksum: BB8EECC64D7BF9FC3EBBEADCB464A643
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\jpeg
+- generatedChecksum: 84A247C1C2368D457A53657A824A8301
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg
   name: legato_imagedecoder_jpeg.c
-  physicalPath: gfx\legato\image\jpeg
+  physicalPath: gfx/legato/image/jpeg
   security: NON_SECURE
   type: SOURCE
-  userChecksum: BB8EECC64D7BF9FC3EBBEADCB464A643
+  userChecksum: 84A247C1C2368D457A53657A824A8301
 - generatedChecksum: 2B8A48A113099D6CD10A08FF5AFA5B4A
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\jpeg
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg
   name: legato_imagedecoder_jpeg_common.c
-  physicalPath: gfx\legato\image\jpeg
+  physicalPath: gfx/legato/image/jpeg
   security: NON_SECURE
   type: SOURCE
   userChecksum: 2B8A48A113099D6CD10A08FF5AFA5B4A
-- generatedChecksum: 7ED23EB2E6665334A605D3C1A27CF606
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\png
-  name: legato_imagedecoder_png.c
-  physicalPath: gfx\legato\image\png
+- generatedChecksum: D59E534E86910BC48ABF3DC4348A1A2E
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono
+  name: legato_imagedecoder_mono.c
+  physicalPath: gfx/legato/image/mono
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7ED23EB2E6665334A605D3C1A27CF606
+  userChecksum: D59E534E86910BC48ABF3DC4348A1A2E
+- generatedChecksum: 300343E4FD3A2BA1F52C2586128F2865
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono
+  name: legato_imagedecoder_mono_read_internal.c
+  physicalPath: gfx/legato/image/mono
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 300343E4FD3A2BA1F52C2586128F2865
+- generatedChecksum: CD7828DFD63AF711B3B4ADA1917E7603
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono
+  name: legato_imagedecoder_mono_read_stream.c
+  physicalPath: gfx/legato/image/mono
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: CD7828DFD63AF711B3B4ADA1917E7603
+- generatedChecksum: 127378083089331A2F62CBD5B1111763
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/png
+  name: legato_imagedecoder_png.c
+  physicalPath: gfx/legato/image/png
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 127378083089331A2F62CBD5B1111763
 - generatedChecksum: F9C070A89A95EC4C2DCF100C72937633
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
   userChecksum: F9C070A89A95EC4C2DCF100C72937633
 - generatedChecksum: 743343860061C49F5E8F7D7A5CC307F4
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw_blend.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
   userChecksum: 743343860061C49F5E8F7D7A5CC307F4
 - generatedChecksum: 2009633255D8F939A03C573DD73EEE91
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw_convert.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
   userChecksum: 2009633255D8F939A03C573DD73EEE91
 - generatedChecksum: 59356D8E3167B6CBCFC374B05503CC8F
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw_mask.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
   userChecksum: 59356D8E3167B6CBCFC374B05503CC8F
 - generatedChecksum: 60428440243934CA28A223226F1B0864
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw_palette_internal.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
   userChecksum: 60428440243934CA28A223226F1B0864
-- generatedChecksum: 346A7E813B095C4D8A39B09A06FE722C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+- generatedChecksum: 501973C07E11A4C3CD001ED12BE04729
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw_palette_stream.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 346A7E813B095C4D8A39B09A06FE722C
+  userChecksum: 501973C07E11A4C3CD001ED12BE04729
 - generatedChecksum: 60F2C174A6DEA3BF33A3B97DEF528EED
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw_read_internal.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
   userChecksum: 60F2C174A6DEA3BF33A3B97DEF528EED
-- generatedChecksum: 3D8DBEEFD7D605C792F329471CAEBDE6
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+- generatedChecksum: 1EA3C491851F9D10484FAE3927083EF0
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw_read_stream_color.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 3D8DBEEFD7D605C792F329471CAEBDE6
+  userChecksum: 1EA3C491851F9D10484FAE3927083EF0
 - generatedChecksum: 368D18B822E55E3E477EBD4A757EF716
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw_read_stream_index.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
   userChecksum: 368D18B822E55E3E477EBD4A757EF716
 - generatedChecksum: 449F30952AD3F2A2C98BE08EFD1A2DF5
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw_read_stream_rlecolor.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
   userChecksum: 449F30952AD3F2A2C98BE08EFD1A2DF5
 - generatedChecksum: 747B9EE67B4B34504C0DD2109447F03B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw_read_stream_rleindex.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
   userChecksum: 747B9EE67B4B34504C0DD2109447F03B
 - generatedChecksum: FF7CD26700193D2D1EFE12ADBA80D2A6
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw_rotate.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
   userChecksum: FF7CD26700193D2D1EFE12ADBA80D2A6
 - generatedChecksum: 51FC029DB6443F4A35E62411F58D08B9
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw_scale.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
   userChecksum: 51FC029DB6443F4A35E62411F58D08B9
 - generatedChecksum: 8BA399A776A7E9DD780A96793C062A04
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw_setup.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8BA399A776A7E9DD780A96793C062A04
 - generatedChecksum: F42AC34D95AC7EACDAF9E90D48242428
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw_write.c
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
   userChecksum: F42AC34D95AC7EACDAF9E90D48242428
-- generatedChecksum: 6C67DCE4BC3F98B18543ECD14AEA712C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\core
+- generatedChecksum: B2367C9B0D5D397E532EE3CE06697ACF
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/core
   name: legato_input.c
-  physicalPath: gfx\legato\core
+  physicalPath: gfx/legato/core
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 6C67DCE4BC3F98B18543ECD14AEA712C
+  userChecksum: B2367C9B0D5D397E532EE3CE06697ACF
 - generatedChecksum: 166EFFCA3A6ED925F2EECB58B757BC83
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\datastructure
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/datastructure
   name: legato_list.c
-  physicalPath: gfx\legato\datastructure
+  physicalPath: gfx/legato/datastructure
   security: NON_SECURE
   type: SOURCE
   userChecksum: 166EFFCA3A6ED925F2EECB58B757BC83
 - generatedChecksum: 515E5CF2FBDF1AECE8D0D4B1ECFDF13F
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_math.c
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
   userChecksum: 515E5CF2FBDF1AECE8D0D4B1ECFDF13F
 - generatedChecksum: E9A4A944EADB1C731F31920210914DDD
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\memory
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/memory
   name: legato_memory.c
-  physicalPath: gfx\legato\memory
+  physicalPath: gfx/legato/memory
   security: NON_SECURE
   type: SOURCE
   userChecksum: E9A4A944EADB1C731F31920210914DDD
 - generatedChecksum: CE69218FE966EFCC87A06C76D9D662B6
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image
   name: legato_palette.c
-  physicalPath: gfx\legato\image
+  physicalPath: gfx/legato/image
   security: NON_SECURE
   type: SOURCE
   userChecksum: CE69218FE966EFCC87A06C76D9D662B6
-- generatedChecksum: 518010961543C2F91BFC945395568E1B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+- generatedChecksum: 16567942616B91C518682DAC08B02A2F
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_pixelbuffer.c
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 518010961543C2F91BFC945395568E1B
+  userChecksum: 16567942616B91C518682DAC08B02A2F
 - generatedChecksum: D27C569803C9610A12F9B82D8025E7C8
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\radiobutton
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/radiobutton
   name: legato_radiobutton_group.c
-  physicalPath: gfx\legato\widget\radiobutton
+  physicalPath: gfx/legato/widget/radiobutton
   security: NON_SECURE
   type: SOURCE
   userChecksum: D27C569803C9610A12F9B82D8025E7C8
 - generatedChecksum: 08401D7220E1ABC4D368F7A678916753
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\font
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/font
   name: legato_rasterfont_liberationmono1.c
-  physicalPath: gfx\legato\font
+  physicalPath: gfx/legato/font
   security: NON_SECURE
   type: SOURCE
   userChecksum: 08401D7220E1ABC4D368F7A678916753
 - generatedChecksum: EA7FB6E29DA7227B1B48FBD66056D7EC
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\font
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/font
   name: legato_rasterfont_liberationmono8.c
-  physicalPath: gfx\legato\font
+  physicalPath: gfx/legato/font
   security: NON_SECURE
   type: SOURCE
   userChecksum: EA7FB6E29DA7227B1B48FBD66056D7EC
-- generatedChecksum: DF7D41678B9DA0AD3EE0D99A16711EE8
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\font
+- generatedChecksum: 0F005C34F38BCA09E2D4F067C5A39FD1
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/font
   name: legato_rasterfont_stream.c
-  physicalPath: gfx\legato\font
+  physicalPath: gfx/legato/font
   security: NON_SECURE
   type: SOURCE
-  userChecksum: DF7D41678B9DA0AD3EE0D99A16711EE8
+  userChecksum: 0F005C34F38BCA09E2D4F067C5A39FD1
 - generatedChecksum: CEA5EBCAD80F2905A5E6ACDE2AD4F8FE
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_rect.c
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
   userChecksum: CEA5EBCAD80F2905A5E6ACDE2AD4F8FE
 - generatedChecksum: AAD40235137F4975F38347A98DF7B9B4
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\datastructure
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/datastructure
   name: legato_rectarray.c
-  physicalPath: gfx\legato\datastructure
+  physicalPath: gfx/legato/datastructure
   security: NON_SECURE
   type: SOURCE
   userChecksum: AAD40235137F4975F38347A98DF7B9B4
-- generatedChecksum: 90079F5B32382EF3E77B27C7F70D2CFD
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\renderer
+- generatedChecksum: 1859B09F325740BEC2E28D8500A38D1F
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/renderer
   name: legato_renderer.c
-  physicalPath: gfx\legato\renderer
+  physicalPath: gfx/legato/renderer
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 90079F5B32382EF3E77B27C7F70D2CFD
-- generatedChecksum: EF00DAB935C4977E34A72B5D976F572A
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\core
+  userChecksum: 1859B09F325740BEC2E28D8500A38D1F
+- generatedChecksum: D07EFFF78D360EA5B81D3BC952835EF4
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/core
   name: legato_scheme.c
-  physicalPath: gfx\legato\core
+  physicalPath: gfx/legato/core
   security: NON_SECURE
   type: SOURCE
-  userChecksum: EF00DAB935C4977E34A72B5D976F572A
-- generatedChecksum: 3BD7FFC7658199344F70441E058BECB4
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\core
+  userChecksum: D07EFFF78D360EA5B81D3BC952835EF4
+- generatedChecksum: 398916FF694667DF840878D2640D40A4
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/core
   name: legato_state.c
-  physicalPath: gfx\legato\core
+  physicalPath: gfx/legato/core
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 3BD7FFC7658199344F70441E058BECB4
-- generatedChecksum: 57FDDCBDBE41DEC2C6DF1FB160834AB9
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\core
+  userChecksum: 398916FF694667DF840878D2640D40A4
+- generatedChecksum: AE30F16F736295344A9CFE4DA0D5328A
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/core
   name: legato_stream.c
-  physicalPath: gfx\legato\core
+  physicalPath: gfx/legato/core
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 57FDDCBDBE41DEC2C6DF1FB160834AB9
+  userChecksum: AE30F16F736295344A9CFE4DA0D5328A
 - generatedChecksum: 08E8E1B99B41C9226B9081065AF1DB58
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_string.c
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: SOURCE
   userChecksum: 08E8E1B99B41C9226B9081065AF1DB58
 - generatedChecksum: 56971255CFEC12B89CF325D1853C47AB
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_string_renderer.c
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: SOURCE
   userChecksum: 56971255CFEC12B89CF325D1853C47AB
 - generatedChecksum: 47B82889C85ED3825DC2BA4B19D159F8
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_string_renderer_stream.c
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: SOURCE
   userChecksum: 47B82889C85ED3825DC2BA4B19D159F8
 - generatedChecksum: 40C1D751635A0126FCB40529C5885A18
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_stringtable.c
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: SOURCE
   userChecksum: 40C1D751635A0126FCB40529C5885A18
 - generatedChecksum: 060CC7A3D51063736F9A9A95A4A98ABC
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_stringutils.c
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: SOURCE
   userChecksum: 060CC7A3D51063736F9A9A95A4A98ABC
 - generatedChecksum: DAFA9F0BA6E7FC81E93F21287B9FDC84
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_tablestring.c
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: SOURCE
   userChecksum: DAFA9F0BA6E7FC81E93F21287B9FDC84
 - generatedChecksum: 251CE72162CB7CA77E528C3847C7CF43
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_utils.c
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
   userChecksum: 251CE72162CB7CA77E528C3847C7CF43
-- generatedChecksum: 2756954421692BABE89ACFD9705828E1
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\memory
+- generatedChecksum: 6BC00715A0308BBE0D8175B42D706DA5
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/memory
   name: legato_variableheap.c
-  physicalPath: gfx\legato\memory
+  physicalPath: gfx/legato/memory
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 2756954421692BABE89ACFD9705828E1
-- generatedChecksum: EF815DBD5A45A3EFDD1DF94210396E6D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget
+  userChecksum: 6BC00715A0308BBE0D8175B42D706DA5
+- generatedChecksum: C8D90467762EB55E7C8684456E92968A
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget
   name: legato_widget.c
-  physicalPath: gfx\legato\widget
+  physicalPath: gfx/legato/widget
   security: NON_SECURE
   type: SOURCE
-  userChecksum: EF815DBD5A45A3EFDD1DF94210396E6D
+  userChecksum: C8D90467762EB55E7C8684456E92968A
 - generatedChecksum: 5FE816B6FE74D7712D2DB342720D1D47
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\arc
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/arc
   name: legato_widget_arc.c
-  physicalPath: gfx\legato\widget\arc
+  physicalPath: gfx/legato/widget/arc
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5FE816B6FE74D7712D2DB342720D1D47
 - generatedChecksum: 4A8EA23A24BAACBCD06692ADCF93A515
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\arc
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/arc
   name: legato_widget_arc_skin_classic.c
-  physicalPath: gfx\legato\widget\arc
+  physicalPath: gfx/legato/widget/arc
   security: NON_SECURE
   type: SOURCE
   userChecksum: 4A8EA23A24BAACBCD06692ADCF93A515
 - generatedChecksum: 5CDBB2A4D53122292E2917D4AF76284D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\bargraph
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/bargraph
   name: legato_widget_bar_graph.c
-  physicalPath: gfx\legato\widget\bargraph
+  physicalPath: gfx/legato/widget/bargraph
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5CDBB2A4D53122292E2917D4AF76284D
 - generatedChecksum: 35A82F1532D19DDBB4B76D96FFC8DDCB
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\bargraph
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/bargraph
   name: legato_widget_bar_graph_skin_classic.c
-  physicalPath: gfx\legato\widget\bargraph
+  physicalPath: gfx/legato/widget/bargraph
   security: NON_SECURE
   type: SOURCE
   userChecksum: 35A82F1532D19DDBB4B76D96FFC8DDCB
-- generatedChecksum: 99F6026FF6AE78E67C7B2EB8A0A9E41F
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\button
+- generatedChecksum: 2588FE0821E01A66BAD8A200B9110DBF
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/button
   name: legato_widget_button.c
-  physicalPath: gfx\legato\widget\button
+  physicalPath: gfx/legato/widget/button
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 99F6026FF6AE78E67C7B2EB8A0A9E41F
+  userChecksum: 2588FE0821E01A66BAD8A200B9110DBF
 - generatedChecksum: 58BF4DE5BFF7A5D28A1B7D86ED134E18
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\button
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/button
   name: legato_widget_button_skin_classic.c
-  physicalPath: gfx\legato\widget\button
+  physicalPath: gfx/legato/widget/button
   security: NON_SECURE
   type: SOURCE
   userChecksum: 58BF4DE5BFF7A5D28A1B7D86ED134E18
-- generatedChecksum: DA3A725AFAC71E0D067EE6B5773BC2E6
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\checkbox
+- generatedChecksum: 7CC35E7D48AFA938CC23E0DA45B1C7D3
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/checkbox
   name: legato_widget_checkbox.c
-  physicalPath: gfx\legato\widget\checkbox
+  physicalPath: gfx/legato/widget/checkbox
   security: NON_SECURE
   type: SOURCE
-  userChecksum: DA3A725AFAC71E0D067EE6B5773BC2E6
+  userChecksum: 7CC35E7D48AFA938CC23E0DA45B1C7D3
 - generatedChecksum: 84AE0954F00574B77315F2865EEC51C3
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\checkbox
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/checkbox
   name: legato_widget_checkbox_skin_classic.c
-  physicalPath: gfx\legato\widget\checkbox
+  physicalPath: gfx/legato/widget/checkbox
   security: NON_SECURE
   type: SOURCE
   userChecksum: 84AE0954F00574B77315F2865EEC51C3
 - generatedChecksum: 6D890C3F3916113CBE31D33DD094E0C0
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\circle
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/circle
   name: legato_widget_circle.c
-  physicalPath: gfx\legato\widget\circle
+  physicalPath: gfx/legato/widget/circle
   security: NON_SECURE
   type: SOURCE
   userChecksum: 6D890C3F3916113CBE31D33DD094E0C0
 - generatedChecksum: B747DBE1BEFA8A368B3067626926930E
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\circle
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/circle
   name: legato_widget_circle_skin_classic.c
-  physicalPath: gfx\legato\widget\circle
+  physicalPath: gfx/legato/widget/circle
   security: NON_SECURE
   type: SOURCE
   userChecksum: B747DBE1BEFA8A368B3067626926930E
 - generatedChecksum: 2B6A35585841BD8E7B81A189BA11625B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\circulargauge
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/circulargauge
   name: legato_widget_circular_gauge.c
-  physicalPath: gfx\legato\widget\circulargauge
+  physicalPath: gfx/legato/widget/circulargauge
   security: NON_SECURE
   type: SOURCE
   userChecksum: 2B6A35585841BD8E7B81A189BA11625B
 - generatedChecksum: 48F3A5A5500694D32C42816FEF7FA167
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\circulargauge
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/circulargauge
   name: legato_widget_circular_gauge_skin_classic.c
-  physicalPath: gfx\legato\widget\circulargauge
+  physicalPath: gfx/legato/widget/circulargauge
   security: NON_SECURE
   type: SOURCE
   userChecksum: 48F3A5A5500694D32C42816FEF7FA167
 - generatedChecksum: A03261F3798C79E80DE9FA68D5C42A15
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\circularslider
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/circularslider
   name: legato_widget_circular_slider.c
-  physicalPath: gfx\legato\widget\circularslider
+  physicalPath: gfx/legato/widget/circularslider
   security: NON_SECURE
   type: SOURCE
   userChecksum: A03261F3798C79E80DE9FA68D5C42A15
 - generatedChecksum: 1C67BBBD10320E21578AED7A5BE38A53
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\circularslider
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/circularslider
   name: legato_widget_circular_slider_skin_classic.c
-  physicalPath: gfx\legato\widget\circularslider
+  physicalPath: gfx/legato/widget/circularslider
   security: NON_SECURE
   type: SOURCE
   userChecksum: 1C67BBBD10320E21578AED7A5BE38A53
 - generatedChecksum: E44A08BCB748C7F00A26088C1CAF63F6
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\drawsurface
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/drawsurface
   name: legato_widget_drawsurface.c
-  physicalPath: gfx\legato\widget\drawsurface
+  physicalPath: gfx/legato/widget/drawsurface
   security: NON_SECURE
   type: SOURCE
   userChecksum: E44A08BCB748C7F00A26088C1CAF63F6
 - generatedChecksum: A1FD9363F690637DCD67C21743B7EB92
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\drawsurface
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/drawsurface
   name: legato_widget_drawsurface_skin_classic.c
-  physicalPath: gfx\legato\widget\drawsurface
+  physicalPath: gfx/legato/widget/drawsurface
   security: NON_SECURE
   type: SOURCE
   userChecksum: A1FD9363F690637DCD67C21743B7EB92
 - generatedChecksum: CB874DD990A51D24395D1BD6396D9429
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\gradient
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/gradient
   name: legato_widget_gradient.c
-  physicalPath: gfx\legato\widget\gradient
+  physicalPath: gfx/legato/widget/gradient
   security: NON_SECURE
   type: SOURCE
   userChecksum: CB874DD990A51D24395D1BD6396D9429
 - generatedChecksum: 6EDCF200BFE71A664C24B5FA485D36F9
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\gradient
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/gradient
   name: legato_widget_gradient_skin_classic.c
-  physicalPath: gfx\legato\widget\gradient
+  physicalPath: gfx/legato/widget/gradient
   security: NON_SECURE
   type: SOURCE
   userChecksum: 6EDCF200BFE71A664C24B5FA485D36F9
 - generatedChecksum: D0B1280D641F0C841CD875281E249CF6
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\groupbox
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/groupbox
   name: legato_widget_groupbox.c
-  physicalPath: gfx\legato\widget\groupbox
+  physicalPath: gfx/legato/widget/groupbox
   security: NON_SECURE
   type: SOURCE
   userChecksum: D0B1280D641F0C841CD875281E249CF6
 - generatedChecksum: B4F2B6C7D3862E4C323D79E4D7518734
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\groupbox
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/groupbox
   name: legato_widget_groupbox_skin_classic.c
-  physicalPath: gfx\legato\widget\groupbox
+  physicalPath: gfx/legato/widget/groupbox
   security: NON_SECURE
   type: SOURCE
   userChecksum: B4F2B6C7D3862E4C323D79E4D7518734
 - generatedChecksum: ABAC13672F9F8AE01B8BD3701057E569
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\image
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/image
   name: legato_widget_image.c
-  physicalPath: gfx\legato\widget\image
+  physicalPath: gfx/legato/widget/image
   security: NON_SECURE
   type: SOURCE
   userChecksum: ABAC13672F9F8AE01B8BD3701057E569
 - generatedChecksum: 58A0A375BF738CA4A6144DA190AA7583
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\image
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/image
   name: legato_widget_image_skin_classic.c
-  physicalPath: gfx\legato\widget\image
+  physicalPath: gfx/legato/widget/image
   security: NON_SECURE
   type: SOURCE
   userChecksum: 58A0A375BF738CA4A6144DA190AA7583
 - generatedChecksum: 0EE2A63B32DD120F26AEFD3990842459
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\imagerotate
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/imagerotate
   name: legato_widget_imagerotate.c
-  physicalPath: gfx\legato\widget\imagerotate
+  physicalPath: gfx/legato/widget/imagerotate
   security: NON_SECURE
   type: SOURCE
   userChecksum: 0EE2A63B32DD120F26AEFD3990842459
 - generatedChecksum: C7E3A6F542663EC8E8C9006980A5C469
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\imagerotate
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/imagerotate
   name: legato_widget_imagerotate_skin_classic.c
-  physicalPath: gfx\legato\widget\imagerotate
+  physicalPath: gfx/legato/widget/imagerotate
   security: NON_SECURE
   type: SOURCE
   userChecksum: C7E3A6F542663EC8E8C9006980A5C469
 - generatedChecksum: 08F24981384EABD4A0FA8E240461DAA7
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\imagescale
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/imagescale
   name: legato_widget_imagescale.c
-  physicalPath: gfx\legato\widget\imagescale
+  physicalPath: gfx/legato/widget/imagescale
   security: NON_SECURE
   type: SOURCE
   userChecksum: 08F24981384EABD4A0FA8E240461DAA7
 - generatedChecksum: 56A13F4BE8418F75EDAF1DF458A3B476
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\imagescale
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/imagescale
   name: legato_widget_imagescale_skin_classic.c
-  physicalPath: gfx\legato\widget\imagescale
+  physicalPath: gfx/legato/widget/imagescale
   security: NON_SECURE
   type: SOURCE
   userChecksum: 56A13F4BE8418F75EDAF1DF458A3B476
 - generatedChecksum: F66E7A496224477623426397509EE1EF
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\imagesequence
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/imagesequence
   name: legato_widget_imagesequence.c
-  physicalPath: gfx\legato\widget\imagesequence
+  physicalPath: gfx/legato/widget/imagesequence
   security: NON_SECURE
   type: SOURCE
   userChecksum: F66E7A496224477623426397509EE1EF
 - generatedChecksum: 59CA977AFD703D93FADBBFC309001323
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\imagesequence
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/imagesequence
   name: legato_widget_imagesequence_skin_classic.c
-  physicalPath: gfx\legato\widget\imagesequence
+  physicalPath: gfx/legato/widget/imagesequence
   security: NON_SECURE
   type: SOURCE
   userChecksum: 59CA977AFD703D93FADBBFC309001323
 - generatedChecksum: DC3530C7E6E6815724E4CFE97745F524
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\keypad
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/keypad
   name: legato_widget_keypad.c
-  physicalPath: gfx\legato\widget\keypad
+  physicalPath: gfx/legato/widget/keypad
   security: NON_SECURE
   type: SOURCE
   userChecksum: DC3530C7E6E6815724E4CFE97745F524
 - generatedChecksum: 573D18116E2334CA40841D00E2491251
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\keypad
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/keypad
   name: legato_widget_keypad_skin_classic.c
-  physicalPath: gfx\legato\widget\keypad
+  physicalPath: gfx/legato/widget/keypad
   security: NON_SECURE
   type: SOURCE
   userChecksum: 573D18116E2334CA40841D00E2491251
 - generatedChecksum: 914E5ACC60FA876D5521F4475CB36024
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\label
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/label
   name: legato_widget_label.c
-  physicalPath: gfx\legato\widget\label
+  physicalPath: gfx/legato/widget/label
   security: NON_SECURE
   type: SOURCE
   userChecksum: 914E5ACC60FA876D5521F4475CB36024
 - generatedChecksum: CF1C5372BCB070A603069C83B201F78B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\label
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/label
   name: legato_widget_label_skin_classic.c
-  physicalPath: gfx\legato\widget\label
+  physicalPath: gfx/legato/widget/label
   security: NON_SECURE
   type: SOURCE
   userChecksum: CF1C5372BCB070A603069C83B201F78B
 - generatedChecksum: 8CFA9ED260540C1FD8BE5136F99E8FF4
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\line
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/line
   name: legato_widget_line.c
-  physicalPath: gfx\legato\widget\line
+  physicalPath: gfx/legato/widget/line
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8CFA9ED260540C1FD8BE5136F99E8FF4
 - generatedChecksum: B4DD083B4F07635CEDD52103DFA1D097
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\linegraph
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/linegraph
   name: legato_widget_line_graph.c
-  physicalPath: gfx\legato\widget\linegraph
+  physicalPath: gfx/legato/widget/linegraph
   security: NON_SECURE
   type: SOURCE
   userChecksum: B4DD083B4F07635CEDD52103DFA1D097
 - generatedChecksum: 72A6E76F5E520FED648A44E449B3B371
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\linegraph
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/linegraph
   name: legato_widget_line_graph_skin_classic.c
-  physicalPath: gfx\legato\widget\linegraph
+  physicalPath: gfx/legato/widget/linegraph
   security: NON_SECURE
   type: SOURCE
   userChecksum: 72A6E76F5E520FED648A44E449B3B371
 - generatedChecksum: DA5CF6C9C72D3A934BE3C147C0072E61
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\line
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/line
   name: legato_widget_line_skin_classic.c
-  physicalPath: gfx\legato\widget\line
+  physicalPath: gfx/legato/widget/line
   security: NON_SECURE
   type: SOURCE
   userChecksum: DA5CF6C9C72D3A934BE3C147C0072E61
 - generatedChecksum: 3DA738FB39BB49B06E8FC370D309A00E
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\list
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/list
   name: legato_widget_list.c
-  physicalPath: gfx\legato\widget\list
+  physicalPath: gfx/legato/widget/list
   security: NON_SECURE
   type: SOURCE
   userChecksum: 3DA738FB39BB49B06E8FC370D309A00E
 - generatedChecksum: 3512FE734F3E16603B18C9148BFDDBD4
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\list
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/list
   name: legato_widget_list_skin_classic.c
-  physicalPath: gfx\legato\widget\list
+  physicalPath: gfx/legato/widget/list
   security: NON_SECURE
   type: SOURCE
   userChecksum: 3512FE734F3E16603B18C9148BFDDBD4
 - generatedChecksum: ECE3936F4FD58C8FA9DA20C26280EA88
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\listwheel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/listwheel
   name: legato_widget_listwheel.c
-  physicalPath: gfx\legato\widget\listwheel
+  physicalPath: gfx/legato/widget/listwheel
   security: NON_SECURE
   type: SOURCE
   userChecksum: ECE3936F4FD58C8FA9DA20C26280EA88
 - generatedChecksum: D96216D2E0C59E796E925D9CC376DCDC
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\listwheel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/listwheel
   name: legato_widget_listwheel_skin_classic.c
-  physicalPath: gfx\legato\widget\listwheel
+  physicalPath: gfx/legato/widget/listwheel
   security: NON_SECURE
   type: SOURCE
   userChecksum: D96216D2E0C59E796E925D9CC376DCDC
 - generatedChecksum: 490BEADFF405F33559B5F4C0EE5BF4EE
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\piechart
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/piechart
   name: legato_widget_pie_chart.c
-  physicalPath: gfx\legato\widget\piechart
+  physicalPath: gfx/legato/widget/piechart
   security: NON_SECURE
   type: SOURCE
   userChecksum: 490BEADFF405F33559B5F4C0EE5BF4EE
 - generatedChecksum: A57FBB41B2253E3A033A94FB36A7BBFF
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\piechart
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/piechart
   name: legato_widget_pie_chart_skin_classic.c
-  physicalPath: gfx\legato\widget\piechart
+  physicalPath: gfx/legato/widget/piechart
   security: NON_SECURE
   type: SOURCE
   userChecksum: A57FBB41B2253E3A033A94FB36A7BBFF
 - generatedChecksum: 1B8CBA57FD5ADBD62F10A06F48A939E1
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\progressbar
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/progressbar
   name: legato_widget_progressbar.c
-  physicalPath: gfx\legato\widget\progressbar
+  physicalPath: gfx/legato/widget/progressbar
   security: NON_SECURE
   type: SOURCE
   userChecksum: 1B8CBA57FD5ADBD62F10A06F48A939E1
 - generatedChecksum: F3FB57EDB6FFCB2E6EB5555749BF4D5C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\progressbar
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/progressbar
   name: legato_widget_progressbar_skin_classic.c
-  physicalPath: gfx\legato\widget\progressbar
+  physicalPath: gfx/legato/widget/progressbar
   security: NON_SECURE
   type: SOURCE
   userChecksum: F3FB57EDB6FFCB2E6EB5555749BF4D5C
 - generatedChecksum: AA257CD7400EDA24B50265B2D989B027
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\radialmenu
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/radialmenu
   name: legato_widget_radial_menu.c
-  physicalPath: gfx\legato\widget\radialmenu
+  physicalPath: gfx/legato/widget/radialmenu
   security: NON_SECURE
   type: SOURCE
   userChecksum: AA257CD7400EDA24B50265B2D989B027
 - generatedChecksum: 0DAAB0013266070071BFBF96367CDC11
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\radialmenu
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/radialmenu
   name: legato_widget_radial_menu_skin_classic.c
-  physicalPath: gfx\legato\widget\radialmenu
+  physicalPath: gfx/legato/widget/radialmenu
   security: NON_SECURE
   type: SOURCE
   userChecksum: 0DAAB0013266070071BFBF96367CDC11
 - generatedChecksum: 1C784862C50ED1C8F14EE68ACAECC2B5
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\radiobutton
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/radiobutton
   name: legato_widget_radiobutton.c
-  physicalPath: gfx\legato\widget\radiobutton
+  physicalPath: gfx/legato/widget/radiobutton
   security: NON_SECURE
   type: SOURCE
   userChecksum: 1C784862C50ED1C8F14EE68ACAECC2B5
 - generatedChecksum: 5DEFF07BB2BD5B251C150F7B82B5CEFA
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\radiobutton
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/radiobutton
   name: legato_widget_radiobutton_skin_classic.c
-  physicalPath: gfx\legato\widget\radiobutton
+  physicalPath: gfx/legato/widget/radiobutton
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5DEFF07BB2BD5B251C150F7B82B5CEFA
 - generatedChecksum: 5A0E271B112E916C48C38DC54658CA80
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\rectangle
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/rectangle
   name: legato_widget_rectangle.c
-  physicalPath: gfx\legato\widget\rectangle
+  physicalPath: gfx/legato/widget/rectangle
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5A0E271B112E916C48C38DC54658CA80
 - generatedChecksum: 30FD49D363373A55B0F466ACC46E2E28
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\rectangle
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/rectangle
   name: legato_widget_rectangle_skin_classic.c
-  physicalPath: gfx\legato\widget\rectangle
+  physicalPath: gfx/legato/widget/rectangle
   security: NON_SECURE
   type: SOURCE
   userChecksum: 30FD49D363373A55B0F466ACC46E2E28
 - generatedChecksum: DC446141D9EFFC613301599B284D958C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\scrollbar
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/scrollbar
   name: legato_widget_scrollbar.c
-  physicalPath: gfx\legato\widget\scrollbar
+  physicalPath: gfx/legato/widget/scrollbar
   security: NON_SECURE
   type: SOURCE
   userChecksum: DC446141D9EFFC613301599B284D958C
 - generatedChecksum: F8F62A07AA9A333C5B8A9D676F95DD0B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\scrollbar
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/scrollbar
   name: legato_widget_scrollbar_skin_classic.c
-  physicalPath: gfx\legato\widget\scrollbar
+  physicalPath: gfx/legato/widget/scrollbar
   security: NON_SECURE
   type: SOURCE
   userChecksum: F8F62A07AA9A333C5B8A9D676F95DD0B
 - generatedChecksum: 88505DF5660858302C1493DED7A9EBD3
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget
   name: legato_widget_skin_classic.c
-  physicalPath: gfx\legato\widget
+  physicalPath: gfx/legato/widget
   security: NON_SECURE
   type: SOURCE
   userChecksum: 88505DF5660858302C1493DED7A9EBD3
 - generatedChecksum: B2C287A18B35F36284DCB26FE81C5E36
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget
   name: legato_widget_skin_classic_common.c
-  physicalPath: gfx\legato\widget
+  physicalPath: gfx/legato/widget
   security: NON_SECURE
   type: SOURCE
   userChecksum: B2C287A18B35F36284DCB26FE81C5E36
 - generatedChecksum: B0AB09B41C8A16B0E635CA0D364EC1E4
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\slider
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/slider
   name: legato_widget_slider.c
-  physicalPath: gfx\legato\widget\slider
+  physicalPath: gfx/legato/widget/slider
   security: NON_SECURE
   type: SOURCE
   userChecksum: B0AB09B41C8A16B0E635CA0D364EC1E4
 - generatedChecksum: D7D66FE009CD8F87DFD88453B1555E14
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\slider
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/slider
   name: legato_widget_slider_skin_classic.c
-  physicalPath: gfx\legato\widget\slider
+  physicalPath: gfx/legato/widget/slider
   security: NON_SECURE
   type: SOURCE
   userChecksum: D7D66FE009CD8F87DFD88453B1555E14
 - generatedChecksum: FFDA857BF0C6C921FECCF599E759748E
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\textfield
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/textfield
   name: legato_widget_textfield.c
-  physicalPath: gfx\legato\widget\textfield
+  physicalPath: gfx/legato/widget/textfield
   security: NON_SECURE
   type: SOURCE
   userChecksum: FFDA857BF0C6C921FECCF599E759748E
 - generatedChecksum: 934DE5D72F79754ADD5DF00B9FC7CB4D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\textfield
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/textfield
   name: legato_widget_textfield_skin_classic.c
-  physicalPath: gfx\legato\widget\textfield
+  physicalPath: gfx/legato/widget/textfield
   security: NON_SECURE
   type: SOURCE
   userChecksum: 934DE5D72F79754ADD5DF00B9FC7CB4D
 - generatedChecksum: 72FA4D40E37244D4F6E80D3DCE054119
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\touchtest
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/touchtest
   name: legato_widget_touchtest.c
-  physicalPath: gfx\legato\widget\touchtest
+  physicalPath: gfx/legato/widget/touchtest
   security: NON_SECURE
   type: SOURCE
   userChecksum: 72FA4D40E37244D4F6E80D3DCE054119
 - generatedChecksum: A6265782C064D9BD7B613F4D504BB7E1
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\touchtest
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/touchtest
   name: legato_widget_touchtest_skin_classic.c
-  physicalPath: gfx\legato\widget\touchtest
+  physicalPath: gfx/legato/widget/touchtest
   security: NON_SECURE
   type: SOURCE
   userChecksum: A6265782C064D9BD7B613F4D504BB7E1
 - generatedChecksum: BD6B229F0B6AEB6DC11EE89F1C94CA02
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\window
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/window
   name: legato_widget_window.c
-  physicalPath: gfx\legato\widget\window
+  physicalPath: gfx/legato/widget/window
   security: NON_SECURE
   type: SOURCE
   userChecksum: BD6B229F0B6AEB6DC11EE89F1C94CA02
 - generatedChecksum: 10543C226B948C51688A4B554B0A50A9
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\window
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/window
   name: legato_widget_window_skin_classic.c
-  physicalPath: gfx\legato\widget\window
+  physicalPath: gfx/legato/widget/window
   security: NON_SECURE
   type: SOURCE
   userChecksum: 10543C226B948C51688A4B554B0A50A9
 - generatedChecksum: 6513F2461B8F476B68CA73906086047F
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: libc_syscalls.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
   userChecksum: 6513F2461B8F476B68CA73906086047F
 - generatedChecksum: 483F4DAA35ED044F90A401FAB9E4E26C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\png
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/png
   name: lodepng.c
-  physicalPath: gfx\legato\image\png
+  physicalPath: gfx/legato/image/png
   security: NON_SECURE
   type: SOURCE
   userChecksum: 483F4DAA35ED044F90A401FAB9E4E26C
 - generatedChecksum: null
   logicalPath: ''
   name: main.c
-  physicalPath: ..\..
+  physicalPath: ../..
   security: NON_SECURE
   type: SOURCE
   userChecksum: null
 - generatedChecksum: 1239223DC8F03CE08653F87188CF0743
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\ccl
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/ccl
   name: plib_ccl.c
-  physicalPath: peripheral\ccl
+  physicalPath: peripheral/ccl
   security: NON_SECURE
   type: SOURCE
   userChecksum: 1239223DC8F03CE08653F87188CF0743
 - generatedChecksum: 7F36656DBFB91D9C7E34AC7B19E3481B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\clock
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/clock
   name: plib_clock.c
-  physicalPath: peripheral\clock
+  physicalPath: peripheral/clock
   security: NON_SECURE
   type: SOURCE
   userChecksum: 7F36656DBFB91D9C7E34AC7B19E3481B
 - generatedChecksum: D903E8D9DCBC4107D0AA841E07F653BA
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\cmcc
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/cmcc
   name: plib_cmcc.c
-  physicalPath: peripheral\cmcc
+  physicalPath: peripheral/cmcc
   security: NON_SECURE
   type: SOURCE
   userChecksum: D903E8D9DCBC4107D0AA841E07F653BA
 - generatedChecksum: A4D335E27F01C078E2E56923CBBE1729
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\dmac
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/dmac
   name: plib_dmac.c
-  physicalPath: peripheral\dmac
+  physicalPath: peripheral/dmac
   security: NON_SECURE
   type: SOURCE
   userChecksum: A4D335E27F01C078E2E56923CBBE1729
 - generatedChecksum: 47B443ED5C612CEFAA95609494E00D10
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\evsys
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/evsys
   name: plib_evsys.c
-  physicalPath: peripheral\evsys
+  physicalPath: peripheral/evsys
   security: NON_SECURE
   type: SOURCE
   userChecksum: 47B443ED5C612CEFAA95609494E00D10
 - generatedChecksum: 9D23D00BBE76BA2FF82DF5CB941BBD4F
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\nvic
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/nvic
   name: plib_nvic.c
-  physicalPath: peripheral\nvic
+  physicalPath: peripheral/nvic
   security: NON_SECURE
   type: SOURCE
   userChecksum: 9D23D00BBE76BA2FF82DF5CB941BBD4F
 - generatedChecksum: 57E1F9EA5E404569BFC1A3629AEC05F2
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\nvmctrl
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/nvmctrl
   name: plib_nvmctrl.c
-  physicalPath: peripheral\nvmctrl
+  physicalPath: peripheral/nvmctrl
   security: NON_SECURE
   type: SOURCE
   userChecksum: 57E1F9EA5E404569BFC1A3629AEC05F2
 - generatedChecksum: E491DD450896FD042A96B8FA566C6742
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\port
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/port
   name: plib_port.c
-  physicalPath: peripheral\port
+  physicalPath: peripheral/port
   security: NON_SECURE
   type: SOURCE
   userChecksum: E491DD450896FD042A96B8FA566C6742
 - generatedChecksum: 58C7142AB9F66AB1D8ABA0E3695E199E
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\sercom\i2c_master
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/sercom/i2c_master
   name: plib_sercom4_i2c_master.c
-  physicalPath: peripheral\sercom\i2c_master
+  physicalPath: peripheral/sercom/i2c_master
   security: NON_SECURE
   type: SOURCE
   userChecksum: 58C7142AB9F66AB1D8ABA0E3695E199E
 - generatedChecksum: BF98B7A7D90B7C19FE8C2AD6E3BD6F95
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\tc
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/tc
   name: plib_tc0.c
-  physicalPath: peripheral\tc
+  physicalPath: peripheral/tc
   security: NON_SECURE
   type: SOURCE
   userChecksum: BF98B7A7D90B7C19FE8C2AD6E3BD6F95
 - generatedChecksum: 575A560BBB649CEC30BF67BDD8EB8811
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\tc
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/tc
   name: plib_tc1.c
-  physicalPath: peripheral\tc
+  physicalPath: peripheral/tc
   security: NON_SECURE
   type: SOURCE
   userChecksum: 575A560BBB649CEC30BF67BDD8EB8811
 - generatedChecksum: B055ABB545F31C86257B6A786BC6BEC6
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\tc
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/tc
   name: plib_tc4.c
-  physicalPath: peripheral\tc
+  physicalPath: peripheral/tc
   security: NON_SECURE
   type: SOURCE
   userChecksum: B055ABB545F31C86257B6A786BC6BEC6
 - generatedChecksum: F90BC31146188C748D0CEBFE196F2CAA
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: startup_xc32.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
   userChecksum: F90BC31146188C748D0CEBFE196F2CAA
 - generatedChecksum: 92901E4C07604DD5EC594B58CEC2720B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\cache
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/cache
   name: sys_cache.c
-  physicalPath: system\cache
+  physicalPath: system/cache
   security: NON_SECURE
   type: SOURCE
   userChecksum: 92901E4C07604DD5EC594B58CEC2720B
 - generatedChecksum: 42F3A1D9D54BCC7C91AA8D6156BAD7D0
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\input
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/input
   name: sys_input.c
-  physicalPath: system\input
+  physicalPath: system/input
   security: NON_SECURE
   type: SOURCE
   userChecksum: 42F3A1D9D54BCC7C91AA8D6156BAD7D0
 - generatedChecksum: E2567B999B377C3AB2F46AFB3973AB6C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\input
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/input
   name: sys_input_listener.c
-  physicalPath: system\input
+  physicalPath: system/input
   security: NON_SECURE
   type: SOURCE
   userChecksum: E2567B999B377C3AB2F46AFB3973AB6C
 - generatedChecksum: 02C3C1B519E59992810626BB6098CF56
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\int
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/int
   name: sys_int.c
-  physicalPath: system\int\src
+  physicalPath: system/int/src
   security: NON_SECURE
   type: SOURCE
   userChecksum: 02C3C1B519E59992810626BB6098CF56
 - generatedChecksum: 83BDE663A1AAB20C9E52263F22E2ED3C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\time
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/time
   name: sys_time.c
-  physicalPath: system\time\src
+  physicalPath: system/time/src
   security: NON_SECURE
   type: SOURCE
   userChecksum: 83BDE663A1AAB20C9E52263F22E2ED3C
 - generatedChecksum: A0B09411B9C1928F7FBB31386B1341AC
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: tasks.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
   userChecksum: A0B09411B9C1928F7FBB31386B1341AC
 - generatedChecksum: 7806B30ECAE0D18D08CD583D8775530D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\stdio
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/stdio
   name: xc32_monitor.c
   physicalPath: stdio
   security: NON_SECURE
   type: SOURCE
   userChecksum: 7806B30ECAE0D18D08CD583D8775530D
 - generatedChecksum: 544C4E28DED855E9AF0024B4796FAAB0
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: ac.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 544C4E28DED855E9AF0024B4796FAAB0
 - generatedChecksum: 187A5E9AFAEA27A66EEB3FBA605C31B9
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: ac.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 187A5E9AFAEA27A66EEB3FBA605C31B9
 - generatedChecksum: 48A4701AAFB2CFD217EE28E570A08729
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: adc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 48A4701AAFB2CFD217EE28E570A08729
 - generatedChecksum: 1078AB67A3B4D2C3FB67F1945C8C31C7
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: adc0.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 1078AB67A3B4D2C3FB67F1945C8C31C7
 - generatedChecksum: 38637AA6707DBDB82967C0B0BD5DAC76
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: adc1.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 38637AA6707DBDB82967C0B0BD5DAC76
 - generatedChecksum: FEFD1C34F53549A3FC0DA4F35C74AD91
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: aes.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: FEFD1C34F53549A3FC0DA4F35C74AD91
 - generatedChecksum: AC78A1E0CCF1FFDFD9AE5374FCEA6D6D
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: aes.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: AC78A1E0CCF1FFDFD9AE5374FCEA6D6D
 - generatedChecksum: null
   logicalPath: ''
   name: app.h
-  physicalPath: ..\..
+  physicalPath: ../..
   security: NON_SECURE
   type: HEADER
   userChecksum: null
 - generatedChecksum: 537CAB46F4E3993D34034D8367024171
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\bsp
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/bsp
   name: bsp.h
   physicalPath: bsp
   security: NON_SECURE
   type: HEADER
   userChecksum: 537CAB46F4E3993D34034D8367024171
 - generatedChecksum: 01B82424BC59A54620F7E9E0DB808EBB
-  logicalPath: packs\CMSIS\CMSIS\Core\Include
+  logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: cachel1_armv7.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: 01B82424BC59A54620F7E9E0DB808EBB
 - generatedChecksum: 97BF07FFCA8459E4EB36DE6DC052E2A3
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: can.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 97BF07FFCA8459E4EB36DE6DC052E2A3
 - generatedChecksum: 7E459E1CEA25B76555159854FA0EB117
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: can0.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 7E459E1CEA25B76555159854FA0EB117
 - generatedChecksum: C4296EBB76B87C993C3FE694FFF23EC4
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: can1.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: C4296EBB76B87C993C3FE694FFF23EC4
 - generatedChecksum: 6E139731B0DC7B1329A38932685F88DD
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: ccl.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 6E139731B0DC7B1329A38932685F88DD
 - generatedChecksum: 63EDECB90479CF917B4F79F82EE3A0A0
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: ccl.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 63EDECB90479CF917B4F79F82EE3A0A0
 - generatedChecksum: 3AFC6B9926B1952589DAD0B212C858CD
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: cmcc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 3AFC6B9926B1952589DAD0B212C858CD
 - generatedChecksum: A7808E2870570A01788CDB95FFD11084
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: cmcc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: A7808E2870570A01788CDB95FFD11084
 - generatedChecksum: 00A88E28C299A373117BC4D5B9E80C80
-  logicalPath: packs\CMSIS\CMSIS\Core\Include
+  logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: cmsis_armcc.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: 00A88E28C299A373117BC4D5B9E80C80
 - generatedChecksum: 734DF6998F09B2D22A4D9FE1D544FDFC
-  logicalPath: packs\CMSIS\CMSIS\Core\Include
+  logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: cmsis_armclang.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: 734DF6998F09B2D22A4D9FE1D544FDFC
 - generatedChecksum: 5D653BEFE5E6B1D00AB3682CE5D24C11
-  logicalPath: packs\CMSIS\CMSIS\Core\Include
+  logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: cmsis_armclang_ltm.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: 5D653BEFE5E6B1D00AB3682CE5D24C11
 - generatedChecksum: 60385A5C6C9882B5D30709A1F6EAEC35
-  logicalPath: packs\CMSIS\CMSIS\Core\Include
+  logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: cmsis_compiler.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: 60385A5C6C9882B5D30709A1F6EAEC35
 - generatedChecksum: 42E8B722917508A3A9373D13AD827ED6
-  logicalPath: packs\CMSIS\CMSIS\Core\Include
+  logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: cmsis_gcc.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: 42E8B722917508A3A9373D13AD827ED6
 - generatedChecksum: 376D5C7FD29CAA507ACB1AAB8746B1AD
-  logicalPath: packs\CMSIS\CMSIS\Core\Include
+  logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: cmsis_iccarm.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: 376D5C7FD29CAA507ACB1AAB8746B1AD
 - generatedChecksum: 52F91AC0727F2311EDA0E3BAA7719A9F
-  logicalPath: packs\CMSIS\CMSIS\Core\Include
+  logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: cmsis_version.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: 52F91AC0727F2311EDA0E3BAA7719A9F
 - generatedChecksum: 918AACA6D04DCC538753DCDD1839417E
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: configuration.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
   userChecksum: 918AACA6D04DCC538753DCDD1839417E
 - generatedChecksum: 624A16D50759D7A491C523D747764B49
-  logicalPath: packs\CMSIS\CMSIS\Core\Include
+  logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: core_cm4.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: 624A16D50759D7A491C523D747764B49
 - generatedChecksum: 64CCFA9B41B63E44B0AABF5325575A74
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: dac.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 64CCFA9B41B63E44B0AABF5325575A74
 - generatedChecksum: 902BB85C5481959408BEA6AD082584FA
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: dac.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 902BB85C5481959408BEA6AD082584FA
 - generatedChecksum: FAE89417853714179060E3E3FECF03F9
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: definitions.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
   userChecksum: FAE89417853714179060E3E3FECF03F9
 - generatedChecksum: AA255350342164F392C52E11EFC2A7F3
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: device.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
   userChecksum: AA255350342164F392C52E11EFC2A7F3
 - generatedChecksum: 85D3482D395C59BDFF268B01940CDDDE
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: device_cache.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
   userChecksum: 85D3482D395C59BDFF268B01940CDDDE
 - generatedChecksum: B1F5DFAFF94F9B4E6DD87A5DA5CBB525
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: device_vectors.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
   userChecksum: B1F5DFAFF94F9B4E6DD87A5DA5CBB525
 - generatedChecksum: CCD94E785213966A21E7B66B48974429
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: dmac.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: CCD94E785213966A21E7B66B48974429
 - generatedChecksum: 5875867EDE07453DC1626DA8A730F427
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: dmac.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 5875867EDE07453DC1626DA8A730F427
 - generatedChecksum: 1D2094DFA60F847FFD4E8153B6E78027
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\driver
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/driver
   name: driver.h
   physicalPath: driver
   security: NON_SECURE
   type: HEADER
   userChecksum: 1D2094DFA60F847FFD4E8153B6E78027
 - generatedChecksum: CC7DFCC51CD25171A3E400E18969354F
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\driver
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/driver
   name: driver_common.h
   physicalPath: driver
   security: NON_SECURE
   type: HEADER
   userChecksum: CC7DFCC51CD25171A3E400E18969354F
 - generatedChecksum: 148257D6CC39D0D388939E5C721A027A
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\interface
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/interface
   name: drv_gfx_disp_intf.h
-  physicalPath: gfx\interface
+  physicalPath: gfx/interface
   security: NON_SECURE
   type: HEADER
   userChecksum: 148257D6CC39D0D388939E5C721A027A
 - generatedChecksum: D8C8516D6C11893190E9CE9718472029
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\driver\external_controller
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/driver/external_controller
   name: drv_gfx_external_controller.h
-  physicalPath: gfx\driver\controller\external_controller
+  physicalPath: gfx/driver/controller/external_controller
   security: NON_SECURE
   type: HEADER
   userChecksum: D8C8516D6C11893190E9CE9718472029
 - generatedChecksum: 3C6689B8800C6234028EC2FBE82E25CF
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\driver\i2c
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/driver/i2c
   name: drv_i2c.h
-  physicalPath: driver\i2c
+  physicalPath: driver/i2c
   security: NON_SECURE
   type: HEADER
   userChecksum: 3C6689B8800C6234028EC2FBE82E25CF
 - generatedChecksum: 260EF469FECCFEF9418D6268909EE2F8
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\driver\i2c
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/driver/i2c
   name: drv_i2c_definitions.h
-  physicalPath: driver\i2c
+  physicalPath: driver/i2c
   security: NON_SECURE
   type: HEADER
   userChecksum: 260EF469FECCFEF9418D6268909EE2F8
 - generatedChecksum: 96E55AC4B3153F31385A2A7066E9CCBB
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\driver\input
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/driver/input
   name: drv_maxtouch.h
-  physicalPath: driver\input
+  physicalPath: driver/input
   security: NON_SECURE
   type: HEADER
   userChecksum: 96E55AC4B3153F31385A2A7066E9CCBB
 - generatedChecksum: 924292325E5C1D62240A4881AC4B17BC
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: dsu.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 924292325E5C1D62240A4881AC4B17BC
 - generatedChecksum: ADB59C384F34BE763824A00E7D01AE80
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: dsu.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: ADB59C384F34BE763824A00E7D01AE80
 - generatedChecksum: 223869B2367A8AD2208B038EC682F365
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: eic.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 223869B2367A8AD2208B038EC682F365
 - generatedChecksum: BD4B5C3DFB7E1B6962C65034EE18B41D
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: eic.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: BD4B5C3DFB7E1B6962C65034EE18B41D
 - generatedChecksum: 85D51844D41F6BD8280A63F36E93FEFA
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: evsys.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 85D51844D41F6BD8280A63F36E93FEFA
 - generatedChecksum: 43EBBCE056CEE3905D2EAB0B92EF4255
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: evsys.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 43EBBCE056CEE3905D2EAB0B92EF4255
 - generatedChecksum: 88ECEC4BB169A8735B3A4DBF285A6EC8
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: freqm.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 88ECEC4BB169A8735B3A4DBF285A6EC8
 - generatedChecksum: 0C1DAD147B8B61C218160575BAF743F0
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: freqm.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 0C1DAD147B8B61C218160575BAF743F0
 - generatedChecksum: 01D6044975184A83062959988CED5A79
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: gclk.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 01D6044975184A83062959988CED5A79
 - generatedChecksum: AE435CD2E80B69FB5C355DA15FFFECA0
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: gclk.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: AE435CD2E80B69FB5C355DA15FFFECA0
-- generatedChecksum: 7D64E92BA021E1833EB6D15E83800459
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\driver\external_controller
+- generatedChecksum: 7978B66868F74E0E2A1207E5699C5203
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/driver/external_controller
   name: gfx_driver.h
-  physicalPath: gfx\driver
+  physicalPath: gfx/driver
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7D64E92BA021E1833EB6D15E83800459
+  userChecksum: 7978B66868F74E0E2A1207E5699C5203
 - generatedChecksum: 3B285488C24DBF6469EB15E6B8E271DF
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: gmac.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 3B285488C24DBF6469EB15E6B8E271DF
 - generatedChecksum: D2F2412B3C102C8168FD579744529CAB
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: gmac.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: D2F2412B3C102C8168FD579744529CAB
 - generatedChecksum: 9080EFD0146898F15FC7598CA134CA6A
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: hmatrix.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 9080EFD0146898F15FC7598CA134CA6A
 - generatedChecksum: 19A46C04E70D7FDA9958701C4301C0C5
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: hmatrixb.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 19A46C04E70D7FDA9958701C4301C0C5
 - generatedChecksum: 2635DDB5A2EA54E74D0F4C66E2C11248
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: i2s.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 2635DDB5A2EA54E74D0F4C66E2C11248
 - generatedChecksum: F17508619FAF026792E3CAAF15D1FF67
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: i2s.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: F17508619FAF026792E3CAAF15D1FF67
 - generatedChecksum: A4EB9EBBB8BEF9E8D4965DB93E642FD4
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: icm.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: A4EB9EBBB8BEF9E8D4965DB93E642FD4
 - generatedChecksum: 240B0E97C2A26014F1B3BEE2D75B687F
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: icm.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 240B0E97C2A26014F1B3BEE2D75B687F
 - generatedChecksum: BA8428D699BCFE0684F0FD0C5BE6DA15
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: interrupts.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
   userChecksum: BA8428D699BCFE0684F0FD0C5BE6DA15
 - generatedChecksum: A7277B56D8B21CB9FBFBF8DFD00134F3
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated
   name: le_gen_assets.h
-  physicalPath: gfx\legato\generated
+  physicalPath: gfx/legato/generated
   security: NON_SECURE
   type: HEADER
   userChecksum: A7277B56D8B21CB9FBFBF8DFD00134F3
 - generatedChecksum: 042D3F04407D0A343BB7CACD25439A9C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated
   name: le_gen_harmony.h
-  physicalPath: gfx\legato\generated
+  physicalPath: gfx/legato/generated
   security: NON_SECURE
   type: HEADER
   userChecksum: 042D3F04407D0A343BB7CACD25439A9C
 - generatedChecksum: ADACEF5A0354594228C70F02E25C3476
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated
   name: le_gen_init.h
-  physicalPath: gfx\legato\generated
+  physicalPath: gfx/legato/generated
   security: NON_SECURE
   type: HEADER
   userChecksum: ADACEF5A0354594228C70F02E25C3476
 - generatedChecksum: 62E433CE1F7A69AEBA43E5635626C86C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated
   name: le_gen_scheme.h
-  physicalPath: gfx\legato\generated
+  physicalPath: gfx/legato/generated
   security: NON_SECURE
   type: HEADER
   userChecksum: 62E433CE1F7A69AEBA43E5635626C86C
 - generatedChecksum: DF7B0EE6C6023DEEC8FF329BDFB64993
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_AlphaBlendingDemoScreen.h
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: HEADER
   userChecksum: DF7B0EE6C6023DEEC8FF329BDFB64993
 - generatedChecksum: D1D7E843E2FCB858DDC43772C2A7BC11
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_AlphaBlendingHelpScreen.h
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: HEADER
   userChecksum: D1D7E843E2FCB858DDC43772C2A7BC11
 - generatedChecksum: 9BFA83FFB89CD5AB7E7838157BEC1ECD
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_KeypadDemoScreen.h
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: HEADER
   userChecksum: 9BFA83FFB89CD5AB7E7838157BEC1ECD
 - generatedChecksum: 30090192A26297418A18F60E8FE74C3F
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_KeypadHelpScreen.h
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: HEADER
   userChecksum: 30090192A26297418A18F60E8FE74C3F
 - generatedChecksum: 2F7EB22EFB746D3A828B9B9B4FD2E784
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_ListWheelDemoScreen.h
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: HEADER
   userChecksum: 2F7EB22EFB746D3A828B9B9B4FD2E784
 - generatedChecksum: 1AA6A9D796833FC2218F80B0FF037C6F
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_ListWheelHelpScreen.h
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: HEADER
   userChecksum: 1AA6A9D796833FC2218F80B0FF037C6F
 - generatedChecksum: 85EC4A653A571305CD69DB3C3E59AEF9
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_MainMenu.h
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: HEADER
   userChecksum: 85EC4A653A571305CD69DB3C3E59AEF9
 - generatedChecksum: 03707E4500B62A7790D1FB10CBAC6997
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_MainMenuHelp.h
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: HEADER
   userChecksum: 03707E4500B62A7790D1FB10CBAC6997
 - generatedChecksum: 4193C9CF82A2427733DA1EB91FABF334
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_SettingsScreen.h
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: HEADER
   userChecksum: 4193C9CF82A2427733DA1EB91FABF334
 - generatedChecksum: A191437C974113E96813E5D86C69E597
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_SlideShowDemoScreen.h
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: HEADER
   userChecksum: A191437C974113E96813E5D86C69E597
 - generatedChecksum: 2364B7DAA3FE3F1B0725B8A8A6BC9976
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_SlideshowHelpScreen.h
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: HEADER
   userChecksum: 2364B7DAA3FE3F1B0725B8A8A6BC9976
 - generatedChecksum: ACAEF279CCDA482A4E11781215BFF203
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_SplashScreen.h
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: HEADER
   userChecksum: ACAEF279CCDA482A4E11781215BFF203
 - generatedChecksum: F70E3747E0E968F0C2E9BC3F29FE9C96
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_TouchTestDemoScreen.h
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: HEADER
   userChecksum: F70E3747E0E968F0C2E9BC3F29FE9C96
 - generatedChecksum: 3DF62B030714874F5A13E2EFC70CDD31
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\generated\screen
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/generated/screen
   name: le_gen_screen_TouchTestHelpScreen.h
-  physicalPath: gfx\legato\generated\screen
+  physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: HEADER
   userChecksum: 3DF62B030714874F5A13E2EFC70CDD31
 - generatedChecksum: 993110774813AF4280462AE794C64083
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato
   name: legato.h
-  physicalPath: gfx\legato
+  physicalPath: gfx/legato
   security: NON_SECURE
   type: HEADER
   userChecksum: 993110774813AF4280462AE794C64083
 - generatedChecksum: 6A358135828719657F3A57D2FD2BBF8A
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\datastructure
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/datastructure
   name: legato_array.h
-  physicalPath: gfx\legato\datastructure
+  physicalPath: gfx/legato/datastructure
   security: NON_SECURE
   type: HEADER
   userChecksum: 6A358135828719657F3A57D2FD2BBF8A
-- generatedChecksum: 803A3E4DA0BAC462B6FD5037EEB403FC
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+- generatedChecksum: E5639B5733F9A8A058424F37917E3FA0
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_color.h
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: HEADER
-  userChecksum: 803A3E4DA0BAC462B6FD5037EEB403FC
+  userChecksum: E5639B5733F9A8A058424F37917E3FA0
 - generatedChecksum: 13553FC080D7DB70E8038CABB05F2B87
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_common.h
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: HEADER
   userChecksum: 13553FC080D7DB70E8038CABB05F2B87
-- generatedChecksum: 8582A7DF00C42E8C5643007C596CFC02
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato
+- generatedChecksum: B39B0A899955E32BF727C4759A37E4F3
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato
   name: legato_config.h
-  physicalPath: gfx\legato
+  physicalPath: gfx/legato
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8582A7DF00C42E8C5643007C596CFC02
+  userChecksum: B39B0A899955E32BF727C4759A37E4F3
 - generatedChecksum: 30A2B9F9E41BB023C20363CE7E0256A4
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_dynamicstring.h
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: HEADER
   userChecksum: 30A2B9F9E41BB023C20363CE7E0256A4
 - generatedChecksum: D1322A069859371BFA289DC605C5F1A9
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget
   name: legato_editwidget.h
-  physicalPath: gfx\legato\widget
+  physicalPath: gfx/legato/widget
   security: NON_SECURE
   type: HEADER
   userChecksum: D1322A069859371BFA289DC605C5F1A9
 - generatedChecksum: 9ABEDADEC6151E5F97498A8623932D09
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_error.h
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: HEADER
   userChecksum: 9ABEDADEC6151E5F97498A8623932D09
 - generatedChecksum: 399F86EA062F4D826F593A3D9DB79D87
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\core
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/core
   name: legato_event.h
-  physicalPath: gfx\legato\core
+  physicalPath: gfx/legato/core
   security: NON_SECURE
   type: HEADER
   userChecksum: 399F86EA062F4D826F593A3D9DB79D87
 - generatedChecksum: 5B4BEAE42537264A02A3558EAEBA8514
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\memory
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/memory
   name: legato_fixedheap.h
-  physicalPath: gfx\legato\memory
+  physicalPath: gfx/legato/memory
   security: NON_SECURE
   type: HEADER
   userChecksum: 5B4BEAE42537264A02A3558EAEBA8514
 - generatedChecksum: 295D1BDE726B062609ECDD25D6FE5C01
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_fixedstring.h
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: HEADER
   userChecksum: 295D1BDE726B062609ECDD25D6FE5C01
-- generatedChecksum: C61FB415C6EB89C02C332803FA1E277B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\font
+- generatedChecksum: 9640B4174E120D811ACF200434A0DC17
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/font
   name: legato_font.h
-  physicalPath: gfx\legato\font
+  physicalPath: gfx/legato/font
   security: NON_SECURE
   type: HEADER
-  userChecksum: C61FB415C6EB89C02C332803FA1E277B
+  userChecksum: 9640B4174E120D811ACF200434A0DC17
 - generatedChecksum: 223FBC4FC8651E3CCF8D58D95CBE73EF
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\renderer
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/renderer
   name: legato_gpu.h
-  physicalPath: gfx\legato\renderer
+  physicalPath: gfx/legato/renderer
   security: NON_SECURE
   type: HEADER
   userChecksum: 223FBC4FC8651E3CCF8D58D95CBE73EF
-- generatedChecksum: 942A4B3154E73995419331CA145742DF
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image
+- generatedChecksum: 4883DAA559AD3AD7F4DB03285440E1A7
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image
   name: legato_image.h
-  physicalPath: gfx\legato\image
+  physicalPath: gfx/legato/image
   security: NON_SECURE
   type: HEADER
-  userChecksum: 942A4B3154E73995419331CA145742DF
+  userChecksum: 4883DAA559AD3AD7F4DB03285440E1A7
 - generatedChecksum: 20F5C4A58F413B7AD3ECF05A45A69861
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image
   name: legato_image_utils.h
-  physicalPath: gfx\legato\image
+  physicalPath: gfx/legato/image
   security: NON_SECURE
   type: HEADER
   userChecksum: 20F5C4A58F413B7AD3ECF05A45A69861
 - generatedChecksum: F0B4EF8BC9ECFC58C9F62CB647948CB5
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\jpeg
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg
   name: legato_imagedecoder_jpeg.h
-  physicalPath: gfx\legato\image\jpeg
+  physicalPath: gfx/legato/image/jpeg
   security: NON_SECURE
   type: HEADER
   userChecksum: F0B4EF8BC9ECFC58C9F62CB647948CB5
 - generatedChecksum: 1602CC67EF74146364F65BC8543A00AD
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\jpeg
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg
   name: legato_imagedecoder_jpeg_common.h
-  physicalPath: gfx\legato\image\jpeg
+  physicalPath: gfx/legato/image/jpeg
   security: NON_SECURE
   type: HEADER
   userChecksum: 1602CC67EF74146364F65BC8543A00AD
+- generatedChecksum: 33DA5CD50A3BB46122DE90551C40B811
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono
+  name: legato_imagedecoder_mono.h
+  physicalPath: gfx/legato/image/mono
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 33DA5CD50A3BB46122DE90551C40B811
 - generatedChecksum: 7ADDAC9059A85F81FAFFBF0953F115C2
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\png
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/png
   name: legato_imagedecoder_png.h
-  physicalPath: gfx\legato\image\png
+  physicalPath: gfx/legato/image/png
   security: NON_SECURE
   type: HEADER
   userChecksum: 7ADDAC9059A85F81FAFFBF0953F115C2
 - generatedChecksum: B81AA9C48BB7A1416D0D25EC35D5A2AA
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\raw
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/raw
   name: legato_imagedecoder_raw.h
-  physicalPath: gfx\legato\image\raw
+  physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: HEADER
   userChecksum: B81AA9C48BB7A1416D0D25EC35D5A2AA
 - generatedChecksum: 47A67BD8B145601637452E0047D104CD
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\core
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/core
   name: legato_input.h
-  physicalPath: gfx\legato\core
+  physicalPath: gfx/legato/core
   security: NON_SECURE
   type: HEADER
   userChecksum: 47A67BD8B145601637452E0047D104CD
 - generatedChecksum: 762C92704327F16E64BA44BFB203A6E6
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\datastructure
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/datastructure
   name: legato_list.h
-  physicalPath: gfx\legato\datastructure
+  physicalPath: gfx/legato/datastructure
   security: NON_SECURE
   type: HEADER
   userChecksum: 762C92704327F16E64BA44BFB203A6E6
 - generatedChecksum: 5A155613C6E3BD1248189A7585F9AF0D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_math.h
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: HEADER
   userChecksum: 5A155613C6E3BD1248189A7585F9AF0D
 - generatedChecksum: BEB3F3D63025ED8FA62EF5752BF851B0
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\memory
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/memory
   name: legato_memory.h
-  physicalPath: gfx\legato\memory
+  physicalPath: gfx/legato/memory
   security: NON_SECURE
   type: HEADER
   userChecksum: BEB3F3D63025ED8FA62EF5752BF851B0
 - generatedChecksum: E06D754A5AFC61E5C2F7954EC89FDDCC
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image
   name: legato_palette.h
-  physicalPath: gfx\legato\image
+  physicalPath: gfx/legato/image
   security: NON_SECURE
   type: HEADER
   userChecksum: E06D754A5AFC61E5C2F7954EC89FDDCC
 - generatedChecksum: D04F42C4BDF251F652FB931F1A34A52C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_pixelbuffer.h
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: HEADER
   userChecksum: D04F42C4BDF251F652FB931F1A34A52C
 - generatedChecksum: 9E276EF2015D1F1A5E491CC936FD9DC1
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\radiobutton
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/radiobutton
   name: legato_radiobutton_group.h
-  physicalPath: gfx\legato\widget\radiobutton
+  physicalPath: gfx/legato/widget/radiobutton
   security: NON_SECURE
   type: HEADER
   userChecksum: 9E276EF2015D1F1A5E491CC936FD9DC1
 - generatedChecksum: 7578127311E17F9429A0B685EC9EEC97
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_rect.h
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: HEADER
   userChecksum: 7578127311E17F9429A0B685EC9EEC97
 - generatedChecksum: F96F7917094EBDD9921EA20737D7FC3B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\datastructure
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/datastructure
   name: legato_rectarray.h
-  physicalPath: gfx\legato\datastructure
+  physicalPath: gfx/legato/datastructure
   security: NON_SECURE
   type: HEADER
   userChecksum: F96F7917094EBDD9921EA20737D7FC3B
-- generatedChecksum: F5536C6CB211C4D900A1D86BE9BC8ADA
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\renderer
+- generatedChecksum: 822155984303B5FD15335E8707044FEE
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/renderer
   name: legato_renderer.h
-  physicalPath: gfx\legato\renderer
+  physicalPath: gfx/legato/renderer
   security: NON_SECURE
   type: HEADER
-  userChecksum: F5536C6CB211C4D900A1D86BE9BC8ADA
-- generatedChecksum: 8DE4FBC5FE1338053AAC6B23F9554D2F
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\core
+  userChecksum: 822155984303B5FD15335E8707044FEE
+- generatedChecksum: 5FCB3049984A9867B372F0F9303FAF08
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/core
   name: legato_scheme.h
-  physicalPath: gfx\legato\core
+  physicalPath: gfx/legato/core
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8DE4FBC5FE1338053AAC6B23F9554D2F
+  userChecksum: 5FCB3049984A9867B372F0F9303FAF08
 - generatedChecksum: 27E2986E39A7E7CEF850B1023C0B3EB4
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\core
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/core
   name: legato_state.h
-  physicalPath: gfx\legato\core
+  physicalPath: gfx/legato/core
   security: NON_SECURE
   type: HEADER
   userChecksum: 27E2986E39A7E7CEF850B1023C0B3EB4
-- generatedChecksum: CB5AF592F872E94656BCB5A2D31A5B43
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\core
+- generatedChecksum: 641A7B01ED0FC02F380666A7E19BF1FA
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/core
   name: legato_stream.h
-  physicalPath: gfx\legato\core
+  physicalPath: gfx/legato/core
   security: NON_SECURE
   type: HEADER
-  userChecksum: CB5AF592F872E94656BCB5A2D31A5B43
+  userChecksum: 641A7B01ED0FC02F380666A7E19BF1FA
 - generatedChecksum: 6AEF5FC0FC2CD30713AC5F8947101B2D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_string.h
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: HEADER
   userChecksum: 6AEF5FC0FC2CD30713AC5F8947101B2D
 - generatedChecksum: 820FD03AC923CFD43C2506C70B19F783
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_string_renderer.h
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: HEADER
   userChecksum: 820FD03AC923CFD43C2506C70B19F783
 - generatedChecksum: BD15246AF6C9A8FFF816F29D2C3DCDDC
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_stringtable.h
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: HEADER
   userChecksum: BD15246AF6C9A8FFF816F29D2C3DCDDC
 - generatedChecksum: 6729534E5E4135F693D358A4D3FE72B8
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_stringutils.h
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: HEADER
   userChecksum: 6729534E5E4135F693D358A4D3FE72B8
 - generatedChecksum: AD73789EC166A514CEB5D3A58A9A3897
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\string
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/string
   name: legato_tablestring.h
-  physicalPath: gfx\legato\string
+  physicalPath: gfx/legato/string
   security: NON_SECURE
   type: HEADER
   userChecksum: AD73789EC166A514CEB5D3A58A9A3897
 - generatedChecksum: D3234BFBF6F6A81B7C1C71B35E8DEB74
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\common
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/common
   name: legato_utils.h
-  physicalPath: gfx\legato\common
+  physicalPath: gfx/legato/common
   security: NON_SECURE
   type: HEADER
   userChecksum: D3234BFBF6F6A81B7C1C71B35E8DEB74
 - generatedChecksum: 17E34C88F31AE0B00F5EBBDD4CC4D8F0
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\memory
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/memory
   name: legato_variableheap.h
-  physicalPath: gfx\legato\memory
+  physicalPath: gfx/legato/memory
   security: NON_SECURE
   type: HEADER
   userChecksum: 17E34C88F31AE0B00F5EBBDD4CC4D8F0
 - generatedChecksum: 6370BE961A73E0203F53FB06A650D0A0
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget
   name: legato_widget.h
-  physicalPath: gfx\legato\widget
+  physicalPath: gfx/legato/widget
   security: NON_SECURE
   type: HEADER
   userChecksum: 6370BE961A73E0203F53FB06A650D0A0
 - generatedChecksum: C0448E9B842F142F56295C3C6AF2D471
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\arc
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/arc
   name: legato_widget_arc.h
-  physicalPath: gfx\legato\widget\arc
+  physicalPath: gfx/legato/widget/arc
   security: NON_SECURE
   type: HEADER
   userChecksum: C0448E9B842F142F56295C3C6AF2D471
 - generatedChecksum: 2EBAB8757A7C6AF496542296CC80307B
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\bargraph
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/bargraph
   name: legato_widget_bar_graph.h
-  physicalPath: gfx\legato\widget\bargraph
+  physicalPath: gfx/legato/widget/bargraph
   security: NON_SECURE
   type: HEADER
   userChecksum: 2EBAB8757A7C6AF496542296CC80307B
 - generatedChecksum: B1CB1F67E0E4D9311BC532E6B6BD3907
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\button
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/button
   name: legato_widget_button.h
-  physicalPath: gfx\legato\widget\button
+  physicalPath: gfx/legato/widget/button
   security: NON_SECURE
   type: HEADER
   userChecksum: B1CB1F67E0E4D9311BC532E6B6BD3907
 - generatedChecksum: 43CDD2F674AB491DB54D5ED2262C978D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\checkbox
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/checkbox
   name: legato_widget_checkbox.h
-  physicalPath: gfx\legato\widget\checkbox
+  physicalPath: gfx/legato/widget/checkbox
   security: NON_SECURE
   type: HEADER
   userChecksum: 43CDD2F674AB491DB54D5ED2262C978D
 - generatedChecksum: 3761B2661F5F40BAEBC08AB004EF61DA
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\circle
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/circle
   name: legato_widget_circle.h
-  physicalPath: gfx\legato\widget\circle
+  physicalPath: gfx/legato/widget/circle
   security: NON_SECURE
   type: HEADER
   userChecksum: 3761B2661F5F40BAEBC08AB004EF61DA
 - generatedChecksum: E47FC9FA3ECD9F66671A6E89AF08DA8A
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\circulargauge
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/circulargauge
   name: legato_widget_circular_gauge.h
-  physicalPath: gfx\legato\widget\circulargauge
+  physicalPath: gfx/legato/widget/circulargauge
   security: NON_SECURE
   type: HEADER
   userChecksum: E47FC9FA3ECD9F66671A6E89AF08DA8A
 - generatedChecksum: 2ACA91ABCA3945B56C9F20A0A3A54CD3
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\circularslider
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/circularslider
   name: legato_widget_circular_slider.h
-  physicalPath: gfx\legato\widget\circularslider
+  physicalPath: gfx/legato/widget/circularslider
   security: NON_SECURE
   type: HEADER
   userChecksum: 2ACA91ABCA3945B56C9F20A0A3A54CD3
 - generatedChecksum: 1764775B7C2A7E69671079612E23943F
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\drawsurface
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/drawsurface
   name: legato_widget_drawsurface.h
-  physicalPath: gfx\legato\widget\drawsurface
+  physicalPath: gfx/legato/widget/drawsurface
   security: NON_SECURE
   type: HEADER
   userChecksum: 1764775B7C2A7E69671079612E23943F
 - generatedChecksum: 63B32E97BE8DE20B6300FD3F47D91055
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\gradient
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/gradient
   name: legato_widget_gradient.h
-  physicalPath: gfx\legato\widget\gradient
+  physicalPath: gfx/legato/widget/gradient
   security: NON_SECURE
   type: HEADER
   userChecksum: 63B32E97BE8DE20B6300FD3F47D91055
 - generatedChecksum: D8129C08C17C5D7A2F45B984749B746D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\groupbox
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/groupbox
   name: legato_widget_groupbox.h
-  physicalPath: gfx\legato\widget\groupbox
+  physicalPath: gfx/legato/widget/groupbox
   security: NON_SECURE
   type: HEADER
   userChecksum: D8129C08C17C5D7A2F45B984749B746D
 - generatedChecksum: ECD94FF5C399154A64FB54F2D9DB2E97
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\image
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/image
   name: legato_widget_image.h
-  physicalPath: gfx\legato\widget\image
+  physicalPath: gfx/legato/widget/image
   security: NON_SECURE
   type: HEADER
   userChecksum: ECD94FF5C399154A64FB54F2D9DB2E97
 - generatedChecksum: 8AEF553BA23CF20DBD3AD048741EB535
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\imagerotate
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/imagerotate
   name: legato_widget_imagerotate.h
-  physicalPath: gfx\legato\widget\imagerotate
+  physicalPath: gfx/legato/widget/imagerotate
   security: NON_SECURE
   type: HEADER
   userChecksum: 8AEF553BA23CF20DBD3AD048741EB535
 - generatedChecksum: 48794E46195FB67FE5F77D7A36798A99
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\imagescale
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/imagescale
   name: legato_widget_imagescale.h
-  physicalPath: gfx\legato\widget\imagescale
+  physicalPath: gfx/legato/widget/imagescale
   security: NON_SECURE
   type: HEADER
   userChecksum: 48794E46195FB67FE5F77D7A36798A99
 - generatedChecksum: 311B28E997063D065FC561FB64322809
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\imagesequence
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/imagesequence
   name: legato_widget_imagesequence.h
-  physicalPath: gfx\legato\widget\imagesequence
+  physicalPath: gfx/legato/widget/imagesequence
   security: NON_SECURE
   type: HEADER
   userChecksum: 311B28E997063D065FC561FB64322809
 - generatedChecksum: E4388D5D0402AE9906331FD264181E96
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\keypad
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/keypad
   name: legato_widget_keypad.h
-  physicalPath: gfx\legato\widget\keypad
+  physicalPath: gfx/legato/widget/keypad
   security: NON_SECURE
   type: HEADER
   userChecksum: E4388D5D0402AE9906331FD264181E96
 - generatedChecksum: 6CBAA1A97C7A86D8D7064CD4E6857DF7
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\label
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/label
   name: legato_widget_label.h
-  physicalPath: gfx\legato\widget\label
+  physicalPath: gfx/legato/widget/label
   security: NON_SECURE
   type: HEADER
   userChecksum: 6CBAA1A97C7A86D8D7064CD4E6857DF7
 - generatedChecksum: 75D40482DFCFEA8720D3B9B63AB0D5B1
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\line
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/line
   name: legato_widget_line.h
-  physicalPath: gfx\legato\widget\line
+  physicalPath: gfx/legato/widget/line
   security: NON_SECURE
   type: HEADER
   userChecksum: 75D40482DFCFEA8720D3B9B63AB0D5B1
 - generatedChecksum: 15E48B5CFC564739184424CAF813009F
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\linegraph
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/linegraph
   name: legato_widget_line_graph.h
-  physicalPath: gfx\legato\widget\linegraph
+  physicalPath: gfx/legato/widget/linegraph
   security: NON_SECURE
   type: HEADER
   userChecksum: 15E48B5CFC564739184424CAF813009F
 - generatedChecksum: 20DEECB16B121DE01E32528E80BE0A19
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\list
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/list
   name: legato_widget_list.h
-  physicalPath: gfx\legato\widget\list
+  physicalPath: gfx/legato/widget/list
   security: NON_SECURE
   type: HEADER
   userChecksum: 20DEECB16B121DE01E32528E80BE0A19
 - generatedChecksum: 82FE46F1DF1B9AC483E059C47B216832
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\listwheel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/listwheel
   name: legato_widget_listwheel.h
-  physicalPath: gfx\legato\widget\listwheel
+  physicalPath: gfx/legato/widget/listwheel
   security: NON_SECURE
   type: HEADER
   userChecksum: 82FE46F1DF1B9AC483E059C47B216832
 - generatedChecksum: B3CFADE028AFEA439223906E776FCF7A
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\piechart
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/piechart
   name: legato_widget_pie_chart.h
-  physicalPath: gfx\legato\widget\piechart
+  physicalPath: gfx/legato/widget/piechart
   security: NON_SECURE
   type: HEADER
   userChecksum: B3CFADE028AFEA439223906E776FCF7A
 - generatedChecksum: 9A4F6EA7452116DEA9425C1B15691DDF
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\progressbar
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/progressbar
   name: legato_widget_progressbar.h
-  physicalPath: gfx\legato\widget\progressbar
+  physicalPath: gfx/legato/widget/progressbar
   security: NON_SECURE
   type: HEADER
   userChecksum: 9A4F6EA7452116DEA9425C1B15691DDF
 - generatedChecksum: 502D2A03014465D16BB691EA9EA2A93A
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\radialmenu
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/radialmenu
   name: legato_widget_radial_menu.h
-  physicalPath: gfx\legato\widget\radialmenu
+  physicalPath: gfx/legato/widget/radialmenu
   security: NON_SECURE
   type: HEADER
   userChecksum: 502D2A03014465D16BB691EA9EA2A93A
 - generatedChecksum: CF44E658CC8F3A2D92F2BF72D59412C2
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\radiobutton
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/radiobutton
   name: legato_widget_radiobutton.h
-  physicalPath: gfx\legato\widget\radiobutton
+  physicalPath: gfx/legato/widget/radiobutton
   security: NON_SECURE
   type: HEADER
   userChecksum: CF44E658CC8F3A2D92F2BF72D59412C2
 - generatedChecksum: 3C64F6DBD82AD09E12CE486F7FC2E55D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\rectangle
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/rectangle
   name: legato_widget_rectangle.h
-  physicalPath: gfx\legato\widget\rectangle
+  physicalPath: gfx/legato/widget/rectangle
   security: NON_SECURE
   type: HEADER
   userChecksum: 3C64F6DBD82AD09E12CE486F7FC2E55D
 - generatedChecksum: 9E239CE183C03029B1B8CB7F22835A09
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\scrollbar
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/scrollbar
   name: legato_widget_scrollbar.h
-  physicalPath: gfx\legato\widget\scrollbar
+  physicalPath: gfx/legato/widget/scrollbar
   security: NON_SECURE
   type: HEADER
   userChecksum: 9E239CE183C03029B1B8CB7F22835A09
 - generatedChecksum: 90BED9F488814E692D3DF063E7F6D702
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget
   name: legato_widget_skin_classic_common.h
-  physicalPath: gfx\legato\widget
+  physicalPath: gfx/legato/widget
   security: NON_SECURE
   type: HEADER
   userChecksum: 90BED9F488814E692D3DF063E7F6D702
 - generatedChecksum: 0B4EA51F3089D2E99738AB1110E7A4E8
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\slider
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/slider
   name: legato_widget_slider.h
-  physicalPath: gfx\legato\widget\slider
+  physicalPath: gfx/legato/widget/slider
   security: NON_SECURE
   type: HEADER
   userChecksum: 0B4EA51F3089D2E99738AB1110E7A4E8
 - generatedChecksum: ADBC052CC601B3458A18AF005369E632
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\textfield
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/textfield
   name: legato_widget_textfield.h
-  physicalPath: gfx\legato\widget\textfield
+  physicalPath: gfx/legato/widget/textfield
   security: NON_SECURE
   type: HEADER
   userChecksum: ADBC052CC601B3458A18AF005369E632
 - generatedChecksum: 888705E272E58B0AB066BC8FDC136020
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\touchtest
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/touchtest
   name: legato_widget_touchtest.h
-  physicalPath: gfx\legato\widget\touchtest
+  physicalPath: gfx/legato/widget/touchtest
   security: NON_SECURE
   type: HEADER
   userChecksum: 888705E272E58B0AB066BC8FDC136020
 - generatedChecksum: 997EF7032EF79E6E4F8721CCA15A744E
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\widget\window
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/widget/window
   name: legato_widget_window.h
-  physicalPath: gfx\legato\widget\window
+  physicalPath: gfx/legato/widget/window
   security: NON_SECURE
   type: HEADER
   userChecksum: 997EF7032EF79E6E4F8721CCA15A744E
 - generatedChecksum: 288C8B8C00AA685CA12FE4166B2306B9
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\gfx\legato\image\png
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/png
   name: lodepng.h
-  physicalPath: gfx\legato\image\png
+  physicalPath: gfx/legato/image/png
   security: NON_SECURE
   type: HEADER
   userChecksum: 288C8B8C00AA685CA12FE4166B2306B9
 - generatedChecksum: ABD464764186AE4836FB2BCB9C7D662A
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: mclk.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: ABD464764186AE4836FB2BCB9C7D662A
 - generatedChecksum: 691A43DB105AD7CEAEACF671AAD08A1E
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: mclk.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 691A43DB105AD7CEAEACF671AAD08A1E
 - generatedChecksum: B96ADDA2C111E73B26EBA5E7B4498912
-  logicalPath: packs\CMSIS\CMSIS\Core\Include
+  logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: mpu_armv7.h
-  physicalPath: ..\..\packs\CMSIS\CMSIS\Core\Include
+  physicalPath: ../../packs/CMSIS/CMSIS/Core/Include
   security: NON_SECURE
   type: HEADER
   userChecksum: B96ADDA2C111E73B26EBA5E7B4498912
 - generatedChecksum: 68019AD8B2DBAC8DDCC995886D6F9929
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: nvmctrl.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 68019AD8B2DBAC8DDCC995886D6F9929
 - generatedChecksum: 23E2139BE0D8510E13AC47925AA31B08
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: nvmctrl.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 23E2139BE0D8510E13AC47925AA31B08
 - generatedChecksum: F0AD88762263B7CB89B02AB4F5876059
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\osal
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/osal
   name: osal.h
   physicalPath: osal
   security: NON_SECURE
   type: HEADER
   userChecksum: F0AD88762263B7CB89B02AB4F5876059
 - generatedChecksum: 0AC88C49E4585B606FD5AC6804F0C340
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\osal
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/osal
   name: osal_definitions.h
   physicalPath: osal
   security: NON_SECURE
   type: HEADER
   userChecksum: 0AC88C49E4585B606FD5AC6804F0C340
 - generatedChecksum: B040122CCA94A0636810D6F15F13B751
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\osal
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/osal
   name: osal_impl_basic.h
   physicalPath: osal
   security: NON_SECURE
   type: HEADER
   userChecksum: B040122CCA94A0636810D6F15F13B751
 - generatedChecksum: 7F77DEF36DE028EEA68BA801B00D46FB
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: osc32kctrl.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 7F77DEF36DE028EEA68BA801B00D46FB
 - generatedChecksum: 8E02A9813153EFDF921A6E858CBB3C88
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: osc32kctrl.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 8E02A9813153EFDF921A6E858CBB3C88
 - generatedChecksum: 3B66320F1CC8418F3767D5934EA458A7
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: oscctrl.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 3B66320F1CC8418F3767D5934EA458A7
 - generatedChecksum: E3FD05FBB7497DE43100147FF3342570
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: oscctrl.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: E3FD05FBB7497DE43100147FF3342570
 - generatedChecksum: A83A43C251309E6B3F59A7DBB8AFE73B
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: pac.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: A83A43C251309E6B3F59A7DBB8AFE73B
 - generatedChecksum: 979C8D57CEF1A2BE9D4622EE32A639CD
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: pac.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 979C8D57CEF1A2BE9D4622EE32A639CD
 - generatedChecksum: 7BBB8C1CE4A15B9131E9AC9F8A5724B1
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: pcc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 7BBB8C1CE4A15B9131E9AC9F8A5724B1
 - generatedChecksum: B851166216CB3695EB45A250B78BE00B
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: pcc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: B851166216CB3695EB45A250B78BE00B
 - generatedChecksum: 04368AC9F8DC8C2FA7289688A5BEB1E5
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: pdec.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 04368AC9F8DC8C2FA7289688A5BEB1E5
 - generatedChecksum: 9C6F1AA77503899E185BE198BD92F4B0
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: pdec.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 9C6F1AA77503899E185BE198BD92F4B0
 - generatedChecksum: 550622C61F7164B3DBB20D380B088BFC
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\ccl
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/ccl
   name: plib_ccl.h
-  physicalPath: peripheral\ccl
+  physicalPath: peripheral/ccl
   security: NON_SECURE
   type: HEADER
   userChecksum: 550622C61F7164B3DBB20D380B088BFC
 - generatedChecksum: 0416F129713FDF989ACC1FC57065125C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\clock
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/clock
   name: plib_clock.h
-  physicalPath: peripheral\clock
+  physicalPath: peripheral/clock
   security: NON_SECURE
   type: HEADER
   userChecksum: 0416F129713FDF989ACC1FC57065125C
 - generatedChecksum: 95A89CFFC2B67EA718036EF9B8805872
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\cmcc
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/cmcc
   name: plib_cmcc.h
-  physicalPath: peripheral\cmcc
+  physicalPath: peripheral/cmcc
   security: NON_SECURE
   type: HEADER
   userChecksum: 95A89CFFC2B67EA718036EF9B8805872
 - generatedChecksum: 17B4E969FEF64548F99710BE00445133
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\dmac
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/dmac
   name: plib_dmac.h
-  physicalPath: peripheral\dmac
+  physicalPath: peripheral/dmac
   security: NON_SECURE
   type: HEADER
   userChecksum: 17B4E969FEF64548F99710BE00445133
 - generatedChecksum: CCAEF942C66AF995876DFD85CEFF611F
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\evsys
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/evsys
   name: plib_evsys.h
-  physicalPath: peripheral\evsys
+  physicalPath: peripheral/evsys
   security: NON_SECURE
   type: HEADER
   userChecksum: CCAEF942C66AF995876DFD85CEFF611F
 - generatedChecksum: 55ECCC7FA71BD15B46EF80DC0515ED7A
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\nvic
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/nvic
   name: plib_nvic.h
-  physicalPath: peripheral\nvic
+  physicalPath: peripheral/nvic
   security: NON_SECURE
   type: HEADER
   userChecksum: 55ECCC7FA71BD15B46EF80DC0515ED7A
 - generatedChecksum: FD895019D50FEFCD49D89FCE2B0D9BBB
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\nvmctrl
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/nvmctrl
   name: plib_nvmctrl.h
-  physicalPath: peripheral\nvmctrl
+  physicalPath: peripheral/nvmctrl
   security: NON_SECURE
   type: HEADER
   userChecksum: FD895019D50FEFCD49D89FCE2B0D9BBB
 - generatedChecksum: 44894DC1765ADB5C483D98A2FCB25AB9
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\port
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/port
   name: plib_port.h
-  physicalPath: peripheral\port
+  physicalPath: peripheral/port
   security: NON_SECURE
   type: HEADER
   userChecksum: 44894DC1765ADB5C483D98A2FCB25AB9
 - generatedChecksum: 2EB20A4F0102639D472B23313F20C6AB
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\sercom\i2c_master
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/sercom/i2c_master
   name: plib_sercom4_i2c_master.h
-  physicalPath: peripheral\sercom\i2c_master
+  physicalPath: peripheral/sercom/i2c_master
   security: NON_SECURE
   type: HEADER
   userChecksum: 2EB20A4F0102639D472B23313F20C6AB
 - generatedChecksum: 555AC09B32F566FBFB0A0505CF73ABD6
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\sercom\i2c_master
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/sercom/i2c_master
   name: plib_sercom_i2c_master_common.h
-  physicalPath: peripheral\sercom\i2c_master
+  physicalPath: peripheral/sercom/i2c_master
   security: NON_SECURE
   type: HEADER
   userChecksum: 555AC09B32F566FBFB0A0505CF73ABD6
 - generatedChecksum: 8D0960B1F9AEC2A8F11E66FA2A6B010D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\tc
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/tc
   name: plib_tc0.h
-  physicalPath: peripheral\tc
+  physicalPath: peripheral/tc
   security: NON_SECURE
   type: HEADER
   userChecksum: 8D0960B1F9AEC2A8F11E66FA2A6B010D
 - generatedChecksum: 3FE34BF0B211EBC7267A1318D6D48E4E
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\tc
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/tc
   name: plib_tc1.h
-  physicalPath: peripheral\tc
+  physicalPath: peripheral/tc
   security: NON_SECURE
   type: HEADER
   userChecksum: 3FE34BF0B211EBC7267A1318D6D48E4E
 - generatedChecksum: B6D09D4497DF1D6900A6F699DC9F41C0
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\tc
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/tc
   name: plib_tc4.h
-  physicalPath: peripheral\tc
+  physicalPath: peripheral/tc
   security: NON_SECURE
   type: HEADER
   userChecksum: B6D09D4497DF1D6900A6F699DC9F41C0
 - generatedChecksum: C0A6E5B99D379FC08247B5FA465A54B3
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\peripheral\tc
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/peripheral/tc
   name: plib_tc_common.h
-  physicalPath: peripheral\tc
+  physicalPath: peripheral/tc
   security: NON_SECURE
   type: HEADER
   userChecksum: C0A6E5B99D379FC08247B5FA465A54B3
 - generatedChecksum: 355A935E7095DA5401A27E668BE2CA33
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: pm.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 355A935E7095DA5401A27E668BE2CA33
 - generatedChecksum: 6A6AA1951314295812A22B0EABF66196
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: pm.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 6A6AA1951314295812A22B0EABF66196
 - generatedChecksum: 477C4D2EB15944D4481855756AB772F7
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: port.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 477C4D2EB15944D4481855756AB772F7
 - generatedChecksum: 99023BA274402D89312A076853B17954
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: port.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 99023BA274402D89312A076853B17954
 - generatedChecksum: 1FCA40F624996D08988CC6BAD8FEE2DE
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: pukcc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 1FCA40F624996D08988CC6BAD8FEE2DE
 - generatedChecksum: 5CFB3B2CB27861A279C9D438A31564BE
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: qspi.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 5CFB3B2CB27861A279C9D438A31564BE
 - generatedChecksum: 67EDAD1249B45A14BFCEA3907272830E
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: qspi.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 67EDAD1249B45A14BFCEA3907272830E
 - generatedChecksum: E6ABC65223ED32454451D6504B7A833E
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: ramecc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: E6ABC65223ED32454451D6504B7A833E
 - generatedChecksum: 72FD3A13DD1DA7E3AB0200B84581349E
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: ramecc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 72FD3A13DD1DA7E3AB0200B84581349E
 - generatedChecksum: 322D807C476B0C1156976ADBA81205D9
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: rstc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 322D807C476B0C1156976ADBA81205D9
 - generatedChecksum: B353389B9AA96B98C3F0BA901F6B8E56
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: rstc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: B353389B9AA96B98C3F0BA901F6B8E56
 - generatedChecksum: E993A21DF7C3EF395BC123D93F8D3106
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: rtc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: E993A21DF7C3EF395BC123D93F8D3106
 - generatedChecksum: C83140A060AF763334983DB9E018675D
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: rtc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: C83140A060AF763334983DB9E018675D
 - generatedChecksum: A07D9B612C01FDA9BE974FB90A282ACF
-  logicalPath: packs\ATSAME54P20A_DFP
+  logicalPath: packs/ATSAME54P20A_DFP
   name: same54p20a.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP
+  physicalPath: ../../packs/ATSAME54P20A_DFP
   security: NON_SECURE
   type: HEADER
   userChecksum: A07D9B612C01FDA9BE974FB90A282ACF
 - generatedChecksum: 406DE56451FAFD7E27CF9CB9322AC8B3
-  logicalPath: packs\ATSAME54P20A_DFP\pio
+  logicalPath: packs/ATSAME54P20A_DFP/pio
   name: same54p20a.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\pio
+  physicalPath: ../../packs/ATSAME54P20A_DFP/pio
   security: NON_SECURE
   type: HEADER
   userChecksum: 406DE56451FAFD7E27CF9CB9322AC8B3
 - generatedChecksum: 84C277820474A75ED73DA107AC675BD6
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: sdhc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 84C277820474A75ED73DA107AC675BD6
 - generatedChecksum: 50F27C1A35C5BFA28D7DB56119B261D2
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: sdhc0.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 50F27C1A35C5BFA28D7DB56119B261D2
 - generatedChecksum: 6221CCE1E3DD773D1426CE7C1433EB45
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: sdhc1.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 6221CCE1E3DD773D1426CE7C1433EB45
 - generatedChecksum: FEC78AFD2163B24AECE5D3F011DF645F
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: sercom.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: FEC78AFD2163B24AECE5D3F011DF645F
 - generatedChecksum: 7604A8A8B80FBCE92D05A16DBB3AA879
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: sercom0.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 7604A8A8B80FBCE92D05A16DBB3AA879
 - generatedChecksum: 6055D131202DEDA19F3616E34AF5D433
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: sercom1.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 6055D131202DEDA19F3616E34AF5D433
 - generatedChecksum: 8DA8340A9C005947E891885DB6965BDA
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: sercom2.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 8DA8340A9C005947E891885DB6965BDA
 - generatedChecksum: F308BF12750E9CA5D642850459D079A4
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: sercom3.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: F308BF12750E9CA5D642850459D079A4
 - generatedChecksum: 0DD2279B458769F8FF73DB55893BF67F
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: sercom4.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 0DD2279B458769F8FF73DB55893BF67F
 - generatedChecksum: C2C3041A911F059DB0ED8134BAEA2D06
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: sercom5.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: C2C3041A911F059DB0ED8134BAEA2D06
 - generatedChecksum: 9C55F796C7829591F4FFFA41FA2D155A
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: sercom6.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 9C55F796C7829591F4FFFA41FA2D155A
 - generatedChecksum: 6DD7FB90983D5FF812420FD0D102BACB
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: sercom7.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 6DD7FB90983D5FF812420FD0D102BACB
 - generatedChecksum: AEDAA55D4824D24D34354510BBEB2E3D
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: supc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: AEDAA55D4824D24D34354510BBEB2E3D
 - generatedChecksum: 7FE321E5DFCDE77ADDE0BA7509523CCD
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: supc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 7FE321E5DFCDE77ADDE0BA7509523CCD
 - generatedChecksum: AFAAF7D896D57569CA4CF73BB3339481
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\cache
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/cache
   name: sys_cache.h
-  physicalPath: system\cache
+  physicalPath: system/cache
   security: NON_SECURE
   type: HEADER
   userChecksum: AFAAF7D896D57569CA4CF73BB3339481
 - generatedChecksum: 6BB6C54C5CD963A5A940CF7BB28F4E10
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\debug
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/debug
   name: sys_debug.h
-  physicalPath: system\debug
+  physicalPath: system/debug
   security: NON_SECURE
   type: HEADER
   userChecksum: 6BB6C54C5CD963A5A940CF7BB28F4E10
 - generatedChecksum: 533CEADA23BA3DB1FDC642E71682110D
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\input
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/input
   name: sys_input.h
-  physicalPath: system\input
+  physicalPath: system/input
   security: NON_SECURE
   type: HEADER
   userChecksum: 533CEADA23BA3DB1FDC642E71682110D
 - generatedChecksum: 326B45D18D7A6BB4B2D1E0FCF50EF176
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\input
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/input
   name: sys_input_gesture.h
-  physicalPath: system\input
+  physicalPath: system/input
   security: NON_SECURE
   type: HEADER
   userChecksum: 326B45D18D7A6BB4B2D1E0FCF50EF176
 - generatedChecksum: A254F5CC3DD63C1432666958260CADAB
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\input
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/input
   name: sys_input_keyboard.h
-  physicalPath: system\input
+  physicalPath: system/input
   security: NON_SECURE
   type: HEADER
   userChecksum: A254F5CC3DD63C1432666958260CADAB
 - generatedChecksum: 34162E1DCA132A3EAB3767F529CFD195
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\input
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/input
   name: sys_input_listener.h
-  physicalPath: system\input
+  physicalPath: system/input
   security: NON_SECURE
   type: HEADER
   userChecksum: 34162E1DCA132A3EAB3767F529CFD195
 - generatedChecksum: 9B0AB7A5A79745BE5AEC37B9A14D7090
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\input
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/input
   name: sys_input_mouse.h
-  physicalPath: system\input
+  physicalPath: system/input
   security: NON_SECURE
   type: HEADER
   userChecksum: 9B0AB7A5A79745BE5AEC37B9A14D7090
 - generatedChecksum: 6012C94D59E0E69145C089AB1F736C28
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\input
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/input
   name: sys_input_touch.h
-  physicalPath: system\input
+  physicalPath: system/input
   security: NON_SECURE
   type: HEADER
   userChecksum: 6012C94D59E0E69145C089AB1F736C28
 - generatedChecksum: 1329D2DEB6E5AC9515AD4D165C60DC74
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\int
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/int
   name: sys_int.h
-  physicalPath: system\int
+  physicalPath: system/int
   security: NON_SECURE
   type: HEADER
   userChecksum: 1329D2DEB6E5AC9515AD4D165C60DC74
 - generatedChecksum: 00278F169FFB0CBBAB3A68B5D647F093
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\int
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/int
   name: sys_int_mapping.h
-  physicalPath: system\int
+  physicalPath: system/int
   security: NON_SECURE
   type: HEADER
   userChecksum: 00278F169FFB0CBBAB3A68B5D647F093
 - generatedChecksum: 466D676839280C0E7FC2CC6F78BA6EE9
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\time
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/time
   name: sys_time.h
-  physicalPath: system\time
+  physicalPath: system/time
   security: NON_SECURE
   type: HEADER
   userChecksum: 466D676839280C0E7FC2CC6F78BA6EE9
 - generatedChecksum: 125CB4EFA4E80BCD6041E8AC22F2E2FC
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\time
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/time
   name: sys_time_definitions.h
-  physicalPath: system\time
+  physicalPath: system/time
   security: NON_SECURE
   type: HEADER
   userChecksum: 125CB4EFA4E80BCD6041E8AC22F2E2FC
 - generatedChecksum: 62F39464265EC34979649F761FB4FE57
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system\time
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system/time
   name: sys_time_local.h
-  physicalPath: system\time\src
+  physicalPath: system/time/src
   security: NON_SECURE
   type: HEADER
   userChecksum: 62F39464265EC34979649F761FB4FE57
 - generatedChecksum: BE95B4F134C5C929787B9DA6FDBF3501
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system
   name: system.h
   physicalPath: system
   security: NON_SECURE
   type: HEADER
   userChecksum: BE95B4F134C5C929787B9DA6FDBF3501
 - generatedChecksum: C3F5136D520DAC4416512EBFCCA023C3
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system
   name: system_common.h
   physicalPath: system
   security: NON_SECURE
   type: HEADER
   userChecksum: C3F5136D520DAC4416512EBFCCA023C3
 - generatedChecksum: 1C75A8A6B60598A2FD0D533F57839B72
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel\system
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel/system
   name: system_module.h
   physicalPath: system
   security: NON_SECURE
   type: HEADER
   userChecksum: 1C75A8A6B60598A2FD0D533F57839B72
 - generatedChecksum: 933F43E98345310486EB55024AE22C8A
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: tc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 933F43E98345310486EB55024AE22C8A
 - generatedChecksum: 0CF3D0ED4CA4A57C65BE54BE9B096040
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: tc0.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 0CF3D0ED4CA4A57C65BE54BE9B096040
 - generatedChecksum: E44AA910E5E5BC5F8552DF21EA363797
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: tc1.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: E44AA910E5E5BC5F8552DF21EA363797
 - generatedChecksum: 1F6AE0E33AF5284A7084A8F234A1ACFB
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: tc2.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 1F6AE0E33AF5284A7084A8F234A1ACFB
 - generatedChecksum: 252F425A064CF6C5D9C1B9903297DE1E
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: tc3.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 252F425A064CF6C5D9C1B9903297DE1E
 - generatedChecksum: 1FEACDDED9B2A189682A1AA0AABA10C3
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: tc4.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 1FEACDDED9B2A189682A1AA0AABA10C3
 - generatedChecksum: 8C3DEE4ECB5908A7483DC9256036EB7A
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: tc5.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 8C3DEE4ECB5908A7483DC9256036EB7A
 - generatedChecksum: A37183945215BD178F7FC9B4800D0CA8
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: tc6.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: A37183945215BD178F7FC9B4800D0CA8
 - generatedChecksum: 84CC0296D20D8080FD8EC8770D081B82
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: tc7.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 84CC0296D20D8080FD8EC8770D081B82
 - generatedChecksum: A4D9FCDB4DB6B68E79AF9C6A6EB84324
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: tcc.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: A4D9FCDB4DB6B68E79AF9C6A6EB84324
 - generatedChecksum: 81EE89C96816B9AFF7850E8644C5278E
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: tcc0.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 81EE89C96816B9AFF7850E8644C5278E
 - generatedChecksum: A0B62B9B3BBCE1E41DCE126538972DEA
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: tcc1.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: A0B62B9B3BBCE1E41DCE126538972DEA
 - generatedChecksum: 973368BBCFC49732F6FD83740490869D
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: tcc2.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 973368BBCFC49732F6FD83740490869D
 - generatedChecksum: EEB43DB784F7409FFA92CE574FB6DE5B
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: tcc3.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: EEB43DB784F7409FFA92CE574FB6DE5B
 - generatedChecksum: 195EBF50B59CE07E3F39CD39DF4FA8FE
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: tcc4.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: 195EBF50B59CE07E3F39CD39DF4FA8FE
 - generatedChecksum: 3448B62FDF48416310C7CED2A0A37D1C
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: toolchain_specifics.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
   userChecksum: 3448B62FDF48416310C7CED2A0A37D1C
 - generatedChecksum: 9BAA095FD13BD9C7A4DE9C557A5853FA
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: trng.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 9BAA095FD13BD9C7A4DE9C557A5853FA
 - generatedChecksum: D2DE9CF6C07EADF0F1DDB64517B728B6
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: trng.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: D2DE9CF6C07EADF0F1DDB64517B728B6
 - generatedChecksum: 6731910581AB359B9F9B7F2FF3989553
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: usb.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: 6731910581AB359B9F9B7F2FF3989553
 - generatedChecksum: FD54BA5947D17FB12598032BAB482DCC
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: usb.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: FD54BA5947D17FB12598032BAB482DCC
 - generatedChecksum: null
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: user.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
   userChecksum: null
 - generatedChecksum: F5BB5BF684CF04E45383E4B8D309A483
-  logicalPath: packs\ATSAME54P20A_DFP\component
+  logicalPath: packs/ATSAME54P20A_DFP/component
   name: wdt.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\component
+  physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
   userChecksum: F5BB5BF684CF04E45383E4B8D309A483
 - generatedChecksum: B8E26B847638826781229BAD5D3065F9
-  logicalPath: packs\ATSAME54P20A_DFP\instance
+  logicalPath: packs/ATSAME54P20A_DFP/instance
   name: wdt.h
-  physicalPath: ..\..\packs\ATSAME54P20A_DFP\instance
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
   userChecksum: B8E26B847638826781229BAD5D3065F9
 - generatedChecksum: 7273D96796B104217B3D0E2B05456324
-  logicalPath: config\ili9488_rgb565_e54_cult_parallel
+  logicalPath: config/ili9488_rgb565_e54_cult_parallel
   name: ATSAME54P20A.ld
   physicalPath: ''
   security: NON_SECURE

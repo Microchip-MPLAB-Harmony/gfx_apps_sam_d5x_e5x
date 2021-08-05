@@ -48,4 +48,4 @@ children:
         children:
         - {type: Value, value: gpu_driver}
 - type: ElementPosition
-  attributes: {x: '487', y: '306', id: le_gfx_virtual_gpu}
+  attributes: {x: '496', y: '309', id: le_gfx_virtual_gpu}

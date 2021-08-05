@@ -74,6 +74,9 @@
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg/legato_imagedecoder_jpeg.h</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg/legato_imagedecoder_jpeg_common.h</itemPath>
                 </logicalFolder>
+                <logicalFolder name="f4" displayName="mono" projectFiles="true">
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono/legato_imagedecoder_mono.h</itemPath>
+                </logicalFolder>
                 <logicalFolder name="f3" displayName="png" projectFiles="true">
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/png/legato_imagedecoder_png.h</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/png/lodepng.h</itemPath>
@@ -511,6 +514,11 @@
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg/legato_imagedecoder_jpeg_common.c</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg/jidctint.c</itemPath>
                 </logicalFolder>
+                <logicalFolder name="f4" displayName="mono" projectFiles="true">
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono/legato_imagedecoder_mono.c</itemPath>
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono/legato_imagedecoder_mono_read_internal.c</itemPath>
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono/legato_imagedecoder_mono_read_stream.c</itemPath>
+                </logicalFolder>
                 <logicalFolder name="f3" displayName="png" projectFiles="true">
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/png/legato_imagedecoder_png.c</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/png/lodepng.c</itemPath>
@@ -804,11 +812,11 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.50</languageToolchainVersion>
+        <languageToolchainVersion>3.00</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAME54_DFP" vendor="Microchip" version="3.2.56"/>
+        <pack name="SAME54_DFP" vendor="Microchip" version="3.3.64"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
       </packs>
       <ScriptingSettings>
@@ -999,6 +1007,8 @@
       </C32Global>
       <EdbgTool>
         <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="arm.use_vtor" value="false"/>
+        <property key="arm.vtor_adr" value="exception_table"/>
         <property key="communication.activationmode" value="nohv"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.speed" value="2.000"/>
@@ -1008,6 +1018,8 @@
         <property key="firmware.toolpack"
                   value="Press to select which tool pack to use"/>
         <property key="firmware.update.action" value="firmware.update.use.latest"/>
+        <property key="freeze.timers" value="false"/>
+        <property key="lastid" value=""/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
         <property key="memories.configurationmemory" value="true"/>
@@ -1021,9 +1033,8 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-fffff"/>
+        <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="/home/rhone/work/h3/harmony_gfx_apps_sam_d5x_e5x/apps/legato_benchmark/firmware/legato_bm_e54_cu_cpro_parallel.X/debug/ili9488_rgb565_e54_cult_parallel/legato_bm_e54_cu_cpro_parallel_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
@@ -1034,6 +1045,9 @@
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.preserveuserid" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
+        <property key="script.log_level" value="0"/>
+        <property key="script.reset_delay" value="0"/>
+        <property key="script.show_output" value="false"/>
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.uselatestoolpack"/>
         <property key="toolpack.updateoptions.packversion"

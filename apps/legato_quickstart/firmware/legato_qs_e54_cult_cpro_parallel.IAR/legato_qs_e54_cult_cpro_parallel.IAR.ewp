@@ -2266,6 +2266,12 @@
                                         <name>$PROJ_DIR$\..\src\config\ili9488_rgb565_e54_cult_parallel_iar\gfx\legato\image\png\lodepng.h</name>
                                     </file>
                                 </group>
+                                <group>
+                                    <name>mono</name>
+                                    <file>
+                                        <name>$PROJ_DIR$\..\src\config\ili9488_rgb565_e54_cult_parallel_iar\gfx\legato\image\mono\legato_imagedecoder_mono.h</name>
+                                    </file>
+                                </group>
                                 <file>
                                     <name>$PROJ_DIR$\..\src\config\ili9488_rgb565_e54_cult_parallel_iar\gfx\legato\image\legato_image_utils.h</name>
                                 </file>
@@ -3281,6 +3287,18 @@
                                     </file>
                                     <file>
                                         <name>$PROJ_DIR$\..\src\config\ili9488_rgb565_e54_cult_parallel_iar\gfx\legato\image\png\lodepng.c</name>
+                                    </file>
+                                </group>
+                                <group>
+                                    <name>mono</name>
+                                    <file>
+                                        <name>$PROJ_DIR$\..\src\config\ili9488_rgb565_e54_cult_parallel_iar\gfx\legato\image\mono\legato_imagedecoder_mono.c</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\..\src\config\ili9488_rgb565_e54_cult_parallel_iar\gfx\legato\image\mono\legato_imagedecoder_mono_read_internal.c</name>
+                                    </file>
+                                    <file>
+                                        <name>$PROJ_DIR$\..\src\config\ili9488_rgb565_e54_cult_parallel_iar\gfx\legato\image\mono\legato_imagedecoder_mono_read_stream.c</name>
                                     </file>
                                 </group>
                                 <file>

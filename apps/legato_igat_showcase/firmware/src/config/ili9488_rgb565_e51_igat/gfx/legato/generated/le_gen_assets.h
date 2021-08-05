@@ -61,11 +61,6 @@ extern const lePalette leGlobalPalette;
 /*****************************************************************************
  * Legato Graphics Asset Location IDs
  *****************************************************************************/
-/*********************************
- * Legato Asset Memory Location
- * Name:          QSPI_XIP
- ***********************************/
-#define LE_STREAM_LOCATION_ID_QSPI_XIP    1
 
 /*****************************************************************************
  * Legato Graphics Image Assets

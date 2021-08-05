@@ -336,6 +336,19 @@ children:
 - type: Attachments
   children:
   - type: DirectDependency
+    attributes: {id: Graphics Display}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: gfx_disp_generic}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: gfx_display}
+  - type: DirectDependency
     attributes: {id: Parallel Display Interface}
     children:
     - type: Attributes
@@ -362,4 +375,4 @@ children:
         children:
         - {type: Value, value: gfx_driver}
 - type: ElementPosition
-  attributes: {x: '523', y: '328', id: le_gfx_driver_external}
+  attributes: {x: '616', y: '309', id: le_gfx_driver_external}

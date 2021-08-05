@@ -21,4 +21,4 @@ children:
         children:
         - {type: Value, value: 'false'}
 - type: ElementPosition
-  attributes: {x: '61', y: '515', id: drv_usbfs_v1}
+  attributes: {x: '46', y: '539', id: drv_usbfs_v1}

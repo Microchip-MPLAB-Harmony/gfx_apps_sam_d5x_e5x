@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_MGScrn.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leWidget* MGScrn_PanelWidget3;
 leWidget* MGScrn_PanelWidget2;

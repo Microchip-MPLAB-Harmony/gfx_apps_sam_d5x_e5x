@@ -51,7 +51,7 @@
 #include "plib_sdhc_common.h"
 
 #define SDHC1_DMA_NUM_DESCR_LINES        1
-#define SDHC1_BASE_CLOCK_FREQUENCY       120000000
+#define SDHC1_BASE_CLOCK_FREQUENCY       100000000
 #define SDHC1_MAX_BLOCK_SIZE                   0x200
 
 static       SDHC_ADMA_DESCR sdhc1DmaDescrTable[SDHC1_DMA_NUM_DESCR_LINES] __ALIGNED(32);

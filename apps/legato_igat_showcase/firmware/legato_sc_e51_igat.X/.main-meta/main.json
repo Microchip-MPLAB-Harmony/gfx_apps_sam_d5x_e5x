@@ -1,0 +1,85 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.gfx_apps_sam_d5x_e5x_legato_igat_showcase_legato_sc_e51_igat",
+		"version": "3.9.2",
+		"displayName": "Legato Showcase Demonstration for SAM E51 Integrated Graphics and Touch Development Kit",
+		"projectName": "legato_sc_e51_igat",
+		"shortDescription": "This demonstration showcases the touch and graphics features of the SAM E51 Integrated Graphics and Touch Evaluation Kit",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.45.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.50.0"
+			}
+		],
+		"dfp": {
+			"name": "SAME51_DFP",
+			"semverRange": "^3.2.56"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.6.2"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "ATSAME51J20A",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit", "SAM E51 Integrated Graphics and Touch Evaluation Kit"
+			],
+			[
+				"Harmony", "Middleware", "Graphics", "Legato", "LEGATO_IGAT_SHOWCASE"
+			],
+			[
+				"Middleware", "Graphics", "Legato", "LEGATO_IGAT_SHOWCASE"
+			]
+		],
+		"peripherals": [
+			"External Display Controller",
+			"Touch",
+			"PTC",
+			"QSPI"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"Middleware",
+			"Graphics",
+			"ATSAME51J20A",
+			"SAM D5x/E5x Family",
+			"Memory",
+			"Legato",
+			"External Display Controller",
+			"Touch",
+			"PTC",
+			"QSPI",
+			"Touch",
+			"IGAT",
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

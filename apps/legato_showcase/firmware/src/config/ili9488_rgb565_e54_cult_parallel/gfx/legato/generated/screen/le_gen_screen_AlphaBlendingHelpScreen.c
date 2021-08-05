@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_AlphaBlendingHelpScreen.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leWidget* AlphaBlendingHelpScreen_PanelWidget7;
 leButtonWidget* AlphaBlendingHelpScreen_AlphaHelpCloseButton;

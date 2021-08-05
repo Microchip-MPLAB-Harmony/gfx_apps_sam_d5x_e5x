@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_MainMenu.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leGradientWidget* MainMenu_GradientWidget1;
 leButtonWidget* MainMenu_ListwheelDemoMenuButton;

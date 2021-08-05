@@ -40,15 +40,13 @@ The following applications are provided to demonstrate a subset of the capabilit
 
 | Category | Item | Description | Release Type |
 | --- | --- | ---- |---- |
-|  apps | [legato_adventure](./apps/legato_adventure/readme.md) | Parallax and sprite animation example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
-|     | [legato_benchmark](./apps/legato_benchmark/readme.md) | Performance utility example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
-|     | [legato_cooker](./apps/legato_cooker/readme.md) | Appliance cooker UI example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
-|     | [legato_flash](./apps/legato_flash/readme.md) |  Flash writer example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
-|     | [legato_monitor](./apps/legato_monitor/readme.md) | Health monitor example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
-|     | [legato_quickstart](./apps/legato_quickstart/readme.md) | Legato UI library quickstart example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
-|     | [legato_quickstart_ext_res](./apps/legato_quickstart_ext_res/readme.md) | Legato UI library external resource example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic)|
-|     | [legato_showcase](./apps/legato_showcase/readme.md) | Widgets and advance capabilities example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
-|     | [legato_igat_showcase](./apps/legato_igat_showcase/readme.md) | Advanced graphics with Integrated touch example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
+|  apps | [legato_benchmark](./apps/legato_benchmark/readme.md) | Performance measuring utility example | ![app-beta](https://img.shields.io/badge/application-release-blue?style=plastic) |
+|     | [legato_flash](./apps/legato_flash/readme.md) |  Flash writer example | ![app-beta](https://img.shields.io/badge/application-release-blue?style=plastic) |
+|     | [legato_quickstart](./apps/legato_quickstart/readme.md) | Legato UI library quickstart example | ![app-beta](https://img.shields.io/badge/application-release-blue?style=plastic) |
+|     | [legato_quickstart_ext_res](./apps/legato_quickstart_ext_res/readme.md) | Legato UI library external resource example | ![app-beta](https://img.shields.io/badge/application-release-blue?style=plastic)|
+|     | [legato_showcase](./apps/legato_showcase/readme.md) | Widgets and advance capabilities example | ![app-beta](https://img.shields.io/badge/application-release-blue?style=plastic) |
+|     | [legato_igat_showcase](./apps/legato_igat_showcase/readme.md) | Advanced graphics with Integrated touch example | ![app-beta](https://img.shields.io/badge/application-release-blue?style=plastic) |
+|     | [legato_showcase_plus](./apps/legato_showcase_plus/readme.md) | Advacned graphics demonstration | ![app-beta](https://img.shields.io/badge/application-release-blue?style=plastic) |
 
 
 ## Graphics application examples (Blank)
@@ -57,7 +55,7 @@ The following applications are provided to demonstrate the ability for the Harmo
 
 | Category | Item | Description | Release Type |
 | --- | --- | ---- |---- |
-| apps | [blank_quickstart](./apps/blank_quickstart/readme.md) | Blank UI-less library quickstart example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
+| apps | [blank_quickstart](./apps/blank_quickstart/readme.md) | Blank UI-less library quickstart example | ![app-beta](https://img.shields.io/badge/application-release-blue?style=plastic) |
 
 
 ____

@@ -29,6 +29,17 @@
               <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/driver/sst26/src/drv_sst26_local.h</itemPath>
               <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/driver/sst26/drv_sst26_definitions.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="f2" displayName="usb" projectFiles="true">
+              <logicalFolder name="f1" displayName="usbfsv1" projectFiles="true">
+                <logicalFolder name="f1" displayName="src" projectFiles="true">
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/driver/usb/usbfsv1/src/drv_usbfsv1_variant_mapping.h</itemPath>
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/driver/usb/usbfsv1/src/drv_usbfsv1_local.h</itemPath>
+                </logicalFolder>
+                <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/driver/usb/usbfsv1/drv_usbfsv1.h</itemPath>
+              </logicalFolder>
+              <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/driver/usb/drv_usb.h</itemPath>
+              <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/driver/usb/drv_usb_external_dependencies.h</itemPath>
+            </logicalFolder>
             <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/driver/driver.h</itemPath>
             <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/driver/driver_common.h</itemPath>
           </logicalFolder>
@@ -80,6 +91,9 @@
                 <logicalFolder name="f2" displayName="jpeg" projectFiles="true">
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg/legato_imagedecoder_jpeg.h</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg/legato_imagedecoder_jpeg_common.h</itemPath>
+                </logicalFolder>
+                <logicalFolder name="f4" displayName="mono" projectFiles="true">
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono/legato_imagedecoder_mono.h</itemPath>
                 </logicalFolder>
                 <logicalFolder name="f3" displayName="png" projectFiles="true">
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/png/legato_imagedecoder_png.h</itemPath>
@@ -261,7 +275,6 @@
             <logicalFolder name="f2" displayName="tc" projectFiles="true">
               <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/peripheral/tc/plib_tc_common.h</itemPath>
               <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/peripheral/tc/plib_tc0.h</itemPath>
-              <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/peripheral/tc/plib_tc4.h</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f3" displayName="system" projectFiles="true">
@@ -308,6 +321,25 @@
             <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/system/system_common.h</itemPath>
             <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/system/system_module.h</itemPath>
             <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/system/system_media.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f4" displayName="usb" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/src/usb_host_local.h</itemPath>
+              <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/src/usb_host_hub_mapping.h</itemPath>
+              <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/src/usb_external_dependencies.h</itemPath>
+              <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/src/usb_host_msd_local.h</itemPath>
+              <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/src/usb_host_scsi_local.h</itemPath>
+            </logicalFolder>
+            <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/usb_host.h</itemPath>
+            <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/usb_common.h</itemPath>
+            <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/usb_chapter_9.h</itemPath>
+            <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/usb_host_client_driver.h</itemPath>
+            <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/usb_host_hub_interface.h</itemPath>
+            <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/usb_hub.h</itemPath>
+            <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/usb_host_msd.h</itemPath>
+            <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/usb_host_scsi.h</itemPath>
+            <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/usb_msd.h</itemPath>
+            <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/scsi.h</itemPath>
           </logicalFolder>
           <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/device.h</itemPath>
           <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/user.h</itemPath>
@@ -486,6 +518,14 @@
             <logicalFolder name="f5" displayName="sst26" projectFiles="true">
               <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/driver/sst26/src/drv_sst26.c</itemPath>
             </logicalFolder>
+            <logicalFolder name="f2" displayName="usb" projectFiles="true">
+              <logicalFolder name="f1" displayName="usbfsv1" projectFiles="true">
+                <logicalFolder name="f1" displayName="src" projectFiles="true">
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/driver/usb/usbfsv1/src/drv_usbfsv1.c</itemPath>
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/driver/usb/usbfsv1/src/drv_usbfsv1_host.c</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+            </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f5" displayName="gfx" projectFiles="true">
             <logicalFolder name="f3" displayName="driver" projectFiles="true">
@@ -551,6 +591,11 @@
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg/legato_imagedecoder_jpeg.c</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg/legato_imagedecoder_jpeg_common.c</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg/jidctint.c</itemPath>
+                </logicalFolder>
+                <logicalFolder name="f4" displayName="mono" projectFiles="true">
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono/legato_imagedecoder_mono.c</itemPath>
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono/legato_imagedecoder_mono_read_internal.c</itemPath>
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono/legato_imagedecoder_mono_read_stream.c</itemPath>
                 </logicalFolder>
                 <logicalFolder name="f3" displayName="png" projectFiles="true">
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/png/legato_imagedecoder_png.c</itemPath>
@@ -770,7 +815,6 @@
             </logicalFolder>
             <logicalFolder name="f2" displayName="tc" projectFiles="true">
               <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/peripheral/tc/plib_tc0.c</itemPath>
-              <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/peripheral/tc/plib_tc4.c</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f6" displayName="stdio" projectFiles="true">
@@ -805,12 +849,20 @@
               <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/system/time/src/sys_time.c</itemPath>
             </logicalFolder>
           </logicalFolder>
+          <logicalFolder name="f4" displayName="usb" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/src/usb_host.c</itemPath>
+              <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/src/usb_host_msd.c</itemPath>
+              <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb/src/usb_host_scsi.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
           <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/tasks.c</itemPath>
           <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/initialization.c</itemPath>
           <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/interrupts.c</itemPath>
           <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/exceptions.c</itemPath>
           <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/startup_xc32.c</itemPath>
           <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/libc_syscalls.c</itemPath>
+          <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/usb_host_init_data.c</itemPath>
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/hexdecoder.c</itemPath>
@@ -831,6 +883,7 @@
         <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/drv_i2c.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/drv_sdmmc.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/drv_sst26.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/drv_usbfs_v1.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/evsys.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/gfx_disp_mxt_cpro_320x480.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/gfx_hal_le.yml</itemPath>
@@ -851,7 +904,8 @@
         <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/sys_input.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/sys_time.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/tc0.yml</itemPath>
-        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/tc4.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/usb_host.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/ili9488_rgb565_e54_cult_parallel.mhc/usb_host_msd.yml</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/harmony-manifest-success.yml</itemPath>
@@ -870,7 +924,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.50</languageToolchainVersion>
+        <languageToolchainVersion>3.01</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -1590,6 +1644,47 @@
                   value=""/>
         <property key="warningmessagebreakoptions.warningmessages" value="holdstate"/>
       </Simulator>
+      <Tool>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="communication.activationmode" value="nohv"/>
+        <property key="communication.interface" value="swd"/>
+        <property key="communication.speed" value="2.000"/>
+        <property key="debugoptions.useswbreakpoints" value="true"/>
+        <property key="firmware.path"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="firmware.toolpack"
+                  value="Press to select which tool pack to use"/>
+        <property key="firmware.update.action" value="firmware.update.use.latest"/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.configurationmemory2" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.exclude.configurationmemory" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="0-fffff"/>
+        <property key="poweroptions.powerenable" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value="0-47001fff"/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.programuserotp" value="false"/>
+        <property key="toolpack.updateoptions"
+                  value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion"
+                  value="Press to select which tool pack to use"/>
+        <property key="voltagevalue" value=""/>
+      </Tool>
     </conf>
   </confs>
 </configurationDescriptor>

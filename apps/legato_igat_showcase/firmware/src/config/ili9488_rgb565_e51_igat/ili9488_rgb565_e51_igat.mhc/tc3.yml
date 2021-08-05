@@ -162,4 +162,4 @@ children:
         children:
         - {type: Value, value: '65.536'}
 - type: ElementPosition
-  attributes: {x: '21', y: '306', id: tc3}
+  attributes: {x: '7', y: '303', id: tc3}

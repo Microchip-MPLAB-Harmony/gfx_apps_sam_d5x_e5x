@@ -71,6 +71,9 @@
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg/legato_imagedecoder_jpeg.h</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg/legato_imagedecoder_jpeg_common.h</itemPath>
                 </logicalFolder>
+                <logicalFolder name="f4" displayName="mono" projectFiles="true">
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono/legato_imagedecoder_mono.h</itemPath>
+                </logicalFolder>
                 <logicalFolder name="f3" displayName="png" projectFiles="true">
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/png/legato_imagedecoder_png.h</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/png/lodepng.h</itemPath>
@@ -505,6 +508,11 @@
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg/legato_imagedecoder_jpeg.c</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg/legato_imagedecoder_jpeg_common.c</itemPath>
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/jpeg/jidctint.c</itemPath>
+                </logicalFolder>
+                <logicalFolder name="f4" displayName="mono" projectFiles="true">
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono/legato_imagedecoder_mono.c</itemPath>
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono/legato_imagedecoder_mono_read_internal.c</itemPath>
+                  <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/mono/legato_imagedecoder_mono_read_stream.c</itemPath>
                 </logicalFolder>
                 <logicalFolder name="f3" displayName="png" projectFiles="true">
                   <itemPath>../src/config/ili9488_rgb565_e54_cult_parallel/gfx/legato/image/png/legato_imagedecoder_png.c</itemPath>

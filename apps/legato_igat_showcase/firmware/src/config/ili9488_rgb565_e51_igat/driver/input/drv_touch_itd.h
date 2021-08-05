@@ -48,7 +48,7 @@
 //DOM-IGNORE-END
 
 #define TOUCH_SCREEN_WIDTH 480
-#define TOUCH_SCREEN_HEIGHT 320
+#define TOUCH_SCREEN_HEIGHT 272
 
 #define TOUCH_SCREEN_WIDTH_EDGE_ADJUST 0
 #define TOUCH_SCREEN_HEIGHT_EDGE_ADJUST 0
@@ -62,11 +62,12 @@
 
 #define GESTURES_ENABLED 1
 #define FLIP_Y  1
-        
+
 #define TAP_SINGLE				(TAP | 0x01u)
 #define DOUBLE_TAP_SINGLE       (TAP | 0x02u)
 #define SINGLE_TAP_DUAL         (TAP_DUAL | 0x01u)
 #define DOUBLE_TAP_DUAL         (TAP_DUAL | 0x02u)
+
 
 typedef enum
 {

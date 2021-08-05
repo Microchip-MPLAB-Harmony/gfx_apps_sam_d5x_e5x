@@ -5,7 +5,7 @@ nav_order: 99
 
 # ![MPLAB® Harmony Graphics Suite](./docs/html/mhgs.png) Microchip MPLAB® Harmony 3 Graphics application examples for SAM D5x/E5x Family
 
-## Harmony 3 Graphics application examples for SAM D5x/E5x family v3.9.1
+## Harmony 3 Graphics application examples for SAM D5x/E5x family v3.9.2
 
 ### Development kit and demo application support
 
@@ -13,7 +13,19 @@ Following table provides number of peripheral library examples available for dif
 
 | Development Kits  | MPLABx applications |
 |:-----------------:|:-------------------:|
-| [SAM E54 Curiosity Ultra Development Board](https://www.microchip.com/Developmenttools/ProductDetails/DM320210)     | 13 |
+| [SAM E54 Curiosity Ultra Development Board](https://www.microchip.com/Developmenttools/ProductDetails/DM320210)     | 9 |
+| [SAM E51 Integrated Graphics and Touch Development Board](https://www.microchip.com/developmenttools/ProductDetails/EV14C17A)     | 2 |
+
+## Release v3.9.2
+
+### New Features
+
+New features added in this release are as follows:
+
+- Added **Legato Showcase Plus** for the SAM E54 Curiosity Ultra Development Board
+- **Legato Cooker**, **Legato Adventure** and **Legato Monitor** are removed as their features are replicated in **Legato Showcase Plus**
+- USB MSD reader support added to **Legato Flash**
+
 
 ## Release v3.9.1
 
@@ -42,12 +54,12 @@ The current known issues are as follows:
 
 ### Development Tools
 
-- [MPLAB® X IDE v5.45](https://www.microchip.com/mplab/mplab-x-ide)
+- [MPLAB® X IDE v5.50](https://www.microchip.com/mplab/mplab-x-ide)
 - MPLAB® X IDE plug-ins:
-  - MPLAB® Harmony Configurator (MHC) v3.6.5
-- [MPLAB® XC32 C/C++ Compiler v2.50](https://www.microchip.com/mplab/compilers)
+  - MPLAB® Harmony Configurator (MHC) v3.8.0
+- [MPLAB® XC32 C/C++ Compiler v3.01](https://www.microchip.com/mplab/compilers)
 
 ### Dependent Components
 
-* [Harmony 3 GFX v3.9.3](https://github.com/Microchip-MPLAB-Harmony/gfx/releases/tag/v3.9.3)
+* [Harmony 3 GFX v3.9.4](https://github.com/Microchip-MPLAB-Harmony/gfx/releases/tag/v3.9.4)
 * [Harmony 3 TOUCH v3.9.2](https://github.com/Microchip-MPLAB-Harmony/touch/releases/tag/v3.9.2)

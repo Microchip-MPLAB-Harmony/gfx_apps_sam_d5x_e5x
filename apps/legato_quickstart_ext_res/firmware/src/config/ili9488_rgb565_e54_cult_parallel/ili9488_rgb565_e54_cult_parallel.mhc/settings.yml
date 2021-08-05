@@ -1,11 +1,11 @@
 configName: ili9488_rgb565_e54_cult_parallel
 folderName: ''
 format_version: v1.0
-frameworkPath: ../../..
+frameworkPath: ../../../../harmony3_dev
 processor: ATSAME54P20A
 projectName: ''
 settings:
-  PackageFilter: aerospace;audio;bsp;core;csp;gfx;harmony_gfx_apps_pic32mz_da;harmony_gfx_apps_pic32mz_ef;harmony_gfx_apps_sam_9x60;harmony_gfx_apps_sam_a5d2;harmony_gfx_apps_sam_c20_c21;harmony_gfx_apps_sam_d5x_e5x;harmony_gfx_apps_sam_e70_s70_v70_v71;touch;usb
+  PackageFilter: bsp;core;csp;gfx;quick_docs;touch;usb
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
   CMSISPath: .\dev_packs\arm\CMSIS\5.7.0

@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_SlideshowHelpScreen.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leWidget* SlideshowHelpScreen_PanelWidget8;
 leButtonWidget* SlideshowHelpScreen_SlideShowHelpCloseButton;

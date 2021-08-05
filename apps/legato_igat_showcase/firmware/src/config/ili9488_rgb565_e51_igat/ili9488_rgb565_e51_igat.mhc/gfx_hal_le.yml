@@ -24,7 +24,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: le_gfx_driver_external, value: '480'}
+        attributes: {id: le_gfx_driver_external, value: '272'}
       - type: User
         attributes: {value: '320'}
   - type: Integer
@@ -54,7 +54,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: le_gfx_driver_external, value: maXTouch Curiosity Pro}
+        attributes: {id: le_gfx_driver_external, value: Generic Display}
   - type: Boolean
     attributes: {id: DisplayVSYNCNegative}
     children:
@@ -89,7 +89,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: le_gfx_driver_external, value: '320'}
+        attributes: {id: le_gfx_driver_external, value: '480'}
       - type: User
         attributes: {value: '480'}
   - type: String
@@ -112,7 +112,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: le_gfx_driver_external, value: gfx_disp_mxt_cpro_320x480}
+        attributes: {id: le_gfx_driver_external, value: gfx_disp_generic}
   - type: String
     attributes: {id: gfx_driver}
     children:
@@ -121,4 +121,4 @@ children:
       - type: Dynamic
         attributes: {id: le_gfx_driver_external, value: le_gfx_driver_external}
 - type: ElementPosition
-  attributes: {x: '138', y: '303', id: gfx_hal_le}
+  attributes: {x: '31', y: '461', id: gfx_hal_le}

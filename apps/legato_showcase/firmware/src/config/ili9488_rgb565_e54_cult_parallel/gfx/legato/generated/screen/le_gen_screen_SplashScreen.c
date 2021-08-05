@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_SplashScreen.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leWidget* SplashScreen_PanelWidget;
 leImageWidget* SplashScreen_SplashPic32Logo;

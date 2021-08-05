@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_default.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leWidget* default_BackgroundPanel;
 leImageWidget* default_WatermarkImage;

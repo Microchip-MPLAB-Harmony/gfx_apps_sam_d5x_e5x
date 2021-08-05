@@ -80,6 +80,9 @@
 #define SWITCH2_STATE_PRESSED   0
 #define SWITCH2_STATE_RELEASED  1
 
+/*** VBUS Macros for VBUS_AL_PC19 ***/
+#define VBUS_AL_PC19_PowerEnable()         (PORT_REGS->GROUP[2].PORT_OUTCLR = 1 << 19)
+#define VBUS_AL_PC19_PowerDisable()        (PORT_REGS->GROUP[2].PORT_OUTSET = 1 << 19)
 
 
 

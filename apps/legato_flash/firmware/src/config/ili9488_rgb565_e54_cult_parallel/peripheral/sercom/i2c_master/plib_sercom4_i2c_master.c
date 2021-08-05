@@ -60,7 +60,7 @@
 
 
 /* SERCOM4 I2C baud value */
-#define SERCOM4_I2CM_BAUD_VALUE         (0x34U)
+#define SERCOM4_I2CM_BAUD_VALUE         (0x73U)
 
 
 static SERCOM_I2C_OBJ sercom4I2CObj;
@@ -200,7 +200,7 @@ bool SERCOM4_I2C_TransferSetup(SERCOM_I2C_TRANSFER_SETUP* setup, uint32_t srcClk
 
     if( srcClkFreq == 0U)
     {
-        srcClkFreq = 48000000UL;
+        srcClkFreq = 100000000UL;
     }
 
     if (SERCOM4_I2C_CalculateBaudValue(srcClkFreq, i2cClkSpeed, &baudValue) == false)

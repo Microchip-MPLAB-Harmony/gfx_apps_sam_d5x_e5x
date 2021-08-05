@@ -156,10 +156,6 @@ extern void SERCOM7_2_Handler          ( void ) __attribute__((weak, alias("Dumm
 extern void SERCOM7_OTHER_Handler      ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void CAN0_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void CAN1_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
-extern void USB_OTHER_Handler          ( void ) __attribute__((weak, alias("Dummy_Handler")));
-extern void USB_SOF_HSOF_Handler       ( void ) __attribute__((weak, alias("Dummy_Handler")));
-extern void USB_TRCPT0_Handler         ( void ) __attribute__((weak, alias("Dummy_Handler")));
-extern void USB_TRCPT1_Handler         ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void GMAC_Handler               ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void TCC0_OTHER_Handler         ( void ) __attribute__((weak, alias("Dummy_Handler")));
 extern void TCC0_MC0_Handler           ( void ) __attribute__((weak, alias("Dummy_Handler")));
@@ -223,6 +219,7 @@ const H3DeviceVectors exception_table=
 {
     /* Configure Initial Stack Pointer, using linker-generated symbols */
     .pvStack = &_stack,
+
 
     .pfnReset_Handler              = Reset_Handler,
     .pfnNonMaskableInt_Handler     = NonMaskableInt_Handler,
@@ -311,10 +308,10 @@ const H3DeviceVectors exception_table=
     .pfnSERCOM7_OTHER_Handler      = SERCOM7_OTHER_Handler,
     .pfnCAN0_Handler               = CAN0_Handler,
     .pfnCAN1_Handler               = CAN1_Handler,
-    .pfnUSB_OTHER_Handler          = USB_OTHER_Handler,
-    .pfnUSB_SOF_HSOF_Handler       = USB_SOF_HSOF_Handler,
-    .pfnUSB_TRCPT0_Handler         = USB_TRCPT0_Handler,
-    .pfnUSB_TRCPT1_Handler         = USB_TRCPT1_Handler,
+    .pfnUSB_OTHER_Handler          = DRV_USBFSV1_OTHER_Handler,
+    .pfnUSB_SOF_HSOF_Handler       = DRV_USBFSV1_SOF_HSOF_Handler,
+    .pfnUSB_TRCPT0_Handler         = DRV_USBFSV1_TRCPT0_Handler,
+    .pfnUSB_TRCPT1_Handler         = DRV_USBFSV1_TRCPT1_Handler,
     .pfnGMAC_Handler               = GMAC_Handler,
     .pfnTCC0_OTHER_Handler         = TCC0_OTHER_Handler,
     .pfnTCC0_MC0_Handler           = TCC0_MC0_Handler,

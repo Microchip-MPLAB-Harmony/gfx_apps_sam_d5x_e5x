@@ -1,5 +1,8 @@
 
-![](../../../../docs/images/mhgs.png) legato_sc_e51_igat.X
+![](../../../../docs/images/mhgs.png) 
+
+SAME51 IGaT Legato Showcase
+-------------------------
 
 Defining the Architecture
 -------------------------

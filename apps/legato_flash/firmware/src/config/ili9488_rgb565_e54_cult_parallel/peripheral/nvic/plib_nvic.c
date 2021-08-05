@@ -69,6 +69,14 @@ void NVIC_Initialize( void )
     NVIC_EnableIRQ(SERCOM4_2_IRQn);
     NVIC_SetPriority(SERCOM4_OTHER_IRQn, 7);
     NVIC_EnableIRQ(SERCOM4_OTHER_IRQn);
+    NVIC_SetPriority(USB_OTHER_IRQn, 7);
+    NVIC_EnableIRQ(USB_OTHER_IRQn);
+    NVIC_SetPriority(USB_SOF_HSOF_IRQn, 7);
+    NVIC_EnableIRQ(USB_SOF_HSOF_IRQn);
+    NVIC_SetPriority(USB_TRCPT0_IRQn, 7);
+    NVIC_EnableIRQ(USB_TRCPT0_IRQn);
+    NVIC_SetPriority(USB_TRCPT1_IRQn, 7);
+    NVIC_EnableIRQ(USB_TRCPT1_IRQn);
     NVIC_SetPriority(TC0_IRQn, 7);
     NVIC_EnableIRQ(TC0_IRQn);
     NVIC_SetPriority(SDHC1_IRQn, 7);

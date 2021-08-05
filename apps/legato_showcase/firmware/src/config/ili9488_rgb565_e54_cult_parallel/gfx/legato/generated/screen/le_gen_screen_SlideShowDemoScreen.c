@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_SlideShowDemoScreen.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leGradientWidget* SlideShowDemoScreen_GradientWidget6;
 leImageSequenceWidget* SlideShowDemoScreen_ImageSequenceWidget1;

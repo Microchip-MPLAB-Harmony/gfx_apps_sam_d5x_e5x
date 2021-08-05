@@ -5,7 +5,7 @@ frameworkPath: ../../..
 processor: ATSAME54P20A
 projectName: ''
 settings:
-  PackageFilter: bsp;core;cryptoauthlib;csp;gfx;gfx-ed;quick_docs;touch;usb
+  PackageFilter: audio;bsp;core;core_apps_pic32mz_da;core_apps_pic32mz_ef;cryptoauthlib;csp;csp_apps_pic32mz_da;csp_apps_pic32mz_ef;csp_apps_sam_c20_c21;csp_apps_sam_d5x_e5x;csp_apps_sam_e70_s70_v70_v71;gfx;gfx_apps;gfx_apps_pic32mz_da;gfx_apps_pic32mz_ef;gfx_apps_sam_9x60;gfx_apps_sam_a5d2;gfx_apps_sam_c20_c21;gfx_apps_sam_d5x_e5x;gfx_apps_sam_e70_s70_v70_v71;gfx_old;quick_docs;touch;usb;wireless
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
   CMSISPath: .\dev_packs\arm\CMSIS\5.7.0

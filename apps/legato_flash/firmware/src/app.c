@@ -38,6 +38,9 @@
 // *****************************************************************************
 // *****************************************************************************
 
+#define USB_ID      1
+#define SDCARD_ID   2
+
 HexDecoder CACHE_ALIGN dec;
 
 SYS_FS_HANDLE fileHandle;
@@ -46,6 +49,7 @@ char          readChar;
 uint8_t CACHE_ALIGN      writeBuffer[BUFFER_SIZE];
 uint8_t CACHE_ALIGN      verificationBuffer[BUFFER_SIZE];
 
+int32_t       usbDeviceConnected;
 int32_t       sdcardDeviceConnected;
 
 static char number[12];
@@ -70,6 +74,8 @@ static leFixedString counterStr;
 static leFixedString totalStr;
 
 #define FILENAME             "/SQI.hex"
+#define USB_MOUNT_NAME       "/mnt/usb"
+#define USB_DEV_NAME         "/dev/sda1"
 #define SDCARD_MOUNT_NAME       "/mnt/myDrive1"
 #define SDCARD_DEV_NAME         "/dev/mmcblka1"
 
@@ -96,9 +102,24 @@ APP_DATA CACHE_ALIGN appData;
 // *****************************************************************************
 // *****************************************************************************
 
+USB_HOST_EVENT_RESPONSE APP_USBHostEventHandler (USB_HOST_EVENT event,
+                                                 void* eventData,
+                                                 uintptr_t context)
+{
+    switch (event)
+    {
+        case USB_HOST_EVENT_DEVICE_UNSUPPORTED:
+            break;
+        default:
+            break;
+    }
+    
+    return(USB_HOST_EVENT_RESPONSE_NONE);
+}
+
 static void deviceConnectionStateChanged()
 {
-    if((sdcardDeviceConnected != 0) && (appData.state == APP_STATE_DONE))
+    if((usbDeviceConnected != 0 || sdcardDeviceConnected != 0) && (appData.state == APP_STATE_DONE))
     {
         default_ErrorMsgPanel->fn->setVisible(default_ErrorMsgPanel, LE_FALSE);
     }
@@ -107,6 +128,15 @@ static void deviceConnectionStateChanged()
         default_ErrorMsgPanel->fn->setVisible(default_ErrorMsgPanel, LE_TRUE);
     }
 
+    if (usbDeviceConnected != 0)
+    {
+        default_USBButton->fn->setVisible(default_USBButton, LE_TRUE);
+    }
+    else
+    {
+        default_USBButton->fn->setVisible(default_USBButton, LE_FALSE);
+    }
+    
     if (sdcardDeviceConnected != 0)
     {
         default_SDCardButton->fn->setVisible(default_SDCardButton, LE_TRUE);
@@ -125,7 +155,12 @@ void APP_SYSFSEventHandler(SYS_FS_EVENT event,
     {
         case SYS_FS_EVENT_MOUNT:
         {
-            if(strcmp((const char *)eventData, SDCARD_MOUNT_NAME) == 0)
+            if(strcmp((const char *)eventData, USB_MOUNT_NAME) == 0)
+            {
+                usbDeviceConnected = 1;
+                LED1_On();
+            }
+            else if(strcmp((const char *)eventData, SDCARD_MOUNT_NAME) == 0)
             {
                 sdcardDeviceConnected = 1;
                 LED2_On();
@@ -140,7 +175,12 @@ void APP_SYSFSEventHandler(SYS_FS_EVENT event,
         }    
         case SYS_FS_EVENT_UNMOUNT:
         {
-            if(strcmp((const char *)eventData, SDCARD_MOUNT_NAME) == 0)
+            if(strcmp((const char *)eventData, USB_MOUNT_NAME) == 0)
+            {
+                usbDeviceConnected = 0;
+                LED1_Off();
+            }
+            else if(strcmp((const char *)eventData, SDCARD_MOUNT_NAME) == 0)
             {
                 sdcardDeviceConnected = 0;
                 LED2_Off();
@@ -171,13 +211,29 @@ void APP_SDCardButtonPressed(leButtonWidget* btn)
     }
 }
 
+void APP_USBButtonPressed(leButtonWidget* btn)
+{
+    SYS_FS_CurrentDriveSet(USB_MOUNT_NAME);
+
+    fileHandle = SYS_FS_FileOpen( FILENAME, (SYS_FS_FILE_OPEN_READ));
+    
+    if(fileHandle != SYS_FS_HANDLE_INVALID)
+    {
+        appData.state = APP_VALIDATE_FILE;
+    }
+    else
+    {
+        appData.state = APP_FILE_NOT_FOUND;
+    }
+}
+
 void APP_OKButtonPressed(leButtonWidget* btn)
 {
     default_InfoPanel->fn->setVisible(default_InfoPanel, LE_FALSE);
     default_SelectMediumPanel->fn->setVisible(default_SelectMediumPanel, LE_TRUE);
     default_InfoOKButton->fn->setVisible(default_InfoOKButton, LE_FALSE);
-    default_USBButton->fn->setVisible(default_USBButton, LE_FALSE);
-    default_SDCardButton->fn->setVisible(default_SDCardButton, LE_FALSE);
+    default_USBButton->fn->setVisible(default_USBButton, LE_TRUE);
+    default_SDCardButton->fn->setVisible(default_SDCardButton, LE_TRUE);
 
     deviceConnectionStateChanged();
 }
@@ -285,6 +341,8 @@ void APP_Initialize ( void )
     /* Place the App state machine in its initial state. */
     appData.state = APP_STATE_INIT;
 
+    usbDeviceConnected = 0;
+    
     appData.screenShown = false;    
 }
 
@@ -292,6 +350,7 @@ void APP_Initialize ( void )
 void default_OnShow()
 {
     default_SDCardButton->fn->setReleasedEventCallback(default_SDCardButton, &APP_SDCardButtonPressed);
+    default_USBButton->fn->setReleasedEventCallback(default_USBButton, &APP_USBButtonPressed);
     default_InfoOKButton->fn->setReleasedEventCallback(default_InfoOKButton, &APP_OKButtonPressed);
     
     leFixedString_Constructor(&totalStr, totalStrBuff, 12);
@@ -359,7 +418,7 @@ void APP_Tasks ( void )
             }
             else
             {
-                appData.state = APP_STATE_DONE;
+                appData.state = APP_STATE_BUS_ENABLE;
             }
             break;
         }
@@ -379,6 +438,26 @@ void APP_Tasks ( void )
             break;
         }
 
+        case APP_STATE_BUS_ENABLE:
+        {
+            // set the event handler and enable the bus
+            //SYS_FS_EventHandlerSet(&APP_SYSFSEventHandler, (uintptr_t)NULL);
+            USB_HOST_EventHandlerSet(&APP_USBHostEventHandler, 0);
+            USB_HOST_BusEnable(0);
+            
+            appData.state = APP_STATE_WAIT_FOR_BUS_ENABLE_COMPLETE;
+            break;
+        }
+		
+        case APP_STATE_WAIT_FOR_BUS_ENABLE_COMPLETE:
+        {
+            if(USB_HOST_BusIsEnabled(0))
+            {
+                appData.state = APP_STATE_DONE;
+            }
+            break;
+        }
+		
 		case APP_OPEN_FILE:
 		{
 			fileHandle = SYS_FS_FileOpen( FILENAME, SYS_FS_FILE_OPEN_READ);
@@ -591,8 +670,8 @@ void APP_Tasks ( void )
                 leTableString_Constructor(&ts_FlashingComplete, stringID_FlashingComplete); 
                 default_InfoLabel1->fn->setString(default_InfoLabel1, (leString*)&ts_FlashingComplete);
 
-                default_USBButton->fn->setVisible(default_USBButton, LE_FALSE);
-                default_SDCardButton->fn->setVisible(default_SDCardButton, LE_FALSE);
+                default_USBButton->fn->setVisible(default_USBButton, LE_TRUE);
+                default_SDCardButton->fn->setVisible(default_SDCardButton, LE_TRUE);
                 default_InfoLabel1->fn->setVisible(default_InfoLabel1, LE_TRUE);
                 default_InfoLabel2->fn->setVisible(default_InfoLabel2, LE_FALSE);
                 default_InfoOKButton->fn->setVisible(default_InfoOKButton, LE_TRUE);
@@ -736,6 +815,12 @@ void APP_Tasks ( void )
         
 		case APP_STATE_DONE:
         {
+            if( SYS_FS_Mount( USB_DEV_NAME, USB_MOUNT_NAME, FAT, 0, NULL) == SYS_FS_RES_SUCCESS )
+            {
+                usbDeviceConnected = 1;
+                LED1_On();
+            }
+            
             if( SYS_FS_Mount( SDCARD_DEV_NAME, SDCARD_MOUNT_NAME, FAT, 1, NULL) == SYS_FS_RES_SUCCESS )
             {
                 sdcardDeviceConnected = 1;

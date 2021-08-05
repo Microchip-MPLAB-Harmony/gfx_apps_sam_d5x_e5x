@@ -401,6 +401,15 @@ children:
 - type: Attachments
   children:
   - type: DirectCapability
+    attributes: {id: SERCOM0_I2C}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
+  - type: DirectCapability
     attributes: {id: SERCOM0_SPI}
     children:
     - type: Attributes

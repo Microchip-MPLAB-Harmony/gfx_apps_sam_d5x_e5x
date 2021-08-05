@@ -110,7 +110,7 @@ children:
       - type: String
         attributes: {id: text}
         children:
-        - {type: Value, value: '**** Compare Period is 0.5 us ****'}
+        - {type: Value, value: '**** Compare Period is 0.24 us ****'}
   - type: File
     attributes: {id: TC_COMPARE_SOURCE}
     children:
@@ -133,7 +133,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: tc4, value: '48000000'}
+        attributes: {id: tc4, value: '100000000'}
   - type: Combo
     attributes: {id: TC_OPERATION_MODE}
     children:
@@ -149,7 +149,7 @@ children:
       - type: String
         attributes: {id: text}
         children:
-        - {type: Value, value: '****Timer resolution is 20.8333333333 nS****'}
+        - {type: Value, value: '****Timer resolution is 10.0 nS****'}
   - type: File
     attributes: {id: TC_TIMER_HEADER}
     children:
@@ -198,7 +198,7 @@ children:
       - type: Float
         attributes: {id: max}
         children:
-        - {type: Value, value: '0.0053333333'}
+        - {type: Value, value: '0.00256'}
   - type: String
     attributes: {id: TIMER_PERIOD_MAX}
     children:

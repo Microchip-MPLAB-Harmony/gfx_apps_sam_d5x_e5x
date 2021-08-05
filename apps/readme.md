@@ -21,23 +21,19 @@ This is the showcase graphics demonstration on the [SAM E51 Integrated Graphics 
 
 <img src="./../docs/html/legato_sc_e51_igat.png" width="480" height="272" />
 
-* [Legato Cooker](./legato_cooker/readme.md)
 
-This demonstration provides a touch-enabled cooker UI.
+* [Legato Showcase Plus](./legato_showcase_plus/readme.md)
 
-<img src="./../docs/html/legato_cooker.png" width="480" height="272" />
+This is the showcase graphics demonstration on the [SAM E54 Curiosity Ultra Development Board](https://www.microchip.com/Developmenttools/ProductDetails/DM320210)
+
+<img src="./../docs/html/legato_scp_e54_cu.png" width="480" height="272" />
+
 
 * [Legato Quickstart](./legato_quickstart/readme.md)
 
 This demonstration provides a touch-enabled starting point for the legato graphics library.
 
 <img src="./../docs/html/legato_quickstart.png" width="480" height="272" />
-
-* [Legato Monitor](./legato_monitor/readme.md)
-
-The user interface of this application contains dynamic labels that show changing values for systolic pressure, diastolic pressure and pulse rate, very similar to what would be seen on a consumer blood pressure and heartbeat monitor device.
-
-<img src="./../docs/html/legato_monitor.png" width="320" height="480" />
 
 * [Legato Flash](./legato_flash/readme.md)
 
@@ -56,12 +52,6 @@ This demonstration provides a touch-enabled starting point for reading images, s
 This demonstration provides a touch-enabled starting point for reading images, string, and multiple fonts from both internal and external non-volatile memory (NVM).
 
 <img src="./../docs/html/legato_showcase.png" width="480" height="272" />
-
-* [Legato Adventure](./legato_adventure/readme.md)
-
-This application demonstrates sprite animation capabilities using the graphics library.
-
-<img src="./../docs/html/legato_adventure.png" width="480" height="272" />
 
 * [Legato Benchmark](./legato_benchmark/readme.md)
 

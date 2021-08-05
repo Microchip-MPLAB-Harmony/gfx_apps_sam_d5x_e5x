@@ -24,7 +24,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '50'}
+        attributes: {value: '25'}
   - type: KeyValueSet
     attributes: {id: DEF_DEADBAND_PERCENT}
     children:
@@ -38,84 +38,84 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '1'}
+        attributes: {value: '0'}
   - type: KeyValueSet
     attributes: {id: DEF_DIGI_FILT_GAIN1}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '1'}
+        attributes: {value: '0'}
   - type: KeyValueSet
     attributes: {id: DEF_DIGI_FILT_GAIN10}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '1'}
+        attributes: {value: '0'}
   - type: KeyValueSet
     attributes: {id: DEF_DIGI_FILT_GAIN11}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '1'}
+        attributes: {value: '0'}
   - type: KeyValueSet
     attributes: {id: DEF_DIGI_FILT_GAIN2}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '1'}
+        attributes: {value: '0'}
   - type: KeyValueSet
     attributes: {id: DEF_DIGI_FILT_GAIN3}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '1'}
+        attributes: {value: '0'}
   - type: KeyValueSet
     attributes: {id: DEF_DIGI_FILT_GAIN4}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '1'}
+        attributes: {value: '0'}
   - type: KeyValueSet
     attributes: {id: DEF_DIGI_FILT_GAIN5}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '1'}
+        attributes: {value: '0'}
   - type: KeyValueSet
     attributes: {id: DEF_DIGI_FILT_GAIN6}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '1'}
+        attributes: {value: '0'}
   - type: KeyValueSet
     attributes: {id: DEF_DIGI_FILT_GAIN7}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '1'}
+        attributes: {value: '0'}
   - type: KeyValueSet
     attributes: {id: DEF_DIGI_FILT_GAIN8}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '1'}
+        attributes: {value: '0'}
   - type: KeyValueSet
     attributes: {id: DEF_DIGI_FILT_GAIN9}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '1'}
+        attributes: {value: '0'}
   - type: KeyValueSet
     attributes: {id: DEF_DIGI_FILT_OVERSAMPLING0}
     children:
@@ -382,6 +382,90 @@ children:
       children:
       - type: User
         attributes: {value: '5'}
+  - type: KeyValueSet
+    attributes: {id: DEF_NOD_SERIES_RESISTOR0}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '2'}
+  - type: KeyValueSet
+    attributes: {id: DEF_NOD_SERIES_RESISTOR1}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '2'}
+  - type: KeyValueSet
+    attributes: {id: DEF_NOD_SERIES_RESISTOR10}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '2'}
+  - type: KeyValueSet
+    attributes: {id: DEF_NOD_SERIES_RESISTOR11}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '2'}
+  - type: KeyValueSet
+    attributes: {id: DEF_NOD_SERIES_RESISTOR2}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '2'}
+  - type: KeyValueSet
+    attributes: {id: DEF_NOD_SERIES_RESISTOR3}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '2'}
+  - type: KeyValueSet
+    attributes: {id: DEF_NOD_SERIES_RESISTOR4}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '2'}
+  - type: KeyValueSet
+    attributes: {id: DEF_NOD_SERIES_RESISTOR5}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '2'}
+  - type: KeyValueSet
+    attributes: {id: DEF_NOD_SERIES_RESISTOR6}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '2'}
+  - type: KeyValueSet
+    attributes: {id: DEF_NOD_SERIES_RESISTOR7}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '2'}
+  - type: KeyValueSet
+    attributes: {id: DEF_NOD_SERIES_RESISTOR8}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '2'}
+  - type: KeyValueSet
+    attributes: {id: DEF_NOD_SERIES_RESISTOR9}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '2'}
   - type: Integer
     attributes: {id: DEF_POS_HYS}
     children:
@@ -395,84 +479,84 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '18'}
+        attributes: {value: '20'}
   - type: Integer
     attributes: {id: DEF_SENSOR_DET_THRESHOLD1}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '18'}
+        attributes: {value: '20'}
   - type: Integer
     attributes: {id: DEF_SENSOR_DET_THRESHOLD10}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '18'}
+        attributes: {value: '20'}
   - type: Integer
     attributes: {id: DEF_SENSOR_DET_THRESHOLD11}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '18'}
+        attributes: {value: '20'}
   - type: Integer
     attributes: {id: DEF_SENSOR_DET_THRESHOLD2}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '18'}
+        attributes: {value: '20'}
   - type: Integer
     attributes: {id: DEF_SENSOR_DET_THRESHOLD3}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '18'}
+        attributes: {value: '20'}
   - type: Integer
     attributes: {id: DEF_SENSOR_DET_THRESHOLD4}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '18'}
+        attributes: {value: '20'}
   - type: Integer
     attributes: {id: DEF_SENSOR_DET_THRESHOLD5}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '18'}
+        attributes: {value: '20'}
   - type: Integer
     attributes: {id: DEF_SENSOR_DET_THRESHOLD6}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '18'}
+        attributes: {value: '20'}
   - type: Integer
     attributes: {id: DEF_SENSOR_DET_THRESHOLD7}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '18'}
+        attributes: {value: '20'}
   - type: Integer
     attributes: {id: DEF_SENSOR_DET_THRESHOLD8}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '18'}
+        attributes: {value: '20'}
   - type: Integer
     attributes: {id: DEF_SENSOR_DET_THRESHOLD9}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '18'}
+        attributes: {value: '20'}
   - type: Integer
     attributes: {id: DEF_TOUCH_CHARGE_SHARE_DELAY0}
     children:
@@ -493,14 +577,14 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '3'}
+        attributes: {value: '2'}
   - type: Integer
     attributes: {id: DEF_TOUCH_CHARGE_SHARE_DELAY11}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '3'}
+        attributes: {value: '2'}
   - type: Integer
     attributes: {id: DEF_TOUCH_CHARGE_SHARE_DELAY2}
     children:
@@ -528,35 +612,35 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '3'}
+        attributes: {value: '2'}
   - type: Integer
     attributes: {id: DEF_TOUCH_CHARGE_SHARE_DELAY6}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '3'}
+        attributes: {value: '2'}
   - type: Integer
     attributes: {id: DEF_TOUCH_CHARGE_SHARE_DELAY7}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '3'}
+        attributes: {value: '2'}
   - type: Integer
     attributes: {id: DEF_TOUCH_CHARGE_SHARE_DELAY8}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '3'}
+        attributes: {value: '2'}
   - type: Integer
     attributes: {id: DEF_TOUCH_CHARGE_SHARE_DELAY9}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '3'}
+        attributes: {value: '2'}
   - type: Integer
     attributes: {id: DEF_TOUCH_DET_INT}
     children:

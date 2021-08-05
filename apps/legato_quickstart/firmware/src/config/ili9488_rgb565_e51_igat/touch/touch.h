@@ -115,65 +115,67 @@ SUBSTITUTE  GOODS,  TECHNOLOGY,  SERVICES,  OR  ANY  CLAIMS  BY  THIRD   PARTIES
  */
 	
 
+//CUSTOM CODE - DO NOT MODIFY OR REMOVE!!!
 #define NODE_0_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(16), 3, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_2), FILTER_LEVEL_64                   \
+   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(16), 3, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
 
 #define NODE_1_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(15), 3, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_2), FILTER_LEVEL_64                   \
+   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(15), 3, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
 
 #define NODE_2_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(14), 3, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_2), FILTER_LEVEL_64                   \
+   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(14), 3, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
 
 #define NODE_3_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(29), 3, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_2), FILTER_LEVEL_64                   \
+   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(29), 3, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
 
 #define NODE_4_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(28), 3, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_2), FILTER_LEVEL_64                   \
+   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(28), 3, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
 
 #define NODE_5_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(25), Y(16)|Y(15)|Y(14)|Y(29)|Y(28), 3, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_2), FILTER_LEVEL_64                   \
+   X(16)|X(15)|X(14)|X(29)|X(28), Y(25), 2, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
 
 #define NODE_6_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(24), Y(16)|Y(15)|Y(14)|Y(29)|Y(28), 3, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_2), FILTER_LEVEL_64                   \
+   X(16)|X(15)|X(14)|X(29)|X(28), Y(24), 2, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
 
 #define NODE_7_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(21), Y(16)|Y(15)|Y(14)|Y(29)|Y(28), 3, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_2), FILTER_LEVEL_64                   \
+   X(16)|X(15)|X(14)|X(29)|X(28), Y(21), 2, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
 
 #define NODE_8_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(31), Y(16)|Y(15)|Y(14)|Y(29)|Y(28), 3, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_2), FILTER_LEVEL_64                   \
+   X(16)|X(15)|X(14)|X(29)|X(28), Y(31), 2, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
 
 #define NODE_9_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(30), Y(16)|Y(15)|Y(14)|Y(29)|Y(28), 3, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_2), FILTER_LEVEL_64                   \
+   X(16)|X(15)|X(14)|X(29)|X(28), Y(30), 2, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
 
 #define NODE_10_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(18), Y(16)|Y(15)|Y(14)|Y(29)|Y(28), 3, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_2), FILTER_LEVEL_64                   \
+   X(16)|X(15)|X(14)|X(29)|X(28), Y(18), 2, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
 
 #define NODE_11_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(17), Y(16)|Y(15)|Y(14)|Y(29)|Y(28), 3, NODE_RSEL_PRSC(RSEL_VAL_0, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_2), FILTER_LEVEL_64                   \
+   X(16)|X(15)|X(14)|X(29)|X(28), Y(17), 2, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
+//END OF CUSTOM CODE
 
 
 /**********************************************************/
@@ -191,73 +193,73 @@ SUBSTITUTE  GOODS,  TECHNOLOGY,  SERVICES,  OR  ANY  CLAIMS  BY  THIRD   PARTIES
 
 #define KEY_0_PARAMS                                                                                            \
 {                                                                                                              \
-    18, HYST_25, AKS_GROUP_1                       \
+    20, HYST_25, AKS_GROUP_1                       \
 }
 
 
 #define KEY_1_PARAMS                                                                                            \
 {                                                                                                              \
-    18, HYST_25, AKS_GROUP_1                       \
+    20, HYST_25, AKS_GROUP_1                       \
 }
 
 
 #define KEY_2_PARAMS                                                                                            \
 {                                                                                                              \
-    18, HYST_25, AKS_GROUP_1                       \
+    20, HYST_25, AKS_GROUP_1                       \
 }
 
 
 #define KEY_3_PARAMS                                                                                            \
 {                                                                                                              \
-    18, HYST_25, AKS_GROUP_1                       \
+    20, HYST_25, AKS_GROUP_1                       \
 }
 
 
 #define KEY_4_PARAMS                                                                                            \
 {                                                                                                              \
-    18, HYST_25, AKS_GROUP_1                       \
+    20, HYST_25, AKS_GROUP_1                       \
 }
 
 
 #define KEY_5_PARAMS                                                                                            \
 {                                                                                                              \
-    18, HYST_25, AKS_GROUP_1                       \
+    20, HYST_25, AKS_GROUP_1                       \
 }
 
 
 #define KEY_6_PARAMS                                                                                            \
 {                                                                                                              \
-    18, HYST_25, AKS_GROUP_1                       \
+    20, HYST_25, AKS_GROUP_1                       \
 }
 
 
 #define KEY_7_PARAMS                                                                                            \
 {                                                                                                              \
-    18, HYST_25, AKS_GROUP_1                       \
+    20, HYST_25, AKS_GROUP_1                       \
 }
 
 
 #define KEY_8_PARAMS                                                                                            \
 {                                                                                                              \
-    18, HYST_25, AKS_GROUP_1                       \
+    20, HYST_25, AKS_GROUP_1                       \
 }
 
 
 #define KEY_9_PARAMS                                                                                            \
 {                                                                                                              \
-    18, HYST_25, AKS_GROUP_1                       \
+    20, HYST_25, AKS_GROUP_1                       \
 }
 
 
 #define KEY_10_PARAMS                                                                                            \
 {                                                                                                              \
-    18, HYST_25, AKS_GROUP_1                       \
+    20, HYST_25, AKS_GROUP_1                       \
 }
 
 
 #define KEY_11_PARAMS                                                                                            \
 {                                                                                                              \
-    18, HYST_25, AKS_GROUP_1                       \
+    20, HYST_25, AKS_GROUP_1                       \
 }
 
 
@@ -368,7 +370,7 @@ SUBSTITUTE  GOODS,  TECHNOLOGY,  SERVICES,  OR  ANY  CLAIMS  BY  THIRD   PARTIES
  * The minimum contact size measurement for persistent contact tracking.
  * Contact size is the sum of neighbouring keys' touch deltas forming the touch contact.
  */
-#define SURFACE_CS_MIN_CONTACT 50
+#define SURFACE_CS_MIN_CONTACT 25
 
 
 /**********************************************************/

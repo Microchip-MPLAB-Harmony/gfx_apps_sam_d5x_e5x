@@ -1,7 +1,7 @@
 #include "gfx/legato/generated/screen/le_gen_screen_Menu.h"
 
 // screen member widget declarations
-leWidget* root0;
+static leWidget* root0;
 
 leWidget* Menu_PanelWidget0;
 leLabelWidget* Menu_LabelWidget0;
