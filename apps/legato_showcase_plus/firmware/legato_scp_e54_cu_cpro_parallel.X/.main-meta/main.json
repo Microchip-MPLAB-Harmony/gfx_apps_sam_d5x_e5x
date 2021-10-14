@@ -4,10 +4,10 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.gfx_apps_sam_d5x_e5x_legato_showcase_plus_legato_scp_e54_cu_cpro_parallel",
-		"version": "3.9.2",
-		"displayName": "Legato Showcase Demonstration for SAM E51 Integrated Graphics and Touch Development Kit",
+		"version": "3.9.3",
+		"displayName": "Legato Showcase Plus Demonstration for SAM D5x/E5x Family",
 		"projectName": "legato_scp_e54_cu_cpro_parallel",
-		"shortDescription": "This demonstration showcases the touch and graphics features of the SAME51 Integrated Graphics and Touch Evaluation Kit",
+		"shortDescription": "This demonstration showcases the touch guesture and high performance graphics features",
 		"ide": {
 			"name": "MPLABX",
 			"semverRange": ">=5.45.0"

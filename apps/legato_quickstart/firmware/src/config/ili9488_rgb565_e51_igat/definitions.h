@@ -62,6 +62,7 @@
 #include "peripheral/tc/plib_tc0.h"
 #include "system/time/sys_time.h"
 #include "system/input/sys_input.h"
+#include "peripheral/adc/plib_adc0.h"
 #include "peripheral/ccl/plib_ccl.h"
 #include "gfx/driver/controller/external_controller/drv_gfx_external_controller.h"
 #include "system/int/sys_int.h"

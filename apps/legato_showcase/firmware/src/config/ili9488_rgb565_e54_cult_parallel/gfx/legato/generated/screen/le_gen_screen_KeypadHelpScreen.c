@@ -100,6 +100,8 @@ leResult screenShow_KeypadHelpScreen(void)
 
 void screenUpdate_KeypadHelpScreen(void)
 {
+    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+
     KeypadHelpScreen_OnUpdate(); // raise event
 }
 

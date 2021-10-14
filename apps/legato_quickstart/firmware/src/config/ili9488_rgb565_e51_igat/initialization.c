@@ -161,6 +161,7 @@ void SYS_Initialize ( void* data )
 
     TC0_TimerInitialize();
 
+    ADC0_Initialize();
 
 
     drv_touch_itd_init();

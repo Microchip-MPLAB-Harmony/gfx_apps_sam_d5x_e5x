@@ -1,0 +1,36 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: sys_input}
+children:
+- type: Symbols
+  children:
+  - type: Integer
+    attributes: {id: MaxListeners}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '5'}
+  - type: Boolean
+    attributes: {id: RTOSEnabled}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: sys_input, value: 'true'}
+  - type: Integer
+    attributes: {id: RTOSStackSize}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '512'}
+  - type: Integer
+    attributes: {id: RTOSTaskDelay}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '0'}
+- type: ElementPosition
+  attributes: {x: '16', y: '125', id: sys_input}

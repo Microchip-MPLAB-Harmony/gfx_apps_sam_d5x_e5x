@@ -2,6 +2,134 @@ format_version: v1.0
 type: UniqueComponent
 attributes: {id: gfx_disp_generic}
 children:
+- type: Symbols
+  children:
+  - type: Integer
+    attributes: {id: BacklightDisable}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: '0'}
+  - type: Integer
+    attributes: {id: BacklightEnable}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: '1'}
+  - type: Boolean
+    attributes: {id: ChipSelectPolarity}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: 'true'}
+  - type: Boolean
+    attributes: {id: DataEnable}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: 'true'}
+  - type: Boolean
+    attributes: {id: DataEnablePolarity}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: 'true'}
+  - type: Integer
+    attributes: {id: DisplayHeight}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: '320'}
+  - type: Integer
+    attributes: {id: DisplayWidth}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: '480'}
+  - type: Boolean
+    attributes: {id: HSYNCNegative}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: 'false'}
+  - type: Integer
+    attributes: {id: HorzBackPorch}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: '2'}
+  - type: Integer
+    attributes: {id: HorzFrontPorch}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: '2'}
+  - type: Integer
+    attributes: {id: HorzPulseWidth}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: '41'}
+  - type: Boolean
+    attributes: {id: ResetPolarity}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: 'true'}
+  - type: Boolean
+    attributes: {id: UseChipSelect}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: 'true'}
+  - type: Boolean
+    attributes: {id: UseReset}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: 'true'}
+  - type: Boolean
+    attributes: {id: VSYNCNegative}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: 'false'}
+  - type: Integer
+    attributes: {id: VertBackPorch}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: '2'}
+  - type: Integer
+    attributes: {id: VertFrontPorch}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: '2'}
+  - type: Integer
+    attributes: {id: VertPulseWidth}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: gfx_disp_generic, value: '10'}
 - type: Attachments
   children:
   - type: DirectCapability
@@ -31,4 +159,4 @@ children:
         children:
         - {type: Value, value: touch_panel}
 - type: ElementPosition
-  attributes: {x: '365', y: '246', id: gfx_disp_generic}
+  attributes: {x: '437', y: '270', id: gfx_disp_generic}

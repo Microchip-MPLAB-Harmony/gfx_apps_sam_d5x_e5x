@@ -200,6 +200,10 @@
             <itemPath>../src/config/ili9488_rgb565_e51_igat/osal/osal_impl_basic.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f11" displayName="adc" projectFiles="true">
+              <itemPath>../src/config/ili9488_rgb565_e51_igat/peripheral/adc/plib_adc_common.h</itemPath>
+              <itemPath>../src/config/ili9488_rgb565_e51_igat/peripheral/adc/plib_adc0.h</itemPath>
+            </logicalFolder>
             <logicalFolder name="f10" displayName="ccl" projectFiles="true">
               <itemPath>../src/config/ili9488_rgb565_e51_igat/peripheral/ccl/plib_ccl.h</itemPath>
             </logicalFolder>
@@ -269,6 +273,7 @@
             <itemPath>../src/config/ili9488_rgb565_e51_igat/touch/touch.h</itemPath>
             <itemPath>../src/config/ili9488_rgb565_e51_igat/touch/touch_api_ptc.h</itemPath>
             <itemPath>../src/config/ili9488_rgb565_e51_igat/touch/qtm_surface_cs_0x0021_api.h</itemPath>
+            <itemPath>../src/config/ili9488_rgb565_e51_igat/touch/touch_example.h</itemPath>
           </logicalFolder>
           <itemPath>../src/config/ili9488_rgb565_e51_igat/device_cache.h</itemPath>
           <itemPath>../src/config/ili9488_rgb565_e51_igat/toolchain_specifics.h</itemPath>
@@ -353,6 +358,7 @@
             <itemPath>../src/packs/ATSAME51J20A_DFP/component/trng.h</itemPath>
             <itemPath>../src/packs/ATSAME51J20A_DFP/component/usb.h</itemPath>
             <itemPath>../src/packs/ATSAME51J20A_DFP/component/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAME51J20A_DFP/component/fuses.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f3" displayName="instance" projectFiles="true">
             <itemPath>../src/packs/ATSAME51J20A_DFP/instance/ac.h</itemPath>
@@ -412,6 +418,7 @@
             <itemPath>../src/packs/ATSAME51J20A_DFP/instance/trng.h</itemPath>
             <itemPath>../src/packs/ATSAME51J20A_DFP/instance/usb.h</itemPath>
             <itemPath>../src/packs/ATSAME51J20A_DFP/instance/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAME51J20A_DFP/instance/fuses.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAME51J20A_DFP/pio/same51j20a.h</itemPath>
@@ -710,6 +717,9 @@
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f11" displayName="adc" projectFiles="true">
+              <itemPath>../src/config/ili9488_rgb565_e51_igat/peripheral/adc/plib_adc0.c</itemPath>
+            </logicalFolder>
             <logicalFolder name="f10" displayName="ccl" projectFiles="true">
               <itemPath>../src/config/ili9488_rgb565_e51_igat/peripheral/ccl/plib_ccl.c</itemPath>
             </logicalFolder>
@@ -761,6 +771,7 @@
           </logicalFolder>
           <logicalFolder name="f4" displayName="touch" projectFiles="true">
             <itemPath>../src/config/ili9488_rgb565_e51_igat/touch/touch.c</itemPath>
+            <itemPath>../src/config/ili9488_rgb565_e51_igat/touch/touch_example.c</itemPath>
           </logicalFolder>
           <itemPath>../src/config/ili9488_rgb565_e51_igat/initialization.c</itemPath>
           <itemPath>../src/config/ili9488_rgb565_e51_igat/interrupts.c</itemPath>
@@ -803,6 +814,7 @@
       <logicalFolder name="f1"
                      displayName="ili9488_rgb565_e51_igat.mhc"
                      projectFiles="true">
+        <itemPath>../src/config/ili9488_rgb565_e51_igat/ili9488_rgb565_e51_igat.mhc/adc0.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e51_igat/ili9488_rgb565_e51_igat.mhc/ccl.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e51_igat/ili9488_rgb565_e51_igat.mhc/cmsis.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e51_igat/ili9488_rgb565_e51_igat.mhc/core.yml</itemPath>
@@ -820,6 +832,7 @@
         <itemPath>../src/config/ili9488_rgb565_e51_igat/ili9488_rgb565_e51_igat.mhc/lib_qtouch.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e51_igat/ili9488_rgb565_e51_igat.mhc/nvmctrl.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e51_igat/ili9488_rgb565_e51_igat.mhc/project.yml</itemPath>
+        <itemPath>../src/config/ili9488_rgb565_e51_igat/ili9488_rgb565_e51_igat.mhc/ptc.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e51_igat/ili9488_rgb565_e51_igat.mhc/rtc.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e51_igat/ili9488_rgb565_e51_igat.mhc/settings.yml</itemPath>
         <itemPath>../src/config/ili9488_rgb565_e51_igat/ili9488_rgb565_e51_igat.mhc/sys_input.yml</itemPath>
@@ -857,8 +870,8 @@
           <linkerLibItems>
             <linkerLibFileItem>../src/config/ili9488_rgb565_e51_igat/touch/lib/qtm_acq_same51_0x000f.X.a</linkerLibFileItem>
             <linkerLibFileItem>../src/config/ili9488_rgb565_e51_igat/touch/lib/qtm_touch_key_cm4_0x0002.X.a</linkerLibFileItem>
-            <linkerLibFileItem>../src/config/ili9488_rgb565_e51_igat/touch/lib/qtm_surface_cs_cm4_0x0021.X.a</linkerLibFileItem>
             <linkerLibFileItem>../src/config/ili9488_rgb565_e51_igat/touch/lib/qtm_freq_hop_auto_cm4_0x0004.X.a</linkerLibFileItem>
+            <linkerLibFileItem>../src/config/ili9488_rgb565_e51_igat/touch/lib/qtm_surface_cs_cm4_0x0021.X.a</linkerLibFileItem>
           </linkerLibItems>
         </linkerTool>
         <archiverTool>
@@ -1568,6 +1581,56 @@
                   value=""/>
         <property key="warningmessagebreakoptions.warningmessages" value="holdstate"/>
       </Simulator>
+      <Tool>
+        <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="arm.use_vtor" value="false"/>
+        <property key="arm.vtor_adr" value="exception_table"/>
+        <property key="communication.activationmode" value="nohv"/>
+        <property key="communication.interface" value="swd"/>
+        <property key="communication.speed" value="2.000"/>
+        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="firmware.path"
+                  value="Press to browse for a specific firmware version"/>
+        <property key="firmware.toolpack"
+                  value="Press to select which tool pack to use"/>
+        <property key="firmware.update.action" value="firmware.update.use.latest"/>
+        <property key="freeze.timers" value="false"/>
+        <property key="lastid" value=""/>
+        <property key="memories.aux" value="false"/>
+        <property key="memories.bootflash" value="true"/>
+        <property key="memories.configurationmemory" value="true"/>
+        <property key="memories.configurationmemory2" value="true"/>
+        <property key="memories.dataflash" value="true"/>
+        <property key="memories.eeprom" value="true"/>
+        <property key="memories.exclude.configurationmemory" value="true"/>
+        <property key="memories.flashdata" value="true"/>
+        <property key="memories.id" value="true"/>
+        <property key="memories.instruction.ram.ranges"
+                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.programmemory" value="true"/>
+        <property key="memories.programmemory.ranges" value="0-fffff"/>
+        <property key="memories.rww" value="true"/>
+        <property key="poweroptions.powerenable" value="false"/>
+        <property key="programoptions.eraseb4program" value="true"/>
+        <property key="programoptions.preservedataflash" value="false"/>
+        <property key="programoptions.preservedataflash.ranges"
+                  value="${memories.dataflash.default}"/>
+        <property key="programoptions.preserveeeprom" value="false"/>
+        <property key="programoptions.preserveeeprom.ranges" value=""/>
+        <property key="programoptions.preserveprogram.ranges" value=""/>
+        <property key="programoptions.preserveprogramrange" value="false"/>
+        <property key="programoptions.preserveuserid" value="false"/>
+        <property key="programoptions.programuserotp" value="false"/>
+        <property key="script.has_reset" value="true"/>
+        <property key="script.log_level" value="1"/>
+        <property key="script.reset_delay" value="0"/>
+        <property key="script.show_output" value="false"/>
+        <property key="toolpack.updateoptions"
+                  value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion"
+                  value="Press to select which tool pack to use"/>
+        <property key="voltagevalue" value=""/>
+      </Tool>
       <nEdbgTool>
         <property key="AutoSelectMemRanges" value="auto"/>
         <property key="arm.use_vtor" value="false"/>

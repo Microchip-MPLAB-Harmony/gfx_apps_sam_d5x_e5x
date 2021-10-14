@@ -162,5 +162,12 @@ Active gesture recognition demonstrates basic gesture detection using the H3 Tou
 
 ![](../../../../docs/html/igat_active_gestures.png)
 
+**Low Power Mode and Proximity Sensing**
+
+The application will automatically enter low power mode after 30 seconds of inactivity. Low power mode can also be initiated by double-tapping the upper left corner of the display.
+
+During low power mode, proximity detection is enabled and the application will exit low power mode when proximity or touch input is detected.
+
+
 
 * * * * *

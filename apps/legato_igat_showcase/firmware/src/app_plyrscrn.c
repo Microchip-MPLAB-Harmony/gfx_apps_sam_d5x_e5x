@@ -331,7 +331,11 @@ void PlyrScrn_OnUpdate(void)
         if (stats_enabled == true)
         {
             //update fps
-            sprintf(fpsStrBuff, "%u fps", fps);
+#ifdef RTOS_ENABLED
+        sprintf(fpsStrBuff, "%u fps, cpu %u%%", fps, 100 - cpu_free); 
+#else
+        sprintf(fpsStrBuff, "%u fps", fps);
+#endif
             fpsStr.fn->setFromCStr(&fpsStr, fpsStrBuff);    
             PlyrScrn_FPSLabel->fn->setString(PlyrScrn_FPSLabel, (leString*)&fpsStr);          
         }

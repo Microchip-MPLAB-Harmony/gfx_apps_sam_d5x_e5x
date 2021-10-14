@@ -102,6 +102,8 @@ leResult screenShow_ListWheelHelpScreen(void)
 
 void screenUpdate_ListWheelHelpScreen(void)
 {
+    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+
     ListWheelHelpScreen_OnUpdate(); // raise event
 }
 

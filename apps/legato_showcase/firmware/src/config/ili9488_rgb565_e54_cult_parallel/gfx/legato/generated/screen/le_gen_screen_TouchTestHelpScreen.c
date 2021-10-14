@@ -100,6 +100,8 @@ leResult screenShow_TouchTestHelpScreen(void)
 
 void screenUpdate_TouchTestHelpScreen(void)
 {
+    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+
     TouchTestHelpScreen_OnUpdate(); // raise event
 }
 

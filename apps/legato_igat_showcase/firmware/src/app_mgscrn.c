@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define APP_MGSCRN_PRINTF(...) printf(__VA_ARGS__)
+#define APP_MGSCRN_PRINTF(...) //printf(__VA_ARGS__)
 
 #define GEST_IMG_SHOW_POS_X 116
 #define GEST_IMG_HIDE_POS_X 480
@@ -497,7 +497,11 @@ void MGScrn_OnUpdate(void)
         last_sec_count != sec_count)
     {
         //update fps
+#ifdef RTOS_ENABLED
+        sprintf(fpsStrBuff, "%u fps, cpu %u%%", fps, 100 - cpu_free); 
+#else
         sprintf(fpsStrBuff, "%u fps", fps);
+#endif
         fpsStr.fn->setFromCStr(&fpsStr, fpsStrBuff);    
         MGScrn_FPSLabel->fn->setString(MGScrn_FPSLabel, (leString*)&fpsStr);          
         

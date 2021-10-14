@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.gfx_apps_sam_d5x_e5x_legato_igat_showcase_legato_sc_e51_igat",
-		"version": "3.9.2",
+		"version": "3.9.3",
 		"displayName": "Legato Showcase Demonstration for SAM E51 Integrated Graphics and Touch Development Kit",
 		"projectName": "legato_sc_e51_igat",
 		"shortDescription": "This demonstration showcases the touch and graphics features of the SAM E51 Integrated Graphics and Touch Evaluation Kit",
@@ -20,7 +20,7 @@
 		],
 		"dfp": {
 			"name": "SAME51_DFP",
-			"semverRange": "^3.2.56"
+			"semverRange": "^3.3.85"
 		},
 		"configurator": {
 			"name": "MHC",
@@ -55,6 +55,9 @@
 			"QSPI"
 		],
 		"keywords": [
+			"Display",
+			"Touch",
+			"Gesture",
 			"MHC",
 			"Harmony",
 			"Middleware",
@@ -67,8 +70,7 @@
 			"Touch",
 			"PTC",
 			"QSPI",
-			"Touch",
-			"IGAT",
+			"IGAT"
 		],
 		"additionalData": {
 			"longDescription": {

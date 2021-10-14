@@ -81,7 +81,7 @@ static uint16_t distanceThreshold = 3;
  * Motion Gestures 2D Process
  */
 uint8_t pred_done = 1u;
-extern  qtm_surface_cs2t_control_t    qtm_surface_cs_control1;
+extern  qtm_surface_cs2t_control_t qtm_surface_cs_control1;
 
 touch_ret_t motion_gestures_2d_process(void)
 {
@@ -169,7 +169,7 @@ const char* project_name="Motion_Gestures_Touch_Demo";
 /*
  * Process Touch Gesture Result
  */
-qtm_gestures_2d_control_t   qtm_gestures_2d_control1;
+extern qtm_gestures_2d_control_t   qtm_gestures_2d_control1;
 
 void process_touch_gesture_result(void)
 {         

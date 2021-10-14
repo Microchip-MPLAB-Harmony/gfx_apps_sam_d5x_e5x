@@ -5,7 +5,7 @@ nav_order: 99
 
 # ![MPLAB® Harmony Graphics Suite](./docs/html/mhgs.png) Microchip MPLAB® Harmony 3 Graphics application examples for SAM D5x/E5x Family
 
-## Harmony 3 Graphics application examples for SAM D5x/E5x family v3.9.2
+## Harmony 3 Graphics application examples for SAM D5x/E5x family v3.9.3
 
 ### Development kit and demo application support
 
@@ -14,7 +14,17 @@ Following table provides number of peripheral library examples available for dif
 | Development Kits  | MPLABx applications |
 |:-----------------:|:-------------------:|
 | [SAM E54 Curiosity Ultra Development Board](https://www.microchip.com/Developmenttools/ProductDetails/DM320210)     | 9 |
-| [SAM E51 Integrated Graphics and Touch Development Board](https://www.microchip.com/developmenttools/ProductDetails/EV14C17A)     | 2 |
+| [SAM E51 Integrated Graphics and Touch Development Board](https://www.microchip.com/developmenttools/ProductDetails/EV14C17A)     | 3 |
+
+## Release v3.9.3
+
+### New Features
+
+New features added in this release are as follows:
+
+- Added Low Power mode and Proximity Sensing support to **Legato IGaT Showcase**
+- Added RTOS version of **Legato IGaT Showcase** with CPU usage metrics
+
 
 ## Release v3.9.2
 
@@ -33,8 +43,8 @@ New features added in this release are as follows:
 
 New features added in this release are as follows:
 
-- Added Legato Quickstart for the IGAT Development Board
-- Added Legato IGAT Showcase for the IGAT Development Board
+- Added Legato Quickstart for the IGaT Development Board
+- Added Legato IGaT Showcase for the IGaT Development Board
 
 
 ## Release v3.9.0
@@ -52,6 +62,7 @@ The current known issues are as follows:
 
 - For all IAR configurations, make sure LE_DYNAMIC_VTABLES is define to 1 to ensure build success
 
+
 ### Development Tools
 
 - [MPLAB® X IDE v5.50](https://www.microchip.com/mplab/mplab-x-ide)
@@ -59,7 +70,8 @@ The current known issues are as follows:
   - MPLAB® Harmony Configurator (MHC) v3.8.0
 - [MPLAB® XC32 C/C++ Compiler v3.01](https://www.microchip.com/mplab/compilers)
 
+
 ### Dependent Components
 
-* [Harmony 3 GFX v3.9.4](https://github.com/Microchip-MPLAB-Harmony/gfx/releases/tag/v3.9.4)
-* [Harmony 3 TOUCH v3.9.2](https://github.com/Microchip-MPLAB-Harmony/touch/releases/tag/v3.9.2)
+* [Harmony 3 GFX v3.9.5](https://github.com/Microchip-MPLAB-Harmony/gfx/releases/tag/v3.9.5)
+* [Harmony 3 TOUCH v3.10.1](https://github.com/Microchip-MPLAB-Harmony/touch/releases/tag/v3.10.1)

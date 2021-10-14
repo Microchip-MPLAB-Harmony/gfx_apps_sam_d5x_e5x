@@ -67,11 +67,20 @@ extern "C" {
 #include <stdlib.h>
 #include "configuration.h"
 #include "definitions.h"
+#include "app_pwrmgr.h"
 
 //APP settings
 //#define DEMO_MODE_OPTION_ENABLED 1
-
+#ifdef RTOS_ENABLED
+#define CLOCK_TICK_TIMER_PERIOD_MS 10
+#else
 #define CLOCK_TICK_TIMER_PERIOD_MS 30
+#endif
+
+
+
+
+
 #define NUM_COUNT_SEC_TICK (1000/CLOCK_TICK_TIMER_PERIOD_MS)
 #define NUM_COUNT_TAP_TICK (200/CLOCK_TICK_TIMER_PERIOD_MS) 
 #define DEMO_MODE_IDLE_TIMEOUT_SECS 5
@@ -81,6 +90,7 @@ extern "C" {
 #define BACKLIGHT_PWM_MAX_VALUE 100
 #define BACKLIGHT_MAX_PCT 100    
 #define BACKLIGHT_MIN_PCT 0
+#define BACKLIGHT_SLEEP_PCT 1
     
 //#define ENABLE_APP_DEMO 1
 //#define SHOW_UPDATE_MESSAGE    
@@ -105,6 +115,9 @@ typedef enum
     /* Application's state machine's initial state. */
     APP_STATE_INIT=0,
     APP_STATE_SERVICE_TASKS,
+    APP_STATE_POWERING_DOWN,
+    APP_STATE_SLEEP,
+    APP_STATE_POWERING_UP,
     /* TODO: Define states used by the application state machine. */
 
 } APP_STATES;
@@ -293,11 +306,12 @@ extern unsigned int demo_mode_event_idx;
 extern bool demo_mode_on;
 extern bool demo_mode_enabled;
 
-extern unsigned int tick_count;
+extern volatile unsigned int tick_count;
 extern unsigned int tick_count_last;
-extern unsigned int sec_count;
+extern volatile unsigned int sec_count;
 extern int last_sec_count;
 extern unsigned int fps;
+extern unsigned int cpu_free;
 extern char fpsStrBuff[];
 extern bool stats_enabled;
 extern leChar fpsStrCharBuff[];

@@ -344,6 +344,7 @@ static void fpsUpdateTimer_Callback()
     
     fpsBtnText.fn->setFromCStr(&fpsBtnText, charBuff);
     Screen3_ImageUpdateValue->fn->setString(Screen3_ImageUpdateValue, (leString*)&fpsBtnText);
+    Screen3_ImageUpdateValue->fn->invalidate(Screen3_ImageUpdateValue);
     
 
     //Update Refresh Rate
@@ -363,6 +364,7 @@ static void fpsUpdateTimer_Callback()
     refreshRateText.fn->setFromCStr(&refreshRateText, charBuff);
     Screen3_ImageRefreshValue->fn->setString(Screen3_ImageRefreshValue,
                                      (leString*)&refreshRateText);
+    Screen3_ImageRefreshValue->fn->invalidate(Screen3_ImageRefreshValue);
     
     
     prevDrawCount = leGetRenderState()->drawCount;

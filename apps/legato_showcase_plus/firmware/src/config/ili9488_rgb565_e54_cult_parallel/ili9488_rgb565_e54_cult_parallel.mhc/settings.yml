@@ -5,10 +5,10 @@ frameworkPath: ..\..\..\..\harmony3_dev
 processor: ATSAME54P20A
 projectName: legato_showcase_plus_e54_cu_cpro_parallel
 settings:
-  PackageFilter: bsp;core;csp;gfx;quick_docs;touch;usb
+  PackageFilter: audio;bsp;core;cryptoauthlib;csp;gfx;gfx-ed;quick_docs;touch;usb
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
   TRUSTZONE: 'false'
-  CMSISPath: .\dev_packs\arm\CMSIS\5.7.0
+  CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
   MERGE_STRATEGY: USER_ALL
-  DFPPath: .\dev_packs\Microchip\SAME54_DFP\3.5.87\atdf\ATSAME54P20A.atdf
+  DFPPath: .\dev_packs\Microchip\SAME54_DFP\3.6.95\atdf\ATSAME54P20A.atdf

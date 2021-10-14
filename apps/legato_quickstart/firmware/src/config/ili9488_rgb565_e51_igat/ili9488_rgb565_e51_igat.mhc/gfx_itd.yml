@@ -29,6 +29,8 @@ children:
       children:
       - type: Dynamic
         attributes: {id: gfx_itd, value: '272'}
+      - type: User
+        attributes: {value: '320'}
   - type: Integer
     attributes: {id: TouchWidth}
     children:

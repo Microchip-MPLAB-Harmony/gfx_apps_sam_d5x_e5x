@@ -151,6 +151,8 @@ leResult screenShow_SlideshowHelpScreen(void)
 
 void screenUpdate_SlideshowHelpScreen(void)
 {
+    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+
     SlideshowHelpScreen_OnUpdate(); // raise event
 }
 

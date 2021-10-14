@@ -112,6 +112,8 @@ leResult screenShow_Intro(void)
 
 void screenUpdate_Intro(void)
 {
+    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+
     Intro_OnUpdate(); // raise event
 }
 

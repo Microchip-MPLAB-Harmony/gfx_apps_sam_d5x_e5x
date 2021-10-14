@@ -31,6 +31,10 @@
 #include "app.h"
 #include "app_qspi.h"
 #include "app_usbd_cdc.h"
+#include "app_pwrmgr.h"
+#ifdef RTOS_ENABLED
+#include "task.h"
+#endif
 
 #define APP_PRINTF(...) //printf(__VA_ARGS__)
 
@@ -40,15 +44,16 @@ unsigned int demo_mode_count_secs = 0;
 unsigned int demo_mode_event_idx = 0;
 bool demo_mode_on = true;
 bool demo_mode_enabled = false;
-unsigned int tick_count = 0;
+volatile unsigned int tick_count = 0;
 unsigned int tick_count_last = 0;
-unsigned int sec_count = 0;
+volatile unsigned int sec_count = 0;
 int last_sec_count = 0;
 int clock_sec = 0;
 int clock_min = 0;
 int clock_hr = 12;
 unsigned int last_frame_count = 0;
 unsigned int fps;
+unsigned int cpu_free;
 bool stats_enabled = 0;
 static SYS_TIME_HANDLE timer = SYS_TIME_HANDLE_INVALID;
 APP_EVENTS app_event = EVENT_NONE;
@@ -61,24 +66,13 @@ static int brightness = 0, target_brightness = 100;
 
 static APP_GESTURE_CMD gesture = APP_GEST_NONE;
 
-static DEMO_MODE_OBJ demo_mode_obj[] =
-{
-    {3, EVENT_STOP_COOKING},
-    {3, EVENT_START_COOKING},
-    {5, EVENT_PAUSE_COOKING},
-    {3, EVENT_CONTINUE_COOKING},
-    {10, EVENT_STOP_COOKING},
-    {3, EVENT_CHANGE_SCENE},
-    
-    {10, STOP_COOKING},
-    {3, SELECT_ITEM_1},
-    {3, START_COOKING},
-    {10, STOP_COOKING},
-    {3, SELECT_ITEM_3},
-    {3, START_COOKING},
-    {10, STOP_COOKING},
-    {3, CHANGE_SCENE},       
-};
+#ifdef RTOS_ENABLED
+extern unsigned int Task_Usage(void);
+#endif
+#ifdef PM_ENABLED
+static int APP_PMID = 0;
+#endif
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Global Data Definitions
@@ -129,6 +123,10 @@ bool isDisplayReady(void)
     return  (val.value.v_uint == 0);
 }
 
+extern void touch_enable_lowpower_measurement(void);
+extern void touch_disable_nonlp_sensors(void);
+extern uint16_t measurement_period_store;
+
 static void Timer_Callback ( uintptr_t context)
 {
     tick_count++;
@@ -164,27 +162,6 @@ static void Timer_Callback ( uintptr_t context)
                 }
             }
         }        
-        
-        if (demo_mode_enabled == true &&
-            idle_secs > DEMO_MODE_IDLE_TIMEOUT_SECS)
-        {
-            demo_mode_on = true;
-            demo_mode_count_secs++;
-            if (demo_mode_count_secs > demo_mode_obj[demo_mode_event_idx].timeout)
-            {
-                app_event = demo_mode_obj[demo_mode_event_idx].event;
-                demo_mode_count_secs = 0;
-                demo_mode_event_idx = 
-                        (demo_mode_event_idx < sizeof(demo_mode_obj)/sizeof(DEMO_MODE_OBJ) - 1) ? 
-                        demo_mode_event_idx + 1 : 0;
-            }
-       }
-        else
-        {
-            demo_mode_on = false;
-        }
-        
-        LED0_Toggle();
     }
     
     if (brightness != target_brightness)
@@ -206,27 +183,38 @@ static void Timer_Callback ( uintptr_t context)
     }
 }
 
+#ifdef RTOS_ENABLED
+void RTOS_AppConfigureTimerForRuntimeStats()
+{
+    //do nothing
+    tick_count = 0;
+}
+
+uint32_t RTOS_AppGetRuntimeCounterValue(void)
+{
+    return tick_count;
+}
+#endif
+
 static void app_touchDownHandler(const SYS_INP_TouchStateEvent* const evt)
 {
-    
-    //reset demo mode
-    idle_secs = 0;
-    demo_mode_event_idx = 0;
-    
+#ifdef PM_ENABLED    
+    pmSendEvent(PM_EVENT_INPUT);
+#endif
 }
 
 static void app_touchUpHandler(const SYS_INP_TouchStateEvent* const evt)
 {
-    //reset demo mode
-    idle_secs = 0;
-    demo_mode_event_idx = 0;
+#ifdef PM_ENABLED    
+    pmSendEvent(PM_EVENT_INPUT);
+#endif
 }
 
 static void app_touchMoveHandler(const SYS_INP_TouchMoveEvent* const evt)
 {
-    //reset demo mode
-    idle_secs = 0;
-    demo_mode_event_idx = 0;
+#ifdef PM_ENABLED    
+    pmSendEvent(PM_EVENT_INPUT);
+#endif
 }
 
 void app_send_event(APP_EVENTS evt)
@@ -307,7 +295,16 @@ static void GenericGestureHandler(const SYS_INP_GenericGestureEvent* const evt)
         }  
         case DOUBLE_TAP_SINGLE:
         {
-            gesture = APP_GEST_TAP_DOUBLE;
+#ifdef PM_ENABLED
+            if (evt->x < 50 && evt->y < 50)
+            {
+                pmSendEvent(PM_EVENT_POWER_DOWN);
+            }
+            else
+#endif                
+            {
+                gesture = APP_GEST_TAP_DOUBLE;
+            }
             break;
         }            
         case SINGLE_TAP_DUAL:
@@ -364,7 +361,7 @@ static void GenericGestureHandler(const SYS_INP_GenericGestureEvent* const evt)
         {
             gesture = APP_GEST_DOWN_SWIPE_HOLD;
             break;
-        }     
+        }
         case HOLD_TAP:
         {
             gesture = APP_GEST_TAP_HOLD;
@@ -421,6 +418,50 @@ void APP_ClearGesture(void)
 {
     gesture = APP_GEST_NONE;
 }
+
+PM_RESULT APP_PMCallbackFunc(PM_COMP_EVENT event, void * parm)
+{
+    switch(event)
+    {
+        case PM_COMP_EVENT_PREPARE:
+        {
+            if (appData.state == APP_STATE_SERVICE_TASKS &&
+                APP_IMGFLASH_GetReadyStatus() == true)
+            {
+                return PM_OK;
+            }
+            
+            return PM_FAILED;
+        }
+        case PM_COMP_EVENT_ABORT:
+        {
+            appData.state = APP_STATE_SERVICE_TASKS;
+            
+            break;
+        }
+        case PM_COMP_EVENT_POWER_DOWN:
+        {
+            APP_SetTargetBacklight(BACKLIGHT_SLEEP_PCT);
+            
+            appData.state = APP_STATE_POWERING_DOWN;
+            
+            break;
+        }
+        case PM_COMP_EVENT_POWER_UP:
+        {
+            SYS_TIME_TimerStart(timer);
+            APP_SetTargetBacklight(BACKLIGHT_MAX_PCT);
+            
+            appData.state = APP_STATE_POWERING_UP;
+            
+            break;
+        }
+        default:
+            break;
+    }
+    
+    return PM_OK;
+}
 /******************************************************************************
   Function:
     void APP_Tasks ( void )
@@ -442,8 +483,10 @@ void APP_Tasks ( void )
             
             TC3_CompareStart();
             
-            timer = SYS_TIME_CallbackRegisterMS(Timer_Callback, 1, CLOCK_TICK_TIMER_PERIOD_MS, SYS_TIME_PERIODIC);            
-
+            timer = SYS_TIME_CallbackRegisterMS(Timer_Callback, 1, CLOCK_TICK_TIMER_PERIOD_MS, SYS_TIME_PERIODIC);   
+#ifdef PM_ENABLED            
+            APP_PMID = pmRegisterComponent(PM_APP_COMP, APP_PMCallbackFunc, NULL);
+#endif
             if (appInitialized)
             {
                 app_inputListener.handleTouchDown = &app_touchDownHandler;
@@ -465,13 +508,49 @@ void APP_Tasks ( void )
 
         case APP_STATE_SERVICE_TASKS:
         {
-              APP_IMGFLASH_Tasks();
+#ifdef RTOS_ENABLED
+            static unsigned int sec_count_last;              
 
+            if (stats_enabled == true && 
+                sec_count != sec_count_last)
+            {
+                cpu_free = Task_Usage();
+                sec_count_last = sec_count;
+            }            
+#else
+            APP_IMGFLASH_Tasks();
+#endif
             break;
         }
+#ifdef PM_ENABLED        
+        case APP_STATE_POWERING_DOWN:
+        {
+            if (APP_GetBacklightBrightness() <= BACKLIGHT_SLEEP_PCT)
+            {
+                SYS_TIME_TimerStop(timer);
+                pmComponentSetState(APP_PMID, PM_COMP_POWERED_DOWN);
+                appData.state = APP_STATE_SLEEP;
+            }
+            
+            break;
+        }        
+        case APP_STATE_SLEEP:
+        {
+            break;
+        }
+        case APP_STATE_POWERING_UP:
+        {
+            if (APP_GetBacklightBrightness() >= BACKLIGHT_MAX_PCT)
+            {
+                pmComponentSetState(APP_PMID, PM_COMP_ACTIVE);
+                appData.state = APP_STATE_SERVICE_TASKS;
+            }
+            
+            break;
+        }
+#endif        
 
         /* TODO: implement your application state machine.*/
-
 
         /* The default state should never be executed. */
         default:

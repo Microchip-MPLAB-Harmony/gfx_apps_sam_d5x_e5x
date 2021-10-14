@@ -4,7 +4,7 @@
 	"content": {
 		"metaDataVersion": "1.1.0",
 		"name": "com.microchip.mcu32.mplabx.project.gfx_apps_sam_d5x_e5x_legato_quickstart_legato_qs_e51_igat",
-		"version": "3.9.2",
+		"version": "3.9.3",
 		"displayName": "Legato Quickstart Example for SAM E51 Integrated Graphics and Touch Evaluation Kit",
 		"projectName": "legato_qs_e51_igat",
 		"shortDescription": "This demonstration provides a touch-enabled starting point for the legato graphics library.",
@@ -20,7 +20,7 @@
 		],
 		"dfp": {
 			"name": "SAME51_DFP",
-			"semverRange": "^3.2.56"
+			"semverRange": "^3.3.85"
 		},
 		"configurator": {
 			"name": "MHC",
@@ -55,6 +55,9 @@
 			"SPI"
 		],
 		"keywords": [
+			"Display",
+			"Touch",
+			"Gesture",
 			"MHC",
 			"Harmony",
 			"Middleware",
@@ -67,8 +70,7 @@
 			"Touch",
 			"I2C",
 			"SPI",
-			"Touch",
-			"IGAT",
+			"IGAT"
 		],
 		"additionalData": {
 			"longDescription": {

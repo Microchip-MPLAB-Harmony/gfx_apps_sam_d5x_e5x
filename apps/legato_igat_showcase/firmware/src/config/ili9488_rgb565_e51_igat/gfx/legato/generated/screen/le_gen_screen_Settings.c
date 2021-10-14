@@ -224,6 +224,8 @@ leResult screenShow_Settings(void)
 
 void screenUpdate_Settings(void)
 {
+    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+
     Settings_OnUpdate(); // raise event
 }
 

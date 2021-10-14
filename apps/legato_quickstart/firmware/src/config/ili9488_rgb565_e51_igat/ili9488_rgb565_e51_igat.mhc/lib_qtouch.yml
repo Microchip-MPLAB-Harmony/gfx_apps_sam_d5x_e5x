@@ -677,6 +677,13 @@ children:
       - type: User
         attributes: {value: 'true'}
   - type: Boolean
+    attributes: {id: ENABLE_SCROLLER}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_qtouch, value: 'false'}
+  - type: Boolean
     attributes: {id: ENABLE_SURFACE}
     children:
     - type: Values
@@ -1845,6 +1852,15 @@ children:
       children:
       - type: User
         attributes: {value: '1'}
+  - type: Menu
+    attributes: {id: SURFACE_MENU}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: Integer
     attributes: {id: TAP_HOLD_TIMEOUT}
     children:
@@ -1859,6 +1875,20 @@ children:
       children:
       - type: User
         attributes: {value: '12'}
+  - type: String
+    attributes: {id: TOUCH_CH_SURFACE_X_LINES}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_qtouch, value: X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17)+X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17)+X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17)+X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17)+X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17)+X(16)|X(15)|X(14)|X(29)|X(28)+X(16)|X(15)|X(14)|X(29)|X(28)+X(16)|X(15)|X(14)|X(29)|X(28)+X(16)|X(15)|X(14)|X(29)|X(28)+X(16)|X(15)|X(14)|X(29)|X(28)+X(16)|X(15)|X(14)|X(29)|X(28)+X(16)|X(15)|X(14)|X(29)|X(28)}
+  - type: String
+    attributes: {id: TOUCH_CH_SURFACE_Y_LINES}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_qtouch, value: Y(16)+Y(15)+Y(14)+Y(29)+Y(28)+Y(25)+Y(24)+Y(21)+Y(31)+Y(30)+Y(18)+Y(17)}
   - type: Boolean
     attributes: {id: TOUCH_ENABLE_CH_0}
     children:
@@ -2027,6 +2057,42 @@ children:
       children:
       - type: User
         attributes: {value: 'true'}
+  - type: File
+    attributes: {id: TOUCH_HOP_AUTO_HEADER}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Library
+    attributes: {id: TOUCH_HOP_AUTO_LIB}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
+  - type: File
+    attributes: {id: TOUCH_HOP_HEADER}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
+  - type: Library
+    attributes: {id: TOUCH_HOP_LIB}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'false'}
   - type: Integer
     attributes: {id: TOUCH_KEY_ENABLE_CNT}
     children:
@@ -2080,23 +2146,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: lib_qtouch, value: RTC}
-  - type: Menu
-    attributes: {id: TOUCH_WARNING}
-    children:
-    - type: Attributes
-      children:
-      - type: String
-        attributes: {id: description}
-        children:
-        - {type: Value, value: Open touch configurator and save project}
-      - type: String
-        attributes: {id: label}
-        children:
-        - {type: Value, value: '!!!Warning PTC clock out of sync'}
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
   - type: KeyValueSet
     attributes: {id: TUNE_MODE_SELECTED}
     children:
@@ -2154,6 +2203,19 @@ children:
         attributes: {id: targetAttachmentID}
         children:
         - {type: Value, value: RTC_TMR}
+  - type: DirectDependency
+    attributes: {id: lib_acquire}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: ptc}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: ptc_Acq_Engine}
   - type: DirectCapability
     attributes: {id: lib_qtouch}
     children:

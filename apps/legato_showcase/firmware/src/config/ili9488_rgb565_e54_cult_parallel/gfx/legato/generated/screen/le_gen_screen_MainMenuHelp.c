@@ -203,6 +203,8 @@ leResult screenShow_MainMenuHelp(void)
 
 void screenUpdate_MainMenuHelp(void)
 {
+    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+
     MainMenuHelp_OnUpdate(); // raise event
 }
 

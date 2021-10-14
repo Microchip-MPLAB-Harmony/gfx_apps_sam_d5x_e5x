@@ -268,8 +268,6 @@ void CkrScrn2_OnShow(void)
                                                               stringID_DefaultMinute,
                                                               0));
     
-    CkrScrn2_ButtonWidget6->fn->setPressed(CkrScrn2_ButtonWidget6, (leBool) (demo_mode_on == false));
-    
     CkrScrn2_SliderButton2->fn->installEventFilter(CkrScrn2_SliderButton2, CkrScrn2_eventFilter);
     
     leFixedString_Constructor(&fpsStr, fpsStrCharBuff, FPS_STR_SIZE);
@@ -821,7 +819,11 @@ void CkrScrn2_OnUpdate(void)
         last_sec_count != sec_count)
     {
         //update fps
+#ifdef RTOS_ENABLED
+        sprintf(fpsStrBuff, "%u fps, cpu %u%%", fps, 100 - cpu_free); 
+#else
         sprintf(fpsStrBuff, "%u fps", fps);
+#endif
         fpsStr.fn->setFromCStr(&fpsStr, fpsStrBuff);    
         CkrScrn2_FPSLabel->fn->setString(CkrScrn2_FPSLabel, (leString*)&fpsStr);          
         

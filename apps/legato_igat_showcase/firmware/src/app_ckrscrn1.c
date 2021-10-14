@@ -219,15 +219,14 @@ static void CkrScrn1_UpdateClock(void)
     minStr.fn->setFromCStr(&minStr, charBuff);    
     CkrScrn1_MinuteLabel->fn->setString(CkrScrn1_MinuteLabel, (leString*)&minStr);
 
-    if (demo_mode_on)
-    {
-        CkrScrn1_DemoModeOnButton->fn->setVisible(CkrScrn1_DemoModeOnButton, sec_count%2);        
-    }
-
     if (stats_enabled == true)
     {
         //update fps
+#ifdef RTOS_ENABLED
+        sprintf(fpsStrBuff, "%u fps, cpu %u%%", fps, 100 - cpu_free); 
+#else
         sprintf(fpsStrBuff, "%u fps", fps);
+#endif
         fpsStr.fn->setFromCStr(&fpsStr, fpsStrBuff);    
         CkrScrn1_FPSLabel->fn->setString(CkrScrn1_FPSLabel, (leString*)&fpsStr);
     }

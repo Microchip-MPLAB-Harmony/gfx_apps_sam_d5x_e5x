@@ -187,6 +187,8 @@ leResult screenShow_Menu(void)
 
 void screenUpdate_Menu(void)
 {
+    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+
     Menu_OnUpdate(); // raise event
 }
 

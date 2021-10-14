@@ -206,7 +206,11 @@ void Intro_OnUpdate(void)
         last_sec_count != sec_count)
     {
         //update fps
+#ifdef RTOS_ENABLED
+        sprintf(fpsStrBuff, "%u fps, cpu %u%%", fps, 100 - cpu_free); 
+#else
         sprintf(fpsStrBuff, "%u fps", fps);
+#endif
         fpsStr.fn->setFromCStr(&fpsStr, fpsStrBuff);    
         Intro_FPSLabel->fn->setString(Intro_FPSLabel, (leString*)&fpsStr);          
         

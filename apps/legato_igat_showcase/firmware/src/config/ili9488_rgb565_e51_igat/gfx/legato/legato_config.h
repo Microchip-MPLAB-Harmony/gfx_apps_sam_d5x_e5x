@@ -66,9 +66,9 @@ extern "C" {
 
 // image decoder configuration
 #define LE_ENABLE_RAW_DECODER                1
-#define LE_ENABLE_JPEG_DECODER               1
-#define LE_ENABLE_PNG_DECODER                1
-#define LE_ENABLE_MONO_DECODER                1
+#define LE_ENABLE_JPEG_DECODER               0
+#define LE_ENABLE_PNG_DECODER                0
+#define LE_ENABLE_MONO_DECODER               0
 
 #define LE_PREEMPTION_LEVEL                  0
 #define LE_STREAMING_ENABLED                 0

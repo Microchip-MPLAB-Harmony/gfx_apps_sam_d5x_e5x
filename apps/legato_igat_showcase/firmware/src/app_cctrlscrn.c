@@ -143,7 +143,11 @@ void CCtrlScrn1_OnUpdate(void)
         last_sec_count != sec_count)
     {
         //update fps
+#ifdef RTOS_ENABLED
+        sprintf(fpsStrBuff, "%u fps, cpu %u%%", fps, 100 - cpu_free); 
+#else
         sprintf(fpsStrBuff, "%u fps", fps);
+#endif
         fpsStr.fn->setFromCStr(&fpsStr, fpsStrBuff);    
         CCtrlScrn1_FPSLabel->fn->setString(CCtrlScrn1_FPSLabel, (leString*)&fpsStr);          
         

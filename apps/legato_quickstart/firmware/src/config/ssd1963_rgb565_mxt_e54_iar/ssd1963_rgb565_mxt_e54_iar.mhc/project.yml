@@ -1,11 +1,4 @@
 files:
-- generatedChecksum: ''
-  logicalPath: ''
-  name: app.c
-  physicalPath: ../..
-  security: NON_SECURE
-  type: SOURCE
-  userChecksum: ''
 - generatedChecksum: 3E59F5E2CC619BC6273282ECE032DF6F
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/bsp
   name: bsp.c
@@ -20,13 +13,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 2BEFB65BBE3ACC7291C404C41D06C926
-- generatedChecksum: 8C6AE0D116E1FF6235358E818B640FB8
+- generatedChecksum: 83628D1DFF7B90BB8C1BCC8F19A46DED
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/driver/external_controller
   name: drv_gfx_external_controller.c
   physicalPath: gfx/driver/controller/external_controller
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 8C6AE0D116E1FF6235358E818B640FB8
+  userChecksum: 83628D1DFF7B90BB8C1BCC8F19A46DED
 - generatedChecksum: 13F062B063A4F4AE0B19CE872943995B
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/driver/i2c
   name: drv_i2c.c
@@ -48,41 +41,48 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: D60987ADDBC55D814DF1F8934395B71C
-- generatedChecksum: D8059CB0170D180E835F10F453551E8D
+- generatedChecksum: 6069C4FD56993BDA3B1FC223DD5BAA4A
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar
   name: exceptions.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D8059CB0170D180E835F10F453551E8D
-- generatedChecksum: 36FA79243A4ABD63DAAEA023290EDE3B
+  userChecksum: 6069C4FD56993BDA3B1FC223DD5BAA4A
+- generatedChecksum: 395CB5E473B76326871D60F6D31F648D
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/driver/external_controller
   name: gfx_driver.c
   physicalPath: gfx/driver
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 36FA79243A4ABD63DAAEA023290EDE3B
-- generatedChecksum: 3DEEDFE75E93BB82B3D6FDC608872821
+  userChecksum: 395CB5E473B76326871D60F6D31F648D
+- generatedChecksum: 51D19E2818A4282EE571C71E4EF288FB
+  logicalPath: config/ssd1963_rgb565_mxt_e54_iar/stdio
+  name: iar_monitor.c
+  physicalPath: stdio
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 51D19E2818A4282EE571C71E4EF288FB
+- generatedChecksum: 9268F4B954FCF8574EDC9F8E68799508
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 3DEEDFE75E93BB82B3D6FDC608872821
-- generatedChecksum: 5A566918EBD940733E93D6FF112B5794
+  userChecksum: 9268F4B954FCF8574EDC9F8E68799508
+- generatedChecksum: 27E73300C89F13F02B92A6014B54C674
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar
   name: interrupts.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5A566918EBD940733E93D6FF112B5794
-- generatedChecksum: 5CE14AD869159C9B4DD69BEB18859C73
+  userChecksum: 27E73300C89F13F02B92A6014B54C674
+- generatedChecksum: BD56AABB9ED9F9439F14C3A58FDA4676
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/jpeg
   name: jidctint.c
   physicalPath: gfx/legato/image/jpeg
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5CE14AD869159C9B4DD69BEB18859C73
+  userChecksum: BD56AABB9ED9F9439F14C3A58FDA4676
 - generatedChecksum: 2CF7536B93FC93BD0AA2A037DDA5B5E2
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/generated/font
   name: le_gen_fonts.c
@@ -97,13 +97,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 2D48DB8AD17CFF23FA87412540899BA2
-- generatedChecksum: 4A852E591E91A90DD2355DE79C5A38BF
+- generatedChecksum: B3CE19A5FC9AE2944FECF0FDA2847E3B
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/generated
   name: le_gen_harmony.c
   physicalPath: gfx/legato/generated
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 4A852E591E91A90DD2355DE79C5A38BF
+  userChecksum: B3CE19A5FC9AE2944FECF0FDA2847E3B
 - generatedChecksum: 8AB6D447852CD535F5A3CBA29144C796
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/generated/image
   name: le_gen_images.c
@@ -111,27 +111,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8AB6D447852CD535F5A3CBA29144C796
-- generatedChecksum: 2017D36E20B633092E5BAB1D5ED64A28
+- generatedChecksum: 4A0B00DF20738414078086EB7AEFCC30
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/generated
   name: le_gen_init.c
   physicalPath: gfx/legato/generated
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 2017D36E20B633092E5BAB1D5ED64A28
-- generatedChecksum: 0FE12462591634FBDBDD78A902CCA5DC
+  userChecksum: 4A0B00DF20738414078086EB7AEFCC30
+- generatedChecksum: BF89AD9301C9CE65CF84C9DDBCC67F12
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/generated
   name: le_gen_scheme.c
   physicalPath: gfx/legato/generated
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 0FE12462591634FBDBDD78A902CCA5DC
-- generatedChecksum: 58DB9D3F4558CE2BF87445BFAEC92C38
+  userChecksum: BF89AD9301C9CE65CF84C9DDBCC67F12
+- generatedChecksum: 93B910817460AD6AC1B7A0CAAC76E309
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/generated/screen
   name: le_gen_screen_Screen0.c
   physicalPath: gfx/legato/generated/screen
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 58DB9D3F4558CE2BF87445BFAEC92C38
+  userChecksum: 93B910817460AD6AC1B7A0CAAC76E309
 - generatedChecksum: 2B49CB75680C7708C26798F3536BCCDF
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/generated
   name: le_gen_stringtable.c
@@ -146,27 +146,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 01B237A9019C1E5013E2A0861C7A238D
-- generatedChecksum: E94315C195A45FF08B0139E2B45361BF
+- generatedChecksum: 7FB91D04503DFDEF7E004C7A0EF79B7D
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/common
   name: legato_color.c
   physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E94315C195A45FF08B0139E2B45361BF
-- generatedChecksum: D801337F03035B928D43958A1FA736A4
+  userChecksum: 7FB91D04503DFDEF7E004C7A0EF79B7D
+- generatedChecksum: D5267278C45E6C26787A4F43711E0BCD
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/common
   name: legato_color_blend.c
   physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D801337F03035B928D43958A1FA736A4
-- generatedChecksum: 52C224E473C92A243A2088CA26FC4D4D
+  userChecksum: D5267278C45E6C26787A4F43711E0BCD
+- generatedChecksum: 74840DE2605F41AFD0AECDDBDE96219E
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/common
   name: legato_color_convert.c
   physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 52C224E473C92A243A2088CA26FC4D4D
+  userChecksum: 74840DE2605F41AFD0AECDDBDE96219E
 - generatedChecksum: 1221BA4090C19217257E0D9F403C0ED6
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/common
   name: legato_color_lerp.c
@@ -181,13 +181,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5E9BA6B6BE8679E6B74CD26D3C79755B
-- generatedChecksum: 2BC97DC2D82D7632D8106C4B85B42702
+- generatedChecksum: FF5E6CA899EA829612958C578E2BF68E
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/renderer
   name: legato_draw.c
   physicalPath: gfx/legato/renderer
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 2BC97DC2D82D7632D8106C4B85B42702
+  userChecksum: FF5E6CA899EA829612958C578E2BF68E
 - generatedChecksum: B47C2B94656F56D52E89DC68EB5F382A
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/renderer
   name: legato_draw_arc.c
@@ -237,13 +237,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 6BE27C8A351299B6B06C9E6989FA7CC3
-- generatedChecksum: 01014B4BC02CB8016B18A8C0F988237C
+- generatedChecksum: 4F690E83221F436BB8BEA3F0A5937EF5
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/memory
   name: legato_fixedheap.c
   physicalPath: gfx/legato/memory
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 01014B4BC02CB8016B18A8C0F988237C
+  userChecksum: 4F690E83221F436BB8BEA3F0A5937EF5
 - generatedChecksum: 0229A4CF2EC1D9A2EDC422F27A4F31B5
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/string
   name: legato_fixedstring.c
@@ -251,27 +251,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 0229A4CF2EC1D9A2EDC422F27A4F31B5
-- generatedChecksum: A86BC44CF6D3E3F3F9D52066D9F6D2AC
+- generatedChecksum: E0DB819796B4B5F4227D20621206AF44
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/font
   name: legato_font.c
   physicalPath: gfx/legato/font
   security: NON_SECURE
   type: SOURCE
-  userChecksum: A86BC44CF6D3E3F3F9D52066D9F6D2AC
-- generatedChecksum: A53D312304593A61E277F9B5C901D623
+  userChecksum: E0DB819796B4B5F4227D20621206AF44
+- generatedChecksum: 2BBF9EFDBC1B2CCFD8F836296F1CADEF
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/renderer
   name: legato_gpu.c
   physicalPath: gfx/legato/renderer
   security: NON_SECURE
   type: SOURCE
-  userChecksum: A53D312304593A61E277F9B5C901D623
-- generatedChecksum: 52BDD66519B411F0D7FA0CE4E64B2E28
+  userChecksum: 2BBF9EFDBC1B2CCFD8F836296F1CADEF
+- generatedChecksum: AD1126687188EBF0194B8D83099D80DC
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image
   name: legato_image.c
   physicalPath: gfx/legato/image
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 52BDD66519B411F0D7FA0CE4E64B2E28
+  userChecksum: AD1126687188EBF0194B8D83099D80DC
 - generatedChecksum: 3AA0D34DB9343AF0E35B8F0C576C89FA
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image
   name: legato_image_utils.c
@@ -279,139 +279,160 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 3AA0D34DB9343AF0E35B8F0C576C89FA
-- generatedChecksum: A7D784794EF72CA63D109767C78B6168
+- generatedChecksum: 84A247C1C2368D457A53657A824A8301
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/jpeg
   name: legato_imagedecoder_jpeg.c
   physicalPath: gfx/legato/image/jpeg
   security: NON_SECURE
   type: SOURCE
-  userChecksum: A7D784794EF72CA63D109767C78B6168
-- generatedChecksum: EA1876A80EE3E988C91007D4B52F708F
+  userChecksum: 84A247C1C2368D457A53657A824A8301
+- generatedChecksum: 2B8A48A113099D6CD10A08FF5AFA5B4A
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/jpeg
   name: legato_imagedecoder_jpeg_common.c
   physicalPath: gfx/legato/image/jpeg
   security: NON_SECURE
   type: SOURCE
-  userChecksum: EA1876A80EE3E988C91007D4B52F708F
-- generatedChecksum: FEB5748641CE0FD5D554340A360536FF
+  userChecksum: 2B8A48A113099D6CD10A08FF5AFA5B4A
+- generatedChecksum: D59E534E86910BC48ABF3DC4348A1A2E
+  logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/mono
+  name: legato_imagedecoder_mono.c
+  physicalPath: gfx/legato/image/mono
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: D59E534E86910BC48ABF3DC4348A1A2E
+- generatedChecksum: 300343E4FD3A2BA1F52C2586128F2865
+  logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/mono
+  name: legato_imagedecoder_mono_read_internal.c
+  physicalPath: gfx/legato/image/mono
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 300343E4FD3A2BA1F52C2586128F2865
+- generatedChecksum: CD7828DFD63AF711B3B4ADA1917E7603
+  logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/mono
+  name: legato_imagedecoder_mono_read_stream.c
+  physicalPath: gfx/legato/image/mono
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: CD7828DFD63AF711B3B4ADA1917E7603
+- generatedChecksum: 127378083089331A2F62CBD5B1111763
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/png
   name: legato_imagedecoder_png.c
   physicalPath: gfx/legato/image/png
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FEB5748641CE0FD5D554340A360536FF
-- generatedChecksum: 17D259B50E1FB8CA799E1739F9CE7699
+  userChecksum: 127378083089331A2F62CBD5B1111763
+- generatedChecksum: F9C070A89A95EC4C2DCF100C72937633
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 17D259B50E1FB8CA799E1739F9CE7699
-- generatedChecksum: F19E3B9CB4731D136108F9034F6F8953
+  userChecksum: F9C070A89A95EC4C2DCF100C72937633
+- generatedChecksum: 743343860061C49F5E8F7D7A5CC307F4
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw_blend.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F19E3B9CB4731D136108F9034F6F8953
-- generatedChecksum: EEA34B31F403600FA673E72C2AB510E7
+  userChecksum: 743343860061C49F5E8F7D7A5CC307F4
+- generatedChecksum: 2009633255D8F939A03C573DD73EEE91
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw_convert.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: EEA34B31F403600FA673E72C2AB510E7
-- generatedChecksum: B07D43973F68FED087666B77B7C9FD57
+  userChecksum: 2009633255D8F939A03C573DD73EEE91
+- generatedChecksum: 59356D8E3167B6CBCFC374B05503CC8F
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw_mask.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B07D43973F68FED087666B77B7C9FD57
-- generatedChecksum: 70D262550E4154A63C233B46562720B5
+  userChecksum: 59356D8E3167B6CBCFC374B05503CC8F
+- generatedChecksum: 60428440243934CA28A223226F1B0864
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw_palette_internal.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 70D262550E4154A63C233B46562720B5
-- generatedChecksum: EB8C95E2383613481B5FD848B9E10209
+  userChecksum: 60428440243934CA28A223226F1B0864
+- generatedChecksum: 501973C07E11A4C3CD001ED12BE04729
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw_palette_stream.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: EB8C95E2383613481B5FD848B9E10209
-- generatedChecksum: 2D231F02CF7B55F97A93B9BFEEADE8DB
+  userChecksum: 501973C07E11A4C3CD001ED12BE04729
+- generatedChecksum: 60F2C174A6DEA3BF33A3B97DEF528EED
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw_read_internal.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 2D231F02CF7B55F97A93B9BFEEADE8DB
-- generatedChecksum: 145F392ED7659A7FE76E351EE1DAE332
+  userChecksum: 60F2C174A6DEA3BF33A3B97DEF528EED
+- generatedChecksum: 1EA3C491851F9D10484FAE3927083EF0
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw_read_stream_color.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 145F392ED7659A7FE76E351EE1DAE332
-- generatedChecksum: 700E2C974372AD3A3A82215553142FCC
+  userChecksum: 1EA3C491851F9D10484FAE3927083EF0
+- generatedChecksum: 368D18B822E55E3E477EBD4A757EF716
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw_read_stream_index.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 700E2C974372AD3A3A82215553142FCC
-- generatedChecksum: 377E6288EE0CCC650CAC1281D3EC52D0
+  userChecksum: 368D18B822E55E3E477EBD4A757EF716
+- generatedChecksum: 449F30952AD3F2A2C98BE08EFD1A2DF5
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw_read_stream_rlecolor.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 377E6288EE0CCC650CAC1281D3EC52D0
-- generatedChecksum: 8F9E821FAACF4580E842DCFBFF897142
+  userChecksum: 449F30952AD3F2A2C98BE08EFD1A2DF5
+- generatedChecksum: 747B9EE67B4B34504C0DD2109447F03B
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw_read_stream_rleindex.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 8F9E821FAACF4580E842DCFBFF897142
-- generatedChecksum: 92E9057863C47B0078069C2ECFC81AF7
+  userChecksum: 747B9EE67B4B34504C0DD2109447F03B
+- generatedChecksum: FF7CD26700193D2D1EFE12ADBA80D2A6
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw_rotate.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 92E9057863C47B0078069C2ECFC81AF7
-- generatedChecksum: 1B6CA684BA0CC006155925092F0FAA38
+  userChecksum: FF7CD26700193D2D1EFE12ADBA80D2A6
+- generatedChecksum: 51FC029DB6443F4A35E62411F58D08B9
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw_scale.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 1B6CA684BA0CC006155925092F0FAA38
-- generatedChecksum: E3B0AC1687A836DA0187B3CD71EC47E9
+  userChecksum: 51FC029DB6443F4A35E62411F58D08B9
+- generatedChecksum: 8BA399A776A7E9DD780A96793C062A04
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw_setup.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E3B0AC1687A836DA0187B3CD71EC47E9
-- generatedChecksum: 6FFB28DF3FC55B69B6F5E2D552EB8CC3
+  userChecksum: 8BA399A776A7E9DD780A96793C062A04
+- generatedChecksum: F42AC34D95AC7EACDAF9E90D48242428
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw_write.c
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 6FFB28DF3FC55B69B6F5E2D552EB8CC3
-- generatedChecksum: FC14256D66487AE60A9174D2E3D49A63
+  userChecksum: F42AC34D95AC7EACDAF9E90D48242428
+- generatedChecksum: B2367C9B0D5D397E532EE3CE06697ACF
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/core
   name: legato_input.c
   physicalPath: gfx/legato/core
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FC14256D66487AE60A9174D2E3D49A63
+  userChecksum: B2367C9B0D5D397E532EE3CE06697ACF
 - generatedChecksum: 166EFFCA3A6ED925F2EECB58B757BC83
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/datastructure
   name: legato_list.c
@@ -440,20 +461,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: CE69218FE966EFCC87A06C76D9D662B6
-- generatedChecksum: AEA8FFDF63FA7F175142F8D89FB02007
+- generatedChecksum: 16567942616B91C518682DAC08B02A2F
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/common
   name: legato_pixelbuffer.c
   physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
-  userChecksum: AEA8FFDF63FA7F175142F8D89FB02007
-- generatedChecksum: 5FF49D5FB970A042947F296C77BEB2F0
+  userChecksum: 16567942616B91C518682DAC08B02A2F
+- generatedChecksum: D27C569803C9610A12F9B82D8025E7C8
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/radiobutton
   name: legato_radiobutton_group.c
   physicalPath: gfx/legato/widget/radiobutton
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5FF49D5FB970A042947F296C77BEB2F0
+  userChecksum: D27C569803C9610A12F9B82D8025E7C8
 - generatedChecksum: 08401D7220E1ABC4D368F7A678916753
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/font
   name: legato_rasterfont_liberationmono1.c
@@ -468,13 +489,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: EA7FB6E29DA7227B1B48FBD66056D7EC
-- generatedChecksum: DF7D41678B9DA0AD3EE0D99A16711EE8
+- generatedChecksum: 0F005C34F38BCA09E2D4F067C5A39FD1
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/font
   name: legato_rasterfont_stream.c
   physicalPath: gfx/legato/font
   security: NON_SECURE
   type: SOURCE
-  userChecksum: DF7D41678B9DA0AD3EE0D99A16711EE8
+  userChecksum: 0F005C34F38BCA09E2D4F067C5A39FD1
 - generatedChecksum: CEA5EBCAD80F2905A5E6ACDE2AD4F8FE
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/common
   name: legato_rect.c
@@ -482,62 +503,62 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: CEA5EBCAD80F2905A5E6ACDE2AD4F8FE
-- generatedChecksum: AAD40235137F4975F38347A98DF7B9B4
+- generatedChecksum: C442E314CAF64600A9AE475B67E24D54
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/datastructure
   name: legato_rectarray.c
   physicalPath: gfx/legato/datastructure
   security: NON_SECURE
   type: SOURCE
-  userChecksum: AAD40235137F4975F38347A98DF7B9B4
-- generatedChecksum: EA4C50EA7F1C27719403775D9633FDFD
+  userChecksum: C442E314CAF64600A9AE475B67E24D54
+- generatedChecksum: ED2F53BC685E598B299CFA1C7F35A04F
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/renderer
   name: legato_renderer.c
   physicalPath: gfx/legato/renderer
   security: NON_SECURE
   type: SOURCE
-  userChecksum: EA4C50EA7F1C27719403775D9633FDFD
-- generatedChecksum: EF00DAB935C4977E34A72B5D976F572A
+  userChecksum: ED2F53BC685E598B299CFA1C7F35A04F
+- generatedChecksum: D07EFFF78D360EA5B81D3BC952835EF4
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/core
   name: legato_scheme.c
   physicalPath: gfx/legato/core
   security: NON_SECURE
   type: SOURCE
-  userChecksum: EF00DAB935C4977E34A72B5D976F572A
-- generatedChecksum: 2C5845AF8461063EEEFB3037F23D7E47
+  userChecksum: D07EFFF78D360EA5B81D3BC952835EF4
+- generatedChecksum: 398916FF694667DF840878D2640D40A4
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/core
   name: legato_state.c
   physicalPath: gfx/legato/core
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 2C5845AF8461063EEEFB3037F23D7E47
-- generatedChecksum: 57FDDCBDBE41DEC2C6DF1FB160834AB9
+  userChecksum: 398916FF694667DF840878D2640D40A4
+- generatedChecksum: AE30F16F736295344A9CFE4DA0D5328A
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/core
   name: legato_stream.c
   physicalPath: gfx/legato/core
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 57FDDCBDBE41DEC2C6DF1FB160834AB9
-- generatedChecksum: 8E1DA884C64CEEB6B8E835012D35381F
+  userChecksum: AE30F16F736295344A9CFE4DA0D5328A
+- generatedChecksum: 08E8E1B99B41C9226B9081065AF1DB58
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/string
   name: legato_string.c
   physicalPath: gfx/legato/string
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 8E1DA884C64CEEB6B8E835012D35381F
-- generatedChecksum: 56971255CFEC12B89CF325D1853C47AB
+  userChecksum: 08E8E1B99B41C9226B9081065AF1DB58
+- generatedChecksum: 047FD85CB8BB7499B8BA11B524C2B765
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/string
   name: legato_string_renderer.c
   physicalPath: gfx/legato/string
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 56971255CFEC12B89CF325D1853C47AB
-- generatedChecksum: 47B82889C85ED3825DC2BA4B19D159F8
+  userChecksum: 047FD85CB8BB7499B8BA11B524C2B765
+- generatedChecksum: A4FDD5ABACF7C10AE219F14F37595934
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/string
   name: legato_string_renderer_stream.c
   physicalPath: gfx/legato/string
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 47B82889C85ED3825DC2BA4B19D159F8
+  userChecksum: A4FDD5ABACF7C10AE219F14F37595934
 - generatedChecksum: 40C1D751635A0126FCB40529C5885A18
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/string
   name: legato_stringtable.c
@@ -545,13 +566,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 40C1D751635A0126FCB40529C5885A18
-- generatedChecksum: 060CC7A3D51063736F9A9A95A4A98ABC
+- generatedChecksum: E999F4BBF2EC3070BAA6A5F0C34BA0CB
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/string
   name: legato_stringutils.c
   physicalPath: gfx/legato/string
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 060CC7A3D51063736F9A9A95A4A98ABC
+  userChecksum: E999F4BBF2EC3070BAA6A5F0C34BA0CB
 - generatedChecksum: DAFA9F0BA6E7FC81E93F21287B9FDC84
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/string
   name: legato_tablestring.c
@@ -559,27 +580,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: DAFA9F0BA6E7FC81E93F21287B9FDC84
-- generatedChecksum: 429999DFD6AA1366814114338DE664A4
+- generatedChecksum: 251CE72162CB7CA77E528C3847C7CF43
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/common
   name: legato_utils.c
   physicalPath: gfx/legato/common
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 429999DFD6AA1366814114338DE664A4
-- generatedChecksum: 2756954421692BABE89ACFD9705828E1
+  userChecksum: 251CE72162CB7CA77E528C3847C7CF43
+- generatedChecksum: 6BC00715A0308BBE0D8175B42D706DA5
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/memory
   name: legato_variableheap.c
   physicalPath: gfx/legato/memory
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 2756954421692BABE89ACFD9705828E1
-- generatedChecksum: AB1A2A934883EDD7F12707CE7FE62DED
+  userChecksum: 6BC00715A0308BBE0D8175B42D706DA5
+- generatedChecksum: C8D90467762EB55E7C8684456E92968A
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget
   name: legato_widget.c
   physicalPath: gfx/legato/widget
   security: NON_SECURE
   type: SOURCE
-  userChecksum: AB1A2A934883EDD7F12707CE7FE62DED
+  userChecksum: C8D90467762EB55E7C8684456E92968A
 - generatedChecksum: 5FE816B6FE74D7712D2DB342720D1D47
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/arc
   name: legato_widget_arc.c
@@ -594,48 +615,48 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 4A8EA23A24BAACBCD06692ADCF93A515
-- generatedChecksum: 5CDBB2A4D53122292E2917D4AF76284D
+- generatedChecksum: AE34B177F4E7EB04684F7D0E0B379F69
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/bargraph
   name: legato_widget_bar_graph.c
   physicalPath: gfx/legato/widget/bargraph
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5CDBB2A4D53122292E2917D4AF76284D
-- generatedChecksum: 35A82F1532D19DDBB4B76D96FFC8DDCB
+  userChecksum: AE34B177F4E7EB04684F7D0E0B379F69
+- generatedChecksum: 9A7155FA191158080AD1FAF53DB6C184
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/bargraph
   name: legato_widget_bar_graph_skin_classic.c
   physicalPath: gfx/legato/widget/bargraph
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 35A82F1532D19DDBB4B76D96FFC8DDCB
-- generatedChecksum: DEB522CC7B02D21D37EE72359C8B9220
+  userChecksum: 9A7155FA191158080AD1FAF53DB6C184
+- generatedChecksum: 3D19294830409CA71A5CBB1B68789573
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/button
   name: legato_widget_button.c
   physicalPath: gfx/legato/widget/button
   security: NON_SECURE
   type: SOURCE
-  userChecksum: DEB522CC7B02D21D37EE72359C8B9220
-- generatedChecksum: 58BF4DE5BFF7A5D28A1B7D86ED134E18
+  userChecksum: 3D19294830409CA71A5CBB1B68789573
+- generatedChecksum: B55D86065598E62BF5E71B1DC9C161CD
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/button
   name: legato_widget_button_skin_classic.c
   physicalPath: gfx/legato/widget/button
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 58BF4DE5BFF7A5D28A1B7D86ED134E18
-- generatedChecksum: DA3A725AFAC71E0D067EE6B5773BC2E6
+  userChecksum: B55D86065598E62BF5E71B1DC9C161CD
+- generatedChecksum: DFC4FB00CFBDA5906AF28B883DD14241
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/checkbox
   name: legato_widget_checkbox.c
   physicalPath: gfx/legato/widget/checkbox
   security: NON_SECURE
   type: SOURCE
-  userChecksum: DA3A725AFAC71E0D067EE6B5773BC2E6
-- generatedChecksum: 84AE0954F00574B77315F2865EEC51C3
+  userChecksum: DFC4FB00CFBDA5906AF28B883DD14241
+- generatedChecksum: D410E83C0CC7AD4193DE9C607562B554
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/checkbox
   name: legato_widget_checkbox_skin_classic.c
   physicalPath: gfx/legato/widget/checkbox
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 84AE0954F00574B77315F2865EEC51C3
+  userChecksum: D410E83C0CC7AD4193DE9C607562B554
 - generatedChecksum: 6D890C3F3916113CBE31D33DD094E0C0
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/circle
   name: legato_widget_circle.c
@@ -657,20 +678,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 2B6A35585841BD8E7B81A189BA11625B
-- generatedChecksum: 48F3A5A5500694D32C42816FEF7FA167
+- generatedChecksum: 7D5BE2286D37B6FBA3BE72B051BE68C6
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/circulargauge
   name: legato_widget_circular_gauge_skin_classic.c
   physicalPath: gfx/legato/widget/circulargauge
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 48F3A5A5500694D32C42816FEF7FA167
-- generatedChecksum: B24783ADFA7DFDAF6793DF2739CAB98B
+  userChecksum: 7D5BE2286D37B6FBA3BE72B051BE68C6
+- generatedChecksum: A03261F3798C79E80DE9FA68D5C42A15
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/circularslider
   name: legato_widget_circular_slider.c
   physicalPath: gfx/legato/widget/circularslider
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B24783ADFA7DFDAF6793DF2739CAB98B
+  userChecksum: A03261F3798C79E80DE9FA68D5C42A15
 - generatedChecksum: 1C67BBBD10320E21578AED7A5BE38A53
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/circularslider
   name: legato_widget_circular_slider_skin_classic.c
@@ -713,13 +734,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: D0B1280D641F0C841CD875281E249CF6
-- generatedChecksum: B4F2B6C7D3862E4C323D79E4D7518734
+- generatedChecksum: 9D50F34BCD954329EEA56BC8ACF466F0
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/groupbox
   name: legato_widget_groupbox_skin_classic.c
   physicalPath: gfx/legato/widget/groupbox
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B4F2B6C7D3862E4C323D79E4D7518734
+  userChecksum: 9D50F34BCD954329EEA56BC8ACF466F0
 - generatedChecksum: ABAC13672F9F8AE01B8BD3701057E569
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/image
   name: legato_widget_image.c
@@ -790,20 +811,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 573D18116E2334CA40841D00E2491251
-- generatedChecksum: A60D16F409981457F45C57B739DC4CEA
+- generatedChecksum: 528D1A3F572273DE54FC6CCA1E2F9999
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/label
   name: legato_widget_label.c
   physicalPath: gfx/legato/widget/label
   security: NON_SECURE
   type: SOURCE
-  userChecksum: A60D16F409981457F45C57B739DC4CEA
-- generatedChecksum: CF1C5372BCB070A603069C83B201F78B
+  userChecksum: 528D1A3F572273DE54FC6CCA1E2F9999
+- generatedChecksum: 4FE09EB9069CD87F81C52FD49226E21A
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/label
   name: legato_widget_label_skin_classic.c
   physicalPath: gfx/legato/widget/label
   security: NON_SECURE
   type: SOURCE
-  userChecksum: CF1C5372BCB070A603069C83B201F78B
+  userChecksum: 4FE09EB9069CD87F81C52FD49226E21A
 - generatedChecksum: 8CFA9ED260540C1FD8BE5136F99E8FF4
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/line
   name: legato_widget_line.c
@@ -811,20 +832,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8CFA9ED260540C1FD8BE5136F99E8FF4
-- generatedChecksum: A0E88EBBF2D5AFB19EDDE4FD02FB0BF2
+- generatedChecksum: B4DD083B4F07635CEDD52103DFA1D097
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/linegraph
   name: legato_widget_line_graph.c
   physicalPath: gfx/legato/widget/linegraph
   security: NON_SECURE
   type: SOURCE
-  userChecksum: A0E88EBBF2D5AFB19EDDE4FD02FB0BF2
-- generatedChecksum: FC92FEA0EF79326E130960A7815592C8
+  userChecksum: B4DD083B4F07635CEDD52103DFA1D097
+- generatedChecksum: 223364A23965A5729B1EAFB4C31057A0
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/linegraph
   name: legato_widget_line_graph_skin_classic.c
   physicalPath: gfx/legato/widget/linegraph
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FC92FEA0EF79326E130960A7815592C8
+  userChecksum: 223364A23965A5729B1EAFB4C31057A0
 - generatedChecksum: DA5CF6C9C72D3A934BE3C147C0072E61
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/line
   name: legato_widget_line_skin_classic.c
@@ -832,20 +853,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: DA5CF6C9C72D3A934BE3C147C0072E61
-- generatedChecksum: 9CCDFF6F33689D0A9246BBFA0E79C178
+- generatedChecksum: 3DA738FB39BB49B06E8FC370D309A00E
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/list
   name: legato_widget_list.c
   physicalPath: gfx/legato/widget/list
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 9CCDFF6F33689D0A9246BBFA0E79C178
-- generatedChecksum: 3512FE734F3E16603B18C9148BFDDBD4
+  userChecksum: 3DA738FB39BB49B06E8FC370D309A00E
+- generatedChecksum: 23151E67F4E4C870B6BFA41AB9FCCEBB
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/list
   name: legato_widget_list_skin_classic.c
   physicalPath: gfx/legato/widget/list
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 3512FE734F3E16603B18C9148BFDDBD4
+  userChecksum: 23151E67F4E4C870B6BFA41AB9FCCEBB
 - generatedChecksum: ECE3936F4FD58C8FA9DA20C26280EA88
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/listwheel
   name: legato_widget_listwheel.c
@@ -853,27 +874,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: ECE3936F4FD58C8FA9DA20C26280EA88
-- generatedChecksum: D96216D2E0C59E796E925D9CC376DCDC
+- generatedChecksum: 7130ADBBE5F8CEAD079F0C5FEB07562A
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/listwheel
   name: legato_widget_listwheel_skin_classic.c
   physicalPath: gfx/legato/widget/listwheel
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D96216D2E0C59E796E925D9CC376DCDC
-- generatedChecksum: 490BEADFF405F33559B5F4C0EE5BF4EE
+  userChecksum: 7130ADBBE5F8CEAD079F0C5FEB07562A
+- generatedChecksum: EAE51C58F7DD09B7D4354C91EF914D94
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/piechart
   name: legato_widget_pie_chart.c
   physicalPath: gfx/legato/widget/piechart
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 490BEADFF405F33559B5F4C0EE5BF4EE
-- generatedChecksum: D7D1FE433A3D4FCE6D7CEDCCE49AFFFF
+  userChecksum: EAE51C58F7DD09B7D4354C91EF914D94
+- generatedChecksum: 0610A1DF573AD7AF05D717CAE42A151F
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/piechart
   name: legato_widget_pie_chart_skin_classic.c
   physicalPath: gfx/legato/widget/piechart
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D7D1FE433A3D4FCE6D7CEDCCE49AFFFF
+  userChecksum: 0610A1DF573AD7AF05D717CAE42A151F
 - generatedChecksum: 1B8CBA57FD5ADBD62F10A06F48A939E1
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/progressbar
   name: legato_widget_progressbar.c
@@ -902,20 +923,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 0DAAB0013266070071BFBF96367CDC11
-- generatedChecksum: 1C784862C50ED1C8F14EE68ACAECC2B5
+- generatedChecksum: 6FDDA332CF47C85D8004C77E74CB5900
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/radiobutton
   name: legato_widget_radiobutton.c
   physicalPath: gfx/legato/widget/radiobutton
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 1C784862C50ED1C8F14EE68ACAECC2B5
-- generatedChecksum: 5DEFF07BB2BD5B251C150F7B82B5CEFA
+  userChecksum: 6FDDA332CF47C85D8004C77E74CB5900
+- generatedChecksum: 679EFE7E049BB87636321D4A2CF52595
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/radiobutton
   name: legato_widget_radiobutton_skin_classic.c
   physicalPath: gfx/legato/widget/radiobutton
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5DEFF07BB2BD5B251C150F7B82B5CEFA
+  userChecksum: 679EFE7E049BB87636321D4A2CF52595
 - generatedChecksum: 5A0E271B112E916C48C38DC54658CA80
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/rectangle
   name: legato_widget_rectangle.c
@@ -930,13 +951,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 30FD49D363373A55B0F466ACC46E2E28
-- generatedChecksum: DC446141D9EFFC613301599B284D958C
+- generatedChecksum: 4AC4BD9161F601BA51153D7B065B8B9E
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/scrollbar
   name: legato_widget_scrollbar.c
   physicalPath: gfx/legato/widget/scrollbar
   security: NON_SECURE
   type: SOURCE
-  userChecksum: DC446141D9EFFC613301599B284D958C
+  userChecksum: 4AC4BD9161F601BA51153D7B065B8B9E
 - generatedChecksum: F8F62A07AA9A333C5B8A9D676F95DD0B
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/scrollbar
   name: legato_widget_scrollbar_skin_classic.c
@@ -951,13 +972,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 88505DF5660858302C1493DED7A9EBD3
-- generatedChecksum: 693B655D419728451085EBECD1C59D90
+- generatedChecksum: B2C287A18B35F36284DCB26FE81C5E36
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget
   name: legato_widget_skin_classic_common.c
   physicalPath: gfx/legato/widget
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 693B655D419728451085EBECD1C59D90
+  userChecksum: B2C287A18B35F36284DCB26FE81C5E36
 - generatedChecksum: B0AB09B41C8A16B0E635CA0D364EC1E4
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/slider
   name: legato_widget_slider.c
@@ -972,20 +993,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: D7D66FE009CD8F87DFD88453B1555E14
-- generatedChecksum: FFDA857BF0C6C921FECCF599E759748E
+- generatedChecksum: 0E4A2C0625814DE52DE6B77D0AC96054
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/textfield
   name: legato_widget_textfield.c
   physicalPath: gfx/legato/widget/textfield
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FFDA857BF0C6C921FECCF599E759748E
-- generatedChecksum: AE553B35F27AA1F295138C3653937EFE
+  userChecksum: 0E4A2C0625814DE52DE6B77D0AC96054
+- generatedChecksum: 864F8FDD74EC136865F75E06E98A4A2B
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/textfield
   name: legato_widget_textfield_skin_classic.c
   physicalPath: gfx/legato/widget/textfield
   security: NON_SECURE
   type: SOURCE
-  userChecksum: AE553B35F27AA1F295138C3653937EFE
+  userChecksum: 864F8FDD74EC136865F75E06E98A4A2B
 - generatedChecksum: 72FA4D40E37244D4F6E80D3DCE054119
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/touchtest
   name: legato_widget_touchtest.c
@@ -1007,34 +1028,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: BD6B229F0B6AEB6DC11EE89F1C94CA02
-- generatedChecksum: 10543C226B948C51688A4B554B0A50A9
+- generatedChecksum: 139F6836AE8F0A4D98C4CDEBD788E7A0
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/window
   name: legato_widget_window_skin_classic.c
   physicalPath: gfx/legato/widget/window
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 10543C226B948C51688A4B554B0A50A9
-- generatedChecksum: 328F1E09E0DD9BEE901C4562A3E5180A
-  logicalPath: config/ssd1963_rgb565_mxt_e54_iar
-  name: libc_syscalls.c
-  physicalPath: ''
-  security: NON_SECURE
-  type: SOURCE
-  userChecksum: 328F1E09E0DD9BEE901C4562A3E5180A
-- generatedChecksum: A9A120FBFFC8A03BC99035259E691446
+  userChecksum: 139F6836AE8F0A4D98C4CDEBD788E7A0
+- generatedChecksum: 483F4DAA35ED044F90A401FAB9E4E26C
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/png
   name: lodepng.c
   physicalPath: gfx/legato/image/png
   security: NON_SECURE
   type: SOURCE
-  userChecksum: A9A120FBFFC8A03BC99035259E691446
-- generatedChecksum: ''
-  logicalPath: ''
-  name: main.c
-  physicalPath: ../..
-  security: NON_SECURE
-  type: SOURCE
-  userChecksum: ''
+  userChecksum: 483F4DAA35ED044F90A401FAB9E4E26C
 - generatedChecksum: 20AB8180ABC1E40E4F87149D640B4BE4
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/clock
   name: plib_clock.c
@@ -1042,62 +1049,62 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 20AB8180ABC1E40E4F87149D640B4BE4
-- generatedChecksum: FD8CCFC86D63BF1AC9F15EBA909D181D
+- generatedChecksum: D903E8D9DCBC4107D0AA841E07F653BA
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/cmcc
   name: plib_cmcc.c
   physicalPath: peripheral/cmcc
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FD8CCFC86D63BF1AC9F15EBA909D181D
-- generatedChecksum: C99E6D9B9BA371EA749B7DC16BC2C209
+  userChecksum: D903E8D9DCBC4107D0AA841E07F653BA
+- generatedChecksum: C3ECDED3D6301DB0DE622293ED615D21
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/evsys
   name: plib_evsys.c
   physicalPath: peripheral/evsys
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C99E6D9B9BA371EA749B7DC16BC2C209
-- generatedChecksum: 126EBED209C667C56626C42C27B8715C
+  userChecksum: C3ECDED3D6301DB0DE622293ED615D21
+- generatedChecksum: D606A4DF0F4C871422CB1AAFFB780150
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/nvic
   name: plib_nvic.c
   physicalPath: peripheral/nvic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 126EBED209C667C56626C42C27B8715C
-- generatedChecksum: 8AA3681EED55E354B4F2764AAECA5347
+  userChecksum: D606A4DF0F4C871422CB1AAFFB780150
+- generatedChecksum: 903E0413B53BA9E8980C740E65F59966
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/nvmctrl
   name: plib_nvmctrl.c
   physicalPath: peripheral/nvmctrl
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 8AA3681EED55E354B4F2764AAECA5347
-- generatedChecksum: 68C80829E23FA8EDB09F0E8594612811
+  userChecksum: 903E0413B53BA9E8980C740E65F59966
+- generatedChecksum: D864C89E2E904CAC56B0D2BFB88F5FF2
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/port
   name: plib_port.c
   physicalPath: peripheral/port
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 68C80829E23FA8EDB09F0E8594612811
-- generatedChecksum: DE57C57E1C41D2F5FBC524602BE3EBEA
+  userChecksum: D864C89E2E904CAC56B0D2BFB88F5FF2
+- generatedChecksum: 76593EC038CF96A88123F46F39AECCF2
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/sercom/i2c_master
   name: plib_sercom4_i2c_master.c
   physicalPath: peripheral/sercom/i2c_master
   security: NON_SECURE
   type: SOURCE
-  userChecksum: DE57C57E1C41D2F5FBC524602BE3EBEA
-- generatedChecksum: 186A1E935514AC0E318992A7BB42E2E6
+  userChecksum: 76593EC038CF96A88123F46F39AECCF2
+- generatedChecksum: CC79D51844D7DC96AE192AEC873F43F2
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/tc
   name: plib_tc0.c
   physicalPath: peripheral/tc
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 186A1E935514AC0E318992A7BB42E2E6
-- generatedChecksum: 24A7EAB2B3A9AEB5C8B83AD1716ED38D
+  userChecksum: CC79D51844D7DC96AE192AEC873F43F2
+- generatedChecksum: 1EA04E26671154E2EDF1152B5A020F29
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar
-  name: startup_xc32.c
+  name: startup_iar.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 24A7EAB2B3A9AEB5C8B83AD1716ED38D
+  userChecksum: 1EA04E26671154E2EDF1152B5A020F29
 - generatedChecksum: 92901E4C07604DD5EC594B58CEC2720B
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/system/cache
   name: sys_cache.c
@@ -1105,34 +1112,34 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 92901E4C07604DD5EC594B58CEC2720B
-- generatedChecksum: 00476FA3C353B9AB067B0EDF1DD27182
+- generatedChecksum: 42F3A1D9D54BCC7C91AA8D6156BAD7D0
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/system/input
   name: sys_input.c
   physicalPath: system/input
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 00476FA3C353B9AB067B0EDF1DD27182
-- generatedChecksum: 99F5C28835CA70CF308C005561EF92C6
+  userChecksum: 42F3A1D9D54BCC7C91AA8D6156BAD7D0
+- generatedChecksum: E2567B999B377C3AB2F46AFB3973AB6C
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/system/input
   name: sys_input_listener.c
   physicalPath: system/input
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 99F5C28835CA70CF308C005561EF92C6
-- generatedChecksum: AC4D91625233534A323364884F492CC6
+  userChecksum: E2567B999B377C3AB2F46AFB3973AB6C
+- generatedChecksum: 02C3C1B519E59992810626BB6098CF56
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/system/int
   name: sys_int.c
   physicalPath: system/int/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: AC4D91625233534A323364884F492CC6
-- generatedChecksum: 40A99C84F50EB7DFAA579B8675F140DD
+  userChecksum: 02C3C1B519E59992810626BB6098CF56
+- generatedChecksum: 83BDE663A1AAB20C9E52263F22E2ED3C
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/system/time
   name: sys_time.c
   physicalPath: system/time/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 40A99C84F50EB7DFAA579B8675F140DD
+  userChecksum: 83BDE663A1AAB20C9E52263F22E2ED3C
 - generatedChecksum: F1A71FDDC0BBA28392D218193408FE9B
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar
   name: tasks.c
@@ -1140,48 +1147,55 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: F1A71FDDC0BBA28392D218193408FE9B
-- generatedChecksum: 16BE5CCEE5F9AF5909BF3F69B51C7D93
-  logicalPath: config/ssd1963_rgb565_mxt_e54_iar/stdio
-  name: xc32_monitor.c
-  physicalPath: stdio
-  security: NON_SECURE
-  type: SOURCE
-  userChecksum: 16BE5CCEE5F9AF5909BF3F69B51C7D93
-- generatedChecksum: CE59F9FD8366F55EF4466B4A5353A6E2
+- generatedChecksum: 544C4E28DED855E9AF0024B4796FAAB0
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: ac.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: CE59F9FD8366F55EF4466B4A5353A6E2
-- generatedChecksum: 2D2199802480A5E2E0EFD9E20A3B41F6
+  userChecksum: 544C4E28DED855E9AF0024B4796FAAB0
+- generatedChecksum: 187A5E9AFAEA27A66EEB3FBA605C31B9
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: ac.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 187A5E9AFAEA27A66EEB3FBA605C31B9
+- generatedChecksum: 48A4701AAFB2CFD217EE28E570A08729
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: adc.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2D2199802480A5E2E0EFD9E20A3B41F6
-- generatedChecksum: 0EB58923E4C54CE1B161FD1FE251BC0C
+  userChecksum: 48A4701AAFB2CFD217EE28E570A08729
+- generatedChecksum: 1078AB67A3B4D2C3FB67F1945C8C31C7
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: adc0.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 1078AB67A3B4D2C3FB67F1945C8C31C7
+- generatedChecksum: 38637AA6707DBDB82967C0B0BD5DAC76
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: adc1.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 38637AA6707DBDB82967C0B0BD5DAC76
+- generatedChecksum: FEFD1C34F53549A3FC0DA4F35C74AD91
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: aes.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 0EB58923E4C54CE1B161FD1FE251BC0C
-- generatedChecksum: ''
-  logicalPath: ''
-  name: app.h
-  physicalPath: ../..
+  userChecksum: FEFD1C34F53549A3FC0DA4F35C74AD91
+- generatedChecksum: AC78A1E0CCF1FFDFD9AE5374FCEA6D6D
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: aes.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: ''
-- generatedChecksum: 113219F7C8F19CBC77EA60ADF7BA5527
-  logicalPath: packs/ATSAME54P20A_DFP
-  name: atsame54p20a.h
-  physicalPath: ../../packs/ATSAME54P20A_DFP
-  security: NON_SECURE
-  type: HEADER
-  userChecksum: 113219F7C8F19CBC77EA60ADF7BA5527
+  userChecksum: AC78A1E0CCF1FFDFD9AE5374FCEA6D6D
 - generatedChecksum: 537CAB46F4E3993D34034D8367024171
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/bsp
   name: bsp.h
@@ -1189,27 +1203,62 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 537CAB46F4E3993D34034D8367024171
-- generatedChecksum: F0FC87070F78020F158A3CDDF231B431
+- generatedChecksum: 01B82424BC59A54620F7E9E0DB808EBB
+  logicalPath: packs/CMSIS/CMSIS/Core/Include
+  name: cachel1_armv7.h
+  physicalPath: ../../packs/CMSIS/CMSIS/Core/Include
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 01B82424BC59A54620F7E9E0DB808EBB
+- generatedChecksum: 97BF07FFCA8459E4EB36DE6DC052E2A3
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: can.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: F0FC87070F78020F158A3CDDF231B431
-- generatedChecksum: 5D044E95E4EC93AED60965DF65656284
+  userChecksum: 97BF07FFCA8459E4EB36DE6DC052E2A3
+- generatedChecksum: 7E459E1CEA25B76555159854FA0EB117
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: can0.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 7E459E1CEA25B76555159854FA0EB117
+- generatedChecksum: C4296EBB76B87C993C3FE694FFF23EC4
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: can1.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: C4296EBB76B87C993C3FE694FFF23EC4
+- generatedChecksum: 6E139731B0DC7B1329A38932685F88DD
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: ccl.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5D044E95E4EC93AED60965DF65656284
-- generatedChecksum: B5109B4198364CE230FC6BFBA2D5E90B
+  userChecksum: 6E139731B0DC7B1329A38932685F88DD
+- generatedChecksum: 63EDECB90479CF917B4F79F82EE3A0A0
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: ccl.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 63EDECB90479CF917B4F79F82EE3A0A0
+- generatedChecksum: 3AFC6B9926B1952589DAD0B212C858CD
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: cmcc.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: B5109B4198364CE230FC6BFBA2D5E90B
+  userChecksum: 3AFC6B9926B1952589DAD0B212C858CD
+- generatedChecksum: A7808E2870570A01788CDB95FFD11084
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: cmcc.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: A7808E2870570A01788CDB95FFD11084
 - generatedChecksum: 00A88E28C299A373117BC4D5B9E80C80
   logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: cmsis_armcc.h
@@ -1259,13 +1308,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 52F91AC0727F2311EDA0E3BAA7719A9F
-- generatedChecksum: 918AACA6D04DCC538753DCDD1839417E
+- generatedChecksum: 6E54D4C67C2E340DDAB64C47421E45EF
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar
   name: configuration.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 918AACA6D04DCC538753DCDD1839417E
+  userChecksum: 6E54D4C67C2E340DDAB64C47421E45EF
 - generatedChecksum: 624A16D50759D7A491C523D747764B49
   logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: core_cm4.h
@@ -1273,27 +1322,34 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 624A16D50759D7A491C523D747764B49
-- generatedChecksum: BDBE854662446C34BFE6F9B06A0FA221
+- generatedChecksum: 64CCFA9B41B63E44B0AABF5325575A74
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: dac.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: BDBE854662446C34BFE6F9B06A0FA221
-- generatedChecksum: 7AADDF9AB80A5E9386FE264FFD9E6C41
+  userChecksum: 64CCFA9B41B63E44B0AABF5325575A74
+- generatedChecksum: 902BB85C5481959408BEA6AD082584FA
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: dac.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 902BB85C5481959408BEA6AD082584FA
+- generatedChecksum: 80975BCC07274995F8BAE2624B78C517
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar
   name: definitions.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7AADDF9AB80A5E9386FE264FFD9E6C41
-- generatedChecksum: 950ACD5FAB0B7DBC0FCEC031DA84018E
+  userChecksum: 80975BCC07274995F8BAE2624B78C517
+- generatedChecksum: 9C57DC305D3DC92E1743DB9325BB8BC1
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar
   name: device.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 950ACD5FAB0B7DBC0FCEC031DA84018E
+  userChecksum: 9C57DC305D3DC92E1743DB9325BB8BC1
 - generatedChecksum: 85D3482D395C59BDFF268B01940CDDDE
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar
   name: device_cache.h
@@ -1301,13 +1357,27 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 85D3482D395C59BDFF268B01940CDDDE
-- generatedChecksum: 6F6485A8C65688863626F98A49768D10
+- generatedChecksum: B1F5DFAFF94F9B4E6DD87A5DA5CBB525
+  logicalPath: config/ssd1963_rgb565_mxt_e54_iar
+  name: device_vectors.h
+  physicalPath: ''
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: B1F5DFAFF94F9B4E6DD87A5DA5CBB525
+- generatedChecksum: CCD94E785213966A21E7B66B48974429
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: dmac.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 6F6485A8C65688863626F98A49768D10
+  userChecksum: CCD94E785213966A21E7B66B48974429
+- generatedChecksum: 5875867EDE07453DC1626DA8A730F427
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: dmac.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 5875867EDE07453DC1626DA8A730F427
 - generatedChecksum: 1D2094DFA60F847FFD4E8153B6E78027
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/driver
   name: driver.h
@@ -1357,76 +1427,146 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 96E55AC4B3153F31385A2A7066E9CCBB
-- generatedChecksum: D35F77B422A8CF906BCB014476ED38B1
+- generatedChecksum: 924292325E5C1D62240A4881AC4B17BC
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: dsu.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: D35F77B422A8CF906BCB014476ED38B1
-- generatedChecksum: 0C74E6F76B5F37356237C4AC074A7AB4
+  userChecksum: 924292325E5C1D62240A4881AC4B17BC
+- generatedChecksum: ADB59C384F34BE763824A00E7D01AE80
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: dsu.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: ADB59C384F34BE763824A00E7D01AE80
+- generatedChecksum: 223869B2367A8AD2208B038EC682F365
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: eic.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 0C74E6F76B5F37356237C4AC074A7AB4
-- generatedChecksum: 22FEADDADB287C37D5C14C321BDBC51B
+  userChecksum: 223869B2367A8AD2208B038EC682F365
+- generatedChecksum: BD4B5C3DFB7E1B6962C65034EE18B41D
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: eic.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: BD4B5C3DFB7E1B6962C65034EE18B41D
+- generatedChecksum: 85D51844D41F6BD8280A63F36E93FEFA
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: evsys.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 22FEADDADB287C37D5C14C321BDBC51B
-- generatedChecksum: FF453F849F5FCA9C1EB37633C55AC384
+  userChecksum: 85D51844D41F6BD8280A63F36E93FEFA
+- generatedChecksum: 43EBBCE056CEE3905D2EAB0B92EF4255
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: evsys.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 43EBBCE056CEE3905D2EAB0B92EF4255
+- generatedChecksum: 88ECEC4BB169A8735B3A4DBF285A6EC8
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: freqm.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: FF453F849F5FCA9C1EB37633C55AC384
-- generatedChecksum: B8B32A8F41246932755658F6FDF61AB5
+  userChecksum: 88ECEC4BB169A8735B3A4DBF285A6EC8
+- generatedChecksum: 0C1DAD147B8B61C218160575BAF743F0
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: freqm.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 0C1DAD147B8B61C218160575BAF743F0
+- generatedChecksum: 01D6044975184A83062959988CED5A79
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: gclk.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: B8B32A8F41246932755658F6FDF61AB5
-- generatedChecksum: 60AA8336842593A8FFB8ADB9A0251F89
+  userChecksum: 01D6044975184A83062959988CED5A79
+- generatedChecksum: AE435CD2E80B69FB5C355DA15FFFECA0
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: gclk.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: AE435CD2E80B69FB5C355DA15FFFECA0
+- generatedChecksum: 7978B66868F74E0E2A1207E5699C5203
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/driver/external_controller
   name: gfx_driver.h
   physicalPath: gfx/driver
   security: NON_SECURE
   type: HEADER
-  userChecksum: 60AA8336842593A8FFB8ADB9A0251F89
-- generatedChecksum: B63702B2BBF991BDED45E749F519DE9C
+  userChecksum: 7978B66868F74E0E2A1207E5699C5203
+- generatedChecksum: 3B285488C24DBF6469EB15E6B8E271DF
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: gmac.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: B63702B2BBF991BDED45E749F519DE9C
-- generatedChecksum: B1B76782EDC9F800793464A538D74C8D
+  userChecksum: 3B285488C24DBF6469EB15E6B8E271DF
+- generatedChecksum: D2F2412B3C102C8168FD579744529CAB
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: gmac.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D2F2412B3C102C8168FD579744529CAB
+- generatedChecksum: 9080EFD0146898F15FC7598CA134CA6A
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: hmatrix.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 9080EFD0146898F15FC7598CA134CA6A
+- generatedChecksum: 19A46C04E70D7FDA9958701C4301C0C5
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: hmatrixb.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: B1B76782EDC9F800793464A538D74C8D
-- generatedChecksum: F5CA1CAADAADF2EFD0CF1FCE2C1600B0
+  userChecksum: 19A46C04E70D7FDA9958701C4301C0C5
+- generatedChecksum: 2635DDB5A2EA54E74D0F4C66E2C11248
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: i2s.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: F5CA1CAADAADF2EFD0CF1FCE2C1600B0
-- generatedChecksum: 68EF1A0FCD60BF1BFBF4086F28BD98DE
+  userChecksum: 2635DDB5A2EA54E74D0F4C66E2C11248
+- generatedChecksum: F17508619FAF026792E3CAAF15D1FF67
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: i2s.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: F17508619FAF026792E3CAAF15D1FF67
+- generatedChecksum: A4EB9EBBB8BEF9E8D4965DB93E642FD4
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: icm.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 68EF1A0FCD60BF1BFBF4086F28BD98DE
+  userChecksum: A4EB9EBBB8BEF9E8D4965DB93E642FD4
+- generatedChecksum: 240B0E97C2A26014F1B3BEE2D75B687F
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: icm.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 240B0E97C2A26014F1B3BEE2D75B687F
+- generatedChecksum: E11C9D5301B02B74A669BA00C7813006
+  logicalPath: config/ssd1963_rgb565_mxt_e54_iar
+  name: interrupts.h
+  physicalPath: ''
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: E11C9D5301B02B74A669BA00C7813006
 - generatedChecksum: 83557CBB7CD152113C3D0BA1C0D99619
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/generated
   name: le_gen_assets.h
@@ -1434,20 +1574,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 83557CBB7CD152113C3D0BA1C0D99619
-- generatedChecksum: B304831F3C1AFA7F7A497602EDC016F8
+- generatedChecksum: 042D3F04407D0A343BB7CACD25439A9C
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/generated
   name: le_gen_harmony.h
   physicalPath: gfx/legato/generated
   security: NON_SECURE
   type: HEADER
-  userChecksum: B304831F3C1AFA7F7A497602EDC016F8
-- generatedChecksum: 13EFC04C0D230052AEBB6FC4CA1D204F
+  userChecksum: 042D3F04407D0A343BB7CACD25439A9C
+- generatedChecksum: A0EF378E7CEC7393625CFDDC465529F4
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/generated
   name: le_gen_init.h
   physicalPath: gfx/legato/generated
   security: NON_SECURE
   type: HEADER
-  userChecksum: 13EFC04C0D230052AEBB6FC4CA1D204F
+  userChecksum: A0EF378E7CEC7393625CFDDC465529F4
 - generatedChecksum: 937DD87DB993245DA7E052C09CDE8AA3
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/generated
   name: le_gen_scheme.h
@@ -1476,13 +1616,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 6A358135828719657F3A57D2FD2BBF8A
-- generatedChecksum: 803A3E4DA0BAC462B6FD5037EEB403FC
+- generatedChecksum: E5639B5733F9A8A058424F37917E3FA0
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/common
   name: legato_color.h
   physicalPath: gfx/legato/common
   security: NON_SECURE
   type: HEADER
-  userChecksum: 803A3E4DA0BAC462B6FD5037EEB403FC
+  userChecksum: E5639B5733F9A8A058424F37917E3FA0
 - generatedChecksum: 13553FC080D7DB70E8038CABB05F2B87
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/common
   name: legato_common.h
@@ -1490,13 +1630,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 13553FC080D7DB70E8038CABB05F2B87
-- generatedChecksum: 2A2791D29C0B95A711C79CA0BEEF5ACE
+- generatedChecksum: 6EAD737EC5179C7C388D5DDFA11D5FFF
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato
   name: legato_config.h
   physicalPath: gfx/legato
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2A2791D29C0B95A711C79CA0BEEF5ACE
+  userChecksum: 6EAD737EC5179C7C388D5DDFA11D5FFF
 - generatedChecksum: 30A2B9F9E41BB023C20363CE7E0256A4
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/string
   name: legato_dynamicstring.h
@@ -1525,13 +1665,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 399F86EA062F4D826F593A3D9DB79D87
-- generatedChecksum: 5B96149BA0B344329F3225A5CDDB508A
+- generatedChecksum: 5B4BEAE42537264A02A3558EAEBA8514
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/memory
   name: legato_fixedheap.h
   physicalPath: gfx/legato/memory
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5B96149BA0B344329F3225A5CDDB508A
+  userChecksum: 5B4BEAE42537264A02A3558EAEBA8514
 - generatedChecksum: 295D1BDE726B062609ECDD25D6FE5C01
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/string
   name: legato_fixedstring.h
@@ -1539,13 +1679,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 295D1BDE726B062609ECDD25D6FE5C01
-- generatedChecksum: C61FB415C6EB89C02C332803FA1E277B
+- generatedChecksum: 9640B4174E120D811ACF200434A0DC17
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/font
   name: legato_font.h
   physicalPath: gfx/legato/font
   security: NON_SECURE
   type: HEADER
-  userChecksum: C61FB415C6EB89C02C332803FA1E277B
+  userChecksum: 9640B4174E120D811ACF200434A0DC17
 - generatedChecksum: 223FBC4FC8651E3CCF8D58D95CBE73EF
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/renderer
   name: legato_gpu.h
@@ -1553,48 +1693,55 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 223FBC4FC8651E3CCF8D58D95CBE73EF
-- generatedChecksum: 613845B7106CD0CCD79F1A3DBFE92904
+- generatedChecksum: 4883DAA559AD3AD7F4DB03285440E1A7
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image
   name: legato_image.h
   physicalPath: gfx/legato/image
   security: NON_SECURE
   type: HEADER
-  userChecksum: 613845B7106CD0CCD79F1A3DBFE92904
-- generatedChecksum: 4F75AE2BA02B082D70C5E22ED7659D8E
+  userChecksum: 4883DAA559AD3AD7F4DB03285440E1A7
+- generatedChecksum: 20F5C4A58F413B7AD3ECF05A45A69861
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image
   name: legato_image_utils.h
   physicalPath: gfx/legato/image
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4F75AE2BA02B082D70C5E22ED7659D8E
-- generatedChecksum: 3A33A851522E07EEB3509AD8D9633DED
+  userChecksum: 20F5C4A58F413B7AD3ECF05A45A69861
+- generatedChecksum: F0B4EF8BC9ECFC58C9F62CB647948CB5
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/jpeg
   name: legato_imagedecoder_jpeg.h
   physicalPath: gfx/legato/image/jpeg
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3A33A851522E07EEB3509AD8D9633DED
-- generatedChecksum: DFEB402FABFE3A1FFCF0F6B1B2837440
+  userChecksum: F0B4EF8BC9ECFC58C9F62CB647948CB5
+- generatedChecksum: 1602CC67EF74146364F65BC8543A00AD
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/jpeg
   name: legato_imagedecoder_jpeg_common.h
   physicalPath: gfx/legato/image/jpeg
   security: NON_SECURE
   type: HEADER
-  userChecksum: DFEB402FABFE3A1FFCF0F6B1B2837440
-- generatedChecksum: 41A5A13E42976BB54CAC17621B75C65F
+  userChecksum: 1602CC67EF74146364F65BC8543A00AD
+- generatedChecksum: 33DA5CD50A3BB46122DE90551C40B811
+  logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/mono
+  name: legato_imagedecoder_mono.h
+  physicalPath: gfx/legato/image/mono
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 33DA5CD50A3BB46122DE90551C40B811
+- generatedChecksum: 7ADDAC9059A85F81FAFFBF0953F115C2
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/png
   name: legato_imagedecoder_png.h
   physicalPath: gfx/legato/image/png
   security: NON_SECURE
   type: HEADER
-  userChecksum: 41A5A13E42976BB54CAC17621B75C65F
-- generatedChecksum: 46188203F4682D9E45957B479B1E1339
+  userChecksum: 7ADDAC9059A85F81FAFFBF0953F115C2
+- generatedChecksum: B81AA9C48BB7A1416D0D25EC35D5A2AA
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/raw
   name: legato_imagedecoder_raw.h
   physicalPath: gfx/legato/image/raw
   security: NON_SECURE
   type: HEADER
-  userChecksum: 46188203F4682D9E45957B479B1E1339
+  userChecksum: B81AA9C48BB7A1416D0D25EC35D5A2AA
 - generatedChecksum: 47A67BD8B145601637452E0047D104CD
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/core
   name: legato_input.h
@@ -1623,20 +1770,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: BEB3F3D63025ED8FA62EF5752BF851B0
-- generatedChecksum: 5936559DC4DE978A5BB7D7314A86E665
+- generatedChecksum: E06D754A5AFC61E5C2F7954EC89FDDCC
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image
   name: legato_palette.h
   physicalPath: gfx/legato/image
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5936559DC4DE978A5BB7D7314A86E665
-- generatedChecksum: C7B65AAC9829565535FE11B1A6781D7D
+  userChecksum: E06D754A5AFC61E5C2F7954EC89FDDCC
+- generatedChecksum: D04F42C4BDF251F652FB931F1A34A52C
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/common
   name: legato_pixelbuffer.h
   physicalPath: gfx/legato/common
   security: NON_SECURE
   type: HEADER
-  userChecksum: C7B65AAC9829565535FE11B1A6781D7D
+  userChecksum: D04F42C4BDF251F652FB931F1A34A52C
 - generatedChecksum: 9E276EF2015D1F1A5E491CC936FD9DC1
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/radiobutton
   name: legato_radiobutton_group.h
@@ -1651,27 +1798,27 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 7578127311E17F9429A0B685EC9EEC97
-- generatedChecksum: F96F7917094EBDD9921EA20737D7FC3B
+- generatedChecksum: BC5C0C5CD91410DFA9AC67E61BC0E979
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/datastructure
   name: legato_rectarray.h
   physicalPath: gfx/legato/datastructure
   security: NON_SECURE
   type: HEADER
-  userChecksum: F96F7917094EBDD9921EA20737D7FC3B
-- generatedChecksum: F5536C6CB211C4D900A1D86BE9BC8ADA
+  userChecksum: BC5C0C5CD91410DFA9AC67E61BC0E979
+- generatedChecksum: 822155984303B5FD15335E8707044FEE
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/renderer
   name: legato_renderer.h
   physicalPath: gfx/legato/renderer
   security: NON_SECURE
   type: HEADER
-  userChecksum: F5536C6CB211C4D900A1D86BE9BC8ADA
-- generatedChecksum: 8DE4FBC5FE1338053AAC6B23F9554D2F
+  userChecksum: 822155984303B5FD15335E8707044FEE
+- generatedChecksum: 5FCB3049984A9867B372F0F9303FAF08
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/core
   name: legato_scheme.h
   physicalPath: gfx/legato/core
   security: NON_SECURE
   type: HEADER
-  userChecksum: 8DE4FBC5FE1338053AAC6B23F9554D2F
+  userChecksum: 5FCB3049984A9867B372F0F9303FAF08
 - generatedChecksum: 27E2986E39A7E7CEF850B1023C0B3EB4
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/core
   name: legato_state.h
@@ -1679,13 +1826,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 27E2986E39A7E7CEF850B1023C0B3EB4
-- generatedChecksum: CB5AF592F872E94656BCB5A2D31A5B43
+- generatedChecksum: 641A7B01ED0FC02F380666A7E19BF1FA
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/core
   name: legato_stream.h
   physicalPath: gfx/legato/core
   security: NON_SECURE
   type: HEADER
-  userChecksum: CB5AF592F872E94656BCB5A2D31A5B43
+  userChecksum: 641A7B01ED0FC02F380666A7E19BF1FA
 - generatedChecksum: 6AEF5FC0FC2CD30713AC5F8947101B2D
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/string
   name: legato_string.h
@@ -1707,34 +1854,34 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: BD15246AF6C9A8FFF816F29D2C3DCDDC
-- generatedChecksum: 6729534E5E4135F693D358A4D3FE72B8
+- generatedChecksum: D9BB8CC71544DC99DFF3EA845A5FE02B
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/string
   name: legato_stringutils.h
   physicalPath: gfx/legato/string
   security: NON_SECURE
   type: HEADER
-  userChecksum: 6729534E5E4135F693D358A4D3FE72B8
-- generatedChecksum: AC4FF6B766FF70D8326EF0CE3BBB1DBC
+  userChecksum: D9BB8CC71544DC99DFF3EA845A5FE02B
+- generatedChecksum: AD73789EC166A514CEB5D3A58A9A3897
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/string
   name: legato_tablestring.h
   physicalPath: gfx/legato/string
   security: NON_SECURE
   type: HEADER
-  userChecksum: AC4FF6B766FF70D8326EF0CE3BBB1DBC
-- generatedChecksum: B94995EFE98A1183097E4F2D2B34AC0E
+  userChecksum: AD73789EC166A514CEB5D3A58A9A3897
+- generatedChecksum: D3234BFBF6F6A81B7C1C71B35E8DEB74
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/common
   name: legato_utils.h
   physicalPath: gfx/legato/common
   security: NON_SECURE
   type: HEADER
-  userChecksum: B94995EFE98A1183097E4F2D2B34AC0E
-- generatedChecksum: C8C2D5C1C267C038FD3080F8AFB6398C
+  userChecksum: D3234BFBF6F6A81B7C1C71B35E8DEB74
+- generatedChecksum: 17E34C88F31AE0B00F5EBBDD4CC4D8F0
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/memory
   name: legato_variableheap.h
   physicalPath: gfx/legato/memory
   security: NON_SECURE
   type: HEADER
-  userChecksum: C8C2D5C1C267C038FD3080F8AFB6398C
+  userChecksum: 17E34C88F31AE0B00F5EBBDD4CC4D8F0
 - generatedChecksum: 6370BE961A73E0203F53FB06A650D0A0
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget
   name: legato_widget.h
@@ -1924,13 +2071,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 9E239CE183C03029B1B8CB7F22835A09
-- generatedChecksum: 733136F31CF380F554FE05CB6E5AD425
+- generatedChecksum: 90BED9F488814E692D3DF063E7F6D702
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget
   name: legato_widget_skin_classic_common.h
   physicalPath: gfx/legato/widget
   security: NON_SECURE
   type: HEADER
-  userChecksum: 733136F31CF380F554FE05CB6E5AD425
+  userChecksum: 90BED9F488814E692D3DF063E7F6D702
 - generatedChecksum: 0B4EA51F3089D2E99738AB1110E7A4E8
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/widget/slider
   name: legato_widget_slider.h
@@ -1959,20 +2106,27 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 997EF7032EF79E6E4F8721CCA15A744E
-- generatedChecksum: E7439F8E4502BC9DE9E4427AF5C1D64B
+- generatedChecksum: 288C8B8C00AA685CA12FE4166B2306B9
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/gfx/legato/image/png
   name: lodepng.h
   physicalPath: gfx/legato/image/png
   security: NON_SECURE
   type: HEADER
-  userChecksum: E7439F8E4502BC9DE9E4427AF5C1D64B
-- generatedChecksum: 2C118F1AEC9A7589122A2955FD1A58CB
+  userChecksum: 288C8B8C00AA685CA12FE4166B2306B9
+- generatedChecksum: ABD464764186AE4836FB2BCB9C7D662A
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: mclk.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2C118F1AEC9A7589122A2955FD1A58CB
+  userChecksum: ABD464764186AE4836FB2BCB9C7D662A
+- generatedChecksum: 691A43DB105AD7CEAEACF671AAD08A1E
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: mclk.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 691A43DB105AD7CEAEACF671AAD08A1E
 - generatedChecksum: B96ADDA2C111E73B26EBA5E7B4498912
   logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: mpu_armv7.h
@@ -1980,13 +2134,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: B96ADDA2C111E73B26EBA5E7B4498912
-- generatedChecksum: 892B00855EB855478D8BEFEA293A4D84
+- generatedChecksum: 68019AD8B2DBAC8DDCC995886D6F9929
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: nvmctrl.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 892B00855EB855478D8BEFEA293A4D84
+  userChecksum: 68019AD8B2DBAC8DDCC995886D6F9929
+- generatedChecksum: 23E2139BE0D8510E13AC47925AA31B08
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: nvmctrl.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 23E2139BE0D8510E13AC47925AA31B08
 - generatedChecksum: F0AD88762263B7CB89B02AB4F5876059
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/osal
   name: osal.h
@@ -2001,48 +2162,83 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 0AC88C49E4585B606FD5AC6804F0C340
-- generatedChecksum: B358678B02AC7D3AD6CC80621ECC826D
+- generatedChecksum: B040122CCA94A0636810D6F15F13B751
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/osal
   name: osal_impl_basic.h
   physicalPath: osal
   security: NON_SECURE
   type: HEADER
-  userChecksum: B358678B02AC7D3AD6CC80621ECC826D
-- generatedChecksum: 1C6AB6F3B28213E10027BEA5C94BAA51
+  userChecksum: B040122CCA94A0636810D6F15F13B751
+- generatedChecksum: 7F77DEF36DE028EEA68BA801B00D46FB
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: osc32kctrl.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 1C6AB6F3B28213E10027BEA5C94BAA51
-- generatedChecksum: 381D884B14AB6B407A85224D29D29912
+  userChecksum: 7F77DEF36DE028EEA68BA801B00D46FB
+- generatedChecksum: 8E02A9813153EFDF921A6E858CBB3C88
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: osc32kctrl.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 8E02A9813153EFDF921A6E858CBB3C88
+- generatedChecksum: 3B66320F1CC8418F3767D5934EA458A7
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: oscctrl.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 381D884B14AB6B407A85224D29D29912
-- generatedChecksum: 3019CC5A953C430C17A96CF4061AD56E
+  userChecksum: 3B66320F1CC8418F3767D5934EA458A7
+- generatedChecksum: E3FD05FBB7497DE43100147FF3342570
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: oscctrl.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: E3FD05FBB7497DE43100147FF3342570
+- generatedChecksum: A83A43C251309E6B3F59A7DBB8AFE73B
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: pac.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3019CC5A953C430C17A96CF4061AD56E
-- generatedChecksum: EE0675C8DA76F17BDC692D442B6B64D8
+  userChecksum: A83A43C251309E6B3F59A7DBB8AFE73B
+- generatedChecksum: 979C8D57CEF1A2BE9D4622EE32A639CD
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: pac.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 979C8D57CEF1A2BE9D4622EE32A639CD
+- generatedChecksum: 7BBB8C1CE4A15B9131E9AC9F8A5724B1
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: pcc.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: EE0675C8DA76F17BDC692D442B6B64D8
-- generatedChecksum: 7E1A5CEF2685B2154CC63F18DF40D188
+  userChecksum: 7BBB8C1CE4A15B9131E9AC9F8A5724B1
+- generatedChecksum: B851166216CB3695EB45A250B78BE00B
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: pcc.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: B851166216CB3695EB45A250B78BE00B
+- generatedChecksum: 04368AC9F8DC8C2FA7289688A5BEB1E5
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: pdec.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7E1A5CEF2685B2154CC63F18DF40D188
+  userChecksum: 04368AC9F8DC8C2FA7289688A5BEB1E5
+- generatedChecksum: 9C6F1AA77503899E185BE198BD92F4B0
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: pdec.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 9C6F1AA77503899E185BE198BD92F4B0
 - generatedChecksum: 0416F129713FDF989ACC1FC57065125C
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/clock
   name: plib_clock.h
@@ -2064,34 +2260,34 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: CCAEF942C66AF995876DFD85CEFF611F
-- generatedChecksum: E95AB23B866AA0CE6F0ABF637E9E2C83
+- generatedChecksum: 55ECCC7FA71BD15B46EF80DC0515ED7A
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/nvic
   name: plib_nvic.h
   physicalPath: peripheral/nvic
   security: NON_SECURE
   type: HEADER
-  userChecksum: E95AB23B866AA0CE6F0ABF637E9E2C83
-- generatedChecksum: 979C4115BB3514CB386D0B6C8F6E1525
+  userChecksum: 55ECCC7FA71BD15B46EF80DC0515ED7A
+- generatedChecksum: 265847151EACC813B7C7825442C21A32
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/nvmctrl
   name: plib_nvmctrl.h
   physicalPath: peripheral/nvmctrl
   security: NON_SECURE
   type: HEADER
-  userChecksum: 979C4115BB3514CB386D0B6C8F6E1525
-- generatedChecksum: 640DDFC4B3484F9BBCA099E18808317D
+  userChecksum: 265847151EACC813B7C7825442C21A32
+- generatedChecksum: BDE35FCAB49291DCA85F7E2A5F35C9FB
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/port
   name: plib_port.h
   physicalPath: peripheral/port
   security: NON_SECURE
   type: HEADER
-  userChecksum: 640DDFC4B3484F9BBCA099E18808317D
-- generatedChecksum: 4557E66D599A8728CBCF4E1B3C67AEE8
+  userChecksum: BDE35FCAB49291DCA85F7E2A5F35C9FB
+- generatedChecksum: 2EB20A4F0102639D472B23313F20C6AB
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/sercom/i2c_master
   name: plib_sercom4_i2c_master.h
   physicalPath: peripheral/sercom/i2c_master
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4557E66D599A8728CBCF4E1B3C67AEE8
+  userChecksum: 2EB20A4F0102639D472B23313F20C6AB
 - generatedChecksum: 555AC09B32F566FBFB0A0505CF73ABD6
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/sercom/i2c_master
   name: plib_sercom_i2c_master_common.h
@@ -2106,90 +2302,216 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 8D0960B1F9AEC2A8F11E66FA2A6B010D
-- generatedChecksum: 540B28DFE3ED8439B5B28F57D32C6991
+- generatedChecksum: C0A6E5B99D379FC08247B5FA465A54B3
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/peripheral/tc
   name: plib_tc_common.h
   physicalPath: peripheral/tc
   security: NON_SECURE
   type: HEADER
-  userChecksum: 540B28DFE3ED8439B5B28F57D32C6991
-- generatedChecksum: B1EA217C67ECC2211FE8CAD2835BE02C
+  userChecksum: C0A6E5B99D379FC08247B5FA465A54B3
+- generatedChecksum: 355A935E7095DA5401A27E668BE2CA33
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: pm.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: B1EA217C67ECC2211FE8CAD2835BE02C
-- generatedChecksum: 7EF12949E25BBDE8365BC9C3E2E265A6
+  userChecksum: 355A935E7095DA5401A27E668BE2CA33
+- generatedChecksum: 6A6AA1951314295812A22B0EABF66196
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: pm.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 6A6AA1951314295812A22B0EABF66196
+- generatedChecksum: 477C4D2EB15944D4481855756AB772F7
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: port.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7EF12949E25BBDE8365BC9C3E2E265A6
-- generatedChecksum: A8F3DB630AE542E192486610B20052AC
+  userChecksum: 477C4D2EB15944D4481855756AB772F7
+- generatedChecksum: 99023BA274402D89312A076853B17954
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: port.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 99023BA274402D89312A076853B17954
+- generatedChecksum: 1FCA40F624996D08988CC6BAD8FEE2DE
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: pukcc.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: A8F3DB630AE542E192486610B20052AC
-- generatedChecksum: 16405DBA121A18603D94717E52854AB6
+  userChecksum: 1FCA40F624996D08988CC6BAD8FEE2DE
+- generatedChecksum: 5CFB3B2CB27861A279C9D438A31564BE
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: qspi.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 16405DBA121A18603D94717E52854AB6
-- generatedChecksum: 81D1F8895C8F0089BE5F7B7CAE75F664
+  userChecksum: 5CFB3B2CB27861A279C9D438A31564BE
+- generatedChecksum: 67EDAD1249B45A14BFCEA3907272830E
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: qspi.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 67EDAD1249B45A14BFCEA3907272830E
+- generatedChecksum: E6ABC65223ED32454451D6504B7A833E
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: ramecc.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 81D1F8895C8F0089BE5F7B7CAE75F664
-- generatedChecksum: FFCDB02B342E37F94EF0135AAA98E26C
+  userChecksum: E6ABC65223ED32454451D6504B7A833E
+- generatedChecksum: 72FD3A13DD1DA7E3AB0200B84581349E
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: ramecc.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 72FD3A13DD1DA7E3AB0200B84581349E
+- generatedChecksum: 322D807C476B0C1156976ADBA81205D9
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: rstc.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: FFCDB02B342E37F94EF0135AAA98E26C
-- generatedChecksum: AF0FD354CA8988AB2B8337A6B48B0C08
+  userChecksum: 322D807C476B0C1156976ADBA81205D9
+- generatedChecksum: B353389B9AA96B98C3F0BA901F6B8E56
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: rstc.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: B353389B9AA96B98C3F0BA901F6B8E56
+- generatedChecksum: E993A21DF7C3EF395BC123D93F8D3106
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: rtc.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: AF0FD354CA8988AB2B8337A6B48B0C08
-- generatedChecksum: 61F994965E04330AA6A7F6D281A51A3E
+  userChecksum: E993A21DF7C3EF395BC123D93F8D3106
+- generatedChecksum: C83140A060AF763334983DB9E018675D
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: rtc.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: C83140A060AF763334983DB9E018675D
+- generatedChecksum: A07D9B612C01FDA9BE974FB90A282ACF
+  logicalPath: packs/ATSAME54P20A_DFP
+  name: same54p20a.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: A07D9B612C01FDA9BE974FB90A282ACF
+- generatedChecksum: 406DE56451FAFD7E27CF9CB9322AC8B3
   logicalPath: packs/ATSAME54P20A_DFP/pio
   name: same54p20a.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/pio
   security: NON_SECURE
   type: HEADER
-  userChecksum: 61F994965E04330AA6A7F6D281A51A3E
-- generatedChecksum: EBE210A5911C4B40B7BB33F26831918A
+  userChecksum: 406DE56451FAFD7E27CF9CB9322AC8B3
+- generatedChecksum: 84C277820474A75ED73DA107AC675BD6
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: sdhc.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: EBE210A5911C4B40B7BB33F26831918A
-- generatedChecksum: 75A44D3B6E71862C1DDF435F3E40AAA9
+  userChecksum: 84C277820474A75ED73DA107AC675BD6
+- generatedChecksum: 50F27C1A35C5BFA28D7DB56119B261D2
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: sdhc0.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 50F27C1A35C5BFA28D7DB56119B261D2
+- generatedChecksum: 6221CCE1E3DD773D1426CE7C1433EB45
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: sdhc1.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 6221CCE1E3DD773D1426CE7C1433EB45
+- generatedChecksum: FEC78AFD2163B24AECE5D3F011DF645F
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: sercom.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 75A44D3B6E71862C1DDF435F3E40AAA9
-- generatedChecksum: ED48438182D61A47E24537BBC6040B55
+  userChecksum: FEC78AFD2163B24AECE5D3F011DF645F
+- generatedChecksum: 7604A8A8B80FBCE92D05A16DBB3AA879
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: sercom0.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 7604A8A8B80FBCE92D05A16DBB3AA879
+- generatedChecksum: 6055D131202DEDA19F3616E34AF5D433
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: sercom1.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 6055D131202DEDA19F3616E34AF5D433
+- generatedChecksum: 8DA8340A9C005947E891885DB6965BDA
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: sercom2.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 8DA8340A9C005947E891885DB6965BDA
+- generatedChecksum: F308BF12750E9CA5D642850459D079A4
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: sercom3.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: F308BF12750E9CA5D642850459D079A4
+- generatedChecksum: 0DD2279B458769F8FF73DB55893BF67F
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: sercom4.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 0DD2279B458769F8FF73DB55893BF67F
+- generatedChecksum: C2C3041A911F059DB0ED8134BAEA2D06
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: sercom5.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: C2C3041A911F059DB0ED8134BAEA2D06
+- generatedChecksum: 9C55F796C7829591F4FFFA41FA2D155A
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: sercom6.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 9C55F796C7829591F4FFFA41FA2D155A
+- generatedChecksum: 6DD7FB90983D5FF812420FD0D102BACB
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: sercom7.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 6DD7FB90983D5FF812420FD0D102BACB
+- generatedChecksum: AEDAA55D4824D24D34354510BBEB2E3D
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: supc.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: ED48438182D61A47E24537BBC6040B55
+  userChecksum: AEDAA55D4824D24D34354510BBEB2E3D
+- generatedChecksum: 7FE321E5DFCDE77ADDE0BA7509523CCD
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: supc.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 7FE321E5DFCDE77ADDE0BA7509523CCD
 - generatedChecksum: AFAAF7D896D57569CA4CF73BB3339481
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/system/cache
   name: sys_cache.h
@@ -2204,20 +2526,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 6BB6C54C5CD963A5A940CF7BB28F4E10
-- generatedChecksum: D21A943666F73BB99268A0C55B0327FD
+- generatedChecksum: 533CEADA23BA3DB1FDC642E71682110D
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/system/input
   name: sys_input.h
   physicalPath: system/input
   security: NON_SECURE
   type: HEADER
-  userChecksum: D21A943666F73BB99268A0C55B0327FD
-- generatedChecksum: 5499BE8EDFB7930D2460DE8BA8E8818B
+  userChecksum: 533CEADA23BA3DB1FDC642E71682110D
+- generatedChecksum: 326B45D18D7A6BB4B2D1E0FCF50EF176
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/system/input
   name: sys_input_gesture.h
   physicalPath: system/input
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5499BE8EDFB7930D2460DE8BA8E8818B
+  userChecksum: 326B45D18D7A6BB4B2D1E0FCF50EF176
 - generatedChecksum: A254F5CC3DD63C1432666958260CADAB
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/system/input
   name: sys_input_keyboard.h
@@ -2225,13 +2547,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: A254F5CC3DD63C1432666958260CADAB
-- generatedChecksum: 00AAAE838D855B5A8C560B371C7D0363
+- generatedChecksum: 34162E1DCA132A3EAB3767F529CFD195
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/system/input
   name: sys_input_listener.h
   physicalPath: system/input
   security: NON_SECURE
   type: HEADER
-  userChecksum: 00AAAE838D855B5A8C560B371C7D0363
+  userChecksum: 34162E1DCA132A3EAB3767F529CFD195
 - generatedChecksum: 9B0AB7A5A79745BE5AEC37B9A14D7090
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/system/input
   name: sys_input_mouse.h
@@ -2267,13 +2589,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 466D676839280C0E7FC2CC6F78BA6EE9
-- generatedChecksum: 82C87C4CF49EE4D859363C15E9073333
+- generatedChecksum: 125CB4EFA4E80BCD6041E8AC22F2E2FC
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/system/time
   name: sys_time_definitions.h
   physicalPath: system/time
   security: NON_SECURE
   type: HEADER
-  userChecksum: 82C87C4CF49EE4D859363C15E9073333
+  userChecksum: 125CB4EFA4E80BCD6041E8AC22F2E2FC
 - generatedChecksum: 62F39464265EC34979649F761FB4FE57
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar/system/time
   name: sys_time_local.h
@@ -2302,62 +2624,167 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 1C75A8A6B60598A2FD0D533F57839B72
-- generatedChecksum: 723FB4DE75890C74FC22D65EB1B1435F
+- generatedChecksum: 933F43E98345310486EB55024AE22C8A
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: tc.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 723FB4DE75890C74FC22D65EB1B1435F
-- generatedChecksum: C14AFA39E96E7CDEBFF7E6AEFE7A76D8
+  userChecksum: 933F43E98345310486EB55024AE22C8A
+- generatedChecksum: 0CF3D0ED4CA4A57C65BE54BE9B096040
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: tc0.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 0CF3D0ED4CA4A57C65BE54BE9B096040
+- generatedChecksum: E44AA910E5E5BC5F8552DF21EA363797
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: tc1.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: E44AA910E5E5BC5F8552DF21EA363797
+- generatedChecksum: 1F6AE0E33AF5284A7084A8F234A1ACFB
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: tc2.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 1F6AE0E33AF5284A7084A8F234A1ACFB
+- generatedChecksum: 252F425A064CF6C5D9C1B9903297DE1E
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: tc3.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 252F425A064CF6C5D9C1B9903297DE1E
+- generatedChecksum: 1FEACDDED9B2A189682A1AA0AABA10C3
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: tc4.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 1FEACDDED9B2A189682A1AA0AABA10C3
+- generatedChecksum: 8C3DEE4ECB5908A7483DC9256036EB7A
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: tc5.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 8C3DEE4ECB5908A7483DC9256036EB7A
+- generatedChecksum: A37183945215BD178F7FC9B4800D0CA8
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: tc6.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: A37183945215BD178F7FC9B4800D0CA8
+- generatedChecksum: 84CC0296D20D8080FD8EC8770D081B82
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: tc7.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 84CC0296D20D8080FD8EC8770D081B82
+- generatedChecksum: A4D9FCDB4DB6B68E79AF9C6A6EB84324
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: tcc.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: C14AFA39E96E7CDEBFF7E6AEFE7A76D8
-- generatedChecksum: 3448B62FDF48416310C7CED2A0A37D1C
+  userChecksum: A4D9FCDB4DB6B68E79AF9C6A6EB84324
+- generatedChecksum: 81EE89C96816B9AFF7850E8644C5278E
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: tcc0.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 81EE89C96816B9AFF7850E8644C5278E
+- generatedChecksum: A0B62B9B3BBCE1E41DCE126538972DEA
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: tcc1.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: A0B62B9B3BBCE1E41DCE126538972DEA
+- generatedChecksum: 973368BBCFC49732F6FD83740490869D
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: tcc2.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 973368BBCFC49732F6FD83740490869D
+- generatedChecksum: EEB43DB784F7409FFA92CE574FB6DE5B
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: tcc3.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: EEB43DB784F7409FFA92CE574FB6DE5B
+- generatedChecksum: 195EBF50B59CE07E3F39CD39DF4FA8FE
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: tcc4.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 195EBF50B59CE07E3F39CD39DF4FA8FE
+- generatedChecksum: CBCE60852B41160B780B946EBB41B8CD
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar
   name: toolchain_specifics.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 3448B62FDF48416310C7CED2A0A37D1C
-- generatedChecksum: E03D9CF92E2149A1F3D6895DFB343A04
+  userChecksum: CBCE60852B41160B780B946EBB41B8CD
+- generatedChecksum: 9BAA095FD13BD9C7A4DE9C557A5853FA
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: trng.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: E03D9CF92E2149A1F3D6895DFB343A04
-- generatedChecksum: E7F13A74423AE379151D819EC8B880CC
+  userChecksum: 9BAA095FD13BD9C7A4DE9C557A5853FA
+- generatedChecksum: D2DE9CF6C07EADF0F1DDB64517B728B6
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: trng.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D2DE9CF6C07EADF0F1DDB64517B728B6
+- generatedChecksum: 6731910581AB359B9F9B7F2FF3989553
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: usb.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: E7F13A74423AE379151D819EC8B880CC
-- generatedChecksum: ''
-  logicalPath: config/ssd1963_rgb565_mxt_e54_iar
-  name: user.h
-  physicalPath: ''
+  userChecksum: 6731910581AB359B9F9B7F2FF3989553
+- generatedChecksum: FD54BA5947D17FB12598032BAB482DCC
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: usb.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
   security: NON_SECURE
   type: HEADER
-  userChecksum: ''
-- generatedChecksum: 0584CCD9DFFD4AFEA819CA2D7D666F4E
+  userChecksum: FD54BA5947D17FB12598032BAB482DCC
+- generatedChecksum: F5BB5BF684CF04E45383E4B8D309A483
   logicalPath: packs/ATSAME54P20A_DFP/component
   name: wdt.h
   physicalPath: ../../packs/ATSAME54P20A_DFP/component
   security: NON_SECURE
   type: HEADER
-  userChecksum: 0584CCD9DFFD4AFEA819CA2D7D666F4E
-- generatedChecksum: 67D76CA6F818F9C7235E8442D2074A0B
+  userChecksum: F5BB5BF684CF04E45383E4B8D309A483
+- generatedChecksum: B8E26B847638826781229BAD5D3065F9
+  logicalPath: packs/ATSAME54P20A_DFP/instance
+  name: wdt.h
+  physicalPath: ../../packs/ATSAME54P20A_DFP/instance
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: B8E26B847638826781229BAD5D3065F9
+- generatedChecksum: FAD20347A8F2EB4EC5FFED2D5E626393
   logicalPath: config/ssd1963_rgb565_mxt_e54_iar
-  name: ATSAME54P20A.ld
+  name: flash.icf
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: 67D76CA6F818F9C7235E8442D2074A0B
+  userChecksum: FAD20347A8F2EB4EC5FFED2D5E626393
 format_version: v1.0
 libraries: []
 settings:

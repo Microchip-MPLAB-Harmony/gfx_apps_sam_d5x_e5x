@@ -8,6 +8,10 @@
 #include <string.h>
 #define SQI_LOG_STR_SIZE 64
 
+#ifdef RTOS_ENABLED
+#define MIN_SCRATCH_BUFF_VALUE_KB 16
+#define SCRATCH_BUFF_STR_SIZE 16
+#endif
 
 typedef enum
 {
@@ -37,6 +41,12 @@ static SETTINGS_SCRN_EVENT app_scrn_event;
 static char timeStampStrBuff[TIMESTAMP_STR_SIZE];
 static leChar timeStampStrCharBuff[TIMESTAMP_STR_SIZE] = {0};
 static leFixedString timeStampStr;
+
+#ifdef RTOS_ENABLED
+static char scratchBuffStrBuff[SCRATCH_BUFF_STR_SIZE];
+static leChar scratchBuffStrCharBuff[SCRATCH_BUFF_STR_SIZE] = {0};
+static leFixedString scratchBuffStr;
+#endif
 
 extern bool mg_enabled;
 
@@ -114,17 +124,34 @@ void event_Settings_AdvancedGesturesEnable_OnReleased(leButtonWidget* btn)
     Settings_MGInfoLabel->fn->setString(Settings_MGInfoLabel, (leString*)&string_DisabledString);
 }
 
+#ifdef RTOS_ENABLED
+void event_Settings_ScatchBuffSlider_OnValueChanged(leSliderWidget* scr)
+{
+    uint32_t value;
+    
+    value = (((LE_SCRATCH_BUFFER_SIZE_KB - MIN_SCRATCH_BUFF_VALUE_KB) * scr->value) / 100) +
+            MIN_SCRATCH_BUFF_VALUE_KB;
+        
+    leSetScratchBufferSizeKB((value > LE_SCRATCH_BUFFER_SIZE_KB) ? 
+                              LE_SCRATCH_BUFFER_SIZE_KB : value);
+    
+    sprintf(scratchBuffStrBuff, "%u kB", 
+            (unsigned int)((value > LE_SCRATCH_BUFFER_SIZE_KB) ? 
+                            LE_SCRATCH_BUFFER_SIZE_KB : value));
+    scratchBuffStr.fn->setFromCStr(&scratchBuffStr, scratchBuffStrBuff);   
+    Settings_ScatchBufferSizeLabel->fn->setString(Settings_ScatchBufferSizeLabel,
+                                            (leString*)&scratchBuffStr);     
+}
+#endif
+
 void Settings_OnShow(void)
 {
+#ifdef RTOS_ENABLED     
+    uint32_t scratchBuffVal;
+#endif
     
-#ifdef DEMO_MODE_OPTION_ENABLED
-    Settings_ToggleDemoModeButton->fn->setVisible(Settings_ToggleDemoModeButton, true);
-    Settings_DemoModeStatusString->fn->setVisible(Settings_DemoModeStatusString, true);
-    Settings_ToggleDemoModeButton->fn->setPressed(Settings_ToggleDemoModeButton, demo_mode_enabled == true);
-#else
     Settings_DemoModeStatusString->fn->setVisible(Settings_DemoModeStatusString, false);
     Settings_ToggleDemoModeButton->fn->setVisible(Settings_ToggleDemoModeButton, false);
-#endif
 
     Settings_StatsEnableButton->fn->setPressed(Settings_StatsEnableButton, (stats_enabled == true));
     Settings_AdvancedGesturesEnable->fn->setPressed(Settings_AdvancedGesturesEnable, (mg_enabled == true));
@@ -141,7 +168,23 @@ void Settings_OnShow(void)
     sprintf(timeStampStrBuff, "Build: %s", __TIMESTAMP__);
     timeStampStr.fn->setFromCStr(&timeStampStr, timeStampStrBuff);   
     Settings_TimeStampString->fn->setString(Settings_TimeStampString,
-                                            (leString*)&timeStampStr);     
+                                            (leString*)&timeStampStr);
+
+#ifdef RTOS_ENABLED     
+    //Update scratch buffer slider value and label
+    scratchBuffVal = leGetScratchBufferSizeKB();
+    
+    leFixedString_Constructor(&scratchBuffStr, scratchBuffStrCharBuff, SCRATCH_BUFF_STR_SIZE);
+    timeStampStr.fn->setFont(&scratchBuffStr, (leFont*)&FPS_Font);    
+
+    sprintf(scratchBuffStrBuff, "%u kB", (unsigned int)scratchBuffVal);
+    scratchBuffStr.fn->setFromCStr(&scratchBuffStr, scratchBuffStrBuff);   
+    Settings_ScatchBufferSizeLabel->fn->setString(Settings_ScatchBufferSizeLabel,
+                                            (leString*)&scratchBuffStr);      
+    Settings_ScatchBuffSlider->fn->setValue(Settings_ScatchBuffSlider, 
+                      ((scratchBuffVal - MIN_SCRATCH_BUFF_VALUE_KB) * 100) /
+                      (LE_SCRATCH_BUFFER_SIZE_KB - MIN_SCRATCH_BUFF_VALUE_KB));
+#endif
     
     app_scrn_state = SCRN_STATE_INIT;
     app_scrn_event = SCRN_EVENT_NONE;
@@ -151,6 +194,9 @@ void Settings_OnHide(void)
 {
     sqiUpdateStr.fn->destructor(&sqiUpdateStr);
     timeStampStr.fn->destructor(&timeStampStr);
+#ifdef RTOS_ENABLED     
+    scratchBuffStr.fn->destructor(&scratchBuffStr);
+#endif
 }
 
 void Settings_OnUpdate(void)

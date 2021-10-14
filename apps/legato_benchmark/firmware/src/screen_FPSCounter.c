@@ -173,7 +173,7 @@ static void fpsUpdateTimer_Callback()
     
     fpsBtnText.fn->setFromCStr(&fpsBtnText, charBuff);
     Screen1_FPSUpdateValue->fn->setString(Screen1_FPSUpdateValue, (leString*)&fpsBtnText);
-    
+    Screen1_FPSUpdateValue->fn->invalidate(Screen1_FPSUpdateValue);
 
     //Update Refresh Rate
     gfxIOCTLArg_Value val;
@@ -192,6 +192,7 @@ static void fpsUpdateTimer_Callback()
     refreshRateText.fn->setFromCStr(&refreshRateText, charBuff);
     Screen1_FPSRefreshValue->fn->setString(Screen1_FPSRefreshValue,
                                    (leString*)&refreshRateText);
+    Screen1_FPSRefreshValue->fn->invalidate(Screen1_FPSRefreshValue);
     
     
     prevDrawCount = leGetRenderState()->drawCount;

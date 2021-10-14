@@ -61,6 +61,7 @@
 #include "system/time/sys_time.h"
 #include "usb/usb_device_cdc.h"
 #include "usb/usb_cdc.h"
+#include "peripheral/adc/plib_adc0.h"
 #include "driver/usb/usbfsv1/drv_usbfsv1.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
@@ -74,11 +75,13 @@
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/dmac/plib_dmac.h"
 #include "peripheral/cmcc/plib_cmcc.h"
+#include "peripheral/pm/plib_pm.h"
 #include "peripheral/qspi/plib_qspi.h"
 #include "system/input/sys_input.h"
 #include "peripheral/ccl/plib_ccl.h"
 #include "gfx/driver/controller/external_controller/drv_gfx_external_controller.h"
 #include "app.h"
+#include "app_pwrmgr.h"
 
 
 
