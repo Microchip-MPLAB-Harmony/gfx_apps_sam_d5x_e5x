@@ -721,6 +721,7 @@ leRasterFont NotoSans_Regular =
             8860, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     18,
     13,
@@ -959,6 +960,7 @@ leRasterFont NotoSans_Regular_20 =
             2500, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     26,
     19,
@@ -1203,6 +1205,7 @@ leRasterFont NotoSans_Regular_wheel =
             2516, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     21,
     15,
@@ -2075,6 +2078,7 @@ leRasterFont NotoSans_Regular_Time =
             12896, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     46,
     44,
@@ -2179,6 +2183,7 @@ leRasterFont NotoSans_Bold =
             732, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     20,
     19,
@@ -3391,6 +3396,7 @@ leRasterFont NotoSans_Bold_CookTime =
             18196, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     45,
     43,
@@ -3682,6 +3688,7 @@ leRasterFont NotoSans_Regular_Menu =
             3128, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     19,
     15,
@@ -5235,6 +5242,7 @@ leRasterFont NotoSans_Bold_Time2 =
             23808, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     61,
     59,
@@ -6351,6 +6359,7 @@ leRasterFont NotoSans_Regular_Time2 =
             16812, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     53,
     51,
@@ -7092,6 +7101,7 @@ leRasterFont TitleFont =
             9072, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     18,
     13,
@@ -10074,6 +10084,7 @@ leRasterFont NotoMono_40 =
             44968, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     42,
     31,
@@ -11829,6 +11840,7 @@ leRasterFont NotoMono_30 =
             25332, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     31,
     23,
@@ -16357,6 +16369,7 @@ leRasterFont NotoMono_50 =
             69704, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     51,
     38,
@@ -17807,6 +17820,7 @@ leRasterFont CCtrl_Temp_Font =
             22160, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     61,
     59,
@@ -18232,6 +18246,7 @@ leRasterFont TitleTiny =
             4008, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     13,
     9,
@@ -18749,6 +18764,7 @@ leRasterFont Font_Info =
             5456, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     14,
     10,
@@ -18969,6 +18985,7 @@ leRasterFont FPS_Font =
             776, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     13,
     9,

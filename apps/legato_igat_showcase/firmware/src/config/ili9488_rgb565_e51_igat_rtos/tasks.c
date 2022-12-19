@@ -132,7 +132,7 @@ unsigned int Task_Usage(void)
     uint32_t ulTotalTime;
     uint32_t pctRunTime;
     TaskStatus_t xTaskDetails;
-    uint32_t app_usage;
+    uint32_t app_usage = 0;
 
 #ifdef SHOW_RTOS_IDLE_TASK        
     tasks[IDLE_TASK_ID].handle = xTaskGetIdleTaskHandle();

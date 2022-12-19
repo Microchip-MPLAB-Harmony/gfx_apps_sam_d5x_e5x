@@ -5,10 +5,10 @@ frameworkPath: ..\..\..\..\..\..\..\Harmony3Public
 processor: ATSAME51J20A
 projectName: legato_showcase_e51_igat_rtos
 settings:
-  PackageFilter: audio;bsp;core;cryptoauthlib;csp;gfx;gfx-ed;quick_docs;touch;usb
+  PackageFilter: bsp;core;core_apps_pic32mz_da;core_apps_sam_9x60;core_apps_sam_a5d2;core_apps_sam_e70_s70_v70_v71;csp;csp_apps_pic32mz_da;csp_apps_pic32mz_ef;csp_apps_sam_9x60;csp_apps_sam_a5d2;csp_apps_sam_e70_s70_v70_v71;Devices;dev_packs;gfx;gfx_apps_pic32mz_da;gfx_apps_pic32mz_ef;gfx_apps_sam_9x60;gfx_apps_sam_a5d2;gfx_apps_sam_c20_c21;gfx_apps_sam_d5x_e5x;gfx_apps_sam_e70_s70_v70_v71;gfx_apps_sam_l22;harmony-services;quick_docs;touch;usb;usb_apps_device;usb_apps_host
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
   TRUSTZONE: 'false'
   CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
   MERGE_STRATEGY: USER_ALL
-  DFPPath: .\dev_packs\Microchip\SAME51_DFP\3.5.104\atdf\ATSAME51J20A.atdf
+  DFPPath: .\dev_packs\Microchip\SAME51_DFP\3.6.130\atdf\ATSAME51J20A.atdf

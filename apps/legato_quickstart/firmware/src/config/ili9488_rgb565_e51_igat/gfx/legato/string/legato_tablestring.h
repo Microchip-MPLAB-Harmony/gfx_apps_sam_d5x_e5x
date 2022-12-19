@@ -32,6 +32,10 @@
 
 #include "gfx/legato/string/legato_string.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #define LE_STRING_NULLIDX -1
 
 /* internal use only */
@@ -44,9 +48,9 @@ struct leTableString;
 #define LE_TABLESTRING_VTABLE(THIS_TYPE) \
     LE_STRING_VTABLE(THIS_TYPE) \
     \
-    uint32_t (*getID)(const THIS_TYPE* this); \
-    leResult (*setID)(THIS_TYPE* this, uint32_t id); \
-    uint32_t (*sizeInBytes)(const THIS_TYPE* this); \
+    uint32_t (*getID)(const THIS_TYPE* _this); \
+    leResult (*setID)(THIS_TYPE* _this, uint32_t id); \
+    uint32_t (*sizeInBytes)(const THIS_TYPE* _this); \
 
 typedef struct leTableStringVTable
 {
@@ -204,5 +208,8 @@ virtual uint32_t sizeInBytes(const leTableString* this);
 #undef THIS_TYPE
 #endif
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* LEGATO_TABLESTRING_H */

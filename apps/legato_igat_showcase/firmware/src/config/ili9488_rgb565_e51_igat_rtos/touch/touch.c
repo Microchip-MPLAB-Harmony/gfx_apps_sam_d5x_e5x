@@ -1,5 +1,5 @@
 /*******************************************************************************
-  Touch Library v3.10.1 Release
+  Touch Library v3.13.0 Release
 
   Company:
     Microchip Technology Inc.
@@ -17,7 +17,7 @@
 *******************************************************************************/
 
 /*******************************************************************************
-Copyright (c)  2021 released Microchip Technology Inc.  All rights reserved.
+Copyright (c)  2022 released Microchip Technology Inc.  All rights reserved.
 
 Microchip licenses to you the right to use, modify, copy and distribute
 Software only when embedded on a Microchip microcontroller or digital signal
@@ -51,7 +51,6 @@ SUBSTITUTE  GOODS,  TECHNOLOGY,  SERVICES,  OR  ANY  CLAIMS  BY  THIRD   PARTIES
 /*----------------------------------------------------------------------------
  *   prototypes
  *----------------------------------------------------------------------------*/
-
 /*! \brief configure keys, wheels and sliders.
  */
 static touch_ret_t touch_sensors_config(void);
@@ -261,7 +260,6 @@ static touch_ret_t touch_sensors_config(void)
         qtm_calibrate_sensor_node(&qtlib_acq_set1, sensor_nodes);
     }
 
-
     /* Enable sensor keys and assign nodes */
     for (sensor_nodes = 0u; sensor_nodes < DEF_NUM_SENSORS; sensor_nodes++) {
 			qtm_init_sensor_key(&qtlib_key_set1, sensor_nodes, &ptc_qtlib_node_stat1[sensor_nodes]);
@@ -309,7 +307,6 @@ static void qtm_error_callback(uint8_t error)
 	module_error_code = error + 1u;
 
 }
-
 /*============================================================================
 void touch_init(void)
 ------------------------------------------------------------------------------
@@ -574,7 +571,11 @@ uintptr_t rtc_context;
 void touch_timer_config(void)
 {  
     RTC_Timer32CallbackRegister(rtc_cb, rtc_context);
-    RTC_Timer32CounterSet((uint32_t) 0);
+
+    /* Wait for Synchronization after writing value to Count Register */
+    RTC_Timer32Stop();
+    RTC_Timer32CounterSet(0u);
+
 #if ((KRONO_GESTURE_ENABLE == 1u) || (DEF_TOUCH_DATA_STREAMER_ENABLE == 1u))
     RTC_Timer32Compare0Set(1);
 #else

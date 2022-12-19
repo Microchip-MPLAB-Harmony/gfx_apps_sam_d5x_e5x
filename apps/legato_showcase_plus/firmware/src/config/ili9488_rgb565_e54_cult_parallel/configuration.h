@@ -132,9 +132,6 @@ extern "C" {
 #define USB_DEVICE_SOF_EVENT_ENABLE
 
 
-
-
-
 /* Maximum instances of CDC function driver */
 #define USB_DEVICE_CDC_INSTANCES_NUMBER                     1
 

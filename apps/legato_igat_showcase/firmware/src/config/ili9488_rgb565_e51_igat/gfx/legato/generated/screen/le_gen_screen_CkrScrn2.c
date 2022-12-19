@@ -450,7 +450,7 @@ leResult screenShow_CkrScrn2(void)
 
 void screenUpdate_CkrScrn2(void)
 {
-    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+    root0->fn->setSize(root0, root0->rect.width, root0->rect.height);
 
     CkrScrn2_OnUpdate(); // raise event
 }

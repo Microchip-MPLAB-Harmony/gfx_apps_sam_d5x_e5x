@@ -46,6 +46,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: rtc, value: ''}
+  - type: Boolean
+    attributes: {id: RTC_COUNTSYNC_ENABLE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_qtouch, value: 'false'}
   - type: Hex
     attributes: {id: RTC_MODE0_INTENSET}
     children:

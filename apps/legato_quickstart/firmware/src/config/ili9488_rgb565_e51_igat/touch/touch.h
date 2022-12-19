@@ -1,5 +1,5 @@
 /*******************************************************************************
-  Touch Library v3.10.1 Release
+  Touch Library v3.13.0 Release
 
   Company:
     Microchip Technology Inc.
@@ -16,7 +16,7 @@
 *******************************************************************************/
 
 /*******************************************************************************
-Copyright (c) 2021 released Microchip Technology Inc.  All rights reserved.
+Copyright (c) 2022 released Microchip Technology Inc.  All rights reserved.
 
 Microchip licenses to you the right to use, modify, copy and distribute
 Software only when embedded on a Microchip microcontroller or digital signal
@@ -71,7 +71,6 @@ SUBSTITUTE  GOODS,  TECHNOLOGY,  SERVICES,  OR  ANY  CLAIMS  BY  THIRD   PARTIES
  */
 #define DEF_SENSOR_TYPE NODE_MUTUAL
 
-
 /* Set sensor calibration mode for charge share delay ,Prescaler or series resistor.
  * Range: CAL_AUTO_TUNE_NONE / CAL_AUTO_TUNE_RSEL / CAL_AUTO_TUNE_PRSC / CAL_AUTO_TUNE_CSD
  * Default value: CAL_AUTO_TUNE_NONE.
@@ -79,21 +78,22 @@ SUBSTITUTE  GOODS,  TECHNOLOGY,  SERVICES,  OR  ANY  CLAIMS  BY  THIRD   PARTIES
 
 #define DEF_PTC_CAL_OPTION   CAL_AUTO_TUNE_NONE
 
-/* Defines the interrupt priority for the PTC. Set low priority to PTC interrupt for applications having interrupt time
- * constraints.
- */
-#define DEF_PTC_INTERRUPT_PRIORITY 7
-
 /* Calibration option to ensure full charge transfer */
 /* Bits 7:0 = XX | TT SELECT_TAU | X | CAL_OPTION */
 #define DEF_PTC_TAU_TARGET CAL_CHRG_5TAU
 #define DEF_PTC_CAL_AUTO_TUNE (uint8_t)((DEF_PTC_TAU_TARGET << CAL_CHRG_TIME_POS) | DEF_PTC_CAL_OPTION)
+
+/* Defines the interrupt priority for the PTC. Set low priority to PTC interrupt for applications having interrupt time
+ * constraints.
+ */
+#define DEF_PTC_INTERRUPT_PRIORITY 7
 
 /* Set default bootup acquisition frequency.
  * Range: FREQ_SEL_0 - FREQ_SEL_15 , FREQ_SEL_SPREAD
  * Default value: FREQ_SEL_0.
  */
 #define DEF_SEL_FREQ_INIT FREQ_SEL_0
+
 
 /*----------------------------------------------------------------------------
  *     defines
@@ -114,70 +114,56 @@ SUBSTITUTE  GOODS,  TECHNOLOGY,  SERVICES,  OR  ANY  CLAIMS  BY  THIRD   PARTIES
  * {X-line, Y-line, Charge Share Delay, NODE_RSEL_PRSC(series resistor, prescaler), NODE_G(Analog Gain , Digital Gain),
  * filter level}
  */
-	
 
-//CUSTOM CODE - DO NOT MODIFY OR REMOVE!!!
+
 #define NODE_0_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(16), 3, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
+   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(16), 3,NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
-
 #define NODE_1_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(15), 3, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
+   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(15), 3,NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
-
 #define NODE_2_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(14), 3, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
+   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(14), 3,NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
-
 #define NODE_3_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(29), 3, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
+   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(29), 3,NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
-
 #define NODE_4_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(28), 3, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
+   X(25)|X(24)|X(21)|X(31)|X(30)|X(18)|X(17), Y(28), 3,NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
-
 #define NODE_5_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(16)|X(15)|X(14)|X(29)|X(28), Y(25), 2, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
+   X(16)|X(15)|X(14)|X(29)|X(28), Y(25), 2,NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
-
 #define NODE_6_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(16)|X(15)|X(14)|X(29)|X(28), Y(24), 2, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
+   X(16)|X(15)|X(14)|X(29)|X(28), Y(24), 2,NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
-
 #define NODE_7_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(16)|X(15)|X(14)|X(29)|X(28), Y(21), 2, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
+   X(16)|X(15)|X(14)|X(29)|X(28), Y(21), 2,NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
-
 #define NODE_8_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(16)|X(15)|X(14)|X(29)|X(28), Y(31), 2, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
+   X(16)|X(15)|X(14)|X(29)|X(28), Y(31), 2,NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
-
 #define NODE_9_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(16)|X(15)|X(14)|X(29)|X(28), Y(30), 2, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
+   X(16)|X(15)|X(14)|X(29)|X(28), Y(30), 2,NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
-
 #define NODE_10_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(16)|X(15)|X(14)|X(29)|X(28), Y(18), 2, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
+   X(16)|X(15)|X(14)|X(29)|X(28), Y(18), 2,NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
-
 #define NODE_11_PARAMS                                                                                               \
 {                                                                                                                  \
-   X(16)|X(15)|X(14)|X(29)|X(28), Y(17), 2, NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
+   X(16)|X(15)|X(14)|X(29)|X(28), Y(17), 2,NODE_RSEL_PRSC(RSEL_VAL_6, PRSC_DIV_SEL_64), NODE_GAIN(GAIN_1, GAIN_1), FILTER_LEVEL_64                   \
 }
-//END OF CUSTOM CODE
-
 
 /**********************************************************/
 /***************** Key Params   ******************/
@@ -410,6 +396,7 @@ SUBSTITUTE  GOODS,  TECHNOLOGY,  SERVICES,  OR  ANY  CLAIMS  BY  THIRD   PARTIES
 /***************** Communication - Data Streamer ******************/
 /**********************************************************/
 #define DEF_TOUCH_DATA_STREAMER_ENABLE 0u
+
 
 
 /**********************************************************/

@@ -48,7 +48,11 @@
 
 #include "gfx/legato/common/legato_common.h"
 
-#if LE_DRAWSURFACE_WIDGET_ENABLED
+#if LE_DRAWSURFACE_WIDGET_ENABLED == 1
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include "gfx/legato/widget/legato_widget.h"
 
@@ -66,7 +70,7 @@ typedef struct leDrawSurfaceWidget leDrawSurfaceWidget;
  * @details Draw callback is used indicate a draw changed event.
  * @details .
  */
-typedef leBool (*leDrawSurfaceWidget_DrawCallback)(leDrawSurfaceWidget* sfc,
+typedef leBool (* leDrawSurfaceWidget_DrawCallback)(leDrawSurfaceWidget* sfc,
                                                    leRect* bounds);
 
 // *****************************************************************************
@@ -207,6 +211,10 @@ virtual leResult setDrawCallback(leDrawSurfaceWidget* _this,
                                  leDrawSurfaceWidget_DrawCallback cb);
 
 #undef THIS_TYPE
+#endif
+
+#ifdef __cplusplus
+}
 #endif
 
 #endif // LE_DRAWSURFACE_WIDGET_ENABLED

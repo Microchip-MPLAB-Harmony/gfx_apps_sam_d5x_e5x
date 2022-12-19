@@ -199,6 +199,7 @@ leRasterFont NotoSans_Regular =
             2160, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     28,
     20,

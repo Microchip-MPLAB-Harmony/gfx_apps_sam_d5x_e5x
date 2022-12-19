@@ -207,6 +207,36 @@ static leResult _initBlendStage(leRawDecodeState* state)
     return LE_SUCCESS;
 }
 
+static void _directBlit(const lePixelBuffer* src,
+                        const leRect* srcRect,
+                        const leRect* destRect)
+{
+    void* srcPtr;
+    void* destPtr;
+    lePixelBuffer dest;
+    int32_t row, rowSize;
+    leRect frameRect;
+
+    leRenderer_GetFrameRect(&frameRect);
+
+    dest.pixel_count = leGetRenderBuffer()->pixel_count;
+    dest.size.width = leGetRenderBuffer()->size.width;
+    dest.size.height = leGetRenderBuffer()->size.height;
+    dest.mode = leGetRenderBuffer()->mode;
+    dest.buffer_length = leGetRenderBuffer()->buffer_length;
+    dest.pixels = (gfxBuffer)leGetRenderBuffer()->pixels;
+
+    rowSize = srcRect->width * gfxColorInfoTable[src->mode].size;
+
+    for(row = 0; row < srcRect->height; row++)
+    {
+        srcPtr = lePixelBufferOffsetGet(src, srcRect->x, srcRect->y + row);
+        destPtr = lePixelBufferOffsetGet(&dest, destRect->x - frameRect.x, destRect->y - frameRect.y + row);
+
+        memcpy(destPtr, srcPtr, rowSize);
+    }
+}
+
 static leResult _draw(const leImage* img,
                       const leRect* srcRect,
                       int32_t x,
@@ -216,7 +246,7 @@ static leResult _draw(const leImage* img,
     leRect imgRect, sourceClipRect, drawRect, clipRect;
     leRect dmgRect;
 
-    leRenderer_GetDrawRect(&dmgRect);
+    leRenderer_GetClipRect(&dmgRect);
 
     // only allow a new setup if there isn't a current one
     if(_state.mode != LE_RAW_MODE_NONE)
@@ -268,6 +298,18 @@ static leResult _draw(const leImage* img,
     if(img->header.location == LE_STREAM_LOCATION_ID_INTERNAL &&
        img->format == LE_IMAGE_FORMAT_RAW)
     {
+        if((img->flags & LE_IMAGE_DIRECT_BLIT) > 0 &&
+           img->buffer.mode == _state.targetMode)
+        {
+            _directBlit(&_state.source->buffer,
+                        &_state.sourceRect,
+                        &_state.destRect);
+
+            // the op has already completed
+            // failure indicates to the exe loop that there are no stages to run
+            return LE_FAILURE;
+        }
+
         if(leGPU_BlitBuffer(&_state.source->buffer,
                             &_state.sourceRect,
                             &_state.destRect,
@@ -358,6 +400,7 @@ static leResult _resize(const leImage* src,
 #endif
 
     _state.mode = LE_RAW_MODE_RESIZE;
+    _state.randomRLE = LE_TRUE;
 
     _state.source = src;
     _state.sourceRect = sourceClipRect;
@@ -428,7 +471,7 @@ static leResult _resizeDraw(const leImage* src,
     leRect imgRect, sourceClipRect, drawRect, drawClipRect, clipRect;
     leRect dmgRect;
 
-    leRenderer_GetDrawRect(&dmgRect);
+    leRenderer_GetClipRect(&dmgRect);
 
     // only allow a new setup if there isn't a current one
     if(_state.mode != LE_RAW_MODE_NONE)
@@ -481,6 +524,7 @@ static leResult _resizeDraw(const leImage* src,
 #endif
 
     _state.mode = LE_RAW_MODE_RESIZEDRAW;
+    _state.randomRLE = LE_TRUE;
 
     _state.source = src;
     _state.sourceRect = drawClipRect;
@@ -866,6 +910,7 @@ static leResult _rotate(const leImage* src,
 #endif
 
     _state.mode = LE_RAW_MODE_ROTATE;
+    _state.randomRLE = LE_TRUE;
 
     _state.source = src;
     _state.sourceRect = sourceClipRect;
@@ -934,7 +979,7 @@ static leResult _rotateDraw(const leImage* src,
     leRect imgRect, sourceClipRect, drawRect, clipRect;
     leRect dmgRect;
 
-    leRenderer_GetDrawRect(&dmgRect);
+    leRenderer_GetClipRect(&dmgRect);
 
     // only allow a new setup if there isn't a current one
     if(_state.mode != LE_RAW_MODE_NONE)

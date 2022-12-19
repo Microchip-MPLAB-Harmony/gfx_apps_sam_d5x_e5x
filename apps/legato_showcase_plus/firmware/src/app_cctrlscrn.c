@@ -67,7 +67,7 @@ void CCtrlScrn1_OnUpdate(void)
         }
         case CCTRL_SCRN_STATE_WAIT_FOR_READY:
         {
-            if(leGetRenderState()->frameState != LE_FRAME_READY || 
+            if(!leRenderer_IsIdle() || 
                leEvent_GetCount() != 0 ||
                isDisplayReady() != true)
                 break;

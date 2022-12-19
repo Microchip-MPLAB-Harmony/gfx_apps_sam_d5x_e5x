@@ -293,7 +293,7 @@ void Menu_OnUpdate(void)
         }
         case MENU_STATE_WAIT_FOR_READY:
         {
-            if(leGetRenderState()->frameState != LE_FRAME_READY || 
+            if(!leRenderer_IsIdle() || 
                leEvent_GetCount() != 0)
                 break;
             
@@ -454,9 +454,9 @@ void Menu_OnUpdate(void)
                 }
                 case MENU_EVENT_TOUCH_UP:
                 case MENU_EVENT_TOUCH_TAP:
-                {
-                    leWidget * wgt = leUtils_PickFromWidget(
-                                (leWidget *) &leGetState()->rootWidget[0], lastX, lastY);
+                { 
+                    leLayerState* layerState = (leLayerState*)leList_Get(&leGetState()->layerList, 0);
+                    leWidget * wgt = leUtils_PickFromWidget(&layerState->root, lastX, lastY);
 
                     if (wgt->type == LE_WIDGET_BUTTON)
                     {

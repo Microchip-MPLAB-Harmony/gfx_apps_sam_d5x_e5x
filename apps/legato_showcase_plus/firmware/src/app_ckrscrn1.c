@@ -236,7 +236,7 @@ static void CkrScrn1_UpdateClock(void)
 void CkrScrn1_OnUpdate(void)
 {
     //Wait for the library to be done drawing before processing events/animation
-    if(leGetRenderState()->frameState != LE_FRAME_READY || leEvent_GetCount() != 0)
+    if(!leRenderer_IsIdle() || leEvent_GetCount() != 0)
         return;
     
     switch(CkrScrn1_menu_state)

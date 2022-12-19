@@ -44,6 +44,7 @@ static leResult drawString(leStringRenderRequest* req)
     leRect stringRect, lineRect;
     uint32_t startIdx, endIdx;
     leRasterFont* font;
+    leBool rightToLeft = LE_FALSE;
     //leRect drawRect;
 
     len = req->str->fn->length(req->str);
@@ -53,6 +54,7 @@ static leResult drawString(leStringRenderRequest* req)
         return LE_FAILURE;
 
     stringY = req->y;
+    rightToLeft = (font->base.flags & LE_FONT_RIGHTTOLEFT) > 0;
 
     lines = req->str->fn->getLineCount(req->str);
 
@@ -74,15 +76,36 @@ static leResult drawString(leStringRenderRequest* req)
 
         if(req->align == LE_HALIGN_CENTER)
         {
-            lineX = stringRect.x + (stringRect.width / 2) - (lineRect.width / 2);
+            if(rightToLeft == LE_TRUE)
+            {
+                lineX = stringRect.x + (stringRect.width / 2) + (lineRect.width / 2);
+            }
+            else
+            {
+                lineX = stringRect.x + (stringRect.width / 2) - (lineRect.width / 2);
+            }
         }
         else if(req->align == LE_HALIGN_RIGHT)
         {
-            lineX = stringRect.x + stringRect.width - lineRect.width;
+            if(rightToLeft == LE_TRUE)
+            {
+                lineX = stringRect.x + stringRect.width;
+            }
+            else
+            {
+                lineX = stringRect.x + stringRect.width - lineRect.width;
+            }
         }
         else
         {
-            lineX = stringRect.x;
+            if(rightToLeft == LE_TRUE)
+            {
+                lineX = stringRect.x + lineRect.width;
+            }
+            else
+            {
+                lineX = stringRect.x;
+            }
         }
 
         for(charItr = startIdx; charItr < endIdx; charItr++)
@@ -91,21 +114,40 @@ static leResult drawString(leStringRenderRequest* req)
 
             leFont_GetGlyphInfo((leFont*)font, codePoint, &glyphInfo);
 
+            if(rightToLeft == LE_TRUE)
+            {
+                lineX -= glyphInfo.advance;
+            }
+
             if(codePoint == ASCII_SPACE)
             {
 
             }
             else
             {
-                leFont_DrawGlyph((leFont*)font,
-                                 &glyphInfo,
-                                 req->x + lineX + glyphInfo.bearingX,
-                                 stringY + (font->baseline - glyphInfo.bearingY),
-                                 req->color,
-                                 req->alpha);
+                if(req->lookupTable != NULL)
+                {
+                    leFont_DrawGlyph_Lookup((leFont*)font,
+                                            &glyphInfo,
+                                            req->x + lineX + glyphInfo.bearingX,
+                                            stringY + (font->baseline - glyphInfo.bearingY),
+                                            req->lookupTable);
+                }
+                else
+                {
+                    leFont_DrawGlyph((leFont*)font,
+                                     &glyphInfo,
+                                     req->x + lineX + glyphInfo.bearingX,
+                                     stringY + (font->baseline - glyphInfo.bearingY),
+                                     req->color,
+                                     req->alpha);
+                }
             }
 
-            lineX += glyphInfo.advance;
+            if(rightToLeft == LE_FALSE)
+            {
+                lineX += glyphInfo.advance;
+            }
         }
 
         stringY += font->height;

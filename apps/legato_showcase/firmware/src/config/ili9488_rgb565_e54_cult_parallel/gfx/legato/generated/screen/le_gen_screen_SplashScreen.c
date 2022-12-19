@@ -87,7 +87,7 @@ leResult screenShow_SplashScreen(void)
 
 void screenUpdate_SplashScreen(void)
 {
-    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+    root0->fn->setSize(root0, root0->rect.width, root0->rect.height);
 
     SplashScreen_OnUpdate(); // raise event
 }

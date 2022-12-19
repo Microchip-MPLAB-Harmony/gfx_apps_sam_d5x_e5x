@@ -82,8 +82,7 @@ void Intro_OnUpdate(void)
         }        
         case INTRO_STATE_0:
         {
-            if(leGetRenderState()->frameState != LE_FRAME_READY || 
-               leEvent_GetCount() != 0 ||
+            if(leRenderer_IsIdle() == LE_FALSE ||
                isDisplayReady() != true)
                 break;
                         

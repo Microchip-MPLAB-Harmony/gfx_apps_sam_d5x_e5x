@@ -110,6 +110,8 @@ leResult leApplication_MediaReadRequest(leStream* stream, // stream reader
          // failure tells the decoder to abort and move on
         return LE_FAILURE;
     }
+    
+    DCACHE_CLEAN_INVALIDATE_BY_ADDR((uint32_t *)appData.destBuffer, appData.readSize);
 
     appData.transferStatus = DRV_SST26_TRANSFER_BUSY;
     

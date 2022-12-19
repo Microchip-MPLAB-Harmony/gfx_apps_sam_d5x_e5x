@@ -205,7 +205,7 @@ void Settings_OnUpdate(void)
     {
         case SCRN_STATE_INIT:
         {
-            if(leGetRenderState()->frameState != LE_FRAME_READY || leEvent_GetCount() != 0)
+            if(leRenderer_IsIdle() == LE_FALSE)
                 break;
     
             APP_SetTargetBacklight(BACKLIGHT_MAX_PCT);

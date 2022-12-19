@@ -225,7 +225,7 @@ void SplashScreen_OnUpdate()
     {
         case SCREEN_SETUP:
         {
-            if(leGetRenderState()->frameState == LE_FRAME_READY &&
+            if(leRenderer_IsIdle() &&
                leEvent_GetCount() == 0)
             {
                 setup();
@@ -259,7 +259,7 @@ void SplashScreen_OnUpdate()
         }
         case SCREEN_WAIT_FOR_NEXT:
         {
-            if(leGetRenderState()->frameState == LE_FRAME_READY &&
+            if(leRenderer_IsIdle() &&
                leEvent_GetCount() == 0)
             {
                 screenState = SCREEN_MOVE_TO_NEXT;

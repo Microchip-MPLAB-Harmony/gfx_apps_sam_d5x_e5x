@@ -350,6 +350,7 @@ leRasterFont NotoSans_Bold =
             4112, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     21,
     15,
@@ -743,6 +744,7 @@ leRasterFont NotoSans_Regular =
             4260, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     17,
     12,

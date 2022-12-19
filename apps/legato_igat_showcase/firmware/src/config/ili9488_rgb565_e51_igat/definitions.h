@@ -53,9 +53,9 @@
 #include "usb/usb_chapter_9.h"
 #include "usb/usb_device.h"
 #include "driver/input/drv_touch_itd.h"
+#include "peripheral/tc/plib_tc0.h"
 #include "touch/touch.h"
 #include "peripheral/rtc/plib_rtc.h"
-#include "peripheral/tc/plib_tc0.h"
 #include "peripheral/tc/plib_tc3.h"
 #include "gfx/driver/processor/vgpu/drv_gfx_vgpu.h"
 #include "system/time/sys_time.h"
@@ -76,8 +76,8 @@
 #include "peripheral/dmac/plib_dmac.h"
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "peripheral/pm/plib_pm.h"
-#include "peripheral/qspi/plib_qspi.h"
 #include "system/input/sys_input.h"
+#include "peripheral/qspi/plib_qspi.h"
 #include "peripheral/ccl/plib_ccl.h"
 #include "gfx/driver/controller/external_controller/drv_gfx_external_controller.h"
 #include "app.h"
@@ -206,7 +206,7 @@ Remarks:
 
 typedef struct
 {
-	SYS_MODULE_OBJ  usbDevObject0;
+    SYS_MODULE_OBJ  usbDevObject0;
 
     SYS_MODULE_OBJ  sysTime;
 	SYS_MODULE_OBJ  drvUSBFSV1Object;

@@ -49,6 +49,10 @@
 #include "gfx/legato/common/legato_color.h"
 #include "gfx/legato/core/legato_stream.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 // *****************************************************************************
 /**
  * @brief This enum represents a font.
@@ -119,6 +123,22 @@ typedef enum leFontType
 } leFontType;
 
 // *****************************************************************************
+/* Enumeration:
+    enum leFontFlags
+
+  Summary:
+    Defines font attribute flags.
+*/
+/**
+ * @brief Defines font attribute flags.
+ */
+typedef enum leFontFlags
+{
+    LE_FONT_RIGHTTOLEFT = 0x1, // indicates that the font should be rendered right
+                               // to left
+} leFontFlags;
+
+// *****************************************************************************
 /* Structure:
     struct leFont
 
@@ -127,6 +147,7 @@ typedef enum leFontType
     
     leStreamDescriptor header - describes where the font data is located
     leFontType type - indicates the type of font
+    uint32_t flags - flags describing the font
 */
 /**
  * @brief This struct represents a font object.
@@ -136,6 +157,7 @@ typedef struct leFont
 {
     leStreamDescriptor header;
     leFontType type;
+    uint32_t flags;
 } leFont;
 
 // *****************************************************************************
@@ -215,7 +237,7 @@ typedef struct leFontStream
     leStream stream;
 
     leResult (*open)(void);
-    leResult (*drawGlyph)(const leFontGlyph* glyph, int32_t x, int32_t y, leColor clr, uint32_t alpha, leFontStream_DrawCompleteFn cb);
+    leResult (*drawGlyph)(const leFontGlyph* glyph, int32_t x, int32_t y, leColor clr, uint32_t alpha, const leBlendLookupTable* lookupTable, leFontStream_DrawCompleteFn cb);
     leBool (*isDone)(void);
     void (*close)(void);
 
@@ -361,6 +383,28 @@ leResult leFont_DrawGlyph(const leFont* fnt,
                           leColor clr,
                           uint32_t a);
 
+/**
+ * @brief Draws a glyph using a provided font and color lookup table.
+ * @details Uses a font <span class="param">fnt</span> to draw a glyph <span class="param">glyph</span>
+ * to location <span class="param">x</span>, <span class="param">y</span>.
+ * This function uses the alpha value of each glyph pixel as an index into a color lookup
+ * table <span class="param">tbl</span>.
+ * @code
+ * leResult res = leFont_DrawGlyph_Lookup(fnt, glyph, x, y, tbl);
+ * @endcode
+ * @param fnt the font to use
+ * @param glyph the glyph to draw
+ * @param x the screen x location to draw at
+ * @param y the screen y location to draw at
+ * @param tbl the color lookup table to reference
+ * @return LE_SUCCESS if set, otherwise LE_FAILURE.
+ */
+leResult leFont_DrawGlyph_Lookup(const leFont* fnt,
+                                 const leFontGlyph* glyph,
+                                 int32_t x,
+                                 int32_t y,
+                                 const leBlendLookupTable* tbl);
+
 // *****************************************************************************
 /* Function:
     leResult leFont_DrawGlyphData(const leFont* fnt,
@@ -410,6 +454,29 @@ leResult leFont_DrawGlyphData(const leFont* fnt,
                               leColor clr,
                               uint32_t a);
 
+/**
+ * @brief Draws a glyph using a provided font and color lookup table.
+ * @details Uses a font <span class="param">fnt</span> to draw a glyph <span class="param">glyph</span>
+ * from a raw data pointer <span class="param">data</span> to location <span class="param">x</span>,
+ * <span class="param">y</span>.  This function uses the alpha value of each glyph pixel as an index
+ * into a color lookup table <span class="param">tbl</span>.
+ * @code
+ * leResult res = leFont_DrawGlyphData_Lookup(fnt, glyph, data, x, y, tbl);
+ * @endcode
+ * @param fnt the font to use
+ * @param glyph the glyph to draw
+ * @param x the screen x location to draw at
+ * @param y the screen y location to draw at
+ * @param tbl the color lookup table to reference
+ * @return LE_SUCCESS if set, otherwise LE_FAILURE.
+ */
+leResult leFont_DrawGlyphData_Lookup(const leFont* fnt,
+                                     const leFontGlyph* glyph,
+                                     const uint8_t* data,
+                                     int32_t x,
+                                     int32_t y,
+                                     const leBlendLookupTable* tbl);
+
 #if LE_STREAMING_ENABLED == 1
 // *****************************************************************************
 /* Function:
@@ -436,6 +503,10 @@ leResult leFont_DrawGlyphData(const leFont* fnt,
  * @return pointer to leFontStream.
  */
 leFontStream* leFont_GetStream(const leFont* fnt);
+#endif
+
+#ifdef __cplusplus
+}
 #endif
 
 #endif /* LE_FONT_H */

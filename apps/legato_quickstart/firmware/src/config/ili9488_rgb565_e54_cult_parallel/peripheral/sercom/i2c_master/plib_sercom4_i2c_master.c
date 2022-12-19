@@ -362,7 +362,7 @@ bool SERCOM4_I2C_IsBusy(void)
     bool isBusy = true;
     if((sercom4I2CObj.state == SERCOM_I2C_STATE_IDLE))
     {
-        if(((SERCOM4_REGS->I2CM.SERCOM_STATUS & SERCOM_I2CM_STATUS_BUSSTATE_Msk) == SERCOM_I2CM_STATUS_BUSSTATE(0x01UL)))
+        if(((SERCOM4_REGS->I2CM.SERCOM_STATUS & SERCOM_I2CM_STATUS_BUSSTATE_Msk) == SERCOM_I2CM_STATUS_BUSSTATE(0x01U)))
         {
            isBusy = false;
         }
@@ -373,6 +373,41 @@ bool SERCOM4_I2C_IsBusy(void)
 SERCOM_I2C_ERROR SERCOM4_I2C_ErrorGet(void)
 {
     return sercom4I2CObj.error;
+}
+
+void SERCOM4_I2C_TransferAbort( void )
+{
+    sercom4I2CObj.error = SERCOM_I2C_ERROR_NONE;
+
+    // Reset the plib to IDLE state
+    sercom4I2CObj.state = SERCOM_I2C_STATE_IDLE;
+
+    /* Disable the I2C module */
+    SERCOM4_REGS->I2CM.SERCOM_CTRLA &= ~SERCOM_I2CM_CTRLA_ENABLE_Msk;
+
+    /* Wait for synchronization */
+    while((SERCOM4_REGS->I2CM.SERCOM_SYNCBUSY) != 0U)
+    {
+        /* Do nothing */
+    }
+
+    /* Re-enable the I2C module */
+    SERCOM4_REGS->I2CM.SERCOM_CTRLA |= SERCOM_I2CM_CTRLA_ENABLE_Msk;
+
+    /* Wait for synchronization */
+    while((SERCOM4_REGS->I2CM.SERCOM_SYNCBUSY) != 0U)
+    {
+        /* Do nothing */
+    }
+
+    /* Since the I2C module was disabled, re-initialize the bus state to IDLE */
+    SERCOM4_REGS->I2CM.SERCOM_STATUS = (uint16_t)SERCOM_I2CM_STATUS_BUSSTATE(0x01UL);
+
+    /* Wait for synchronization */
+    while((SERCOM4_REGS->I2CM.SERCOM_SYNCBUSY) != 0U)
+    {
+        /* Do nothing */
+    }
 }
 
 void SERCOM4_I2C_InterruptHandler(void)
@@ -462,8 +497,8 @@ void SERCOM4_I2C_InterruptHandler(void)
                     /* Write next byte */
                     else
                     {
-                        SERCOM4_REGS->I2CM.SERCOM_DATA = sercom4I2CObj.writeBuffer[sercom4I2CObj.writeCount++];
-
+                        SERCOM4_REGS->I2CM.SERCOM_DATA = sercom4I2CObj.writeBuffer[sercom4I2CObj.writeCount];
+                        sercom4I2CObj.writeCount++;
                         /* Wait for synchronization */
                             while((SERCOM4_REGS->I2CM.SERCOM_SYNCBUSY) != 0U)
                             {
@@ -496,8 +531,8 @@ void SERCOM4_I2C_InterruptHandler(void)
                         }
 
                     /* Read the received data */
-                    sercom4I2CObj.readBuffer[sercom4I2CObj.readCount++] = SERCOM4_REGS->I2CM.SERCOM_DATA;
-
+                    sercom4I2CObj.readBuffer[sercom4I2CObj.readCount] = (uint8_t) SERCOM4_REGS->I2CM.SERCOM_DATA;
+                    sercom4I2CObj.readCount++;
 
                     break;
 
@@ -541,7 +576,7 @@ void SERCOM4_I2C_InterruptHandler(void)
             SERCOM4_REGS->I2CM.SERCOM_INTFLAG = (uint8_t)SERCOM_I2CM_INTFLAG_Msk;
 
             /* Wait for the NAK and STOP bit to be transmitted out and I2C state machine to rest in IDLE state */
-            while((SERCOM4_REGS->I2CM.SERCOM_STATUS & SERCOM_I2CM_STATUS_BUSSTATE_Msk) != SERCOM_I2CM_STATUS_BUSSTATE(0x01UL))
+            while((SERCOM4_REGS->I2CM.SERCOM_STATUS & SERCOM_I2CM_STATUS_BUSSTATE_Msk) != SERCOM_I2CM_STATUS_BUSSTATE(0x01U))
             {
                 /* Do nothing */
             }

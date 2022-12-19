@@ -28,6 +28,10 @@
 
 #if LE_GRADIENT_WIDGET_ENABLED
 
+#if LE_DEBUG == 1
+#include "gfx/legato/core/legato_debug.h"
+#endif
+
 #include "gfx/legato/common/legato_error.h"
 #include "gfx/legato/common/legato_utils.h"
 #include "gfx/legato/memory/legato_memory.h"
@@ -101,6 +105,10 @@ static leResult setDirection(leGradientWidget* _this,
     
     _this->fn->invalidate(_this);
         
+#if LE_DEBUG == 1
+    _leDebugNotify_WidgetPropertyChanged((leWidget*)_this);
+#endif
+
     return LE_SUCCESS;
 }
 

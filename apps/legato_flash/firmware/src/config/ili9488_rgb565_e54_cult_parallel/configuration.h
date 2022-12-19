@@ -104,7 +104,7 @@ extern "C" {
 #define SYS_FS_CWD_STRING_LEN             1024
 
 
-#define SYS_FS_FAT_VERSION                "v0.14a"
+#define SYS_FS_FAT_VERSION                "v0.14b"
 #define SYS_FS_FAT_READONLY               false
 #define SYS_FS_FAT_CODE_PAGE              437
 #define SYS_FS_FAT_MAX_SS                 SYS_FS_MEDIA_MAX_BLOCK_SIZE
@@ -173,7 +173,7 @@ extern "C" {
 #define DRV_USBFSV1_ENDPOINTS_NUMBER                        1
 
 /* Total number of devices to be supported */
-#define USB_HOST_DEVICES_NUMBER                             1
+#define USB_HOST_DEVICES_NUMBER                             1 
 
 /* Target peripheral list entries */
 #define  USB_HOST_TPL_ENTRIES                               1 
@@ -205,7 +205,7 @@ extern "C" {
 #define DRV_USBFSV1_HOST_NAK_LIMIT                          2000 
 
 /* Maximum Number of pipes */
-#define DRV_USBFSV1_HOST_PIPES_NUMBER                       10 
+#define DRV_USBFSV1_HOST_PIPES_NUMBER                       10  
 
 /* Attach Debounce duration in milli Seconds */ 
 #define DRV_USBFSV1_HOST_ATTACH_DEBOUNCE_DURATION           500

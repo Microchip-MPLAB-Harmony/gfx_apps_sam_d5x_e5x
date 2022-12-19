@@ -717,6 +717,7 @@ leRasterFont NotoSans_Bold16 =
             8848, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     18,
     13,
@@ -1575,6 +1576,7 @@ leRasterFont NotoSans_Bold18 =
             10984, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     19,
     14,
@@ -2888,6 +2890,7 @@ leRasterFont NotoSans_Bold24 =
             18268, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     25,
     18,
@@ -3795,6 +3798,7 @@ leRasterFont NotoSansCJKsc_Bold16 =
             11768, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     23,
     17,
@@ -5200,6 +5204,7 @@ leRasterFont NotoSansCJKsc_Bold24 =
             19732, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     30,
     22,
@@ -5903,6 +5908,7 @@ leRasterFont NotoSansCJKsc_Regular16 =
             8504, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     20,
     14,
@@ -6466,6 +6472,7 @@ leRasterFont NotoMono_Regular =
             6272, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     16,
     12,
@@ -6704,6 +6711,7 @@ leRasterFont NotoSans_Black =
             1064, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     14,
     10,

@@ -270,7 +270,7 @@ leResult screenShow_KeypadDemoScreen(void)
 
 void screenUpdate_KeypadDemoScreen(void)
 {
-    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+    root0->fn->setSize(root0, root0->rect.width, root0->rect.height);
 
     KeypadDemoScreen_OnUpdate(); // raise event
 }

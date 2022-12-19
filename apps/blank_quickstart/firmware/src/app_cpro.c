@@ -29,7 +29,6 @@
 
 #include "app_cpro.h"
 #include "definitions.h"
-#include "gfx/driver/gfx_driver.h"
 
 #define APP_GFX_LAYER_WIDTH_PIXELS  320
 #define APP_GFX_LAYER_HEIGHT_PIXELS 480
@@ -89,10 +88,10 @@ gfxPixelBuffer scratchPixels;
 
 /*******************************************************************************
   Function:
-    void APP_16_PORTRAIT_Initialize ( void )
+    void APP_CPRO_Initialize ( void )
 
   Remarks:
-    See prototype in app_cproData.h.
+    See prototype in app_cpro.h.
  */
 
 void APP_CPRO_Initialize ( void )
@@ -154,7 +153,7 @@ static void APP_PaintFrameWithColor(
     void APP_CPRO_Tasks ( void )
 
   Remarks:
-    See prototype in app_cproData.h.
+    See prototype in app_cpro.h.
  */
 
 void APP_CPRO_Tasks ( void )

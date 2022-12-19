@@ -92,7 +92,8 @@ typedef enum leImageFlags
     LE_IMAGE_USE_MASK_COLOR  = 1 << 0,
     LE_IMAGE_USE_MASK_MAP    = 1 << 1,
     LE_IMAGE_USE_ALPHA_MAP   = 1 << 2,
-    LE_IMAGE_INTERNAL_ALLOC  = 1 << 3
+    LE_IMAGE_INTERNAL_ALLOC  = 1 << 3,
+    LE_IMAGE_DIRECT_BLIT     = 1 << 4
 } leImageFlags;
 
 // *****************************************************************************
@@ -182,7 +183,7 @@ typedef struct leImage
     leStreamDescriptor header;
     leImageFormat format;
     lePixelBuffer buffer;
-    leImageFlags flags;
+    size_t flags;
 
     union
     {

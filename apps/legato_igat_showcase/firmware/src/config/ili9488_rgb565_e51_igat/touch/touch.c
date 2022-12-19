@@ -1,5 +1,5 @@
 /*******************************************************************************
-  Touch Library v3.10.1 Release
+  Touch Library v3.13.0 Release
 
   Company:
     Microchip Technology Inc.
@@ -17,7 +17,7 @@
 *******************************************************************************/
 
 /*******************************************************************************
-Copyright (c)  2021 released Microchip Technology Inc.  All rights reserved.
+Copyright (c)  2022 released Microchip Technology Inc.  All rights reserved.
 
 Microchip licenses to you the right to use, modify, copy and distribute
 Software only when embedded on a Microchip microcontroller or digital signal
@@ -43,15 +43,15 @@ SUBSTITUTE  GOODS,  TECHNOLOGY,  SERVICES,  OR  ANY  CLAIMS  BY  THIRD   PARTIES
 /*----------------------------------------------------------------------------
  *     include files
  *----------------------------------------------------------------------------*/
+#include "definitions.h"
 #include "touch/touch.h"
-#include "definitions.h" 
+ 
 //CUSTOM CODE - DO NOT MODIFY OR REMOVE!!!
 #include "motion-gestures/mg_touch_processing.h"
 //END OF CUSTOM CODE
 /*----------------------------------------------------------------------------
  *   prototypes
  *----------------------------------------------------------------------------*/
-
 /*! \brief configure keys, wheels and sliders.
  */
 static touch_ret_t touch_sensors_config(void);
@@ -261,7 +261,6 @@ static touch_ret_t touch_sensors_config(void)
         qtm_calibrate_sensor_node(&qtlib_acq_set1, sensor_nodes);
     }
 
-
     /* Enable sensor keys and assign nodes */
     for (sensor_nodes = 0u; sensor_nodes < DEF_NUM_SENSORS; sensor_nodes++) {
 			qtm_init_sensor_key(&qtlib_key_set1, sensor_nodes, &ptc_qtlib_node_stat1[sensor_nodes]);
@@ -309,7 +308,6 @@ static void qtm_error_callback(uint8_t error)
 	module_error_code = error + 1u;
 
 }
-
 /*============================================================================
 void touch_init(void)
 ------------------------------------------------------------------------------
@@ -332,6 +330,7 @@ void touch_init(void)
 	touch_sensors_config();
 
 	
+
 }
 
 /*============================================================================
@@ -412,6 +411,7 @@ void touch_process(void)
            /* Acq module Error Detected: Issue an Acq module common error code 0x80 */
             qtm_error_callback(0);
         }
+
 
 
         if (0u != (qtlib_key_set1.qtm_touch_key_group_data->qtm_keys_status & QTM_KEY_REBURST)) {
@@ -529,6 +529,7 @@ void touch_exit_lowpower_mode(void)
 //END OF CUSTOM CODE
 
 uint8_t touch_gesture_time_cnt;
+
 /*============================================================================
 void touch_timer_handler(void)
 ------------------------------------------------------------------------------
@@ -548,7 +549,7 @@ void touch_timer_handler(void)
 		qtm_update_gesture_2d_timer(touch_gesture_time_cnt / DEF_GESTURE_TIME_BASE_MS);
 		touch_gesture_time_cnt = touch_gesture_time_cnt % DEF_GESTURE_TIME_BASE_MS;
 	}
-    
+
     time_to_measure_touch_var = 1;
     
 //CUSTOM CODE - DO NOT MODIFY OR REMOVE!!!
@@ -563,6 +564,7 @@ void touch_timer_handler(void)
 //CUSTOM CODE - DO NOT MODIFY OR REMOVE!!!
 #endif
 //END OF CUSTOM CODE
+
 }
 
 void rtc_cb( RTC_TIMER32_INT_MASK intCause, uintptr_t context )
@@ -574,7 +576,11 @@ uintptr_t rtc_context;
 void touch_timer_config(void)
 {  
     RTC_Timer32CallbackRegister(rtc_cb, rtc_context);
-    RTC_Timer32CounterSet((uint32_t) 0);
+
+    /* Wait for Synchronization after writing value to Count Register */
+    RTC_Timer32Stop();
+    RTC_Timer32CounterSet(0u);
+
 #if ((KRONO_GESTURE_ENABLE == 1u) || (DEF_TOUCH_DATA_STREAMER_ENABLE == 1u))
     RTC_Timer32Compare0Set(1);
 #else

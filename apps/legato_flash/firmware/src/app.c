@@ -597,7 +597,7 @@ void APP_Tasks ( void )
 #ifdef _STDLIB_ULTOA
 			itoa(number, recordCount, 10);
 #else
-			itoa(recordCount, number, 10);
+            sprintf(number,"%ld",recordCount);
 #endif
             
             counterStr.fn->setFromCStr(&totalStr, number);
@@ -636,7 +636,7 @@ void APP_Tasks ( void )
 #ifdef _STDLIB_ULTOA
 			itoa(number, dec.currentRecord + 1, 10);
 #else
-			itoa(dec.currentRecord + 1, number, 10);
+            sprintf(number,"%ld", (dec.currentRecord + 1));
 #endif
             
             counterStr.fn->setFromCStr(&counterStr, number);

@@ -58,6 +58,6 @@ Running the Demonstration
 
 When power-on is successful, the demonstration will display a similar menu to that shown in the following figure (different configurations may have slight variation in the screen aspect ratio):
 
-<img src="../../../../docs/html/legato_qs_e54_cu_cpro_spi_run1.png" />
+<img src="../../../../docs/html/blank_quickstart.png" />
 
 * * * * *

@@ -655,6 +655,13 @@ children:
       children:
       - type: User
         attributes: {value: '1'}
+  - type: Boolean
+    attributes: {id: DISABLE_AUTOTUNE_CSD}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_qtouch, value: 'false'}
   - type: String
     attributes: {id: DS_TIMER_APPLY}
     children:
@@ -2145,7 +2152,7 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: lib_qtouch, value: ''}
+        attributes: {id: lib_qtouch, value: ptcclock}
   - type: File
     attributes: {id: TOUCH_SURFACE2T_HEADER}
     children:
@@ -2171,6 +2178,23 @@ children:
       children:
       - type: Dynamic
         attributes: {id: lib_qtouch, value: RTC}
+  - type: Menu
+    attributes: {id: TOUCH_WARNING}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: description}
+        children:
+        - {type: Value, value: Open touch configurator and save project}
+      - type: String
+        attributes: {id: label}
+        children:
+        - {type: Value, value: '!!!Warning PTC clock out of sync'}
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: KeyValueSet
     attributes: {id: TUNE_MODE_SELECTED}
     children:

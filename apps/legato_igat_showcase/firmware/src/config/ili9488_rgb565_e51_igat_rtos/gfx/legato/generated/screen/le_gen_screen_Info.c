@@ -485,7 +485,7 @@ leResult screenShow_Info(void)
 
 void screenUpdate_Info(void)
 {
-    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+    root0->fn->setSize(root0, root0->rect.width, root0->rect.height);
 
     Info_OnUpdate(); // raise event
 }

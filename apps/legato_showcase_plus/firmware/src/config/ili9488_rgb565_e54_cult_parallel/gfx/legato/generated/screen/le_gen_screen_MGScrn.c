@@ -192,7 +192,7 @@ leResult screenShow_MGScrn(void)
 
 void screenUpdate_MGScrn(void)
 {
-    root0->fn->setSize(root0, root0->parent->rect.width, root0->parent->rect.height);
+    root0->fn->setSize(root0, root0->rect.width, root0->rect.height);
 
     MGScrn_OnUpdate(); // raise event
 }

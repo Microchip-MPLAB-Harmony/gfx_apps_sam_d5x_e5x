@@ -368,14 +368,14 @@ static void CheckGestures(void)
 void CkrScrn2_OnUpdate(void)
 {
     //Wait for the library to be done drawing before processing events/animation
-    if(leGetRenderState()->frameState != LE_FRAME_READY || leEvent_GetCount() != 0)
+    if(!leRenderer_IsIdle() || leEvent_GetCount() != 0)
         return;
     
     switch(CkrScrn2_scene_state)
     {
         case COLOR_SCENE_INIT:
         {
-            if(leGetRenderState()->frameState != LE_FRAME_READY || 
+            if(!leRenderer_IsIdle() || 
                leEvent_GetCount() != 0 ||
                isDisplayReady() != true)
                 break;            

@@ -38,6 +38,10 @@
 #include "gfx/legato/string/legato_string.h"
 #include "gfx/legato/widget/legato_widget.h"
 
+#if LE_DEBUG == 1
+#include "gfx/legato/core/legato_debug.h"
+#endif
+
 #define DEFAULT_WIDTH           100
 #define DEFAULT_HEIGHT          25
 
@@ -167,7 +171,11 @@ static leResult setToggleable(leButtonWidget* _this,
     LE_ASSERT_THIS();
     
     _this->toggleable = toggleable == 0 ? LE_FALSE : LE_TRUE;
-    
+
+#if LE_DEBUG == 1
+    _leDebugNotify_WidgetPropertyChanged((leWidget*)_this);
+#endif
+
     return LE_SUCCESS;
 }
 
@@ -243,7 +251,11 @@ static leResult setPressed(leButtonWidget* _this,
     {
         _this->fn->invalidate(_this);
     }
-        
+
+#if LE_DEBUG == 1
+    _leDebugNotify_WidgetPropertyChanged((leWidget*)_this);
+#endif
+
     return LE_SUCCESS;
 }
 
@@ -261,8 +273,6 @@ static leResult setString(leButtonWidget* _this,
 
     if(_this->string != NULL)
     {
-        invalidateTextRect(_this);
-
         _this->string->fn->setPreInvalidateCallback((leString*)_this->string,
                                                     NULL,
                                                     NULL);
@@ -283,10 +293,15 @@ static leResult setString(leButtonWidget* _this,
         _this->string->fn->setInvalidateCallback((leString*) _this->string,
                                                  (leString_InvalidateCallback) stringInvalidate,
                                                  _this);
-
-        invalidateTextRect(_this);
     }
-    
+
+
+    _this->fn->invalidate(_this);
+
+#if LE_DEBUG == 1
+    _leDebugNotify_WidgetPropertyChanged((leWidget*)_this);
+#endif
+
     return LE_SUCCESS;
 }
 
@@ -305,7 +320,11 @@ static leResult setPressedImage(leButtonWidget* _this,
     _this->pressedImage = img;
 
     _this->fn->invalidateContents(_this);
-    
+
+#if LE_DEBUG == 1
+    _leDebugNotify_WidgetPropertyChanged((leWidget*)_this);
+#endif
+
     return LE_SUCCESS;
 }
 
@@ -324,7 +343,11 @@ static leResult setReleasedImage(leButtonWidget* _this,
     _this->releasedImage = img;
 
     _this->fn->invalidateContents(_this);
-    
+
+#if LE_DEBUG == 1
+    _leDebugNotify_WidgetPropertyChanged((leWidget*)_this);
+#endif
+
     return LE_SUCCESS;
 }
 
@@ -348,7 +371,11 @@ static leResult setImagePosition(leButtonWidget* _this,
     _this->imagePosition = pos;
     
     _this->fn->invalidateContents(_this);
-    
+
+#if LE_DEBUG == 1
+    _leDebugNotify_WidgetPropertyChanged((leWidget*)_this);
+#endif
+
     return LE_SUCCESS;
 }
 
@@ -372,7 +399,11 @@ static leResult setImageMargin(leButtonWidget* _this,
     _this->imageMargin = mg;
     
     _this->fn->invalidateContents(_this);
-    
+
+#if LE_DEBUG == 1
+    _leDebugNotify_WidgetPropertyChanged((leWidget*)_this);
+#endif
+
     return LE_SUCCESS;
 }
 
@@ -402,7 +433,11 @@ static leResult setPressedOffset(leButtonWidget* _this,
     {
         _this->fn->invalidateContents(_this);
     }
-        
+
+#if LE_DEBUG == 1
+    _leDebugNotify_WidgetPropertyChanged((leWidget*)_this);
+#endif
+
     return LE_SUCCESS;
 }
 

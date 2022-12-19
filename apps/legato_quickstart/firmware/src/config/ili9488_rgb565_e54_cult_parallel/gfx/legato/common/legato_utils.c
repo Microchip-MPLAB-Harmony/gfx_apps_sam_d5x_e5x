@@ -180,6 +180,31 @@ leBool leUtils_ChildIntersectsParent(const leWidget* parent,
     return leRectIntersects(&childRect, &parent->rect);
 }
 
+void leUtils_ClipRectToAncestors(const leWidget* wgt,
+                                 struct leRect* res)
+{
+    leRect rct, prct;
+    leWidget* parent;
+
+    LE_PCALL(wgt, rectToParent, &rct);
+
+    parent = wgt->parent;
+
+    while(parent != NULL)
+    {
+        LE_PCALL(parent, localRect, &prct);
+
+        leRectClip(&rct, &prct, &rct);
+
+        rct.x += parent->rect.x;
+        rct.y += parent->rect.y;
+
+        parent = parent->parent;
+    }
+
+    *res = rct;
+}
+
 leWidget* leUtils_GetNextHighestWidget(const leWidget* wgt)
 {
     int32_t idx;
@@ -555,7 +580,7 @@ void leUtils_PointLogicalToScratch(int16_t* x,
 #else
     lePixelBuffer* buf = leGetRenderBuffer();
 
-    rotY = buf->size.height - *x;
+    rotY = buf->size.height - 1 - *x;
     rotX = *y;
 #endif
 
@@ -604,4 +629,25 @@ void leUtils_RectLogicalToScratch(leRect* rect)
 
     rect->x = rotX;
     rect->y = rotY;
+}
+
+const leBlendLookupTable* leUtils_GetSchemeLookupTable(const leScheme* schm,
+                                                       leColor foreground,
+                                                       leColor background)
+{
+    uint32_t itr;
+
+    if(schm == NULL)
+        return NULL;
+
+    for(itr = 0; itr < schm->blendTableCount; ++itr)
+    {
+        if(schm->blendTables[itr]->foreground == foreground &&
+           schm->blendTables[itr]->background == background)
+        {
+            return schm->blendTables[itr];
+        }
+    }
+
+    return NULL;
 }

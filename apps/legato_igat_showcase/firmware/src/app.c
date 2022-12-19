@@ -134,10 +134,10 @@ static void Timer_Callback ( uintptr_t context)
     if (tick_count % NUM_COUNT_SEC_TICK == 0)
     {
         
-        if (leGetRenderState()->drawCount > last_frame_count)
+        if (leRenderer_GetDrawCount() > last_frame_count)
         {
-            fps = leGetRenderState()->drawCount - last_frame_count;
-            last_frame_count = leGetRenderState()->drawCount;
+            fps = leRenderer_GetDrawCount() - last_frame_count;
+            last_frame_count = leRenderer_GetDrawCount();
         }
         else
         {

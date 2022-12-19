@@ -172,10 +172,12 @@ bool SERCOM0_SPI_TransferSetup(SPI_TRANSFER_SETUP *setup, uint32_t spiSourceCloc
 
     if(setup != NULL)
     {
+//CUSTOM CODE - DO NOT MODIFY OR REMOVE!!!
         baudValue = (spiSourceClock/(2U*(setup->clockFrequency))) - 1U;
 
         if((baudValue > 0U) && (baudValue <= 255U))
         {
+//END OF CUSTOM CODE
             /* Selection of the Clock Polarity and Clock Phase */
             SERCOM0_REGS->SPIM.SERCOM_CTRLA &= ~(SERCOM_SPIM_CTRLA_CPOL_Msk | SERCOM_SPIM_CTRLA_CPHA_Msk);
             SERCOM0_REGS->SPIM.SERCOM_CTRLA |= (uint32_t)setup->clockPolarity | (uint32_t)setup->clockPhase;

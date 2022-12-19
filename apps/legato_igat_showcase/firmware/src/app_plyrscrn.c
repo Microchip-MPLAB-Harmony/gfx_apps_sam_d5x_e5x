@@ -196,8 +196,7 @@ void PlyrScrn_OnUpdate(void)
         }
         case PLYR_SCRN_STATE_WAIT_FOR_READY:
         {
-            if(leGetRenderState()->frameState != LE_FRAME_READY || 
-               leEvent_GetCount() != 0 ||
+            if(leRenderer_IsIdle() == LE_FALSE ||
                isDisplayReady() != true)
                 break;
             

@@ -293,8 +293,7 @@ void Menu_OnUpdate(void)
         }
         case MENU_STATE_WAIT_FOR_READY:
         {
-            if(leGetRenderState()->frameState != LE_FRAME_READY || 
-               leEvent_GetCount() != 0)
+            if(leRenderer_IsIdle() == LE_FALSE)
                 break;
             
             if(isDisplayReady() != true)
@@ -455,8 +454,16 @@ void Menu_OnUpdate(void)
                 case MENU_EVENT_TOUCH_UP:
                 case MENU_EVENT_TOUCH_TAP:
                 {
-                    leWidget * wgt = leUtils_PickFromWidget(
-                                (leWidget *) &leGetState()->rootWidget[0], lastX, lastY);
+                    leWidget * wgt;
+                    lePoint pnt;
+
+                    pnt.x = lastX;
+                    pnt.y = lastY;
+
+                    leUtils_PointScreenToLocalSpace((leWidget *) Menu_PanelWidget1, &pnt);
+
+                    wgt = leUtils_PickFromWidget(
+                                (leWidget *) Menu_PanelWidget1, pnt.x, pnt.y);
 
                     if (wgt->type == LE_WIDGET_BUTTON)
                     {

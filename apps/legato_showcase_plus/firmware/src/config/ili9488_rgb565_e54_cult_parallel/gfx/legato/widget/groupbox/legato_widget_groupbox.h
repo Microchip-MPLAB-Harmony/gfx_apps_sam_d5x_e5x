@@ -48,7 +48,11 @@
 
 #include "gfx/legato/common/legato_common.h"
 
-#if LE_GROUPBOX_WIDGET_ENABLED
+#if LE_GROUPBOX_WIDGET_ENABLED == 1
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include "gfx/legato/widget/legato_widget.h"
 #include "gfx/legato/string/legato_string.h"
@@ -178,7 +182,9 @@ virtual leResult setString(leGroupBoxWidget* _this,
 #undef THIS_TYPE
 #endif
 
-
+#ifdef __cplusplus
+}
+#endif
 
 #endif // LE_GROUPBOX_WIDGET_ENABLED
 #endif /* LEGATO_GROUPBOX_H */

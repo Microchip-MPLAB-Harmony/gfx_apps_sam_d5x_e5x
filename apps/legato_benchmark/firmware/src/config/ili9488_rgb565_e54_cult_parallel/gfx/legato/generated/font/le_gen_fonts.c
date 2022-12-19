@@ -757,6 +757,7 @@ leRasterFont ArialLarge =
             11184, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     117,
     115,
@@ -1059,6 +1060,7 @@ leRasterFont ArialMed =
             3788, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     67,
     65,
@@ -1191,6 +1193,7 @@ leRasterFont ArialSmall =
             1060, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     36,
     35,
@@ -1304,6 +1307,7 @@ leRasterFont ArialNarrow =
             276, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     16,
     11,
@@ -1438,6 +1442,7 @@ leRasterFont ArialNarrowMed =
             948, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     27,
     26,
@@ -1591,6 +1596,7 @@ leRasterFont ArialTiny =
             400, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     12,
     8,
@@ -1694,6 +1700,7 @@ leRasterFont ArialTitle =
             216, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     14,
     10,
@@ -1801,6 +1808,7 @@ leRasterFont ArialLittle =
             400, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     20,
     14,
@@ -1857,6 +1865,7 @@ leRasterFont ArialTinyAve =
             8, // data size
         },
         LE_RASTER_FONT,
+        0,
     },
     7,
     6,
