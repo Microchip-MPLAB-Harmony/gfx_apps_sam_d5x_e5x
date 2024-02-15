@@ -52,6 +52,7 @@
 
 #include "configuration.h"
 #include "definitions.h"
+#include "sys_tasks.h"
 
 //CUSTOM CODE - DO NOT REMOVE OR MODIFY ANYTHING IN THIS FILE!!!
 #include "task.h"

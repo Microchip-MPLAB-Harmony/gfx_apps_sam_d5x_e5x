@@ -52,6 +52,7 @@
 #include <device.h>
 #include "system/int/sys_int.h"
 #include "system/ports/sys_ports.h"
+#include "system/dma/sys_dma.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -143,15 +144,15 @@ typedef struct
 
 } DRV_SPI_TRANSFER_SETUP;
 
-typedef void (*DRV_SPI_PLIB_CALLBACK)( uintptr_t );
+typedef void (*DRV_SPI_PLIB_CALLBACK)( uintptr_t context);
 
-typedef bool (*DRV_SPI_PLIB_SETUP) (DRV_SPI_TRANSFER_SETUP *, uint32_t);
+typedef bool (*DRV_SPI_PLIB_SETUP) (DRV_SPI_TRANSFER_SETUP *setup, uint32_t spiSourceClock);
 
-typedef bool (*DRV_SPI_PLIB_WRITE_READ)(void*, size_t, void *, size_t);
+typedef bool (*DRV_SPI_PLIB_WRITE_READ)(void* pTransmitData, size_t txSize, void * pReceiveData, size_t rxSize);
 
 typedef bool (*DRV_SPI_PLIB_TRANSMITTER_IS_BUSY)(void);
 
-typedef void (* DRV_SPI_PLIB_CALLBACK_REGISTER)(DRV_SPI_PLIB_CALLBACK, uintptr_t);
+typedef void (* DRV_SPI_PLIB_CALLBACK_REGISTER)(DRV_SPI_PLIB_CALLBACK callBack, uintptr_t context);
 
 
 typedef struct
@@ -159,12 +160,15 @@ typedef struct
     int32_t         spiTxReadyInt;
     int32_t         spiTxCompleteInt;
     int32_t         spiRxInt;
+    int32_t         dmaTxChannelInt;
+    int32_t         dmaRxChannelInt;
 } DRV_SPI_MULTI_INT_SRC;
 
 typedef union
 {
     DRV_SPI_MULTI_INT_SRC               multi;
     int32_t                             spiInterrupt;
+    int32_t                             dmaInterrupt;
 } DRV_SPI_INT_SRC;
 
 typedef struct
@@ -223,6 +227,17 @@ typedef struct
      * peripheral. */
     const DRV_SPI_PLIB_INTERFACE*   spiPlib;
 
+    /* SPI transmit DMA channel. */
+    SYS_DMA_CHANNEL                 dmaChannelTransmit;
+
+    /* SPI receive DMA channel. */
+    SYS_DMA_CHANNEL                 dmaChannelReceive;
+
+    /* SPI transmit register address used for DMA operation. */
+    void*                           spiTransmitAddress;
+
+    /* SPI receive register address used for DMA operation. */
+    void*                           spiReceiveAddress;
     /* Memory Pool for Client Objects */
     uintptr_t                       clientObjPool;
 

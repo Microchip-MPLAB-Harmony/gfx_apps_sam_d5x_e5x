@@ -89,35 +89,35 @@ static int drv_itd_pmid = -1;
 //Wrapper function that returns true if there is an active touch input
 static inline bool drv_touch_itd_get_surface_active_status(unsigned int id)
 {
-    return qtm_surface_cs_control1.qtm_surface_cs2t_data->qt_surface_cs2t_status & TOUCH_ACTIVE;
+    return (get_surface_status() & TOUCH_ACTIVE);
 }
 
 static inline uint8_t drv_touch_itd_get_surface_data_x_value(unsigned int id)
 {
-    return qtm_surface_cs_control1.qtm_surface_contact_data[id].h_position;
+        return get_surface_position(HOR_POS , id);
 }
 
 static inline uint8_t drv_touch_itd_get_surface_data_y_value(unsigned int id)
 {
-    return (MAX_POS_VALUE - qtm_surface_cs_control1.qtm_surface_contact_data[id].v_position);
+        return (MAX_POS_VALUE - get_surface_position(VER_POS , id));
 }
 
 //Wrapper function that returns true if a gesture is detected
 static inline uint8_t drv_touch_itd_get_gesture_active_status(void)
 {
-   return qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_status;
+   return qtm_gestures_2d_control1.qtm_gestures_data->gestures_status;
 }
 
 //Wrapper function that returns the current detected gesture
 static inline uint8_t drv_touch_itd_get_which_gesture(void)
 {
-    return qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture;
+    return qtm_gestures_2d_control1.qtm_gestures_data->gestures_which_gesture;
 }
 
 //Wrapper function that returns additional info about the current detected gesture
 static inline uint8_t drv_touch_itd_get_gesture_info(void)
 {
-    return qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_info;
+    return qtm_gestures_2d_control1.qtm_gestures_data->gestures_info;
 }
 
 //CUSTOM CODE - DO NOT REMOVE OR MODIFY!!!
@@ -422,7 +422,7 @@ static bool drv_touch_itd_process_gesture(unsigned int id, int x, int y)
     }
     qtm_gestures_2d_clearGesture();
 //CUSTOM CODE - DO NOT REMOVE OR MODIFY!!!
-    qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_status = 0u;
+    qtm_gestures_2d_control1.qtm_gestures_data->gestures_status = 0u;
 //END OF CUSTOM CODE
     
     return gesture_active;

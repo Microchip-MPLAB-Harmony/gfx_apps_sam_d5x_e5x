@@ -85,14 +85,14 @@ extern  qtm_surface_cs2t_control_t qtm_surface_cs_control1;
 
 touch_ret_t motion_gestures_2d_process(void)
 {
-    if (qtm_surface_cs_control1.qtm_surface_cs2t_data->qt_surface_cs2t_status != 0u) {
+    if (get_surface_status() != 0u) {
         
-        collect_coordinates(qtm_surface_cs_control1.qtm_surface_contact_data->h_position,
-                qtm_surface_cs_control1.qtm_surface_contact_data->v_position);
+        collect_coordinates(get_surface_position(HOR_POS, 0),
+                get_surface_position(VER_POS , 0));
             
         pred_done = 0u;
     }
-    if (qtm_surface_cs_control1.qtm_surface_cs2t_data->qt_surface_cs2t_status == 0u && pred_done == 0u) {
+    if (get_surface_status() == 0u && pred_done == 0u) {
         
         process_touch_gesture_result();
         pred_done = 1u;
@@ -169,7 +169,7 @@ const char* project_name="Motion_Gestures_Touch_Demo";
 /*
  * Process Touch Gesture Result
  */
-extern qtm_gestures_2d_control_t qtm_gestures_2d_control1;
+extern qtm_gestures_2d_control_t   qtm_gestures_2d_control1;
 
 void process_touch_gesture_result(void)
 {         
@@ -189,30 +189,30 @@ void process_touch_gesture_result(void)
     if(predict_result.status == SGRE_TOUCH_GESTURE_ACCEPTED)
     {
         qtm_gestures_2d_clearGesture();
-        qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_status = 1u;
+        qtm_gestures_2d_control1.qtm_gestures_data->gestures_status = 1u;
         
         switch (predict_result.label)
         {
             case 15:
-                qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture = MG_M;
+                qtm_gestures_2d_control1.qtm_gestures_data->gestures_which_gesture = MG_M;
                 break;
             case 5:
-                qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture = MG_S;
+                qtm_gestures_2d_control1.qtm_gestures_data->gestures_which_gesture = MG_S;
                 break;
             case 0:
-                qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture = MG_2;
+                qtm_gestures_2d_control1.qtm_gestures_data->gestures_which_gesture = MG_2;
                 break;                
             case 1:
-                qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture = MG_CHECK;
+                qtm_gestures_2d_control1.qtm_gestures_data->gestures_which_gesture = MG_CHECK;
                 break;
             case 4:
-                qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture = MG_ALPHA;
+                qtm_gestures_2d_control1.qtm_gestures_data->gestures_which_gesture = MG_ALPHA;
                 break;
             case 8:
-                qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture = MG_STAR;
+                qtm_gestures_2d_control1.qtm_gestures_data->gestures_which_gesture = MG_STAR;
                 break;
             default:
-                qtm_gestures_2d_control1.qtm_gestures_2d_data->gestures_which_gesture = MG_ERROR;
+                qtm_gestures_2d_control1.qtm_gestures_data->gestures_which_gesture = MG_ERROR;
                 break;
         }
     }

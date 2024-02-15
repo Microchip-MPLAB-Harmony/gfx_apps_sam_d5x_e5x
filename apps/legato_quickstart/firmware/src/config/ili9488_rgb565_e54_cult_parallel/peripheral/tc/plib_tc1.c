@@ -130,7 +130,7 @@ void TC1_CompareCommandSet(TC_COMMAND command)
     while((TC1_REGS->COUNT8.TC_SYNCBUSY) != 0U)
     {
         /* Wait for Write Synchronization */
-    }    
+    }
 }
 
 /* Get the current counter value */
@@ -168,10 +168,10 @@ void TC1_Compare8bitCounterSet( uint8_t count )
 bool TC1_Compare8bitPeriodSet( uint8_t period )
 {
     bool status = false;
-    if((TC1_REGS->COUNT8.TC_STATUS & TC_STATUS_PERBUFV_Msk) == 0U)
+    if((TC1_REGS->COUNT8.TC_STATUS & TC_STATUS_CCBUFV0_Msk) == 0U)
     {
         /* Configure period value */
-        TC1_REGS->COUNT8.TC_PERBUF = period;
+        TC1_REGS->COUNT8.TC_CCBUF[0] = period;
         status = true;
     }
     return status;
@@ -181,7 +181,7 @@ bool TC1_Compare8bitPeriodSet( uint8_t period )
 uint8_t TC1_Compare8bitPeriodGet( void )
 {
     /* Get period value */
-    return (uint8_t)TC1_REGS->COUNT8.TC_PER;
+    return (uint8_t)TC1_REGS->COUNT8.TC_CC[0];
 }
 
 /* Configure duty cycle value */

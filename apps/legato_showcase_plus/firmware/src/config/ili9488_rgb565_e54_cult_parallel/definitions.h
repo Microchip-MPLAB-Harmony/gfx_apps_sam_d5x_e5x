@@ -54,8 +54,8 @@
 #include "usb/usb_device.h"
 #include "peripheral/tc/plib_tc1.h"
 #include "peripheral/tc/plib_tc0.h"
-#include "gfx/driver/processor/vgpu/drv_gfx_vgpu.h"
 #include "peripheral/tc/plib_tc2.h"
+#include "gfx/driver/processor/vgpu/drv_gfx_vgpu.h"
 #include "driver/i2c/drv_i2c.h"
 #include "system/time/sys_time.h"
 #include "usb/usb_device_cdc.h"
@@ -91,6 +91,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "ATSAME54P20A"
+#define DEVICE_ARCH			 "CORTEX-M4"
+#define DEVICE_FAMILY		 "SAME"
+#define DEVICE_SERIES		 "SAME54"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 120000000

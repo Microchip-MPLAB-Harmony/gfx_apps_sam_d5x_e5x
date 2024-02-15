@@ -63,6 +63,8 @@ void HardFault_Handler (void);
 void MemoryManagement_Handler (void);
 void BusFault_Handler (void);
 void DebugMonitor_Handler (void);
+void DMAC_0_InterruptHandler (void);
+void DMAC_1_InterruptHandler (void);
 void SERCOM0_SPI_InterruptHandler (void);
 void SERCOM6_I2C_InterruptHandler (void);
 void TC0_TimerInterruptHandler (void);

@@ -58,8 +58,8 @@
 #include "peripheral/sercom/i2c_master/plib_sercom4_i2c_master.h"
 #include "bsp/bsp.h"
 #include "peripheral/tc/plib_tc0.h"
-#include "driver/i2c/drv_i2c.h"
 #include "system/time/sys_time.h"
+#include "driver/i2c/drv_i2c.h"
 #include "system/input/sys_input.h"
 #include "gfx/driver/controller/external_controller/drv_gfx_external_controller.h"
 #include "driver/input/drv_maxtouch.h"
@@ -78,6 +78,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "ATSAME54P20A"
+#define DEVICE_ARCH			 "CORTEX-M4"
+#define DEVICE_FAMILY		 "SAME"
+#define DEVICE_SERIES		 "SAME54"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 120000000

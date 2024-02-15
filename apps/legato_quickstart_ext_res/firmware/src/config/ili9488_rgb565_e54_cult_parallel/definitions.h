@@ -51,9 +51,9 @@
 #include "peripheral/nvmctrl/plib_nvmctrl.h"
 #include "peripheral/tc/plib_tc1.h"
 #include "peripheral/tc/plib_tc0.h"
-#include "driver/i2c/drv_i2c.h"
 #include "system/time/sys_time.h"
 #include "peripheral/tc/plib_tc4.h"
+#include "driver/i2c/drv_i2c.h"
 #include "driver/input/drv_maxtouch.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
@@ -70,8 +70,8 @@
 #include "peripheral/sercom/i2c_master/plib_sercom4_i2c_master.h"
 #include "bsp/bsp.h"
 #include "driver/sst26/drv_sst26.h"
-#include "peripheral/qspi/plib_qspi.h"
 #include "system/input/sys_input.h"
+#include "peripheral/qspi/plib_qspi.h"
 #include "peripheral/ccl/plib_ccl.h"
 #include "gfx/driver/controller/external_controller/drv_gfx_external_controller.h"
 #include "app.h"
@@ -85,6 +85,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "ATSAME54P20A"
+#define DEVICE_ARCH			 "CORTEX-M4"
+#define DEVICE_FAMILY		 "SAME"
+#define DEVICE_SERIES		 "SAME54"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 120000000

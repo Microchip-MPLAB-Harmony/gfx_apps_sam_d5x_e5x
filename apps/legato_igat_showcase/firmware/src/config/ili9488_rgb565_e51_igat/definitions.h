@@ -54,8 +54,8 @@
 #include "usb/usb_device.h"
 #include "driver/input/drv_touch_itd.h"
 #include "peripheral/tc/plib_tc0.h"
-#include "touch/touch.h"
 #include "peripheral/rtc/plib_rtc.h"
+#include "touch/touch.h"
 #include "peripheral/tc/plib_tc3.h"
 #include "gfx/driver/processor/vgpu/drv_gfx_vgpu.h"
 #include "system/time/sys_time.h"
@@ -76,8 +76,8 @@
 #include "peripheral/dmac/plib_dmac.h"
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "peripheral/pm/plib_pm.h"
-#include "system/input/sys_input.h"
 #include "peripheral/qspi/plib_qspi.h"
+#include "system/input/sys_input.h"
 #include "peripheral/ccl/plib_ccl.h"
 #include "gfx/driver/controller/external_controller/drv_gfx_external_controller.h"
 #include "app.h"
@@ -92,6 +92,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "ATSAME51J20A"
+#define DEVICE_ARCH			 "CORTEX-M4"
+#define DEVICE_FAMILY		 "SAME"
+#define DEVICE_SERIES		 "SAME51"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 120000000

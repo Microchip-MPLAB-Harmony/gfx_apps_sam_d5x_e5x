@@ -48,7 +48,6 @@
 #include "device.h"
 
 
-
 // ****************************************************************************
 // ****************************************************************************
 // Section: Configuration Bits
@@ -78,6 +77,10 @@
 // Section: Driver Initialization Data
 // *****************************************************************************
 // *****************************************************************************
+/* Following MISRA-C rules are deviated in the below code block */
+/* MISRA C-2012 Rule 11.1 */
+/* MISRA C-2012 Rule 11.3 */
+/* MISRA C-2012 Rule 11.8 */
 // <editor-fold defaultstate="collapsed" desc="DRV_I2C Instance 0 Initialization Data">
 
 /* I2C Client Objects Pool */
@@ -87,13 +90,13 @@ static DRV_I2C_CLIENT_OBJ drvI2C0ClientObjPool[DRV_I2C_CLIENTS_NUMBER_IDX0];
 static DRV_I2C_TRANSFER_OBJ drvI2C0TransferObj[DRV_I2C_QUEUE_SIZE_IDX0];
 
 /* I2C PLib Interface Initialization */
-const DRV_I2C_PLIB_INTERFACE drvI2C0PLibAPI = {
+static const DRV_I2C_PLIB_INTERFACE drvI2C0PLibAPI = {
 
     /* I2C PLib Transfer Read Add function */
-    .read = (DRV_I2C_PLIB_READ)SERCOM4_I2C_Read,
+    .read_t = (DRV_I2C_PLIB_READ)SERCOM4_I2C_Read,
 
     /* I2C PLib Transfer Write Add function */
-    .write = (DRV_I2C_PLIB_WRITE)SERCOM4_I2C_Write,
+    .write_t = (DRV_I2C_PLIB_WRITE)SERCOM4_I2C_Write,
 
 
     /* I2C PLib Transfer Write Read Add function */
@@ -113,20 +116,20 @@ const DRV_I2C_PLIB_INTERFACE drvI2C0PLibAPI = {
 };
 
 
-const DRV_I2C_INTERRUPT_SOURCES drvI2C0InterruptSources =
+static const DRV_I2C_INTERRUPT_SOURCES drvI2C0InterruptSources =
 {
     /* Peripheral has more than one interrupt vector */
     .isSingleIntSrc                        = false,
 
     /* Peripheral interrupt lines */
-    .intSources.multi.i2cInt0          = SERCOM4_0_IRQn,
-    .intSources.multi.i2cInt1          = SERCOM4_1_IRQn,
-    .intSources.multi.i2cInt2          = SERCOM4_2_IRQn,
-    .intSources.multi.i2cInt3          = SERCOM4_OTHER_IRQn,
+    .intSources.multi.i2cInt0          = (int32_t)SERCOM4_0_IRQn,
+    .intSources.multi.i2cInt1          = (int32_t)SERCOM4_1_IRQn,
+    .intSources.multi.i2cInt2          = (int32_t)SERCOM4_2_IRQn,
+    .intSources.multi.i2cInt3          = (int32_t)SERCOM4_OTHER_IRQn,
 };
 
 /* I2C Driver Initialization Data */
-const DRV_I2C_INIT drvI2C0InitData =
+static const DRV_I2C_INIT drvI2C0InitData =
 {
     /* I2C PLib API */
     .i2cPlib = &drvI2C0PLibAPI,
@@ -149,7 +152,6 @@ const DRV_I2C_INIT drvI2C0InitData =
     /* I2C Clock Speed */
     .clockSpeed = DRV_I2C_CLOCK_SPEED_IDX0,
 };
-
 // </editor-fold>
 
 // <editor-fold defaultstate="collapsed" desc="DRV_INPUT_MXT336T Initialization Data">
@@ -167,7 +169,7 @@ const DRV_MAXTOUCH_INIT drvMAXTOUCHInitData =
 
 // <editor-fold defaultstate="collapsed" desc="DRV_SST26 Initialization Data">
 
-const DRV_SST26_PLIB_INTERFACE drvSST26PlibAPI = {
+static const DRV_SST26_PLIB_INTERFACE drvSST26PlibAPI = {
     .CommandWrite   = QSPI_CommandWrite,
     .RegisterRead   = QSPI_RegisterRead,
     .RegisterWrite  = QSPI_RegisterWrite,
@@ -175,11 +177,12 @@ const DRV_SST26_PLIB_INTERFACE drvSST26PlibAPI = {
     .MemoryWrite    = QSPI_MemoryWrite
 };
 
-const DRV_SST26_INIT drvSST26InitData =
+static const DRV_SST26_INIT drvSST26InitData =
 {
     .sst26Plib      = &drvSST26PlibAPI,
 };
 // </editor-fold>
+
 
 
 
@@ -205,7 +208,7 @@ SYSTEM_OBJECTS sysObj;
 // *****************************************************************************
 // <editor-fold defaultstate="collapsed" desc="SYS_TIME Initialization Data">
 
-const SYS_TIME_PLIB_INTERFACE sysTimePlibAPI = {
+static const SYS_TIME_PLIB_INTERFACE sysTimePlibAPI = {
     .timerCallbackSet = (SYS_TIME_PLIB_CALLBACK_REGISTER)TC0_TimerCallbackRegister,
     .timerStart = (SYS_TIME_PLIB_START)TC0_TimerStart,
     .timerStop = (SYS_TIME_PLIB_STOP)TC0_TimerStop,
@@ -215,7 +218,7 @@ const SYS_TIME_PLIB_INTERFACE sysTimePlibAPI = {
     .timerCounterGet = (SYS_TIME_PLIB_COUNTER_GET)TC0_Timer16bitCounterGet,
 };
 
-const SYS_TIME_INIT sysTimeInitData =
+static const SYS_TIME_INIT sysTimeInitData =
 {
     .timePlib = &sysTimePlibAPI,
     .hwTimerIntNum = TC0_IRQn,
@@ -231,7 +234,7 @@ const SYS_TIME_INIT sysTimeInitData =
 // *****************************************************************************
 // *****************************************************************************
 
-
+/* MISRAC 2012 deviation block end */
 
 /*******************************************************************************
   Function:
@@ -245,6 +248,7 @@ const SYS_TIME_INIT sysTimeInitData =
 
 void SYS_Initialize ( void* data )
 {
+
     /* MISRAC 2012 deviation block start */
     /* MISRA C-2012 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2012_R_2_2_DR_1 */
 
@@ -274,8 +278,15 @@ void SYS_Initialize ( void* data )
     QSPI_Initialize();
 
 
+
+    /* MISRAC 2012 deviation block start */
+    /* Following MISRA-C rules deviated in this block  */
+    /* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
+    /* MISRA C-2012 Rule 11.8 - Deviation record ID - H3_MISRAC_2012_R_11_8_DR_1 */
+
     /* Initialize I2C0 Driver Instance */
     sysObj.drvI2C0 = DRV_I2C_Initialize(DRV_I2C_INDEX_0, (SYS_MODULE_INIT *)&drvI2C0InitData);
+
 
     sysObj.drvMAXTOUCH = DRV_MAXTOUCH_Initialize(0, (SYS_MODULE_INIT *)&drvMAXTOUCHInitData);
 
@@ -286,7 +297,12 @@ void SYS_Initialize ( void* data )
     DRV_ILI9488_Initialize();
 
 
+    /* MISRA C-2012 Rule 11.3, 11.8 deviated below. Deviation record ID -  
+    H3_MISRAC_2012_R_11_3_DR_1 & H3_MISRAC_2012_R_11_8_DR_1*/
+        
     sysObj.sysTime = SYS_TIME_Initialize(SYS_TIME_INDEX_0, (SYS_MODULE_INIT *)&sysTimeInitData);
+    
+    /* MISRAC 2012 deviation block end */
 
     SYS_INP_Init();
 
@@ -295,14 +311,15 @@ void SYS_Initialize ( void* data )
     Legato_Initialize();
 
 
+    /* MISRAC 2012 deviation block end */
     APP_Initialize();
 
 
     NVIC_Initialize();
 
+
     /* MISRAC 2012 deviation block end */
 }
-
 
 /*******************************************************************************
  End of File

@@ -56,14 +56,14 @@
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/dmac/plib_dmac.h"
 #include "peripheral/cmcc/plib_cmcc.h"
+#include "peripheral/tc/plib_tc0.h"
 #include "driver/input/drv_touch_itd.h"
 #include "touch/touch.h"
 #include "peripheral/rtc/plib_rtc.h"
-#include "peripheral/tc/plib_tc0.h"
 #include "system/time/sys_time.h"
 #include "system/input/sys_input.h"
-#include "peripheral/adc/plib_adc0.h"
 #include "peripheral/ccl/plib_ccl.h"
+#include "peripheral/adc/plib_adc0.h"
 #include "gfx/driver/controller/external_controller/drv_gfx_external_controller.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
@@ -80,6 +80,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "ATSAME51J20A"
+#define DEVICE_ARCH			 "CORTEX-M4"
+#define DEVICE_FAMILY		 "SAME"
+#define DEVICE_SERIES		 "SAME51"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 120000000

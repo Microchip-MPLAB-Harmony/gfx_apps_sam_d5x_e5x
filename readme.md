@@ -3,7 +3,7 @@ title: Harmony 3 Graphics SAM D5x/E5x Family Applications Package
 nav_order: 1
 ---
 
-# ![MPLAB® Harmony Graphics Suite](./docs/html/mhgs.png) MPLAB® Harmony 3 Graphics application examples for SAM D5x/E5x Family
+# ![MPLAB® Harmony Graphics Suite](./images/mhgs.png) MPLAB® Harmony 3 Graphics application examples for SAM D5x/E5x Family
 
 MPLAB® Harmony Graphics Suite  is an extension of the MPLAB® ecosystem for creating
 embedded graphics firmware solutions for Microchip 32-bit SAM and PIC® microcontroller
@@ -20,7 +20,7 @@ For more information on the tools, libraries and basic development with the MPLA
  - [Release Notes](https://microchip-mplab-harmony.github.io/gfx_apps_sam_d5x_e5x/release_notes.html)
  - [MPLAB® Harmony License](https://microchip-mplab-harmony.github.io/gfx/mplab_harmony_license.html)
  - [MPLAB® Harmony 3 Graphics User Guides Wiki](https://github.com/mchpgfx/legato.docs/wiki)
- - [MPLAB® Harmony 3 Graphics API Help](https://mchpgfx.github.io/legato.docs/html/index.html)
+ - [MPLAB® Harmony 3 Graphics API Help](https://mchpgfx.github.io/legato.images/index.html)
  - [MPLAB® Harmony 3 Graphics Applications](https://microchip-mplab-harmony.github.io/gfx/apps/readme.html)
  - [MPLAB® Harmony 3 Graphics Videos](https://www.youtube.com/channel/UCwGbrIuty-pHCyjuVRAyP5Q)
 
@@ -38,7 +38,7 @@ Documentation is available for offline viewing.  It can be used only after cloni
 
 The following applications are provided to demonstrate a subset of the capabilities of Harmony Graphics Suite.
 
-| Category | Item | Description | Release Type |
+| Category | Item | Description | Release Status |
 | --- | --- | ---- |---- |
 |  apps | [legato_benchmark](./apps/legato_benchmark/readme.md) | Performance measuring utility example | ![app-beta](https://img.shields.io/badge/application-release-blue?style=plastic) |
 |     | [legato_flash](./apps/legato_flash/readme.md) |  Flash writer example | ![app-beta](https://img.shields.io/badge/application-release-blue?style=plastic) |
@@ -53,10 +53,18 @@ The following applications are provided to demonstrate a subset of the capabilit
 
 The following applications are provided to demonstrate the ability for the Harmony Graphics Suite to support third-party graphics library.
 
-| Category | Item | Description | Release Type |
+| Category | Item | Description | Release Status |
 | --- | --- | ---- |---- |
 | apps | [blank_quickstart](./apps/blank_quickstart/readme.md) | Blank UI-less library quickstart example | ![app-beta](https://img.shields.io/badge/application-release-blue?style=plastic) |
 
+
+## LVGL Graphics application examples 
+
+The following applications are provided to demonstrate the ability for the Harmony Graphics Suite to support LVGL graphics library.
+
+| Category | Item | Description | Release Status |
+| --- | --- | ---- |---- |
+| apps | [lvgl_showcase](./apps/lvgl_showcase/readme.md) | LVGL library Music Player UI example | ![app-beta](https://img.shields.io/badge/application-beta-orange?style=plastic) |
 
 ____
 

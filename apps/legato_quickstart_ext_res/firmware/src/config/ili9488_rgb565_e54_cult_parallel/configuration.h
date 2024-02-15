@@ -86,7 +86,7 @@ extern "C" {
 #define SYS_TIME_HW_COUNTER_PERIOD                  (0xFFFFU)
 #define SYS_TIME_HW_COUNTER_HALF_PERIOD             (SYS_TIME_HW_COUNTER_PERIOD>>1)
 #define SYS_TIME_CPU_CLOCK_FREQUENCY                (120000000)
-#define SYS_TIME_COMPARE_UPDATE_EXECUTION_CYCLES    (188)
+#define SYS_TIME_COMPARE_UPDATE_EXECUTION_CYCLES    (232)
 
 
 
@@ -102,7 +102,7 @@ extern "C" {
 #define DRV_I2C_CLOCK_SPEED_IDX0              400
 
 /* I2C Driver Common Configuration Options */
-#define DRV_I2C_INSTANCES_NUMBER              1
+#define DRV_I2C_INSTANCES_NUMBER              (1U)
 
 
 
@@ -110,11 +110,11 @@ extern "C" {
 #define DRV_MAXTOUCH_I2C_MODULE_INDEX   0
 
 /* SST26 Driver Instance Configuration */
-#define DRV_SST26_INDEX                 0
-#define DRV_SST26_CLIENTS_NUMBER        1
-#define DRV_SST26_START_ADDRESS         0x0
-#define DRV_SST26_PAGE_SIZE             256
-#define DRV_SST26_ERASE_BUFFER_SIZE     4096
+#define DRV_SST26_INDEX                 (0U)
+#define DRV_SST26_CLIENTS_NUMBER        (1U)
+#define DRV_SST26_START_ADDRESS         (0x0U)
+#define DRV_SST26_PAGE_SIZE             (256U)
+#define DRV_SST26_ERASE_BUFFER_SIZE     (4096U)
 
 
 

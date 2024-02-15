@@ -81,6 +81,8 @@
 #define PIXEL_BUFFER_BYTES_PER_PIXEL 2
 static uint8_t pixelBuffer[SCREEN_WIDTH * PIXEL_BUFFER_BYTES_PER_PIXEL];
 
+gfxBlitCallBack drvBlitCallBack = NULL;
+
 typedef enum
 {
     INIT = 0,
@@ -358,6 +360,10 @@ void DRV_ILI9488_Transfer(GFX_Disp_Intf intf)
             DRV_ILI9488_NCSDeassert(intf); 
             gfxPixelBuffer_SetLocked(drv.blitParms.buf, GFX_FALSE);
             drv.state = IDLE;
+            if (drvBlitCallBack != NULL) 
+            {
+                drvBlitCallBack();
+            }
             break;
         }
         case IDLE:
@@ -616,6 +622,13 @@ gfxDriverIOCTLResponse DRV_ILI9488_IOCTL(gfxDriverIOCTLRequest request,
             else
                 val->value.v_uint = 1;
             
+            return GFX_IOCTL_OK;
+        }		
+        case GFX_IOCTL_SET_BLIT_CALLBACK:
+        {
+            val = (gfxIOCTLArg_Value*)arg;
+            drvBlitCallBack = (gfxBlitCallBack)val->value.v_pointer;
+
             return GFX_IOCTL_OK;
         }		
         default:

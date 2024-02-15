@@ -60,6 +60,7 @@ APP_CPRO_DATA app_cproData;
 #define APP_GFX_BYTES_PER_PIXEL 2
 static uint8_t ScratchPixels[APP_GFX_LAYER_WIDTH_PIXELS * 50 * APP_GFX_BYTES_PER_PIXEL];
 gfxPixelBuffer scratchPixels;
+SYS_INP_InputListener appInputListener;
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Functions
@@ -76,8 +77,21 @@ gfxPixelBuffer scratchPixels;
 // *****************************************************************************
 
 
-/* TODO:  Add any necessary local functions.
-*/
+static void touchDownHandler(const SYS_INP_TouchStateEvent* const evt)
+{
+    LED1_On();
+}
+
+static void touchUpHandler(const SYS_INP_TouchStateEvent* const evt)
+{
+    LED1_Off();
+    LED2_Off();
+}
+
+static void touchMoveHandler(const SYS_INP_TouchMoveEvent* const evt)
+{
+    LED2_On();
+}
 
 
 // *****************************************************************************
@@ -166,6 +180,11 @@ void APP_CPRO_Tasks ( void )
         case APP_CPRO_STATE_INIT:
         {
             bool appInitialized = true;
+            // Register the input event handlers
+            appInputListener.handleTouchDown = &touchDownHandler;
+            appInputListener.handleTouchUp = &touchUpHandler;
+            appInputListener.handleTouchMove = &touchMoveHandler;
+            SYS_INP_AddListener(&appInputListener);
 
             gfxPixelBufferCreate(APP_GFX_LAYER_WIDTH_PIXELS,
                 50,

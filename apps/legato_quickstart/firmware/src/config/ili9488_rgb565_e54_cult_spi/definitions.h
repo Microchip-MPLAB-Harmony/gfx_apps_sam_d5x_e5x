@@ -51,16 +51,17 @@
 #include "peripheral/nvmctrl/plib_nvmctrl.h"
 #include "peripheral/evsys/plib_evsys.h"
 #include "peripheral/sercom/spi_master/plib_sercom0_spi_master.h"
-#include "gfx/legato/generated/le_gen_harmony.h"
 #include "peripheral/sercom/i2c_master/plib_sercom6_i2c_master.h"
+#include "gfx/legato/generated/le_gen_harmony.h"
 #include "peripheral/port/plib_port.h"
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
+#include "peripheral/dmac/plib_dmac.h"
 #include "peripheral/cmcc/plib_cmcc.h"
 #include "bsp/bsp.h"
 #include "peripheral/tc/plib_tc0.h"
-#include "driver/i2c/drv_i2c.h"
 #include "system/time/sys_time.h"
+#include "driver/i2c/drv_i2c.h"
 #include "system/input/sys_input.h"
 #include "gfx/driver/controller/external_controller/drv_gfx_external_controller.h"
 #include "driver/spi/drv_spi.h"
@@ -82,6 +83,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "ATSAME54P20A"
+#define DEVICE_ARCH			 "CORTEX-M4"
+#define DEVICE_FAMILY		 "SAME"
+#define DEVICE_SERIES		 "SAME54"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 120000000

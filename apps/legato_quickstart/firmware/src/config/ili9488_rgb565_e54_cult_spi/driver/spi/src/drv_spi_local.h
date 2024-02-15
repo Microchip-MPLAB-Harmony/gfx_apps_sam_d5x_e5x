@@ -39,8 +39,8 @@
 *******************************************************************************/
 //DOM-IGNORE-END
 
-#ifndef _DRV_SPI_LOCAL_H
-#define _DRV_SPI_LOCAL_H
+#ifndef DRV_SPI_LOCAL_H
+#define DRV_SPI_LOCAL_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -58,15 +58,15 @@
 // *****************************************************************************
 
 /* SPI Driver Handle Macros*/
-#define DRV_SPI_INDEX_MASK                      (0x000000FF)
+#define DRV_SPI_INDEX_MASK                      (0x000000FFU)
 
-#define DRV_SPI_INSTANCE_MASK                   (0x0000FF00)
+#define DRV_SPI_INSTANCE_MASK                   (0x0000FF00U)
 
-#define DRV_SPI_TOKEN_MAX                       (0xFFFF)
+#define DRV_SPI_TOKEN_MAX                       (0xFFFFU)
 
 
-#define _USE_FREQ_CONFIGURED_IN_CLOCK_MANAGER       0
-#define NULL_INDEX                                  0xFF
+#define USE_FREQ_CONFIGURED_IN_CLOCK_MANAGER    (0)
+#define NULL_INDEX                              (0xFF)
 
 // *****************************************************************************
 /* SPI Client-Specific Driver Status
@@ -135,7 +135,7 @@ typedef enum
     None.
 */
 
-typedef struct _DRV_SPI_TRANSFER_OBJ
+typedef struct DRV_SPI_TRANSFER_OBJ_T
 {
     /* True if object is allocated */
     bool                            inUse;
@@ -167,7 +167,7 @@ typedef struct _DRV_SPI_TRANSFER_OBJ
     DRV_SPI_TRANSFER_HANDLE         transferHandle;
 
     /* Next buffer pointer */
-    struct _DRV_SPI_TRANSFER_OBJ*   next;
+    struct DRV_SPI_TRANSFER_OBJ_T*   next;
 
 } DRV_SPI_TRANSFER_OBJ;
 
@@ -228,6 +228,30 @@ typedef struct
      * decide whether or not to update the client specific SPI parameters. */
     DRV_HANDLE                      lastClientHandle;
 
+    /* Transmit DMA Channel */
+    SYS_DMA_CHANNEL                 txDMAChannel;
+
+    /* Receive DMA Channel */
+    SYS_DMA_CHANNEL                 rxDMAChannel;
+
+    /* This is the SPI transmit register address. Used for DMA operation. */
+    void*                           txAddress;
+
+    /* This is the SPI receive register address. Used for DMA operation. */
+    void*                           rxAddress;
+
+    bool                            dmaRxChannelIntStatus;
+    bool                            dmaTxChannelIntStatus;
+    bool                            dmaInterruptStatus;
+
+    /* Dummy data is read into this variable by RX DMA */
+    uint32_t                        rxDummyData;
+
+    /* This holds the number of dummy data to be transmitted */
+    size_t                          txDummyDataSize;
+
+    /* This holds the number of dummy data to be received */
+    size_t                          rxDummyDataSize;
 
     const uint32_t*                 remapDataBits;
 
@@ -278,7 +302,7 @@ typedef struct
     None.
 */
 
-typedef struct _DRV_SPI_CLIENT_OBJ
+typedef struct DRV_SPI_CLIENT_OBJ_T
 {
     /* The hardware instance index associated with the client */
     SYS_MODULE_INDEX                drvIndex;
@@ -308,4 +332,4 @@ typedef struct _DRV_SPI_CLIENT_OBJ
 
 } DRV_SPI_CLIENT_OBJ;
 
-#endif //#ifndef _DRV_SPI_LOCAL_H
+#endif //#ifndef DRV_SPI_LOCAL_H

@@ -40,8 +40,8 @@
 *******************************************************************************/
 // DOM-IGNORE-END
 
-#ifndef _BSP_H
-#define _BSP_H
+#ifndef BSP_H
+#define BSP_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -60,16 +60,19 @@
 // Section: BSP Macros
 // *****************************************************************************
 // *****************************************************************************
+#define sam_e54_cult
+#define BSP_NAME             "sam_e54_cult"
+
 
 
 /*** LED Macros for LED2 ***/
-#define LED2_Toggle()     (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 16)
-#define LED2_On()         (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 16)
-#define LED2_Off()        (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 16)
+#define LED2_Toggle()     (PORT_REGS->GROUP[0].PORT_OUTTGL = 1UL << 16)
+#define LED2_On()         (PORT_REGS->GROUP[0].PORT_OUTCLR = 1UL << 16)
+#define LED2_Off()        (PORT_REGS->GROUP[0].PORT_OUTSET = 1UL << 16)
 /*** LED Macros for LED1 ***/
-#define LED1_Toggle()     (PORT_REGS->GROUP[2].PORT_OUTTGL = 1 << 21)
-#define LED1_On()         (PORT_REGS->GROUP[2].PORT_OUTCLR = 1 << 21)
-#define LED1_Off()        (PORT_REGS->GROUP[2].PORT_OUTSET = 1 << 21)
+#define LED1_Toggle()     (PORT_REGS->GROUP[2].PORT_OUTTGL = 1UL << 21)
+#define LED1_On()         (PORT_REGS->GROUP[2].PORT_OUTCLR = 1UL << 21)
+#define LED1_Off()        (PORT_REGS->GROUP[2].PORT_OUTSET = 1UL << 21)
 
 /*** SWITCH Macros for SWITCH1 ***/
 #define SWITCH1_Get()     ((PORT_REGS->GROUP[3].PORT_IN >> 0) & 0x01)
@@ -81,8 +84,8 @@
 #define SWITCH2_STATE_RELEASED  1
 
 /*** VBUS Macros for VBUS_AL_PC19 ***/
-#define VBUS_AL_PC19_PowerEnable()         (PORT_REGS->GROUP[2].PORT_OUTCLR = 1 << 19)
-#define VBUS_AL_PC19_PowerDisable()        (PORT_REGS->GROUP[2].PORT_OUTSET = 1 << 19)
+#define VBUS_AL_PC19_PowerEnable()         (PORT_REGS->GROUP[2].PORT_OUTCLR = 1UL << 19)
+#define VBUS_AL_PC19_PowerDisable()        (PORT_REGS->GROUP[2].PORT_OUTSET = 1UL << 19)
 
 
 
@@ -116,7 +119,6 @@
 
   Example:
     <code>
-    //Initialize the BSP
     BSP_Initialize();
     </code>
 
@@ -126,7 +128,7 @@
 
 void BSP_Initialize(void);
 
-#endif // _BSP_H
+#endif // BSP_H
 
 /*******************************************************************************
  End of File

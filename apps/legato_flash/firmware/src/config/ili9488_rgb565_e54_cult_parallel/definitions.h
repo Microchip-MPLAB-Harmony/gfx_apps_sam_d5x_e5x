@@ -51,8 +51,8 @@
 #include "peripheral/nvmctrl/plib_nvmctrl.h"
 #include "peripheral/tc/plib_tc0.h"
 #include "peripheral/sdhc/plib_sdhc1.h"
-#include "driver/i2c/drv_i2c.h"
 #include "system/time/sys_time.h"
+#include "driver/i2c/drv_i2c.h"
 #include "usb/usb_chapter_9.h"
 #include "usb/usb_host.h"
 #include "driver/usb/usbfsv1/drv_usbfsv1.h"
@@ -76,15 +76,15 @@
 #include "peripheral/sercom/i2c_master/plib_sercom4_i2c_master.h"
 #include "bsp/bsp.h"
 #include "driver/sst26/drv_sst26.h"
-#include "system/input/sys_input.h"
 #include "peripheral/qspi/plib_qspi.h"
+#include "system/input/sys_input.h"
+#include "peripheral/ccl/plib_ccl.h"
 #include "system/fs/sys_fs.h"
 #include "system/fs/sys_fs_media_manager.h"
 #include "system/fs/sys_fs_fat_interface.h"
 #include "system/fs/fat_fs/file_system/ff.h"
 #include "system/fs/fat_fs/file_system/ffconf.h"
 #include "system/fs/fat_fs/hardware_access/diskio.h"
-#include "peripheral/ccl/plib_ccl.h"
 #include "gfx/driver/controller/external_controller/drv_gfx_external_controller.h"
 #include "app.h"
 
@@ -97,6 +97,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "ATSAME54P20A"
+#define DEVICE_ARCH			 "CORTEX-M4"
+#define DEVICE_FAMILY		 "SAME"
+#define DEVICE_SERIES		 "SAME54"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 120000000
@@ -215,7 +221,7 @@ typedef struct
     SYS_MODULE_OBJ drvI2C0;
 
     SYS_MODULE_OBJ  sysTime;
-	SYS_MODULE_OBJ  usbHostObject0;
+    SYS_MODULE_OBJ  usbHostObject0;
 
 	SYS_MODULE_OBJ  drvUSBFSV1Object;
 

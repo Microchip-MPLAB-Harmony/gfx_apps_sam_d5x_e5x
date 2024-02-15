@@ -48,7 +48,6 @@
 #include "device.h"
 
 
-
 // ****************************************************************************
 // ****************************************************************************
 // Section: Configuration Bits
@@ -78,6 +77,10 @@
 // Section: Driver Initialization Data
 // *****************************************************************************
 // *****************************************************************************
+/* Following MISRA-C rules are deviated in the below code block */
+/* MISRA C-2012 Rule 11.1 */
+/* MISRA C-2012 Rule 11.3 */
+/* MISRA C-2012 Rule 11.8 */
 // <editor-fold defaultstate="collapsed" desc="DRV_I2C Instance 0 Initialization Data">
 
 /* I2C Client Objects Pool */
@@ -87,13 +90,13 @@ static DRV_I2C_CLIENT_OBJ drvI2C0ClientObjPool[DRV_I2C_CLIENTS_NUMBER_IDX0];
 static DRV_I2C_TRANSFER_OBJ drvI2C0TransferObj[DRV_I2C_QUEUE_SIZE_IDX0];
 
 /* I2C PLib Interface Initialization */
-const DRV_I2C_PLIB_INTERFACE drvI2C0PLibAPI = {
+static const DRV_I2C_PLIB_INTERFACE drvI2C0PLibAPI = {
 
     /* I2C PLib Transfer Read Add function */
-    .read = (DRV_I2C_PLIB_READ)SERCOM4_I2C_Read,
+    .read_t = (DRV_I2C_PLIB_READ)SERCOM4_I2C_Read,
 
     /* I2C PLib Transfer Write Add function */
-    .write = (DRV_I2C_PLIB_WRITE)SERCOM4_I2C_Write,
+    .write_t = (DRV_I2C_PLIB_WRITE)SERCOM4_I2C_Write,
 
 
     /* I2C PLib Transfer Write Read Add function */
@@ -113,20 +116,20 @@ const DRV_I2C_PLIB_INTERFACE drvI2C0PLibAPI = {
 };
 
 
-const DRV_I2C_INTERRUPT_SOURCES drvI2C0InterruptSources =
+static const DRV_I2C_INTERRUPT_SOURCES drvI2C0InterruptSources =
 {
     /* Peripheral has more than one interrupt vector */
     .isSingleIntSrc                        = false,
 
     /* Peripheral interrupt lines */
-    .intSources.multi.i2cInt0          = SERCOM4_0_IRQn,
-    .intSources.multi.i2cInt1          = SERCOM4_1_IRQn,
-    .intSources.multi.i2cInt2          = SERCOM4_2_IRQn,
-    .intSources.multi.i2cInt3          = SERCOM4_OTHER_IRQn,
+    .intSources.multi.i2cInt0          = (int32_t)SERCOM4_0_IRQn,
+    .intSources.multi.i2cInt1          = (int32_t)SERCOM4_1_IRQn,
+    .intSources.multi.i2cInt2          = (int32_t)SERCOM4_2_IRQn,
+    .intSources.multi.i2cInt3          = (int32_t)SERCOM4_OTHER_IRQn,
 };
 
 /* I2C Driver Initialization Data */
-const DRV_I2C_INIT drvI2C0InitData =
+static const DRV_I2C_INIT drvI2C0InitData =
 {
     /* I2C PLib API */
     .i2cPlib = &drvI2C0PLibAPI,
@@ -149,7 +152,6 @@ const DRV_I2C_INIT drvI2C0InitData =
     /* I2C Clock Speed */
     .clockSpeed = DRV_I2C_CLOCK_SPEED_IDX0,
 };
-
 // </editor-fold>
 
 // <editor-fold defaultstate="collapsed" desc="DRV_INPUT_MXT336T Initialization Data">
@@ -164,6 +166,7 @@ const DRV_MAXTOUCH_INIT drvMAXTOUCHInitData =
 };
 
 // </editor-fold>
+
 
 
 
@@ -186,22 +189,22 @@ SYSTEM_OBJECTS sysObj;
  
 /*  When designing a Self-powered USB Device, the application should make sure
     that USB_DEVICE_Attach() function is called only when VBUS is actively powered.
-	Therefore, the firmware needs some means to detect when the Host is powering 
-	the VBUS. A 5V tolerant I/O pin can be connected to VBUS (through a resistor)
-	and can be used to detect when VBUS is high or low. The application can specify
-	a VBUS Detect function through the USB Driver Initialize data structure. 
-	The USB device stack will periodically call this function. If the VBUS is 
-	detected, the USB_DEVICE_EVENT_POWER_DETECTED event is generated. If the VBUS 
-	is removed (i.e., the device is physically detached from Host), the USB stack 
-	will generate the event USB_DEVICE_EVENT_POWER_REMOVED. The application should 
-	call USB_DEVICE_Detach() when VBUS is removed. 
+    Therefore, the firmware needs some means to detect when the Host is powering 
+    the VBUS. A 5V tolerant I/O pin can be connected to VBUS (through a resistor)
+    and can be used to detect when VBUS is high or low. The application can specify
+    a VBUS Detect function through the USB Driver Initialize data structure. 
+    The USB device stack will periodically call this function. If the VBUS is 
+    detected, the USB_DEVICE_EVENT_POWER_DETECTED event is generated. If the VBUS 
+    is removed (i.e., the device is physically detached from Host), the USB stack 
+    will generate the event USB_DEVICE_EVENT_POWER_REMOVED. The application should 
+    call USB_DEVICE_Detach() when VBUS is removed. 
     
     The following are the steps to generate the VBUS_SENSE Function through MHC     
         1) Navigate to MHC->Tools->Pin Configuration and Configure the pin used 
-		   as VBUS_SENSE. Set this pin Function as "GPIO" and set as "Input". 
-		   Provide a custom name to the pin.
+           as VBUS_SENSE. Set this pin Function as "GPIO" and set as "Input". 
+           Provide a custom name to the pin.
         2) Select the USB Driver Component in MHC Project Graph and enable the  
-		   "Enable VBUS Sense" Check-box.     
+           "Enable VBUS Sense" Check-box.     
         3) Specify the custom name of the VBUS SENSE pin in the "VBUS SENSE Pin Name" box.  */ 
 static DRV_USB_VBUS_LEVEL DRV_USBFSV1_VBUS_Comparator(void)
 {
@@ -211,24 +214,23 @@ static DRV_USB_VBUS_LEVEL DRV_USBFSV1_VBUS_Comparator(void)
     {
         retVal = DRV_USB_VBUS_LEVEL_VALID;
     }
-	return (retVal);
+    return (retVal);
 
 }
 
-
 const DRV_USBFSV1_INIT drvUSBInit =
 {
-	/* Interrupt Source for USB module */
-	.interruptSource = USB_OTHER_IRQn,
+    /* Interrupt Source for USB module */
+    .interruptSource = USB_OTHER_IRQn,
  
-	/* Interrupt Source for USB module */
-	.interruptSource1 = USB_SOF_HSOF_IRQn,
+    /* Interrupt Source for USB module */
+    .interruptSource1 = USB_SOF_HSOF_IRQn,
  
-	/* Interrupt Source for USB module */
-	.interruptSource2 = USB_TRCPT0_IRQn,
+    /* Interrupt Source for USB module */
+    .interruptSource2 = USB_TRCPT0_IRQn,
  
-	/* Interrupt Source for USB module */
-	.interruptSource3 = USB_TRCPT1_IRQn,
+    /* Interrupt Source for USB module */
+    .interruptSource3 = USB_TRCPT1_IRQn,
 
     /* System module initialization */
     .moduleInit = {0},
@@ -237,7 +239,7 @@ const DRV_USBFSV1_INIT drvUSBInit =
     .operationMode = DRV_USBFSV1_OPMODE_DEVICE,
 
     /* USB Full Speed Operation */
-	.operationSpeed = USB_SPEED_FULL,
+    .operationSpeed = USB_SPEED_FULL,
     
     /* Stop in idle */
     .runInStandby = true,
@@ -247,10 +249,10 @@ const DRV_USBFSV1_INIT drvUSBInit =
 
     /* Identifies peripheral (PLIB-level) ID */
     .usbID = USB_REGS,
-	
+
     /* Function to check for VBus */
     .vbusComparator = DRV_USBFSV1_VBUS_Comparator
-	
+
 };
 
 
@@ -263,7 +265,7 @@ const DRV_USBFSV1_INIT drvUSBInit =
 // *****************************************************************************
 // <editor-fold defaultstate="collapsed" desc="SYS_TIME Initialization Data">
 
-const SYS_TIME_PLIB_INTERFACE sysTimePlibAPI = {
+static const SYS_TIME_PLIB_INTERFACE sysTimePlibAPI = {
     .timerCallbackSet = (SYS_TIME_PLIB_CALLBACK_REGISTER)TC0_TimerCallbackRegister,
     .timerStart = (SYS_TIME_PLIB_START)TC0_TimerStart,
     .timerStop = (SYS_TIME_PLIB_STOP)TC0_TimerStop,
@@ -273,7 +275,7 @@ const SYS_TIME_PLIB_INTERFACE sysTimePlibAPI = {
     .timerCounterGet = (SYS_TIME_PLIB_COUNTER_GET)TC0_Timer16bitCounterGet,
 };
 
-const SYS_TIME_INIT sysTimeInitData =
+static const SYS_TIME_INIT sysTimeInitData =
 {
     .timePlib = &sysTimePlibAPI,
     .hwTimerIntNum = TC0_IRQn,
@@ -300,6 +302,8 @@ const SYS_TIME_INIT sysTimeInitData =
  ********************************************************************************/
 static void STDIO_BufferModeSet(void)
 {
+    /* MISRAC 2012 deviation block start */
+    /* MISRA C-2012 Rule 21.6 deviated 2 times in this file.  Deviation record ID -  H3_MISRAC_2012_R_21_6_DR_3 */
 
     /* Make stdin unbuffered */
     setbuf(stdin, NULL);
@@ -309,7 +313,7 @@ static void STDIO_BufferModeSet(void)
 }
 
 
-
+/* MISRAC 2012 deviation block end */
 
 /*******************************************************************************
   Function:
@@ -323,6 +327,7 @@ static void STDIO_BufferModeSet(void)
 
 void SYS_Initialize ( void* data )
 {
+
     /* MISRAC 2012 deviation block start */
     /* MISRA C-2012 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2012_R_2_2_DR_1 */
 
@@ -357,8 +362,15 @@ void SYS_Initialize ( void* data )
     QSPI_Initialize();
 
 
+
+    /* MISRAC 2012 deviation block start */
+    /* Following MISRA-C rules deviated in this block  */
+    /* MISRA C-2012 Rule 11.3 - Deviation record ID - H3_MISRAC_2012_R_11_3_DR_1 */
+    /* MISRA C-2012 Rule 11.8 - Deviation record ID - H3_MISRAC_2012_R_11_8_DR_1 */
+
     /* Initialize I2C0 Driver Instance */
     sysObj.drvI2C0 = DRV_I2C_Initialize(DRV_I2C_INDEX_0, (SYS_MODULE_INIT *)&drvI2C0InitData);
+
     APP_SW_VGPUInit();
 
 
@@ -369,7 +381,12 @@ void SYS_Initialize ( void* data )
     DRV_ILI9488_Initialize();
 
 
+    /* MISRA C-2012 Rule 11.3, 11.8 deviated below. Deviation record ID -  
+    H3_MISRAC_2012_R_11_3_DR_1 & H3_MISRAC_2012_R_11_8_DR_1*/
+        
     sysObj.sysTime = SYS_TIME_Initialize(SYS_TIME_INDEX_0, (SYS_MODULE_INIT *)&sysTimeInitData);
+    
+    /* MISRAC 2012 deviation block end */
 
     SYS_INP_Init();
 
@@ -379,21 +396,22 @@ void SYS_Initialize ( void* data )
     sysObj.usbDevObject0 = USB_DEVICE_Initialize (USB_DEVICE_INDEX_0 , ( SYS_MODULE_INIT* ) & usbDevInitData);
 
 
-	/* Initialize USB Driver */ 
-    sysObj.drvUSBFSV1Object = DRV_USBFSV1_Initialize(DRV_USBFSV1_INDEX_0, (SYS_MODULE_INIT *) &drvUSBInit);	
+    /* Initialize USB Driver */ 
+    sysObj.drvUSBFSV1Object = DRV_USBFSV1_Initialize(DRV_USBFSV1_INDEX_0, (SYS_MODULE_INIT *) &drvUSBInit);
 
     // initialize UI library
     Legato_Initialize();
 
 
+    /* MISRAC 2012 deviation block end */
     APP_Initialize();
 
 
     NVIC_Initialize();
 
+
     /* MISRAC 2012 deviation block end */
 }
-
 
 /*******************************************************************************
  End of File
